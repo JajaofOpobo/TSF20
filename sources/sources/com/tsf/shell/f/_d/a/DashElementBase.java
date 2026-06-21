@@ -12,7 +12,7 @@ public abstract class DashElementBase {
     private boolean c = false;
     private boolean d;
 
-    public abstract void a(i iVar, Number3d number3d, Number3d number3d2, Runnable runnable);
+    public abstract void a(IRenderable iVar, Number3d number3d, Number3d number3d2, Runnable runnable);
 
     public abstract void a(GridRenderable kVar, Runnable runnable);
 

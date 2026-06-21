@@ -3,7 +3,7 @@ package com.tsf.shell.f.e;
 import com.censivn.C3DEngine.b.c.WindowManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class AlignmentResizeListener implements e.a {
+class AlignmentResizeListener implements WindowManager.a {
     AlignmentResizeListener() {
     }
 

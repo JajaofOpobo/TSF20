@@ -12,12 +12,12 @@ import com.tsf.shell.f.f.PageAnimationState;
 import com.tsf.shell.manager.wallpaper.ShellWallpaperManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceScene extends BaseRenderable implements e.a, ShellWallpaperManager.a {
+public class WorkspaceScene extends BaseRenderable implements WindowManager.a, ShellWallpaperManager.a {
     public static int b = 0;
     private PageAnimationState.a f;
     private com.tsf.shell.f.e.b.ResizeButtonNode g;
-    private d.b h;
-    private a i;
+    private AnimationListener.b h;
+    private ScreenFadeController i;
     private PageAnimationState.a j;
     public Object a = new Object();
     private boolean d = false;
@@ -57,7 +57,7 @@ public class WorkspaceScene extends BaseRenderable implements e.a, ShellWallpape
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
-    public i getHittingTarget(float f, float f2, boolean z) {
+    public IRenderable getHittingTarget(float f, float f2, boolean z) {
         if (!this.d) {
             return super.getHittingTarget(f, f2, z);
         }
@@ -102,15 +102,15 @@ public class WorkspaceScene extends BaseRenderable implements e.a, ShellWallpape
         return this.e;
     }
 
-    public void a(a aVar) {
+    public void a(ScreenFadeController aVar) {
         a(aVar, ItemInfo.APP_INTENT, (Runnable) null);
     }
 
-    public void b(a aVar) {
+    public void b(ScreenFadeController aVar) {
         this.i = aVar;
     }
 
-    public void a(a aVar, int i, Runnable runnable) {
+    public void a(ScreenFadeController aVar, int i, Runnable runnable) {
         if (!this.e) {
             this.e = true;
             this.d = true;

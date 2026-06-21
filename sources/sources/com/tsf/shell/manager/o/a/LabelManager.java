@@ -16,9 +16,9 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LabelManager {
-    public static b a;
+    public static TextLabelElementV2 a;
     public static int b = 0;
-    private static ArrayList<b> c;
+    private static ArrayList<TextLabelElementV2> c;
     private static TextPaint d;
 
     public static class a {
@@ -73,18 +73,18 @@ public class LabelManager {
         LabelManagerV2.add(a(-2210181, false));
         LabelManagerV2.add(a(-10403741, false));
         LabelManagerV2.add(a(-2201238, false));
-        Iterator<b> it = LabelManagerV2.iterator();
+        Iterator<TextLabelElementV2> it = LabelManagerV2.iterator();
         int i = 0;
         while (it.hasNext()) {
             it.next().c = i;
             i++;
         }
-        a = b(e.h(0));
+        a = b(ConfigManager.h(0));
         com.tsf.shell.manager.o.ButtonPresetManager.a.ab = a;
         com.tsf.shell.manager.o.ButtonPresetManager.c.ab = LabelManagerV2.get(1);
     }
 
-    private static b a(int i, boolean z) {
+    private static TextLabelElementV2 a(int i, boolean z) {
         a aVar = new TextConfigV2();
         b bVar = new TextLabelElementV2(LabelManagerV2.size(), aVar);
         aVar.g = com.tsf.shell.manager.o.a.TextLabelElement.a;
@@ -99,12 +99,12 @@ public class LabelManager {
         if (bVarB != a) {
             a = bVarB;
             com.tsf.shell.manager.o.ButtonPresetManager.a.ab = a;
-            e.g(i);
+            ConfigManager.g(i);
             Home.b().a(VEasing.Back.easeIn);
         }
     }
 
-    public static b b(int i) {
+    public static TextLabelElementV2 b(int i) {
         for (b bVar : c) {
             if (bVar.b == i) {
                 return bVar;
@@ -117,7 +117,7 @@ public class LabelManager {
         return LabelManagerV2.size();
     }
 
-    public static b c(int i) {
+    public static TextLabelElementV2 c(int i) {
         return LabelManagerV2.get(i);
     }
 
@@ -138,7 +138,7 @@ public class LabelManager {
             EmptyLabelElement.setShadowLayer(0.0f, 0.0f, 0.0f, -16777216);
         }
         EmptyLabelElement.setTextSize(aVar.a(i));
-        return a(str, aVar.J, aVar.K, 0, 0, d, true, true, 0, 0, aVar2.a, aVar2.b, aVar.C);
+        return a(str, aVar.J, aVar.K, 0, 0, EmptyLabelElement, true, true, 0, 0, aVar2.a, aVar2.b, aVar.C);
     }
 
     public static Bitmap a(String str, int i, int i2, int i3, int i4, TextPaint textPaint, boolean z, boolean z2, int i5, int i6, boolean z3, int i7, float f) {

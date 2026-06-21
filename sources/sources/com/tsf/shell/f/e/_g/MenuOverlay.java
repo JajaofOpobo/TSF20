@@ -359,7 +359,7 @@ public abstract class MenuOverlay {
         showOption(cVar.getMenuContainer());
     }
 
-    public void showOption(i iVar) {
+    public void showOption(IRenderable iVar) {
         boolean z;
         final float menuHeight;
         if (!this.mExtraMenuContainer.containsChild(iVar)) {
@@ -460,7 +460,7 @@ public abstract class MenuOverlay {
         }
     }
 
-    class b implements e.a {
+    class b implements WindowManager.a {
         b() {
         }
 

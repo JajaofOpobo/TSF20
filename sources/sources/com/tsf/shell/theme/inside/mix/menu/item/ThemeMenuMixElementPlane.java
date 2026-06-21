@@ -13,8 +13,8 @@ import com.tsf.shell.manager.o.ThemeColorConstants;
 public class ThemeMenuMixElementPlane extends BaseRenderable {
     public static final int WIDTH = 300;
     private CircleDotNode mNotifPoint;
-    public m mSummaryView;
-    public m mTitleView;
+    public LabelRenderable mSummaryView;
+    public LabelRenderable mTitleView;
     private TextureElement previewTE = new TextureElement(0, false);
     public com.censivn.C3DEngine.b.f.GridRenderable mPreviewView = new com.censivn.C3DEngine.b.f.GridRenderable(A.a(180.0f), A.a(180.0f), false);
 

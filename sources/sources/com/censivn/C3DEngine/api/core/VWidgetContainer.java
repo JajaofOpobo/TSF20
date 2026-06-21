@@ -3,7 +3,7 @@ package com.censivn.C3DEngine.api.core;
 import com.censivn.C3DEngine.api.element.info.LauncherWidget3DInfo;
 import com.censivn.C3DEngine.api.event.VMouseEventListener;
 import com.censivn.C3DEngine.api.shell.VPage;
-import com.tsf.shell.f.i.B;
+import com.tsf.shell.f.i.PageItem;
 import com.tsf.shell.manager.A;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -156,49 +156,49 @@ public class VWidgetContainer extends VObject3dContainer {
         };
         this.mVObjectManager = new VObjectManager(i);
         this.vTarget = new b(null) { // from class: com.censivn.C3DEngine.api.core.VWidgetContainer.2
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void a(float f, float f2) {
                 super.a(f, f2);
                 VWidgetContainer.this.mThis.onChangeSceneSize(f, f2);
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void b_() {
                 super.b_();
                 VWidgetContainer.this.mThis.onLoadAndInitComplete();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void n_() {
                 super.n_();
                 VWidgetContainer.this.mThis.onDragStart();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void c() {
                 super.c();
                 VWidgetContainer.this.mThis.onDragEnd();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void f_() {
                 super.f_();
                 VWidgetContainer.this.mThis.onChoicePageStart();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void o_() {
                 super.o_();
                 VWidgetContainer.this.mThis.onChoicePageEnd();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void p_() {
                 super.p_();
                 VWidgetContainer.this.mThis.onRemoveStart();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void g() {
                 super.g();
                 VWidgetContainer.this.mThis.onDestroy();
@@ -206,19 +206,19 @@ public class VWidgetContainer extends VObject3dContainer {
                 VWidgetContainer.this.mVObjectManager.destroy();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void m_() {
                 super.m_();
                 VWidgetContainer.this.mThis.onDragRelease();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void q_() {
                 super.q_();
                 VWidgetContainer.this.mThis.onPause();
             }
 
-            @Override // com.tsf.shell.f.i.B
+            @Override // com.tsf.shell.f.i.PageItem
             public void j() {
                 super.j();
                 VWidgetContainer.this.mThis.onResume();
@@ -229,7 +229,7 @@ public class VWidgetContainer extends VObject3dContainer {
                 VWidgetContainer.this.mThis.onFocus();
             }
 
-            @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
                 VWidgetContainer.this.mThis.onKillFocus();
             }
@@ -267,7 +267,7 @@ public class VWidgetContainer extends VObject3dContainer {
                 VWidgetContainer.this.mThis.dispatchDraw();
             }
 
-            @Override // com.tsf.shell.f.i.B, com.censivn.C3DEngine.b.f.IRenderable
+            @Override // com.tsf.shell.f.i.PageItem, com.censivn.C3DEngine.b.f.IRenderable
             public void drawMVPMatrix() {
                 VWidgetContainer.this.mThis.drawMVPMatrix();
             }

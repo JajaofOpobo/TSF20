@@ -80,7 +80,7 @@ public class ZoomRenderer extends BaseRenderable {
                 }
                 if (this.f) {
                     ZoomRenderer.this.f = this.a + (motionEvent.getY() - motionEvent2.getY());
-                    ZoomRenderer.this.f = com.tsf.shell.f.e.c.a(ZoomRenderer.this.f, ZoomRenderer.this.e, ZoomRenderer.this.d);
+                    ZoomRenderer.this.f = com.tsf.shell.f.e.SpringEasing.a(ZoomRenderer.this.f, ZoomRenderer.this.e, ZoomRenderer.this.d);
                     return;
                 }
                 if (this.d != null) {
@@ -97,7 +97,7 @@ public class ZoomRenderer extends BaseRenderable {
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 ZoomRenderer.this.a = 0.1f;
                 if (this.f) {
-                    ZoomRenderer.this.f = com.tsf.shell.f.e.c.b(ZoomRenderer.this.f, f2);
+                    ZoomRenderer.this.f = com.tsf.shell.f.e.SpringEasing.b(ZoomRenderer.this.f, f2);
                 } else {
                     ZoomRenderer.this.a = 0.1f;
                 }

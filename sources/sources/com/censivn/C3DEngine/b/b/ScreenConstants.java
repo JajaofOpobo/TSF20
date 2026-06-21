@@ -78,7 +78,7 @@ public class ScreenConstants {
         return i2;
     }
 
-    public static k a(float f2, float f3) {
+    public static GridRenderable a(float f2, float f3) {
         return new GridRenderable(c * f2, c * f3, false);
     }
 

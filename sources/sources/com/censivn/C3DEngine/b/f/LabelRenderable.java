@@ -14,7 +14,7 @@ public class LabelRenderable extends BaseRenderable {
     private float i = 0.0f;
     private float j = 0.0f;
     private float k = 0.0f;
-    private k a = new k(0.0f, 0.0f);
+    private GridRenderable a = new GridRenderable(0.0f, 0.0f);
     private com.tsf.shell.manager.o.a.TextConfig b = new com.tsf.shell.manager.o.a.TextConfig();
     private TextureElement c = new TextureElement(0, false);
 

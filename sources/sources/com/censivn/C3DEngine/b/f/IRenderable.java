@@ -26,6 +26,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.HashMap;
+import com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
@@ -37,10 +38,10 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     public float[] AABB_BL;
     public float[] AABB_BR;
     public float[] AABB_MATRIX;
-    public a AABB_P1;
-    public a AABB_P2;
-    public a AABB_P3;
-    public a AABB_P4;
+    public TextureSpriteRenderable AABB_P1;
+    public TextureSpriteRenderable AABB_P2;
+    public TextureSpriteRenderable AABB_P3;
+    public TextureSpriteRenderable AABB_P4;
     public float[] AABB_TL;
     public float[] AABB_TR;
     public float[] TEMP_AABB_BL;
@@ -121,10 +122,10 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         this.AABB_TR = new float[4];
         this.AABB_BL = new float[4];
         this.AABB_BR = new float[4];
-        this.AABB_P1 = new a();
-        this.AABB_P2 = new a();
-        this.AABB_P3 = new a();
-        this.AABB_P4 = new a();
+        this.AABB_P1 = new TextureSpriteRenderable();
+        this.AABB_P2 = new TextureSpriteRenderable();
+        this.AABB_P3 = new TextureSpriteRenderable();
+        this.AABB_P4 = new TextureSpriteRenderable();
         this.mRenderType = com.censivn.C3DEngine.f.DrawMode.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
@@ -177,10 +178,10 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         this.AABB_TR = new float[4];
         this.AABB_BL = new float[4];
         this.AABB_BR = new float[4];
-        this.AABB_P1 = new a();
-        this.AABB_P2 = new a();
-        this.AABB_P3 = new a();
-        this.AABB_P4 = new a();
+        this.AABB_P1 = new TextureSpriteRenderable();
+        this.AABB_P2 = new TextureSpriteRenderable();
+        this.AABB_P3 = new TextureSpriteRenderable();
+        this.AABB_P4 = new TextureSpriteRenderable();
         this.mRenderType = com.censivn.C3DEngine.f.DrawMode.TRIANGLES;
         this.mMouseEnabled = true;
         this.mMouseAreaDynamic = false;
@@ -698,7 +699,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         MatrixStack.glRotatef(this.mRotation.y, 0.0f, 1.0f, 0.0f);
         MatrixStack.glRotatef(this.mRotation.z, 0.0f, 0.0f, 1.0f);
         MatrixStack.glScalef(this.mScale.x, this.mScale.y, this.mScale.y);
-        com.censivn.C3DEngine.a.c.a(MatrixStack.rMVPMatrix, 0, MatrixStack.rSceneMatrix, 0, MatrixStack.matrix, MatrixStack.topIndex);
+        com.censivn.C3DEngine.a.Box3DRenderable.a(MatrixStack.rMVPMatrix, 0, MatrixStack.rSceneMatrix, 0, MatrixStack.matrix, MatrixStack.topIndex);
         System.arraycopy(MatrixStack.rMVPMatrix, 0, this.AABB_MATRIX, 0, 16);
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
@@ -709,7 +710,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         MatrixStack.glRotatef(this.mRotation.y, 0.0f, 1.0f, 0.0f);
         MatrixStack.glRotatef(this.mRotation.z, 0.0f, 0.0f, 1.0f);
         MatrixStack.glScalef(this.mScale.x, this.mScale.y, this.mScale.y);
-        com.censivn.C3DEngine.a.c.a(MatrixStack.rMVPMatrix, 0, MatrixStack.rSceneMatrix, 0, MatrixStack.matrix, MatrixStack.topIndex);
+        com.censivn.C3DEngine.a.Box3DRenderable.a(MatrixStack.rMVPMatrix, 0, MatrixStack.rSceneMatrix, 0, MatrixStack.matrix, MatrixStack.topIndex);
         System.arraycopy(MatrixStack.rMVPMatrix, 0, this.AABB_MATRIX, 0, 16);
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
@@ -909,7 +910,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         try {
             GLES20.glBufferData(34962, vertices().uvs().buffer().capacity() * 4, vertices().uvs().buffer(), 35044);
         } catch (Exception e) {
-            e.printStackTrace();
+            AltColoredRectRenderable.printStackTrace();
         }
         GLES20.glBindBuffer(34962, 0);
         invalidate();
@@ -955,7 +956,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
-            current = (i) objParent;
+            current = (IRenderable) objParent;
         }
         return number3d;
     }
@@ -969,13 +970,13 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
-            current = (i) objParent;
+            current = (IRenderable) objParent;
         }
         int size = arrayList.size() - 1;
         while (true) {
             int i = size;
             if (i > -1) {
-                Number3d number3dScale = ((i) arrayList.get(i)).scale();
+                Number3d number3dScale = ((IRenderable) arrayList.get(i)).scale();
                 number3d.x /= number3dScale.x;
                 number3d.y /= number3dScale.y;
                 number3d.z /= number3dScale.z;
@@ -995,13 +996,13 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
-            current = (i) objParent;
+            current = (IRenderable) objParent;
         }
         int size = arrayList.size() - 1;
         while (true) {
             int i = size;
             if (i > -1) {
-                Number3d number3dRotation = ((i) arrayList.get(i)).rotation();
+                Number3d number3dRotation = ((IRenderable) arrayList.get(i)).rotation();
                 number3d.x -= number3dRotation.x;
                 number3d.y -= number3dRotation.y;
                 number3d.z -= number3dRotation.z;
@@ -1022,7 +1023,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
-            current = (i) objParent;
+            current = (IRenderable) objParent;
         }
         return number3d;
     }
@@ -1039,7 +1040,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
-            current = (i) objParent;
+            current = (IRenderable) objParent;
             number3d.x *= current.scale().x;
             number3d.y *= current.scale().y;
             number3d.z *= current.scale().z;
@@ -1056,21 +1057,21 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             if (objParent == null || (objParent instanceof com.censivn.C3DEngine.a.SceneGraph)) {
                 break;
             }
-            current = (i) objParent;
+            current = (IRenderable) objParent;
         }
         int size = arrayList.size() - 1;
         while (true) {
             int i = size;
             if (i > -1) {
-                PositionNumber3d positionNumber3dPosition = ((i) arrayList.get(i)).position();
-                Number3d number3dScale = ((i) arrayList.get(i)).scale();
+                PositionNumber3d positionNumber3dPosition = ((IRenderable) arrayList.get(i)).position();
+                Number3d number3dScale = ((IRenderable) arrayList.get(i)).scale();
                 number3d.x -= positionNumber3dPosition.x;
                 number3d.y -= positionNumber3dPosition.y;
                 number3d.z -= positionNumber3dPosition.z;
                 number3d.x /= number3dScale.x;
                 number3d.y /= number3dScale.y;
                 number3d.z /= number3dScale.z;
-                number3d.rotateReverseAll(((i) arrayList.get(i)).rotation());
+                number3d.rotateReverseAll(((IRenderable) arrayList.get(i)).rotation());
                 size = i - 1;
             } else {
                 return number3d;
@@ -1093,10 +1094,10 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         if (mouseAreaDynamic()) {
             calAABB();
         }
-        com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_TL, 0, this.AABB_MATRIX, 0, this.AABB_TL, 0);
-        com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_TR, 0, this.AABB_MATRIX, 0, this.AABB_TR, 0);
-        com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_BL, 0, this.AABB_MATRIX, 0, this.AABB_BL, 0);
-        com.censivn.C3DEngine.a.c.b(this.TEMP_AABB_BR, 0, this.AABB_MATRIX, 0, this.AABB_BR, 0);
+        com.censivn.C3DEngine.a.Box3DRenderable.b(this.TEMP_AABB_TL, 0, this.AABB_MATRIX, 0, this.AABB_TL, 0);
+        com.censivn.C3DEngine.a.Box3DRenderable.b(this.TEMP_AABB_TR, 0, this.AABB_MATRIX, 0, this.AABB_TR, 0);
+        com.censivn.C3DEngine.a.Box3DRenderable.b(this.TEMP_AABB_BL, 0, this.AABB_MATRIX, 0, this.AABB_BL, 0);
+        com.censivn.C3DEngine.a.Box3DRenderable.b(this.TEMP_AABB_BR, 0, this.AABB_MATRIX, 0, this.AABB_BR, 0);
         float f3 = (this.TEMP_AABB_TL[0] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.H;
         float f4 = (this.TEMP_AABB_TL[1] / this.TEMP_AABB_TL[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.I;
         float f5 = (this.TEMP_AABB_TR[0] / this.TEMP_AABB_TR[3]) * com.censivn.C3DEngine.b.b.ScreenConstants.H;
@@ -1109,18 +1110,18 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         this.AABB_P2.a(f - f5, f2 - f6);
         this.AABB_P3.a(f - f7, f2 - f8);
         this.AABB_P4.a(f - f9, f2 - f10);
-        float fA = a.a(this.AABB_P1, this.AABB_P2);
-        float fA2 = a.a(this.AABB_P2, this.AABB_P3);
-        float fA3 = a.a(this.AABB_P3, this.AABB_P1);
+        float fA = TextureSpriteRenderable.a(this.AABB_P1, this.AABB_P2);
+        float fA2 = TextureSpriteRenderable.a(this.AABB_P2, this.AABB_P3);
+        float fA3 = TextureSpriteRenderable.a(this.AABB_P3, this.AABB_P1);
         if (fA < 0.0f && fA2 < 0.0f && fA3 < 0.0f) {
             return true;
         }
         if (this.doubleSidedClickEnabled && fA > 0.0f && fA2 > 0.0f && fA3 > 0.0f) {
             return true;
         }
-        float fA4 = a.a(this.AABB_P2, this.AABB_P3);
-        float fA5 = a.a(this.AABB_P3, this.AABB_P4);
-        float fA6 = a.a(this.AABB_P4, this.AABB_P2);
+        float fA4 = TextureSpriteRenderable.a(this.AABB_P2, this.AABB_P3);
+        float fA5 = TextureSpriteRenderable.a(this.AABB_P3, this.AABB_P4);
+        float fA6 = TextureSpriteRenderable.a(this.AABB_P4, this.AABB_P2);
         if (fA4 <= 0.0f || fA5 <= 0.0f || fA6 <= 0.0f) {
             return this.doubleSidedClickEnabled && fA4 < 0.0f && fA5 < 0.0f && fA6 < 0.0f;
         }
@@ -1154,7 +1155,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         this.AABB_BR[3] = 1.0f;
     }
 
-    public void copyAABB(i iVar) {
+    public void copyAABB(IRenderable iVar) {
         this.AABB_TL[0] = iVar.AABB_TL[0];
         this.AABB_TL[1] = iVar.AABB_TL[1];
         this.AABB_TL[2] = iVar.AABB_TL[2];
@@ -1239,7 +1240,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         this.isAABBInit = true;
         int size = 0;
         if (this instanceof j) {
-            size = ((j) this).children().size();
+            size = ((BaseRenderable) this).children().size();
         }
         if (size <= 0) {
             fMax = 0.0f;
@@ -1249,7 +1250,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             fMin2 = 0.0f;
             fMin3 = 0.0f;
         } else {
-            j jVar = (j) this;
+            j jVar = (BaseRenderable) this;
             int size2 = jVar.children().size();
             float fMin4 = 0.0f;
             float fMin5 = 0.0f;
@@ -1340,12 +1341,12 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         return this._mouseEventListener;
     }
 
-    public i getHittingObjectTarget(MotionEvent motionEvent, boolean z) {
-        float[] fArrA = x.a(motionEvent);
+    public IRenderable getHittingObjectTarget(MotionEvent motionEvent, boolean z) {
+        float[] fArrA = GraphicsEngineBridge.a(motionEvent);
         return getHittingObjectTarget(fArrA[0], fArrA[1], z);
     }
 
-    public i getHittingObjectTarget(float f, float f2, boolean z) {
+    public IRenderable getHittingObjectTarget(float f, float f2, boolean z) {
         if (!visible()) {
             return null;
         }
@@ -1358,7 +1359,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         if (!(this instanceof j)) {
             return null;
         }
-        j jVar = (j) this;
+        j jVar = (BaseRenderable) this;
         int size = jVar.children().size() - 1;
         while (true) {
             int i = size;
@@ -1373,7 +1374,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         }
     }
 
-    public i getHittingTarget(float f, float f2, boolean z) {
+    public IRenderable getHittingTarget(float f, float f2, boolean z) {
         if (!mouseEnabled() || !visible() || !getRendererVisibility()) {
             return null;
         }
@@ -1386,7 +1387,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         if (!(this instanceof j)) {
             return null;
         }
-        j jVar = (j) this;
+        j jVar = (BaseRenderable) this;
         int size = jVar.children().size() - 1;
         while (true) {
             int i = size;
@@ -1436,12 +1437,12 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
 
     public void setFocus() {
         if (getMouseEventListener() != null) {
-            com.censivn.C3DEngine.a.d.d().a(getMouseEventListener());
+            com.censivn.C3DEngine.a.ColoredRectRenderable.d().a(getMouseEventListener());
         }
     }
 
     public void killFocus() {
-        com.censivn.C3DEngine.a.d.d().a((com.censivn.C3DEngine.b.d.MouseEventListener) null);
+        com.censivn.C3DEngine.a.ColoredRectRenderable.d().a((com.censivn.C3DEngine.b.d.MouseEventListener) null);
     }
 
     public void onFocus() {
@@ -1472,7 +1473,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
             this.b = f2;
         }
 
-        public static float a(a aVar, a aVar2) {
+        public static float a(TextureSpriteRenderable aVar, a aVar2) {
             return (aVar.a * aVar2.b) - (aVar.b * aVar2.a);
         }
     }
@@ -1494,7 +1495,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     public void layout(int i, int i2) {
     }
 
-    public void onChildMeasure(i iVar) {
+    public void onChildMeasure(IRenderable iVar) {
     }
 
     public void transferCanvas(float f, float f2, float f3, float f4) {
@@ -1517,7 +1518,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         if (z && (this instanceof j)) {
             float f7 = fMax - position().x;
             float f8 = fMin - position().x;
-            j jVar = (j) this;
+            j jVar = (BaseRenderable) this;
             int size = jVar.children().size();
             for (int i = 0; i < size; i++) {
                 jVar.children().get(i).transferCanvas(f7, 0.0f, f8, 0.0f);
@@ -1547,7 +1548,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         if (z && (this instanceof j)) {
             float f7 = -(position().y - f2);
             float f8 = -(position().y - f4);
-            j jVar = (j) this;
+            j jVar = (BaseRenderable) this;
             int size = jVar.children().size();
             for (int i = 0; i < size; i++) {
                 jVar.children().get(i).transferCanvasV(f, f7, f3, f8);
@@ -1577,7 +1578,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
 
     public void notifLayoutRefresh() {
         if (parent() != null) {
-            ((j) parent()).onChildMeasure(this);
+            ((BaseRenderable) parent()).onChildMeasure(this);
         }
     }
 

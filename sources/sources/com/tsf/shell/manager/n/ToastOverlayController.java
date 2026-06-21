@@ -17,7 +17,7 @@ import java.nio.Buffer;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ToastOverlayController implements e.a {
+public class ToastOverlayController implements WindowManager.a {
     private BaseRenderable a;
     private BaseRenderable b;
     private BaseColoredRectRenderable c;
@@ -99,7 +99,7 @@ public class ToastOverlayController implements e.a {
         return this.e;
     }
 
-    public void a(j jVar) {
+    public void a(BaseRenderable jVar) {
         this.a = jVar;
         this.b = new BaseRenderable();
         this.e = 100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;

@@ -22,7 +22,7 @@ public class DrawerSettingsData {
         this.j = false;
     }
 
-    public void a(b bVar) {
+    public void a(DrawerSettingsData bVar) {
         this.a = bVar.a;
         this.b = bVar.b;
         this.e = bVar.e;

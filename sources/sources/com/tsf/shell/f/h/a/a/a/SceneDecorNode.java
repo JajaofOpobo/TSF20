@@ -67,11 +67,11 @@ public class SceneDecorNode extends BaseRenderable {
         return com.censivn.C3DEngine.b.b.ScreenConstants.a(-30.0f);
     }
 
-    public i c() {
+    public IRenderable c() {
         return this.d;
     }
 
-    public i d() {
+    public IRenderable d() {
         return this.e;
     }
 

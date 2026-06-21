@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class BaseRenderable extends IRenderable implements IRenderableContainer {
     private static Number3d mTempdisplaceNumber3d = new Number3d();
     private boolean isRenderChildren;
-    private ArrayList<i> mChildren;
+    private ArrayList<IRenderable> mChildren;
 
     public BaseRenderable() {
         super(0, 0, false, false, false);
@@ -38,25 +38,25 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         this.isRenderChildren = true;
     }
 
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         if (iVar.parent() != null) {
-            com.tsf.shell.utils.l.a(this, "addChild error , target parent is not null :" + iVar.parent());
+            com.tsf.shell.utils.ButtonRenderable.a(this, "addChild error , target parent is not null :" + iVar.parent());
         }
         this.mChildren.add(iVar);
         iVar.parent(this);
         invalidate();
     }
 
-    public void addChildAt(i iVar, int i) {
+    public void addChildAt(IRenderable iVar, int i) {
         this.mChildren.add(i, iVar);
         iVar.parent(this);
         invalidate();
     }
 
-    public void replaceChild(i iVar, i iVar2) {
+    public void replaceChild(IRenderable iVar, i iVar2) {
         int iIndexOf = this.mChildren.indexOf(iVar);
         if (iIndexOf == -1) {
-            com.tsf.shell.utils.l.a(this, "replaceChild error , target is not exist :" + iVar + "   container:" + this);
+            com.tsf.shell.utils.ButtonRenderable.a(this, "replaceChild error , target is not exist :" + iVar + "   container:" + this);
         }
         this.mChildren.set(iIndexOf, iVar2);
         iVar2.parent(this);
@@ -67,7 +67,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         invalidate();
     }
 
-    public boolean removeChild(i iVar) {
+    public boolean removeChild(IRenderable iVar) {
         boolean zRemove = this.mChildren.remove(iVar);
         if (zRemove) {
             iVar.parent(null);
@@ -76,7 +76,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         return zRemove;
     }
 
-    public i removeChildAt(int i) {
+    public IRenderable removeChildAt(int i) {
         i iVarRemove = this.mChildren.remove(i);
         if (iVarRemove != null) {
             iVarRemove.parent(null);
@@ -86,11 +86,11 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderableContainer
-    public i getChildAt(int i) {
+    public IRenderable getChildAt(int i) {
         return this.mChildren.get(i);
     }
 
-    public i getChildByName(String str) {
+    public IRenderable getChildByName(String str) {
         int i = 0;
         while (true) {
             int i2 = i;
@@ -106,7 +106,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         }
     }
 
-    public int getChildIndexOf(i iVar) {
+    public int getChildIndexOf(IRenderable iVar) {
         return this.mChildren.indexOf(iVar);
     }
 
@@ -115,7 +115,7 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         return this.mChildren.size();
     }
 
-    public boolean containsChild(i iVar) {
+    public boolean containsChild(IRenderable iVar) {
         return this.mChildren.contains(iVar);
     }
 
@@ -127,13 +127,13 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
         return this.isRenderChildren;
     }
 
-    public ArrayList<i> children() {
+    public ArrayList<IRenderable> children() {
         return this.mChildren;
     }
 
     /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
-    public j m9clone() {
-        j jVar = new j(this.mVertices.m8clone(), this.mFaces.m3clone(), this.mTextures);
+    public BaseRenderable m9clone() {
+        j jVar = new BaseRenderable(this.mVertices.m8clone(), this.mFaces.m3clone(), this.mTextures);
         jVar.position().x = position().x;
         jVar.position().y = position().y;
         jVar.position().z = position().z;
@@ -225,9 +225,9 @@ public class BaseRenderable extends IRenderable implements IRenderableContainer 
     public void onDrawChildEnd() {
     }
 
-    public void onDrawChildStart(i iVar) {
+    public void onDrawChildStart(IRenderable iVar) {
     }
 
-    public void onDrawChildEnd(i iVar) {
+    public void onDrawChildEnd(IRenderable iVar) {
     }
 }

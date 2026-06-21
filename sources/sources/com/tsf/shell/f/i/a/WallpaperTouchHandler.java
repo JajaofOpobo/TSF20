@@ -9,14 +9,14 @@ import com.tsf.shell.manager.action.GestureHandler;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     private boolean a;
-    private n.C b;
+    private PageTouchHandler.C b;
 
-    public WallpaperTouchHandler(j jVar) {
+    public WallpaperTouchHandler(BaseRenderable jVar) {
         super(jVar);
         this.a = true;
     }
 
-    public void a(n.C cVar) {
+    public void a(PageTouchHandler.C cVar) {
         this.b = cVar;
     }
 

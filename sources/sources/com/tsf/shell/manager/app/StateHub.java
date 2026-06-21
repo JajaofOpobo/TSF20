@@ -17,7 +17,7 @@ public class StateHub {
     public static h_c j() { return null; }
     public static int m() { return 0; }
     public static WidgetPanelController n() { return null; }
-    public static ArrayList<i> G() { return null; }
+    public static ArrayList<IRenderable> G() { return null; }
 
     public static class h_a {
         public void c(int i) {}

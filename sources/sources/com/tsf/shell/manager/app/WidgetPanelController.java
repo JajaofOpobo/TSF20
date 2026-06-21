@@ -31,7 +31,7 @@ public class WidgetPanelController {
         public void c() {}
     }
 
-    public static class a implements c.a {
+    public static class a implements AppListModel.a {
         public void a() {
         }
 

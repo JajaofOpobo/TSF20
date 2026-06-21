@@ -11,11 +11,11 @@ public class HitTargetManager {
 
     public void a(ILayoutItem fVar) {
         if (fVar != null) {
-            if (this.a.contains(fVar)) {
+            if (this.HitTargetManager.contains(fVar)) {
                 com.tsf.shell.b.ShellBridge.a("HitTargetManager", "addHitTarget error ,target is exist");
                 return;
             } else {
-                this.a.add(0, fVar);
+                this.HitTargetManager.add(0, fVar);
                 return;
             }
         }
@@ -24,11 +24,11 @@ public class HitTargetManager {
 
     public void b(ILayoutItem fVar) {
         if (fVar != null) {
-            if (this.a.contains(fVar)) {
+            if (this.HitTargetManager.contains(fVar)) {
                 com.tsf.shell.b.ShellBridge.a("HitTargetManager", "addHitTarget error ,target is exist");
                 return;
             } else {
-                this.a.add(fVar);
+                this.HitTargetManager.add(fVar);
                 return;
             }
         }
@@ -36,8 +36,8 @@ public class HitTargetManager {
     }
 
     public void c(ILayoutItem fVar) {
-        if (this.a.contains(fVar)) {
-            this.a.remove(fVar);
+        if (this.HitTargetManager.contains(fVar)) {
+            this.HitTargetManager.remove(fVar);
         } else {
             com.tsf.shell.b.ShellBridge.a("HitTargetManager", "removeHitTarget error ,target is not exist");
         }
@@ -54,7 +54,7 @@ public class HitTargetManager {
 
         public void a(final ILayoutItem fVar, MotionEvent motionEvent) {
             if (fVar.o()) {
-                x.a(motionEvent, this.a);
+                GraphicsEngineBridge.a(motionEvent, this.a);
                 if (!this.b) {
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.manager.d.HitTargetManager.a.1
                         @Override // java.lang.Runnable

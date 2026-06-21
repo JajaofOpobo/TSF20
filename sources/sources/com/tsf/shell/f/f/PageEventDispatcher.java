@@ -5,11 +5,11 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageEventDispatcher {
-    private ArrayList<a> a = new ArrayList<>();
-    private g b;
+    private ArrayList<PageShaderNode> a = new ArrayList<>();
+    private WorkspacePage b;
 
     public static class a {
-        public void a(g gVar) {
+        public void a(WorkspacePage gVar) {
         }
 
         public void a() {
@@ -20,29 +20,29 @@ public class PageEventDispatcher {
     }
 
     public void a(A aVar) {
-        if (!this.a.contains(aVar)) {
-            this.a.add(aVar);
+        if (!this.PageShaderNode.contains(aVar)) {
+            this.PageShaderNode.add(aVar);
         }
     }
 
     public void a() {
-        Iterator<a> it = this.a.iterator();
+        Iterator<PageShaderNode> it = this.PageShaderNode.iterator();
         while (it.hasNext()) {
             it.next().a();
         }
     }
 
     public void b() {
-        Iterator<a> it = this.a.iterator();
+        Iterator<PageShaderNode> it = this.PageShaderNode.iterator();
         while (it.hasNext()) {
             it.next().b();
         }
     }
 
-    public void a(g gVar) {
+    public void a(WorkspacePage gVar) {
         if (this.b != gVar) {
             this.b = gVar;
-            Iterator<a> it = this.a.iterator();
+            Iterator<PageShaderNode> it = this.PageShaderNode.iterator();
             while (it.hasNext()) {
                 it.next().a(gVar);
             }

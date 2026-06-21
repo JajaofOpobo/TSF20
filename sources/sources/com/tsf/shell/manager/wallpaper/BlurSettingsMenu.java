@@ -8,7 +8,7 @@ import com.tsf.shell.f.e.ToggleRowItem;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
     private BaseRenderable a;
-    private l b;
+    private ToggleRowItem b;
     private h c;
     private int d;
 
@@ -16,7 +16,7 @@ public class BlurSettingsMenu extends com.tsf.shell.f.e._g.a.MenuItemConfig {
         setTitle(b.i.text_wallpaper_blur);
         setMenuHeight(com.censivn.C3DEngine.b.b.ScreenConstants.a(330.0f));
         this.a = new BaseRenderable();
-        this.b = new l(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.1
+        this.b = new ToggleRowItem(b.d.button_reset, b.i.text_reset) { // from class: com.tsf.shell.manager.wallpaper.BlurSettingsMenu.1
             @Override // com.tsf.shell.f.e.ToggleRowItem
             public void a() {
                 BlurSettingsMenu.this.c.a(0, true);

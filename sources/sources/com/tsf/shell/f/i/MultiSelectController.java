@@ -18,7 +18,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.Keyboard
 
     /* JADX INFO: renamed from: com.tsf.shell.f.i.MultiSelectController$a, reason: collision with other inner class name */
     public interface InterfaceC0113a {
-        ArrayList<i> b();
+        ArrayList<IRenderable> b();
     }
 
     public MultiSelectController(Object obj, InterfaceC0113a interfaceC0113a) {
@@ -30,7 +30,7 @@ public class MultiSelectController implements com.censivn.C3DEngine.b.c.Keyboard
         return this.e;
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         if (iVar instanceof ShortcutItem) {
             ShortcutItem cVar = (ShortcutItem) iVar;
             if (this.c) {

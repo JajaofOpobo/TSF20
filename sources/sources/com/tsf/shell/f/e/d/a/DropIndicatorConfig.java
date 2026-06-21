@@ -20,7 +20,7 @@ public class DropIndicatorConfig {
         }
     };
 
-    public void a(j jVar) {
+    public void a(BaseRenderable jVar) {
         this.d = jVar;
     }
 

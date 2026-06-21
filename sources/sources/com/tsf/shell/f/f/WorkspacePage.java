@@ -16,26 +16,26 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable implements TransitionConfig.a, MultiSelectController.InterfaceC0113a {
+public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable implements WindowManager.a, MultiSelectController.InterfaceC0113a {
     public static com.tsf.shell.f.a.a.GlTextureBinding f;
     public static com.censivn.C3DEngine.b.f.IRenderable i;
     private static com.censivn.C3DEngine.b.f.GridRenderable r;
     private int MultiSelectController;
-    private j.a I;
+    private PageAnimationState.a I;
     private com.tsf.shell.f._d.e.a.DashEffectData J;
     private com.censivn.C3DEngine.b.g._b.ITweenTarget L;
-    protected g a;
+    protected WorkspacePage a;
     protected com.tsf.shell.e.CellLayout b;
     protected com.tsf.shell.f.e.f.EditModeNode c;
     protected com.tsf.shell.f.i.MultiSelectController h;
-    protected l k;
+    protected PageTransitionEffect k;
     private com.censivn.C3DEngine.b.f.GridRenderable q;
     private com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable s;
     private com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable t;
     private com.censivn.C3DEngine.b.d.MouseEventListener v;
     private com.censivn.C3DEngine.b.d.MouseEventListener w;
-    private g x;
-    private g y;
+    private WorkspacePage x;
+    private WorkspacePage y;
     private int z;
     private static TextureElement m = null;
     private static TextureElement n = null;
@@ -57,7 +57,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     boolean j = true;
     private boolean O = false;
     private boolean P = false;
-    private ArrayList<a> C = new ArrayList<>();
+    private ArrayList<MultiSelectController> C = new ArrayList<>();
     private VPage u = new VPage();
 
     public interface a {
@@ -78,11 +78,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     }
 
     public void d() {
-        com.tsf.shell.manager.app.StateHub.d.a(this);
+        com.tsf.shell.manager.app.StateHub.ItemTransitionManager.a(this);
     }
 
     public void e() {
-        com.tsf.shell.manager.app.StateHub.d.d();
+        com.tsf.shell.manager.app.StateHub.ItemTransitionManager.d();
     }
 
     public void f() {
@@ -93,12 +93,12 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         this.G = false;
     }
 
-    public j.a a(com.tsf.shell.f._d.e.a.DashEffectData bVar, com.censivn.C3DEngine.b.f.IRenderable iVar, boolean z) {
+    public PageAnimationState.a a(com.tsf.shell.f._d.e.a.DashEffectData bVar, com.censivn.C3DEngine.b.f.IRenderable iVar, boolean z) {
         this.H = true;
         mouseEnabled(false);
         i = iVar;
         this.J = bVar;
-        j.a aVarA = a(z, false);
+        PageAnimationState.a aVarA = a(z, false);
         this.I = aVarA;
         if (z) {
             com.tsf.shell.manager.app.LauncherAppInfo.g().visible(false);
@@ -159,28 +159,28 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         }
     }
 
-    public j.a j() {
+    public PageAnimationState.a j() {
         return a(false, false);
     }
 
-    public j.a a(boolean z, boolean z2) {
-        j.a aVarC = j.c(this);
+    public PageAnimationState.a a(boolean z, boolean z2) {
+        PageAnimationState.a aVarC = PageAnimationState.c(this);
         if (aVarC.a != this || z2) {
             aVarC.a = this;
             Number3d number3dClone = position().m4clone();
-            h.a.visible(false);
+            h.MultiSelectController.visible(false);
             position().setAll(0.0f, 0.0f, 0.0f);
-            com.tsf.shell.manager.app.TextureCache.b(j.c(), aVarC.b);
+            com.tsf.shell.manager.app.TextureCache.b(PageAnimationState.c(), aVarC.b);
             if (z) {
                 com.tsf.shell.manager.app.LauncherAppInfo.a(this);
             }
-            boolean zVisible = this.c.visible();
-            this.c.visible(true);
-            this.c.dispatchDraw();
-            this.c.visible(Boolean.valueOf(zVisible));
+            boolean zVisible = this.TransitionManager.visible();
+            this.TransitionManager.visible(true);
+            this.TransitionManager.dispatchDraw();
+            this.TransitionManager.visible(Boolean.valueOf(zVisible));
             com.tsf.shell.manager.app.TextureCache.b();
             position().setAllFrom(number3dClone);
-            h.a.visible(true);
+            h.MultiSelectController.visible(true);
         }
         return aVarC;
     }
@@ -253,21 +253,21 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     }
 
     public void a(Number3d number3d) {
-        if (h.c() && this.k.a(this, h.a)) {
-            h.a.position().setAllFrom(number3d);
-            h.a.dispatchDraw();
-            h.a.position().reset();
+        if (PageConfig.c() && this.PageContentType.a(this, h.a)) {
+            h.MultiSelectController.position().setAllFrom(number3d);
+            h.MultiSelectController.dispatchDraw();
+            h.MultiSelectController.position().reset();
         }
     }
 
     public void u() {
-        if (h.c() && this.k.a(this, h.a)) {
-            h.a.dispatchDraw();
+        if (PageConfig.c() && this.PageContentType.a(this, h.a)) {
+            h.MultiSelectController.dispatchDraw();
         }
     }
 
     private void aj() {
-        this.c = new com.tsf.shell.f.e.f.EditModeNode() { // from class: com.tsf.shell.f.f.WorkspacePage.1
+        this.c = new com.tsf.shell.f.e.TransitionRenderer.EditModeNode() { // from class: com.tsf.shell.f.f.WorkspacePage.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (WorkspacePage.this.g != 0.0f && WorkspacePage.this.k != null) {
@@ -287,10 +287,10 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
             public void addChild(com.censivn.C3DEngine.b.f.IRenderable iVar) {
                 super.addChild(iVar);
-                WorkspacePage.this.h.a(iVar);
+                WorkspacePage.this.PageConfig.a(iVar);
             }
         };
-        this.h = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.f.WorkspacePage.2
+        this.h = new com.tsf.shell.f.ItemPageTransition.MultiSelectController(this, this) { // from class: com.tsf.shell.f.f.WorkspacePage.2
             @Override // com.tsf.shell.f.i.MultiSelectController
             public void b(com.tsf.shell.f.i.PageItem bVar) {
                 WorkspacePage.this.N();
@@ -301,14 +301,14 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
 
     @Override // com.tsf.shell.f.i.MultiSelectController.InterfaceC0113a
     public ArrayList<com.censivn.C3DEngine.b.f.IRenderable> b() {
-        return this.c.children();
+        return this.TransitionManager.children();
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         com.tsf.shell.manager.app.ObserverManager.b(this);
         l();
-        this.h.c();
+        this.PageConfig.c();
         this.C.clear();
         if (this.l != null) {
             com.censivn.C3DEngine.C3DEngine.g().a(this.l);
@@ -316,12 +316,12 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             this.q.textures().removeAll();
         }
         if (this instanceof k) {
-            ((k) this).aj();
+            ((PageContentType) this).aj();
         }
     }
 
     public void v() {
-        for (com.censivn.C3DEngine.b.f.IRenderable iVar : (ArrayList) this.c.children().clone()) {
+        for (com.censivn.C3DEngine.b.f.IRenderable iVar : (ArrayList) this.TransitionManager.children().clone()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 com.tsf.shell.manager.app.WidgetManager.a((com.tsf.shell.f.i.PageItem) iVar);
             }
@@ -329,12 +329,12 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     }
 
     public void a(int i2, int i3, int i4, int i5) {
-        this.s.b(n.a, n.b);
+        this.s.b(n.a, PageTouchHandler.b);
         r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         this.q.a(com.censivn.C3DEngine.b.b.ScreenConstants.F);
         this.q.b(com.censivn.C3DEngine.b.b.ScreenConstants.G);
         this.t.b(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
-        for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.c.children()) {
+        for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.TransitionManager.children()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) iVar;
                 bVar.a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
@@ -366,8 +366,8 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         if (!this.F) {
             this.F = true;
             aj();
-            this.s = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(50, 78, 50, 78, 128.0f, 128.0f));
-            this.t = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(n.a, n.b, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
+            this.s = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(n.a, PageTouchHandler.b, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(50, 78, 50, 78, 128.0f, 128.0f));
+            this.t = new com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable(n.a, PageTouchHandler.b, new com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds(4.0f, 124.0f, 4.0f, 124.0f, 128.0f, 128.0f));
             this.t.b(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
             this.t.doubleSidedEnabled(true);
             this.t.position().z = (-200.0f) * com.censivn.C3DEngine.b.b.ScreenConstants.b;
@@ -394,12 +394,12 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 bitmap4.recycle();
             }
             if (r == null) {
-                r = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f, false);
+                r = new com.censivn.C3DEngine.b.TransitionRenderer.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.f, com.tsf.shell.manager.g.LayoutDimensionConstants.f, false);
                 r.textures().addElement(p);
                 r.position().y = ((-n.b) / 2) + (80.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             }
             this.s.textures().addElement(m);
-            this.q = new com.censivn.C3DEngine.b.f.GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, 1, 1, false);
+            this.q = new com.censivn.C3DEngine.b.TransitionRenderer.GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, 1, 1, false);
             this.q.uvs().set(0, 1.0f, 0.0f);
             this.q.uvs().set(1, 0.0f, 0.0f);
             this.q.uvs().set(2, 1.0f, 1.0f);
@@ -407,7 +407,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             addChild(this.q);
         }
         if (this instanceof k) {
-            ((k) this).a();
+            ((PageContentType) this).a();
         }
     }
 
@@ -422,7 +422,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             e = (int) (0.4f * com.censivn.C3DEngine.b.b.ScreenConstants.G);
             d = (n.a * e) / n.b;
         }
-        f = com.tsf.shell.manager.app.TextureCache.a(d, e);
+        f = com.tsf.shell.manager.app.TextureCache.a(d, WindowManager);
     }
 
     public void b(boolean z) {
@@ -491,7 +491,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     public void c(boolean z) {
         this.s.removeFromParent();
         if (z) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams();
             dVar.l(1.0f);
             dVar.m(1.0f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
@@ -521,7 +521,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         this.q.scale().setAll(1.0f, 1.0f, 1.0f);
         L();
         if (z) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams();
             dVar.l(0.28f);
             dVar.m(0.28f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.q);
@@ -542,7 +542,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
 
     public void K() {
         this.N = true;
-        this.c.visible(false);
+        this.TransitionManager.visible(false);
         ab();
         if (this.l == null) {
             this.q.visible(false);
@@ -554,7 +554,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     public void L() {
         if (!this.N) {
             this.N = true;
-            this.c.visible(false);
+            this.TransitionManager.visible(false);
             ab();
             P();
             if (this.l == null) {
@@ -575,7 +575,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             this.N = false;
             ac();
             this.q.visible(false);
-            this.c.visible(true);
+            this.TransitionManager.visible(true);
         }
     }
 
@@ -607,15 +607,15 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 this.l = null;
                 this.q.textures().clear();
             }
-            this.l = com.censivn.C3DEngine.C3DEngine.g().a(d, e, false);
+            this.l = com.censivn.C3DEngine.C3DEngine.g().a(d, WindowManager, false);
             this.q.textures().addElement(this.l);
         }
         com.tsf.shell.manager.app.TextureCache.b(f, this.l);
-        GLES20.glViewport(0, 0, d, e);
-        boolean zVisible = this.c.visible();
-        this.c.visible(true);
-        this.c.drawQuietly();
-        this.c.visible(Boolean.valueOf(zVisible));
+        GLES20.glViewport(0, 0, ItemTransitionManager, WindowManager);
+        boolean zVisible = this.TransitionManager.visible();
+        this.TransitionManager.visible(true);
+        this.TransitionManager.drawQuietly();
+        this.TransitionManager.visible(Boolean.valueOf(zVisible));
         com.tsf.shell.manager.app.TextureCache.b();
         GLES20.glViewport(0, 0, com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
         position().setAllFrom(number3dClone);
@@ -631,7 +631,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 bVar.K().updateContainer(null, -1);
             }
         }
-        this.c.addChild(iVar);
+        this.TransitionManager.addChild(iVar);
         N();
     }
 
@@ -643,13 +643,13 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 bVar.K().screen = this.z;
             }
         }
-        this.c.addChildAt(iVar, i2);
+        this.TransitionManager.addChildAt(iVar, i2);
         N();
     }
 
     public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
-        if (this.c.children().contains(iVar)) {
-            this.c.removeChild(iVar);
+        if (this.TransitionManager.children().contains(iVar)) {
+            this.TransitionManager.removeChild(iVar);
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
                 ((com.tsf.shell.f.i.PageItem) iVar).B();
             }
@@ -658,12 +658,12 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     }
 
     public boolean c(com.censivn.C3DEngine.b.f.IRenderable iVar) {
-        return this.c.children().contains(iVar);
+        return this.TransitionManager.children().contains(iVar);
     }
 
     public int Q() {
         int i2 = 0;
-        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = this.c.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = this.TransitionManager.children().iterator();
         while (true) {
             int i3 = i2;
             if (it.hasNext()) {
@@ -675,11 +675,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
     }
 
     public ArrayList<com.censivn.C3DEngine.b.f.IRenderable> R() {
-        return this.c.children();
+        return this.TransitionManager.children();
     }
 
     public int d(com.censivn.C3DEngine.b.f.IRenderable iVar) {
-        return this.c.getChildIndexOf(iVar);
+        return this.TransitionManager.getChildIndexOf(iVar);
     }
 
     public com.censivn.C3DEngine.b.f.BaseRenderable S() {
@@ -735,9 +735,9 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 @Override // java.lang.Runnable
                 public void run() {
                     if (WorkspacePage.this.j) {
-                        WorkspacePage.this.b.a();
+                        WorkspacePage.this.PageRenderBuffer.a();
                     } else {
-                        WorkspacePage.this.b.b();
+                        WorkspacePage.this.PageRenderBuffer.b();
                     }
                 }
             });
@@ -755,9 +755,9 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 @Override // java.lang.Runnable
                 public void run() {
                     if (WorkspacePage.this.j) {
-                        WorkspacePage.this.b.a();
+                        WorkspacePage.this.PageRenderBuffer.a();
                     } else {
-                        WorkspacePage.this.b.b();
+                        WorkspacePage.this.PageRenderBuffer.b();
                     }
                 }
             });
@@ -768,7 +768,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         if (!this.E) {
             this.E = true;
             mouseEnabled(false);
-            Iterator<a> it = this.C.iterator();
+            Iterator<MultiSelectController> it = this.C.iterator();
             while (it.hasNext()) {
                 it.next().a();
             }
@@ -779,7 +779,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         if (this.E) {
             this.E = false;
             mouseEnabled(true);
-            Iterator<a> it = this.C.iterator();
+            Iterator<MultiSelectController> it = this.C.iterator();
             while (it.hasNext()) {
                 it.next().b();
             }
@@ -792,10 +792,10 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
-        if (com.tsf.shell.manager.app.v.ObjectHelper.b.a()) {
+        if (com.tsf.shell.manager.app.v.ObjectHelper.PageRenderBuffer.a()) {
             for (com.censivn.C3DEngine.b.f.IRenderable iVar : R()) {
                 if (iVar instanceof com.tsf.shell.f.i.PageItem) {
-                    com.tsf.shell.manager.app.v.ObjectHelper.b.a((com.tsf.shell.f.i.PageItem) iVar);
+                    com.tsf.shell.manager.app.v.ObjectHelper.PageRenderBuffer.a((com.tsf.shell.f.i.PageItem) iVar);
                 }
             }
         }
@@ -814,28 +814,28 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
             this.k = lVar;
             ai();
         }
-        this.k.a(this, f2);
+        this.PageContentType.a(this, f2);
     }
 
     public void af() {
         if (this.k != null) {
-            this.k.b(this, this.g);
+            this.PageContentType.b(this, this.g);
         }
     }
 
-    public void a(g gVar) {
+    public void a(WorkspacePage gVar) {
         this.y = gVar;
     }
 
-    public g ag() {
+    public WorkspacePage ag() {
         return this.y;
     }
 
-    public void b(g gVar) {
+    public void b(WorkspacePage gVar) {
         this.x = gVar;
     }
 
-    public g ah() {
+    public WorkspacePage ah() {
         return this.x;
     }
 
@@ -870,11 +870,11 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         position().x = 0.0f;
     }
 
-    public void a(l lVar) {
+    public void a(PageTransitionEffect lVar) {
         a(this, 0.0f, true, true, lVar);
     }
 
-    public void a(g gVar, float f2, boolean z, boolean z2, l lVar) {
+    public void a(WorkspacePage gVar, float f2, boolean z, boolean z2, l lVar) {
         if (this.g * f2 < 0.0f) {
             if (f2 < 0.0f) {
                 if (this.y != null && this.y != gVar) {
@@ -913,7 +913,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 return;
             }
         }
-        bVar.a(this, f2, this.c.children(), runnable);
+        bVar.a(this, f2, this.TransitionManager.children(), runnable);
     }
 
     public void a(Runnable runnable, boolean z) {
@@ -938,6 +938,6 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
                 return;
             }
         }
-        bVar.a(this, this.c.children(), runnable2, z);
+        bVar.a(this, this.TransitionManager.children(), runnable2, z);
     }
 }

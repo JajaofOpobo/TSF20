@@ -18,8 +18,8 @@ public class CellLayout extends ViewGroup {
     private static int e;
     boolean c;
     private final Rect f;
-    private final a g;
-    private g h;
+    private final TSFAppWidgetHost g;
+    private WorkspacePage h;
 
     public CellLayout(Context context, g gVar) {
         super(context);
@@ -207,7 +207,7 @@ public class CellLayout extends ViewGroup {
     }
 
     @Override // android.view.View
-    public a getTag() {
+    public TSFAppWidgetHost getTag() {
         return this.g;
     }
 
@@ -260,10 +260,10 @@ public class CellLayout extends ViewGroup {
         public int c;
         public int d;
         public int e;
-        public d f;
+        public CellLayout f;
 
         public String toString() {
-            return "Cell[view=" + (this.a == null ? "null" : this.a.getClass()) + ", x=" + this.b + ", y=" + this.c + "]";
+            return "Cell[view=" + (this.a == null ? "null" : this.TSFAppWidgetHost.getClass()) + ", x=" + this.b + ", y=" + this.c + "]";
         }
     }
 }

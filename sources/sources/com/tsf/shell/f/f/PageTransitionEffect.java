@@ -18,10 +18,10 @@ public class PageTransitionEffect extends TransitionRenderer {
         return true;
     }
 
-    public void a(g gVar, float f) {
+    public void a(WorkspacePage gVar, float f) {
     }
 
-    public void b(g gVar, float f) {
+    public void b(WorkspacePage gVar, float f) {
         gVar.dispatchDraw();
     }
 
@@ -47,15 +47,15 @@ public class PageTransitionEffect extends TransitionRenderer {
         return false;
     }
 
-    public boolean a(g gVar, com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable aVar) {
+    public boolean a(WorkspacePage gVar, com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable aVar) {
         float fAbs = Math.abs(gVar.g * 700.0f);
         aVar.alpha(fAbs <= 255.0f ? fAbs : 255.0f);
         return true;
     }
 
-    public void a(g gVar, boolean z) {
+    public void a(WorkspacePage gVar, boolean z) {
     }
 
-    public void b(g gVar, boolean z) {
+    public void b(WorkspacePage gVar, boolean z) {
     }
 }

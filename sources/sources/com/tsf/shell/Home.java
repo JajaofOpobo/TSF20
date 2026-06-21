@@ -109,9 +109,9 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     private void r() {
         if (getPackageName().equals("com.tsf.shell")) {
-            b = x.c(b.i.launcher_name_prime);
+            b = GraphicsEngineBridge.c(b.i.launcher_name_prime);
         } else {
-            b = x.c(b.i.launcher_name);
+            b = GraphicsEngineBridge.c(b.i.launcher_name);
         }
     }
 
@@ -145,13 +145,13 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 com.tsf.shell.manager.b.ConfigManager.a();
                 com.tsf.shell.manager.b.ConfigManager.b(com.tsf.shell.manager.b.ConfigManager.a(this), this);
                 com.tsf.shell.utils.StatusBarHelper.a();
-                new com.censivn.C3DEngine.b.c.WindowManager(this);
+                new com.censivn.C3DEngine.b.AlarmServiceBinder.WindowManager(this);
                 if (ShellWallpaperManager.a((Activity) this)) {
                     com.tsf.shell.manager.b.ConfigManager.s(true);
                 } else {
                     com.tsf.shell.manager.b.ConfigManager.s(false);
                 }
-                com.tsf.shell.plugin.notice.NoticeStateProvider.a(this, new g.a() { // from class: com.tsf.shell.Home.1
+                com.tsf.shell.plugin.notice.NoticeStateProvider.a(this, new NoticeStateProvider.a() { // from class: com.tsf.shell.Home.1
                     @Override // com.tsf.shell.plugin.notice.NoticeStateProvider.a
                     public void a(int i) {
                         int i2;
@@ -178,8 +178,8 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             if (z) {
                 c();
             } else {
-                b.a();
-                this.e = new com.tsf.shell.e.DragLayer(this);
+                ShellEventData.a();
+                this.e = new com.tsf.shell.ShellConfigEngine.DragLayer(this);
                 setContentView(this.e);
                 if (!com.tsf.shell.manager.b.TempPreferenceManager.a()) {
                     com.tsf.shell.manager.b.TempPreferenceManager.a(true);
@@ -193,7 +193,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                             break;
                         default:
                             AnonymousClass10 anonymousClass10 = new AnonymousClass10();
-                            h.a(b.i.public_title_error, b.i.notic_restore_startup_notic, b.i.notic_unknow_error_summary, anonymousClass10, new Runnable() { // from class: com.tsf.shell.Home.11
+                            ShellBitmapCache.a(b.i.public_title_error, ShellEventData.i.notic_restore_startup_notic, ShellEventData.i.notic_unknow_error_summary, anonymousClass10, new Runnable() { // from class: com.tsf.shell.Home.11
                                 @Override // java.lang.Runnable
                                 public void run() {
                                     Home.this.e();
@@ -207,7 +207,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 @Override // com.tsf.shell.ShellCallbackDispatcher.a.ShellLayoutEngine.b
                 public void a(int i, boolean z2, ShellLayoutEngine.a aVar) {
                     if (z2 && com.tsf.shell.widget.alarm.service.AlarmServiceBinder.b != null) {
-                        com.tsf.shell.widget.alarm.service.AlarmServiceBinder.b.a(new c.a() { // from class: com.tsf.shell.Home.12.1
+                        com.tsf.shell.widget.alarm.service.AlarmServiceBinder.ShellEventData.a(new AlarmServiceBinder.a() { // from class: com.tsf.shell.Home.12.1
                             @Override // com.tsf.shell.widget.alarm.service.AlarmServiceBinder.a
                             public void a(com.tsf.shell.widget.alarm.service.IAlarmCallback bVar) {
                                 bVar.a(true);
@@ -234,7 +234,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.Home.10.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    Home.this.e.post(new Runnable() { // from class: com.tsf.shell.Home.10.1.1
+                    Home.this.ShellConfigEngine.post(new Runnable() { // from class: com.tsf.shell.Home.10.1.1
                         @Override // java.lang.Runnable
                         public void run() {
                             com.tsf.shell.manager.b.BackupExportManager.e();
@@ -254,7 +254,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     public void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         if (this.s) {
-            com.tsf.shell.manager.GlobalServiceLocator.b.a(this, configuration);
+            com.tsf.shell.manager.GlobalServiceLocator.ShellEventData.a(this, configuration);
             if (this.p != null && !this.p.equals(configuration.locale)) {
                 c();
             }
@@ -265,7 +265,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     public void onWindowFocusChanged(boolean z) {
         super.onWindowFocusChanged(z);
         if (this.s) {
-            com.tsf.shell.manager.GlobalServiceLocator.b.b(z);
+            com.tsf.shell.manager.GlobalServiceLocator.ShellEventData.b(z);
         }
     }
 
@@ -288,7 +288,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             public void run() {
                 Home.this.c();
             }
-        }, i);
+        }, ShellPreferenceManager);
     }
 
     public boolean d() {
@@ -301,7 +301,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         com.censivn.C3DEngine.b.c.KeyboardHandler.c();
         this.p = getResources().getConfiguration().locale;
         this.f = new com.censivn.C3DEngine.C3DEngine.a(this);
-        this.e.addView(this.f);
+        this.ShellConfigEngine.addView(this.f);
         this.o = ShellLayoutEngine.a();
         com.tsf.shell.manager.GlobalServiceLocator.w = new com.tsf.shell.manager.app.DataCoordinator();
         a("initialize");
@@ -315,7 +315,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     }
 
     public void f() {
-        this.n = new com.tsf.shell.f.ShellSurfaceConfig(this.f) { // from class: com.tsf.shell.Home.14
+        this.n = new com.tsf.shell.ShellCleanupTask.ShellSurfaceConfig(this.f) { // from class: com.tsf.shell.Home.14
             @Override // com.tsf.shell.f.ShellSurfaceConfig
             public void a() {
                 Home.this.h();
@@ -330,12 +330,12 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void g() {
         if (this.g == null) {
-            this.g = new com.tsf.shell.e.Workspace3D(this);
+            this.g = new com.tsf.shell.ShellConfigEngine.Workspace3D(this);
         }
-        this.g.setPageManager(com.tsf.shell.manager.GlobalServiceLocator.h);
-        this.g.setOnLongClickListener(this);
-        this.e.setWorkspace(this.g);
-        this.e.addView(this.g, 0);
+        this.NoticeStateProvider.setPageManager(com.tsf.shell.manager.GlobalServiceLocator.h);
+        this.NoticeStateProvider.setOnLongClickListener(this);
+        this.ShellConfigEngine.setWorkspace(this.g);
+        this.ShellConfigEngine.addView(this.g, 0);
         this.i = new SpannableStringBuilder();
         Selection.setSelection(this.i, 0);
         registerReceiver(this.d, new IntentFilter("android.intent.action.CLOSE_SYSTEM_DIALOGS"));
@@ -352,20 +352,20 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void i() {
         int i = 1;
-        com.censivn.C3DEngine.C3DEngine.a().a(new RenderRunnable(i, i) { // from class: com.tsf.shell.Home.15
+        com.censivn.C3DEngine.C3DEngine.a().a(new RenderRunnable(i, ShellPreferenceManager) { // from class: com.tsf.shell.Home.15
             @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
             public void run() {
-                com.tsf.shell.manager.GlobalServiceLocator.h.J();
+                com.tsf.shell.manager.GlobalServiceLocator.ShellBitmapCache.J();
             }
         });
     }
 
     public void j() {
         com.tsf.shell.manager.b.TempPreferenceManager.c();
-        com.tsf.shell.manager.GlobalServiceLocator.b.c(this);
+        com.tsf.shell.manager.GlobalServiceLocator.ShellEventData.c(this);
         com.censivn.C3DEngine.b.c.KeyboardHandler.b();
         com.tsf.shell.f._d.d();
-        com.censivn.C3DEngine.a.d.d().a();
+        com.censivn.C3DEngine.a.ShellLayoutEngine.d().a();
         n();
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.Home.16
             @Override // java.lang.Runnable
@@ -374,7 +374,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.Home.16.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        com.tsf.shell.ShellCallbackDispatcherctivity.b.a.a();
+                        com.tsf.shell.ShellCallbackDispatcherctivity.b.ShellContentManager.a();
                         com.tsf.shell.b.ShellBridge.a();
                     }
                 }, 500L);
@@ -388,7 +388,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public com.tsf.shell.e.Workspace3D l() {
         if (this.g == null) {
-            this.g = new com.tsf.shell.e.Workspace3D(this);
+            this.g = new com.tsf.shell.ShellConfigEngine.Workspace3D(this);
         }
         return this.g;
     }
@@ -400,11 +400,11 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         }
         super.onCreateOptionsMenu(menu);
         if (this.s) {
-            menu.add(0, 3, 0, b.i.text_preferences).setIcon(android.R.drawable.ic_menu_more).setAlphabeticShortcut('N');
-            menu.add(0, 1, 0, b.i.menu_manage_apps).setIcon(android.R.drawable.ic_menu_manage).setAlphabeticShortcut('M');
+            menu.add(0, 3, 0, ShellEventData.i.text_preferences).setIcon(android.R.drawable.ic_menu_more).setAlphabeticShortcut('N');
+            menu.add(0, 1, 0, ShellEventData.i.menu_manage_apps).setIcon(android.R.drawable.ic_menu_manage).setAlphabeticShortcut('M');
             Intent intent = new Intent("android.settings.SETTINGS");
             intent.setFlags(270532608);
-            menu.add(0, 4, 0, b.i.menu_settings).setIcon(android.R.drawable.ic_menu_preferences).setAlphabeticShortcut('P').setIntent(intent);
+            menu.add(0, 4, 0, ShellEventData.i.menu_settings).setIcon(android.R.drawable.ic_menu_preferences).setAlphabeticShortcut('P').setIntent(intent);
         }
         return true;
     }
@@ -422,10 +422,10 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 m();
                 return true;
             case 2:
-                com.tsf.shell.manager.GlobalServiceLocator.d.a(1700);
+                com.tsf.shell.manager.GlobalServiceLocator.ShellLayoutEngine.a(1700);
                 return true;
             case 3:
-                com.tsf.shell.manager.GlobalServiceLocator.d.a(1300);
+                com.tsf.shell.manager.GlobalServiceLocator.ShellLayoutEngine.a(1300);
                 return true;
             default:
                 return super.onOptionsItemSelected(menuItem);
@@ -445,7 +445,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void a(Intent intent) {
         super.startActivity(intent);
-        overridePendingTransition(b.a.app_none, b.a.app_none);
+        overridePendingTransition(b.a.app_none, ShellEventData.a.app_none);
     }
 
     @Override // com.tsf.shell.ShellCoreInterface
@@ -484,7 +484,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.Home.17
                 @Override // java.lang.Runnable
                 public void run() {
-                    Toast.makeText(Home.c, b.i.activity_not_found, 0).show();
+                    Toast.makeText(Home.c, ShellEventData.i.activity_not_found, 0).show();
                 }
             });
             ShellThemeProvider.printStackTrace();
@@ -493,12 +493,12 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void a(Intent intent, int i) {
         try {
-            startActivityForResult(intent, i);
+            startActivityForResult(intent, ShellPreferenceManager);
         } catch (Exception e) {
             com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.Home.2
                 @Override // java.lang.Runnable
                 public void run() {
-                    Toast.makeText(Home.c, b.i.activity_not_found, 0).show();
+                    Toast.makeText(Home.c, ShellEventData.i.activity_not_found, 0).show();
                 }
             });
         }
@@ -509,7 +509,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         if (i >= 0) {
             this.k = true;
         }
-        super.startActivityForResult(intent, i);
+        super.startActivityForResult(intent, ShellPreferenceManager);
     }
 
     @Override // android.app.Activity, android.view.Window.Callback
@@ -561,10 +561,10 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         if (!zOnKeyDown && i != 66) {
             boolean zOnKeyDown2 = false;
             try {
-                zOnKeyDown2 = TextKeyListener.getInstance().onKeyDown(this.g, this.i, i, keyEvent);
+                zOnKeyDown2 = TextKeyListener.getInstance().onKeyDown(this.g, this.i, ShellPreferenceManager, keyEvent);
             } catch (Exception e) {
             }
-            if (zOnKeyDown2 && this.i != null && this.i.length() > 0) {
+            if (zOnKeyDown2 && this.i != null && this.ShellPreferenceManager.length() > 0) {
                 return onSearchRequested();
             }
             return zOnKeyDown;
@@ -587,19 +587,19 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         if (aVar == null) {
             return true;
         }
-        if (this.g.a()) {
+        if (this.NoticeStateProvider.a()) {
             if (aVar.a == null) {
-                this.g.setAllowLongPress(false);
+                this.NoticeStateProvider.setAllowLongPress(false);
             } else {
                 if (!com.tsf.shell.manager.GlobalServiceLocator.A.a()) {
                     return true;
                 }
-                aVar.a.setPressed(false);
-                w.a();
+                aVar.ShellContentManager.setPressed(false);
+                HapticFeedbackManager.a();
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.Home.5
                     @Override // java.lang.Runnable
                     public void run() {
-                        Home.this.e.a(aVar);
+                        Home.this.ShellConfigEngine.a(aVar);
                     }
                 });
             }
@@ -637,7 +637,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
     public void a(LauncherAppWidgetInfo launcherAppWidgetInfo) {
-        com.tsf.shell.manager.GlobalServiceLocator.l.a.a(launcherAppWidgetInfo);
+        com.tsf.shell.manager.GlobalServiceLocator.l.ShellContentManager.a(launcherAppWidgetInfo);
     }
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
@@ -652,32 +652,32 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
     public void c(ArrayList<ItemInfo> arrayList, String str) {
-        com.tsf.shell.manager.GlobalServiceLocator.g.b.a(arrayList, str);
+        com.tsf.shell.manager.GlobalServiceLocator.g.ShellEventData.a(arrayList, str);
     }
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
     public void a(ArrayList<ItemInfo> arrayList, ArrayList<String> arrayList2) {
-        com.tsf.shell.manager.GlobalServiceLocator.g.a.a(arrayList, arrayList2);
+        com.tsf.shell.manager.GlobalServiceLocator.g.ShellContentManager.a(arrayList, arrayList2);
     }
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
     public void a(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
-        com.tsf.shell.manager.GlobalServiceLocator.w.a(arrayList);
+        com.tsf.shell.manager.GlobalServiceLocator.HapticFeedbackManager.a(arrayList);
     }
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
     public void a(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList, boolean z) {
-        com.tsf.shell.manager.GlobalServiceLocator.w.a(arrayList, z);
+        com.tsf.shell.manager.GlobalServiceLocator.HapticFeedbackManager.a(arrayList, z);
     }
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
     public void b(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList) {
-        com.tsf.shell.manager.GlobalServiceLocator.w.b(arrayList);
+        com.tsf.shell.manager.GlobalServiceLocator.HapticFeedbackManager.b(arrayList);
     }
 
     @Override // com.tsf.shell.manager.bind.ShellBindCallback
     public void b(ArrayList<com.tsf.shell.manager.app.LauncherAppInfo> arrayList, boolean z) {
-        com.tsf.shell.manager.GlobalServiceLocator.w.b(arrayList, z);
+        com.tsf.shell.manager.GlobalServiceLocator.HapticFeedbackManager.b(arrayList, z);
     }
 
     @Override // android.app.Activity, android.content.ComponentCallbacks
@@ -696,15 +696,15 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                     @Override // java.lang.Runnable
                     public void run() {
                         Home.this.o.b("Home");
-                        com.tsf.shell.manager.GlobalServiceLocator.f.e();
+                        com.tsf.shell.manager.GlobalServiceLocator.ShellCleanupTask.e();
                     }
                 });
             }
             Intent intent = getIntent();
             if (intent != null) {
-                com.ksmobile.launcher.a.a.a.a(intent.getBooleanExtra("DEFENSE_USER_PRESENT", false));
+                com.ksmobile.launcher.a.a.ShellContentManager.a(intent.getBooleanExtra("DEFENSE_USER_PRESENT", false));
             } else {
-                com.ksmobile.launcher.a.a.a.a(false);
+                com.ksmobile.launcher.a.a.ShellContentManager.a(false);
             }
         }
     }
@@ -741,14 +741,14 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         }
         super.onDestroy();
         if (this.s) {
-            com.tsf.shell.manager.GlobalServiceLocator.l.a.c();
+            com.tsf.shell.manager.GlobalServiceLocator.l.ShellContentManager.c();
             try {
                 TextKeyListener.getInstance().release();
                 unregisterReceiver(this.d);
             } catch (Exception e2) {
             }
             if (this.g != null) {
-                this.g.removeAllViews();
+                this.NoticeStateProvider.removeAllViews();
                 this.g = null;
             }
         }
@@ -760,7 +760,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         if (this.s && "android.intent.action.MAIN".equals(intent.getAction())) {
             int intExtra = intent.getIntExtra("action", -1);
             if (intExtra != -1) {
-                com.tsf.shell.manager.GlobalServiceLocator.d.a(intExtra);
+                com.tsf.shell.manager.GlobalServiceLocator.ShellLayoutEngine.a(intExtra);
                 return;
             }
             n();
@@ -806,7 +806,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public boolean a(ShellLayoutEngine.b bVar, boolean z, int i, String... strArr) {
         if (this.r != null) {
-            return this.r.a(bVar, z, i, strArr);
+            return this.r.a(bVar, z, ShellPreferenceManager, strArr);
         }
         return false;
     }

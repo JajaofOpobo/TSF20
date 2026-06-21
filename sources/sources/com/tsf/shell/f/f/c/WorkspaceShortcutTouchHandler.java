@@ -15,7 +15,7 @@ import com.tsf.shell.utils.DimensionHelper;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceShortcutTouchHandler implements b.a, e.a {
+public class WorkspaceShortcutTouchHandler implements KeyboardHandler.a, WindowManager.a {
     private TextureElement b;
     private BaseRenderable c;
     private com.tsf.shell.f.i.PageItem d;
@@ -23,7 +23,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
     private float h;
     private int i;
     private int j;
-    private g l;
+    private WorkspacePage l;
     private C0133a m;
     private boolean e = false;
     private boolean f = false;
@@ -65,7 +65,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
             int i = (this.h + 1) * (this.i + 1);
             this.a = new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(i, 26, 26, true);
             for (int i2 = 0; i2 < i; i2++) {
-                this.a.a(i2).a(0, 0, 1, 1, 26.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 26.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
+                this.WorkspaceShortcutTouchHandler.a(i2).a(0, 0, 1, 1, 26.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 26.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
             }
             float f5 = ((-f) / 2.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.k;
             float f6 = (f2 / 2.0f) - com.censivn.C3DEngine.b.b.ScreenConstants.m;
@@ -73,8 +73,8 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                 for (int i4 = 0; i4 < this.h + 1; i4++) {
                     float f7 = com.censivn.C3DEngine.b.b.ScreenConstants.r + (this.f * i4);
                     float f8 = com.censivn.C3DEngine.b.b.ScreenConstants.s - (this.g * i3);
-                    com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.a.a(((this.h + 1) * i3) + i4);
-                    b bVar = new b();
+                    com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.WorkspaceShortcutTouchHandler.a(((this.h + 1) * i3) + i4);
+                    b bVar = new KeyboardHandler();
                     bVar.a = i4;
                     bVar.b = i3;
                     bVarA.a(bVar);
@@ -84,7 +84,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                     bVarA.h();
                 }
             }
-            this.a.textures().addElement(WorkspaceShortcutTouchHandler.this.b);
+            this.WorkspaceShortcutTouchHandler.textures().addElement(WorkspaceShortcutTouchHandler.this.b);
         }
     }
 
@@ -94,9 +94,9 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 if (WorkspaceShortcutTouchHandler.this.e && !WorkspaceShortcutTouchHandler.this.f) {
-                    int iB = WorkspaceShortcutTouchHandler.this.a.a.b();
+                    int iB = WorkspaceShortcutTouchHandler.this.a.WorkspaceShortcutTouchHandler.b();
                     for (int i = 0; i < iB; i++) {
-                        ((b) WorkspaceShortcutTouchHandler.this.a.a.a(i).a()).c = 23.0f;
+                        ((KeyboardHandler) WorkspaceShortcutTouchHandler.this.a.WorkspaceShortcutTouchHandler.a(i).a()).c = 23.0f;
                     }
                     if (WorkspaceShortcutTouchHandler.this.d != null) {
                         float f = (WorkspaceShortcutTouchHandler.this.d.position().x + (WorkspaceShortcutTouchHandler.this.a.f / 2.0f)) - ((WorkspaceShortcutTouchHandler.this.i * WorkspaceShortcutTouchHandler.this.a.f) / 2.0f);
@@ -129,14 +129,14 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                                 break;
                             }
                             for (int i12 = i7; i12 < i5 + 1; i12++) {
-                                ((b) WorkspaceShortcutTouchHandler.this.a.a.a(((WorkspaceShortcutTouchHandler.this.a.h + 1) * i11) + i12).a()).c = 230.0f;
+                                ((KeyboardHandler) WorkspaceShortcutTouchHandler.this.a.WorkspaceShortcutTouchHandler.a(((WorkspaceShortcutTouchHandler.this.a.h + 1) * i11) + i12).a()).c = 230.0f;
                             }
                             i10 = i11 + 1;
                         }
                     }
                     for (int i13 = 0; i13 < iB; i13++) {
-                        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = WorkspaceShortcutTouchHandler.this.a.a.a(i13);
-                        b bVar = (b) bVarA.a();
+                        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = WorkspaceShortcutTouchHandler.this.a.WorkspaceShortcutTouchHandler.a(i13);
+                        b bVar = (KeyboardHandler) bVarA.a();
                         float fC = bVarA.c();
                         bVarA.a(((bVar.c - fC) * 0.2f) + fC);
                     }
@@ -155,11 +155,11 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
     }
 
     public void c() {
-        this.b = x.b(b.d.grid_point);
-        this.a.a(com.censivn.C3DEngine.b.b.ScreenConstants.p, com.censivn.C3DEngine.b.b.ScreenConstants.q, r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.i), r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.j));
+        this.b = GraphicsEngineBridge.b(b.d.grid_point);
+        this.WorkspaceShortcutTouchHandler.a(com.censivn.C3DEngine.b.b.ScreenConstants.p, com.censivn.C3DEngine.b.b.ScreenConstants.q, DimensionHelper.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.i), DimensionHelper.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.j));
     }
 
-    public boolean a(g gVar) {
+    public boolean a(WorkspacePage gVar) {
         if (this.e) {
             return false;
         }
@@ -170,7 +170,7 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
         gVar.addChildAt(this.c, 0);
         this.m = com.tsf.shell.manager.app.Notifier.a(this.m, "Desktop reference grid");
         this.c.children().clear();
-        this.a.a.removeFromParent();
+        this.a.WorkspaceShortcutTouchHandler.removeFromParent();
         this.c.addChild(this.a.a);
         c.a(this.c);
         return true;
@@ -216,10 +216,10 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
             this.e = false;
             this.l.g();
             this.l = null;
-            final int iB = this.a.a.b();
+            final int iB = this.a.WorkspaceShortcutTouchHandler.b();
             for (int i = 0; i < iB; i++) {
-                com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.a.a.a(i);
-                ((b) bVarA.a()).c = bVarA.c();
+                com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA = this.a.WorkspaceShortcutTouchHandler.a(i);
+                ((KeyboardHandler) bVarA.a()).c = bVarA.c();
             }
             final C0109a c0109a = this.a;
             d dVar = new d() { // from class: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler.2
@@ -229,8 +229,8 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                     while (true) {
                         int i3 = i2;
                         if (i3 < iB) {
-                            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = c0109a.a.a(i3);
-                            bVarA2.a(((b) bVarA2.a()).c * (1.0f - f));
+                            com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = c0109a.WorkspaceShortcutTouchHandler.a(i3);
+                            bVarA2.a(((KeyboardHandler) bVarA2.a()).c * (1.0f - f));
                             i2 = i3 + 1;
                         } else {
                             return;
@@ -241,8 +241,8 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     for (int i2 = 0; i2 < iB; i2++) {
-                        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = c0109a.a.a(i2);
-                        ((b) bVarA2.a()).c = 0.0f;
+                        com.censivn.C3DEngine.b.f.sprite.SpriteItemData bVarA2 = c0109a.WorkspaceShortcutTouchHandler.a(i2);
+                        ((KeyboardHandler) bVarA2.a()).c = 0.0f;
                         bVarA2.a(0.0f);
                     }
                     WorkspaceShortcutTouchHandler.this.d = null;
@@ -276,6 +276,6 @@ public class WorkspaceShortcutTouchHandler implements b.a, e.a {
 
     @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
-        this.a.a(com.censivn.C3DEngine.b.b.ScreenConstants.p, com.censivn.C3DEngine.b.b.ScreenConstants.q, r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.i), r.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.j));
+        this.WorkspaceShortcutTouchHandler.a(com.censivn.C3DEngine.b.b.ScreenConstants.p, com.censivn.C3DEngine.b.b.ScreenConstants.q, DimensionHelper.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.i), DimensionHelper.a(com.censivn.C3DEngine.C3DEngine.d(), com.censivn.C3DEngine.b.b.ScreenConstants.j));
     }
 }

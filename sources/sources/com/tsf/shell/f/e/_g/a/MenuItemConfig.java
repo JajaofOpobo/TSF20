@@ -46,7 +46,7 @@ public class MenuItemConfig extends MenuItemBase {
         this.mTitleContainer.a(str);
     }
 
-    public void addIcon(i iVar) {
+    public void addIcon(IRenderable iVar) {
         this.mTitleContainer.a(iVar);
     }
 
@@ -62,7 +62,7 @@ public class MenuItemConfig extends MenuItemBase {
     public class a extends BaseRenderable {
         private TextureElement a = new TextureElement(0, false);
         private GridRenderable c;
-        private i d;
+        private IRenderable d;
         private LabelRenderable e;
 
         public a() {
@@ -82,7 +82,7 @@ public class MenuItemConfig extends MenuItemBase {
             a();
         }
 
-        public void a(i iVar) {
+        public void a(IRenderable iVar) {
             a();
             this.d = iVar;
             this.d.position().x = this.c.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.a(12.0f) + com.censivn.C3DEngine.b.b.ScreenConstants.a(90.0f);
@@ -137,7 +137,7 @@ public class MenuItemConfig extends MenuItemBase {
             com.censivn.C3DEngine.C3DEngine.g().a(this.a);
         }
 
-        public void b(i iVar) {
+        public void b(IRenderable iVar) {
             iVar.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.tsf.shell.f.e._g.a.MenuItemConfig.a.2
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {

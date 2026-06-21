@@ -9,8 +9,8 @@ import com.tsf.shell.manager.b.ConfigManager;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ScreenFadeController {
-    private static j c;
-    private static i d;
+    private static BaseRenderable c;
+    private static IRenderable d;
     private int f = 1;
     private boolean g;
     private static com.censivn.C3DEngine.b.g._b.TweenTargetWrapper e = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
@@ -53,7 +53,7 @@ public class ScreenFadeController {
         }
     }
 
-    public ScreenFadeController(j jVar) {
+    public ScreenFadeController(BaseRenderable jVar) {
         this.g = false;
         c = jVar;
         this.g = e.ai();
@@ -118,7 +118,7 @@ public class ScreenFadeController {
         a(com.tsf.shell.manager.app.StateHub.n());
     }
 
-    public void a(g gVar) {
+    public void a(WorkspacePage gVar) {
         if (gVar.t() == -1 && a != 100) {
             ScreenFadeController();
         } else {
@@ -128,8 +128,8 @@ public class ScreenFadeController {
 
     public void a(int i, int i2, int i3, int i4) {
         if (this.g) {
-            ((k) d).a(com.censivn.C3DEngine.b.b.ScreenConstants.F);
-            ((k) d).b(com.censivn.C3DEngine.b.b.ScreenConstants.G);
+            ((GridRenderable) d).a(com.censivn.C3DEngine.b.b.ScreenConstants.F);
+            ((GridRenderable) d).b(com.censivn.C3DEngine.b.b.ScreenConstants.G);
         }
     }
 }

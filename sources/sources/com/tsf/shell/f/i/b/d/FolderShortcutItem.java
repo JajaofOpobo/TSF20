@@ -143,14 +143,14 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         bVar.rotation().z = launcherFolder3DInfo.rotation;
         bVar.ac();
         bVar.ad();
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.MultiSelectController.PageItemTouchHandler(bVar));
         com.tsf.shell.manager.app.WidgetManager.d(bVar);
         return bVar;
     }
 
     public static FolderShortcutItem a(LauncherFolder3DInfo launcherFolder3DInfo) {
         FolderShortcutItem bVar = new FolderShortcutItem(launcherFolder3DInfo);
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.MultiSelectController.PageItemTouchHandler(bVar));
         return bVar;
     }
 
@@ -159,12 +159,12 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         launcherFolder3DInfo.packagename = "";
         ContentValues contentValues = new ContentValues();
         launcherFolder3DInfo.updateName(contentValues, K().title, false);
-        ShellModel.a.a(contentValues, launcherFolder3DInfo, (Runnable) null);
+        ShellModel.MultiSelectController.a(contentValues, launcherFolder3DInfo, (Runnable) null);
         for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.o.children()) {
             if (iVar instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
                 LauncherShortcutAppInfo launcherShortcutAppInfoBb = ((com.tsf.shell.f.i.b.e.DrawerItemVisual) iVar).bb();
                 launcherShortcutAppInfoBb.container = launcherFolder3DInfo.id;
-                ShellModel.a.a(new ContentValues(), launcherShortcutAppInfoBb, (Runnable) null);
+                ShellModel.MultiSelectController.a(new ContentValues(), launcherShortcutAppInfoBb, (Runnable) null);
                 launcherFolder3DInfo.add(launcherShortcutAppInfoBb);
             }
         }
@@ -172,14 +172,14 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         bVar.position().setAllFrom(position());
         bVar.scale().setAllFrom(scale());
         bVar.rotation().setAllFrom(rotation());
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.a.PageItemTouchHandler(bVar));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.MultiSelectController.PageItemTouchHandler(bVar));
         return bVar;
     }
 
     public void a(com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar, final com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2, com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (this.H == null) {
-            bVar.k.visible(false);
-            bVar2.k.textures().addElement(bVar.k.textures().get(0).textureElement);
+            bVar.ItemPositionAnimator.visible(false);
+            bVar2.ItemPositionAnimator.textures().addElement(bVar.ItemPositionAnimator.textures().get(0).textureElement);
             bVar.addChild(bVar2);
             int childIndexOf = bVar.getChildIndexOf(bVar2);
             ILassoSelectable.b(this);
@@ -194,7 +194,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             position().setAllFrom(bVar2.position());
             bVar2.position().setAllFrom(this.o.globalToLocal(Number3WidgetItemLayout.TEMPNUMBER3D));
         }
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.1
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 FolderShortcutItem.this.n(true);
@@ -225,7 +225,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         this.o.globalToLocal(Number3WidgetItemLayout.TEMPNUMBER3D);
         float f = Number3WidgetItemLayout.TEMPNUMBER3D.x;
         float f2 = Number3WidgetItemLayout.TEMPNUMBER3D.y;
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.12
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.12
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 FolderShortcutItem.this.H.g(f3);
@@ -256,7 +256,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.H);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.H, 300, dVar);
         if (iVar != null) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
             dVar2.l(1.0f);
             dVar2.m(1.0f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
@@ -327,7 +327,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         be();
         bd();
         if (G == null) {
-            G = new com.tsf.shell.f.e.LassoSelectionHandler();
+            G = new com.tsf.shell.f.WidgetItemAnimation.LassoSelectionHandler();
         }
         this.R = new FolderItemSorter(this);
         this.o = new FolderItemGrid(this);
@@ -359,8 +359,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             }
         }
         addChild(this.t);
-        com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
-        this.O = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.15
+        com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
+        this.O = new com.censivn.C3DEngine.b.WidgetItemLayout.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.15
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 com.tsf.shell.f.i.b.d.FolderShortcutItem.G.a((com.tsf.shell.f.e.LassoSelectionHandler.a) FolderShortcutItem.this);
@@ -387,7 +387,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 }
             }
         };
-        this.P = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.16
+        this.P = new com.censivn.C3DEngine.b.WidgetItemLayout.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.16
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 FolderShortcutItem.this.R.a(motionEvent, motionEvent2);
@@ -408,7 +408,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 }
             }
         };
-        this.Q = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.17
+        this.Q = new com.censivn.C3DEngine.b.WidgetItemLayout.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.17
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 com.tsf.shell.utils.HapticFeedbackManager.b();
@@ -419,7 +419,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 }
             }
         };
-        this.W = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.18
+        this.W = new com.tsf.shell.f.FolderItemDotIndicator.MultiSelectController(this, this) { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.18
             @Override // com.tsf.shell.f.i.MultiSelectController
             public void h() {
             }
@@ -486,12 +486,12 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 FolderShortcutItem.this.a((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar, false);
                 if (iA < com.tsf.shell.f.i.b.d.FolderShortcutItem.l.K) {
                     FolderShortcutItem.this.aB();
-                    com.tsf.shell.f.i.b.d.FolderShortcutItem.m.a(FolderShortcutItem.this);
-                    com.tsf.shell.f.i.b.d.FolderShortcutItem.m.c(FolderShortcutItem.this);
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem.ILassoSelectable.a(FolderShortcutItem.this);
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem.ILassoSelectable.c(FolderShortcutItem.this);
                 }
             }
         };
-        this.S = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.19
+        this.S = new com.tsf.shell.f.PageItem.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.19
             @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void a(int i, KeyEvent keyEvent) {
                 if (i == 4 && FolderShortcutItem.this.K == com.tsf.shell.f.i.b.d.FolderShortcutItem.a && FolderShortcutItem.this.mouseEnabled() && !FolderShortcutItem.this.o.v()) {
@@ -558,7 +558,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         bVarA.g(0.0f);
         bVarA.mouseEnabled(false);
         this.o.addChild(bVarA);
-        bVarA.setMouseEventListener(new com.tsf.shell.f.i.b.d.FolderTouchHandler(bVarA, this));
+        bVarA.setMouseEventListener(new com.tsf.shell.f.i.b.WidgetItemLayout.FolderTouchHandler(bVarA, this));
         bVarA.a(this.W);
     }
 
@@ -583,7 +583,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         if (this.X) {
             com.tsf.shell.f.i.b.d.FolderShortcutItem.l.a(this, aN());
         }
-        com.tsf.shell.f.i.b.d.FolderShortcutItem.m.a(this);
+        com.tsf.shell.f.i.b.d.FolderShortcutItem.ILassoSelectable.a(this);
         this.X = false;
     }
 
@@ -641,7 +641,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                     break;
             }
         }
-        com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
+        com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
         com.tsf.shell.f.i.b.d.FolderShortcutItem.l.a(this, aN());
         b(0, 0, 0, 0);
         a((Runnable) null, false);
@@ -707,7 +707,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
             this.p.textures().addElement(l.z);
             this.p.position().x = l.c().folder.backPlaneX;
             this.p.position().y = l.c().folder.backPlaneY;
-            com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
+            com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
         } else if (this.p != null) {
             this.p.textures().clear();
             this.p.removeFromParent();
@@ -759,7 +759,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         } else {
             bVar.K().onUpdateContainer(K().id);
         }
-        bVar.setMouseEventListener(new com.tsf.shell.f.i.b.d.FolderTouchHandler(bVar, this));
+        bVar.setMouseEventListener(new com.tsf.shell.f.i.b.WidgetItemLayout.FolderTouchHandler(bVar, this));
         bVar.a(this.W);
         this.W.a((com.censivn.C3DEngine.b.f.IRenderable) bVar);
     }
@@ -793,9 +793,9 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         if (l.c().folder.nameTextFormat.auto) {
             if (!this.y || z) {
                 this.y = true;
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, false);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, false);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this, false);
                 ILassoSelectable.a(this);
             }
         }
@@ -809,9 +809,9 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         if (l.c().folder.nameTextFormat.auto || z) {
             if (this.y || z) {
                 this.y = false;
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, true);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.MultiSelectController.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
                 ILassoSelectable.a(this);
             }
         }
@@ -833,7 +833,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                     com.tsf.shell.f.i.b.d.FolderShortcutItem.l.a(FolderShortcutItem.this, str);
                     com.tsf.shell.f.i.b.d.FolderShortcutItem.l.a(str);
                     if (FolderShortcutItem.this.x) {
-                        com.tsf.shell.f.i.b.d.FolderShortcutItem.m.a(FolderShortcutItem.this);
+                        com.tsf.shell.f.i.b.d.FolderShortcutItem.ILassoSelectable.a(FolderShortcutItem.this);
                     }
                 }
             });
@@ -949,23 +949,23 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         this.T = com.tsf.shell.manager.app.TaskScheduler.a(this.S);
         switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
             case 0:
-                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.PageItem.c());
                 break;
             case 1:
-                dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.3
+                dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.3
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         FolderShortcutItem.this.bj();
                     }
                 };
-                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.PageItem.c());
                 break;
             default:
-                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.TweenCallback) new com.tsf.shell.f.i.b.d.FolderTouchHandler.PageItem.c());
                 break;
         }
         dVar.l(1.0f);
@@ -1008,7 +1008,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                     com.tsf.shell.f.i.b.d.FolderItemPositioner.O.alpha(0.0f);
                     if (FolderShortcutItem.this.aa != null) {
                         if (FolderShortcutItem.this.aa.parent() instanceof com.tsf.shell.f.c.b.DrawerSettingsItemType) {
-                            com.tsf.shell.f.c.b.DrawerSettingsData bVarA = com.tsf.shell.manager.app.WidgetPanelController.a.a(FolderShortcutItem.this.aa);
+                            com.tsf.shell.f.c.b.DrawerSettingsData bVarA = com.tsf.shell.manager.app.WidgetPanelController.MultiSelectController.a(FolderShortcutItem.this.aa);
                             FolderShortcutItem.this.L.x = bVarA.a;
                             FolderShortcutItem.this.L.y = bVarA.b;
                             FolderShortcutItem.this.M.z = bVarA.e;
@@ -1025,7 +1025,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         if (FolderShortcutItem.this.aa != null) {
                             Number3WidgetItemLayout.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
                             FolderShortcutItem.this.aa.localScaleToGlobale(Number3WidgetItemLayout.TEMPNUMBER3D2);
-                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                            dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                             dVar.f(FolderShortcutItem.this.L.x);
                             dVar.h(FolderShortcutItem.this.L.y);
                             dVar.l(Number3WidgetItemLayout.TEMPNUMBER3D2.x);
@@ -1042,7 +1042,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                                 FolderShortcutItem.this.L.y = FolderShortcutItem.this.K().cellYH;
                                 FolderShortcutItem.this.M.z = FolderShortcutItem.this.K().rotationH;
                             }
-                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                            dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                             dVar.f(FolderShortcutItem.this.L.x);
                             dVar.h(FolderShortcutItem.this.L.y);
                             dVar.e(FolderShortcutItem.this.M.z);
@@ -1085,7 +1085,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                                     }
                                 }
                                 if (!((com.tsf.shell.f.i.b.d.FolderTouchHandler) FolderShortcutItem.this.N.getMouseEventListener()).a()) {
-                                    FolderShortcutItem.this.N.getMouseEventListener().d(com.censivn.C3DEngine.a.d.d().f());
+                                    FolderShortcutItem.this.N.getMouseEventListener().d(com.censivn.C3DEngine.a.WidgetItemLayout.d().f());
                                 }
                                 FolderShortcutItem.this.N.mouseEnabled(true);
                                 FolderShortcutItem.this.N = null;
@@ -1263,7 +1263,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         bVar2.rotation().setAllFrom(systemFolderChild.rotation);
                     }
                     bVar2.alpha(255.0f);
-                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.5
+                    dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.5
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             if (bVar2Final.aJ() != 0.0f) {
@@ -1301,7 +1301,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 } else {
                     ThemeFolderDescription.SystemFolderChild systemFolderChild2 = l.c().folder.sampleList.get(i8 % i7);
                     if (bVar2.visible()) {
-                        dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.6
+                        dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.6
                             @Override // com.censivn.C3DEngine.b.g.TweenParams
                             public void a() {
                                 bVar2Final.visible(false);
@@ -1470,7 +1470,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 final com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) this.o.children().get(i4);
                 bVar2.alpha(255.0f);
                 Number3d number3dD = d((iAW - i4) - 1);
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.9
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.9
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
                         bVar2.visible(true);
@@ -1563,7 +1563,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     @Override // com.tsf.shell.f.e.h.PhotoPicker
-    public n l_() {
+    public LassoContextMenu l_() {
         return null;
     }
 
@@ -1585,7 +1585,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     @Override // com.tsf.shell.f.e.h.PhotoPicker
-    public void a(m mVar) {
+    public void a(ILassoSelectable mVar) {
         if (mVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
             com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) mVar;
             if (this.ad == null) {
@@ -1619,7 +1619,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                 bVar.removeFromParent();
                 this.o.addChild(bVar);
                 if (i == size - 1) {
-                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.10
+                    dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.10
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             Iterator it = FolderShortcutItem.this.ad.iterator();
@@ -1639,7 +1639,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
                         }
                     };
                 } else {
-                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.11
+                    dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.11
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             bVar.g(1.0f - f);
@@ -1674,7 +1674,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     @Override // com.tsf.shell.f.e.a.AlignmentListener
     public void e() {
         this.z = true;
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.13
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.13
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = FolderShortcutItem.this.p.alpha();
@@ -1692,7 +1692,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
 
     @Override // com.tsf.shell.f.e.a.AlignmentListener
     public void i() {
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.14
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i.b.d.FolderShortcutItem.14
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = FolderShortcutItem.this.p.alpha();

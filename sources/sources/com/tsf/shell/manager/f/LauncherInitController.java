@@ -16,7 +16,7 @@ import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.utils.SignatureVerifier;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class LauncherInitController extends f {
+public class LauncherInitController extends EngineController {
     private BaseRenderable c;
     private BaseRenderable d;
     private BaseRenderable e;
@@ -30,7 +30,7 @@ public class LauncherInitController extends f {
         this.g = true;
         this.h = null;
         com.tsf.shell.manager.app.Initializer = new com.tsf.shell.manager.j.RateDialogController();
-        com.tsf.shell.manager.app.AppListManager = new e();
+        com.tsf.shell.manager.app.AppListManager = new ThemePreferenceProvider();
         com.tsf.shell.manager.app.C = new com.tsf.shell.services.ServiceLifecycleManager();
         com.tsf.shell.manager.app.CallbackHandler = new com.censivn.C3DEngine.b.c.AnimationListener();
         com.tsf.shell.manager.app.FeatureConfig = new com.tsf.shell.manager.h.ScreenLockController();
@@ -50,7 +50,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.PanelStateManager = new com.tsf.shell.manager.m.SideMenuManager();
         com.tsf.shell.manager.app.LauncherAppInfo = new ShellWallpaperManager(com.censivn.C3DEngine.C3DEngine.d());
         com.tsf.shell.manager.app.TaskScheduler = new ViewportController(eVar);
-        com.tsf.shell.manager.app.StateHub = new n();
+        com.tsf.shell.manager.app.StateHub = new PageTouchHandler();
         com.tsf.shell.manager.app.WidgetAnimator = new com.tsf.shell.f.e.e.ItemAnimationController();
         com.tsf.shell.manager.app.Notifier = new com.tsf.shell.manager.n.ToastOverlayController();
         com.tsf.shell.manager.app.WidgetPanelController = new com.tsf.shell.f.c.DrawerPanelController();
@@ -58,7 +58,7 @@ public class LauncherInitController extends f {
         com.tsf.shell.manager.app.WidgetManager = new com.tsf.shell.manager.r.c.WidgetRegistryManager();
         com.tsf.shell.manager.app.StateManager = new com.tsf.shell.manager.d.HitTargetManager();
         com.tsf.shell.manager.app.WidgetLayoutManager = new com.tsf.shell.manager.r.a.WidgetInstanceTracker();
-        com.tsf.shell.manager.app.PlaceholderManager = new p();
+        com.tsf.shell.manager.app.PlaceholderManager = new StubPlaceholder();
         if (!t.a(com.censivn.C3DEngine.C3DEngine.d())) {
             com.tsf.shell.services.ServiceLifecycleManager.a = false;
         }

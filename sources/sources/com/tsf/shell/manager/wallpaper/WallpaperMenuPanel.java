@@ -22,7 +22,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
-    private h a;
+    private DesktopTouchHandlerH a;
     private WallpaperMenuContainer b;
     private ArrayList<MenuItem> c;
     private com.tsf.shell.manager.wallpaper.BlurSettingsMenu d;
@@ -36,7 +36,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
 
     @Override // com.tsf.shell.f.e._g.a.MenuItemBase
     public void onRecycle() {
-        Iterator<c> it = this.c.iterator();
+        Iterator<BlurSettingsMenu> it = this.c.iterator();
         while (it.hasNext()) {
             it.next().b();
         }
@@ -63,7 +63,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             }
         });
         this.c.add(new LiveWallpaperMenuItem(x.c(b.i.text_live_wallpapers)));
-        this.a = new h(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(320.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(520.0f));
+        this.a = new DesktopTouchHandlerH(com.censivn.C3DEngine.b.b.ScreenConstants.D, this.b.getHeight(), com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 20.0f, com.censivn.C3DEngine.b.b.ScreenConstants.a(320.0f), com.censivn.C3DEngine.b.b.ScreenConstants.a(520.0f));
         this.a.a(new com.censivn.C3DEngine.b.h.b.SparkleEffect() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.3
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
             public int a() {
@@ -71,15 +71,15 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             }
 
             @Override // com.censivn.C3DEngine.b.h.b.SparkleEffect
-            public i a(int i, i iVar) {
-                return (i) WallpaperMenuPanel.this.c.get(i);
+            public IRenderable a(int i, i iVar) {
+                return (IRenderable) WallpaperMenuPanel.this.c.get(i);
             }
         });
         this.a.a(new f() { // from class: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel.4
             @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerF
-            public void a(i iVar, int i, MotionEvent motionEvent) {
+            public void a(IRenderable iVar, int i, MotionEvent motionEvent) {
                 w.b();
-                ((c) WallpaperMenuPanel.this.c.get(i)).a();
+                ((BlurSettingsMenu) WallpaperMenuPanel.this.c.get(i)).a();
             }
         });
         ArrayList<WallpaperPreviewRenderer.C0095a> arrayList = new ArrayList<>();
@@ -139,7 +139,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
         public static final int b = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(300.0f);
         public static final int c = (int) com.censivn.C3DEngine.b.b.ScreenConstants.a(500.0f);
         private LabelRenderable a = new LabelRenderable();
-        private i d;
+        private IRenderable d;
 
         public MenuItem(String str) {
             this.a.a(str);
@@ -148,7 +148,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
             this.a.position().y = ((-c) / 2.0f) - com.censivn.C3DEngine.b.b.ScreenConstants.a(5.0f);
         }
 
-        public void a(i iVar) {
+        public void a(IRenderable iVar) {
             this.d = iVar;
             this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(25.0f);
             addChild(this.d);
@@ -164,7 +164,7 @@ public class WallpaperMenuPanel extends com.tsf.shell.f.e._g.a.MenuActionItem {
 
     /* JADX INFO: renamed from: com.tsf.shell.manager.wallpaper.WallpaperMenuPanel$b, reason: collision with other inner class name */
     static class C0150b extends MenuItem {
-        private a a;
+        private WallpaperPreviewRenderer a;
 
         public C0150b(String str, int i) {
             super(str);

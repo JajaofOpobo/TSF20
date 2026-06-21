@@ -19,7 +19,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     private int h = com.censivn.C3DEngine.b.b.ScreenConstants.z;
     private int i = com.censivn.C3DEngine.b.b.ScreenConstants.A;
     private boolean j = false;
-    private a e = new a(this);
+    private DesktopTouchHandler e = new DesktopTouchHandler(this);
 
     public boolean a(boolean z) {
         return true;
@@ -38,7 +38,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
 
     public void a(d dVar) {
         this.d = dVar;
-        this.e.a(this);
+        this.DesktopTouchHandlerE.a(this);
     }
 
     public d a() {
@@ -57,9 +57,9 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         this.b = arrayList;
     }
 
-    public ArrayList<i> c() {
-        ArrayList<i> arrayList = new ArrayList<>();
-        Iterator<i> it = this.a.children().iterator();
+    public ArrayList<IRenderable> c() {
+        ArrayList<IRenderable> arrayList = new ArrayList<>();
+        Iterator<IRenderable> it = this.DesktopTouchHandler.children().iterator();
         while (it.hasNext()) {
             arrayList.add(it.next());
         }
@@ -76,12 +76,12 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         super.destroy();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList, int i) {
+    public void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList, int i) {
         int i2 = i;
-        for (com.tsf.shell.f.i.B bVar : arrayList) {
+        for (com.tsf.shell.f.i.PageItem bVar : arrayList) {
             bVar.mouseEnabled(false);
             bVar.removeFromParent();
-            this.a.addChildAt(bVar, i2);
+            this.DesktopTouchHandler.addChildAt(bVar, i2);
             bVar.a(i2);
             i2++;
             this.d.e(bVar);
@@ -89,26 +89,26 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         b(i);
     }
 
-    public void b(ArrayList<com.tsf.shell.f.i.B> arrayList) {
-        Iterator<com.tsf.shell.f.i.B> it = arrayList.iterator();
+    public void b(ArrayList<com.tsf.shell.f.i.PageItem> arrayList) {
+        Iterator<com.tsf.shell.f.i.PageItem> it = arrayList.iterator();
         while (it.hasNext()) {
             a(it.next());
         }
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         bVar.mouseEnabled(false);
         if (bVar.parent() != null) {
-            this.a.globalToLocal(bVar.position());
+            this.DesktopTouchHandler.globalToLocal(bVar.position());
             bVar.removeFromParent();
         }
-        this.a.addChild(bVar);
-        bVar.a(this.a.numChildren() - 1);
+        this.DesktopTouchHandler.addChild(bVar);
+        bVar.a(this.DesktopTouchHandler.numChildren() - 1);
     }
 
-    public int b(com.tsf.shell.f.i.B bVar) {
+    public int b(com.tsf.shell.f.i.PageItem bVar) {
         int iJ = bVar.J();
-        this.a.removeChild(bVar);
+        this.DesktopTouchHandler.removeChild(bVar);
         b(iJ);
         return iJ;
     }
@@ -117,17 +117,17 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         return this.b.get(i);
     }
 
-    public boolean a(com.tsf.shell.f.i.B bVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.i.PageItem bVar, float f, float f2) {
         return a(bVar, f, f2, false, false);
     }
 
-    public boolean a(com.tsf.shell.f.i.B bVar, float f, float f2, boolean z, boolean z2) {
+    public boolean a(com.tsf.shell.f.i.PageItem bVar, float f, float f2, boolean z, boolean z2) {
         int i = com.tsf.shell.manager.o.b.a.L;
         int i2 = com.tsf.shell.manager.o.b.a.N;
         int i3 = com.tsf.shell.manager.o.b.a.M;
         int i4 = com.tsf.shell.manager.o.b.a.O;
         int iJ = bVar.J();
-        float[] fArrB = x.b(f, f2);
+        float[] fArrB = GraphicsEngineBridge.b(f, f2);
         float f3 = fArrB[0];
         float f4 = fArrB[1];
         float f5 = f3 - this.c.x;
@@ -150,7 +150,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
                 }
             }
         }
-        int iNumChildren = this.a.numChildren() + 1;
+        int iNumChildren = this.DesktopTouchHandler.numChildren() + 1;
         for (int i5 = 0; i5 < iNumChildren; i5++) {
             Number3d number3d = this.b.get(i5);
             if (f5 > i + number3d.x && f5 < i3 + number3d.x && f6 > i2 + number3d.y) {
@@ -164,14 +164,14 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.B bVar, int i) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, int i) {
         int iJ = bVar.J();
         int iMin = Math.min(iJ, i);
         int iAbs = Math.abs(iJ - i);
         bVar.a(i);
         int i2 = iJ > i ? 1 : 0;
         for (int i3 = iMin; i3 < iMin + iAbs; i3++) {
-            com.tsf.shell.f.i.B bVar2 = (com.tsf.shell.f.i.B) this.a.children().get(i3);
+            com.tsf.shell.f.i.PageItem bVar2 = (com.tsf.shell.f.i.PageItem) this.DesktopTouchHandler.children().get(i3);
             bVar2.a(i3 + i2);
             f(bVar2);
         }
@@ -181,9 +181,9 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     }
 
     void a(int i, i iVar) {
-        int size = this.a.children().size();
+        int size = this.DesktopTouchHandler.children().size();
         while (i < size) {
-            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) this.a.children().get(i);
+            com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) this.DesktopTouchHandler.children().get(i);
             bVar.a(i);
             if (iVar != bVar) {
                 f(bVar);
@@ -193,20 +193,20 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     }
 
     void b(int i) {
-        int size = this.a.children().size();
+        int size = this.DesktopTouchHandler.children().size();
         while (i < size) {
-            com.tsf.shell.f.i.B bVar = (com.tsf.shell.f.i.B) this.a.children().get(i);
+            com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) this.DesktopTouchHandler.children().get(i);
             bVar.a(i);
             f(bVar);
             i++;
         }
     }
 
-    private void f(com.tsf.shell.f.i.B bVar) {
+    private void f(com.tsf.shell.f.i.PageItem bVar) {
         Number3d number3dA = a(bVar.J());
         this.d.a(bVar, number3dA);
         if (bVar.visible()) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
             dVar.f(number3dA.x);
             dVar.h(number3dA.y);
             com.censivn.C3DEngine.b.g.TweenUtils.a(bVar);
@@ -217,7 +217,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         bVar.position().y = number3dA.y;
     }
 
-    public void c(com.tsf.shell.f.i.B bVar) {
+    public void c(com.tsf.shell.f.i.PageItem bVar) {
         e();
         this.d.b(bVar);
     }
@@ -226,7 +226,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         this.c.x = 0.0f;
         this.c.y = 0.0f;
         this.c.z = 0.0f;
-        this.a.localToGlobal(this.c);
+        this.DesktopTouchHandler.localToGlobal(this.c);
     }
 
     public void c(MotionEvent motionEvent) {
@@ -241,23 +241,23 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     public void a(MotionEvent motionEvent) {
     }
 
-    public void d(com.tsf.shell.f.i.B bVar) {
+    public void d(com.tsf.shell.f.i.PageItem bVar) {
         this.d.c(bVar);
     }
 
-    public boolean e(com.tsf.shell.f.i.B bVar) {
+    public boolean e(com.tsf.shell.f.i.PageItem bVar) {
         b(bVar);
         this.d.d(bVar);
         return true;
     }
 
-    public com.tsf.shell.f.i.B e(MotionEvent motionEvent) {
-        float[] fArrA = x.a(motionEvent);
+    public com.tsf.shell.f.i.PageItem e(MotionEvent motionEvent) {
+        float[] fArrA = GraphicsEngineBridge.a(motionEvent);
         float f = fArrA[0];
         float f2 = fArrA[1];
-        for (i iVar : this.a.children()) {
+        for (i iVar : this.DesktopTouchHandler.children()) {
             if (iVar.calTouchCollision(f, f2)) {
-                return (com.tsf.shell.f.i.B) iVar;
+                return (com.tsf.shell.f.i.PageItem) iVar;
             }
         }
         return null;

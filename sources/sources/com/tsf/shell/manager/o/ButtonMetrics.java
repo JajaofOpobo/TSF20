@@ -294,7 +294,7 @@ public class ButtonMetrics {
         }
     }
 
-    public void a(i iVar, boolean z) {
+    public void a(IRenderable iVar, boolean z) {
         if (z) {
             iVar.setAABBPX(this.L, this.N, 0.0f, this.M, this.O, 0.0f);
         } else {
@@ -302,7 +302,7 @@ public class ButtonMetrics {
         }
     }
 
-    public void a(i iVar, float f, float f2, boolean z) {
+    public void a(IRenderable iVar, float f, float f2, boolean z) {
         if (z) {
             iVar.setAABBPX(this.L + f, this.N + f2, 0.0f, this.M + f, this.O + f2, 0.0f);
         } else {

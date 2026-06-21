@@ -47,7 +47,7 @@ public class DesktopRenderer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                float[] fArrA = x.a(motionEvent);
+                float[] fArrA = GraphicsEngineBridge.a(motionEvent);
                 this.d = c.this.getHittingTarget(fArrA[0], fArrA[1], true);
                 if (this.d != null && this.d.getMouseEventListener() != null) {
                     this.b = this.d.getMouseEventListener();
@@ -216,7 +216,7 @@ public class DesktopRenderer extends BaseRenderable {
         for (int i3 = 0; i3 < size; i3++) {
             IRenderable childAt = getChildAt(i3);
             if (childAt instanceof c) {
-                ((c) childAt).a(this.a, 0);
+                ((DesktopRenderer) childAt).a(this.a, 0);
             }
         }
         d();
@@ -235,7 +235,7 @@ public class DesktopRenderer extends BaseRenderable {
             draw();
             MatrixStack.glColor(alpha(), getDefaultColor());
             onDrawChildStart();
-            this.k.reset();
+            this.GridRenderable.reset();
             localToGlobal(this.k);
             if (renderChildren()) {
                 int size = children().size();
@@ -324,25 +324,25 @@ public class DesktopRenderer extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         if (iVar instanceof c) {
-            ((c) iVar).b(this.a);
+            ((DesktopRenderer) iVar).b(this.a);
         }
         super.addChild(iVar);
         d();
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public boolean removeChild(i iVar) {
+    public boolean removeChild(IRenderable iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         d();
         return zRemoveChild;
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public void addChildAt(i iVar, int i) {
+    public void addChildAt(IRenderable iVar, int i) {
         if (iVar instanceof c) {
-            ((c) iVar).b(this.a);
+            ((DesktopRenderer) iVar).b(this.a);
         }
         super.addChildAt(iVar, i);
         d();

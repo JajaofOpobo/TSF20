@@ -36,7 +36,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
     private WidgetFreeResizeController.b l = new WidgetFreeResizeController.b() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.1
         @Override // com.tsf.shell.f.e.WidgetFreeResizeController.b
         public void a() {
-            com.tsf.shell.manager.app.WidgetManager.a.templeteShow();
+            com.tsf.shell.manager.app.WidgetManager.AppWidgetHostManager.templeteShow();
         }
     };
     private com.tsf.shell.e.TSFAppWidgetHost e = new com.tsf.shell.e.TSFAppWidgetHost(this.k, 1024);
@@ -79,12 +79,12 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
     @SuppressLint({"NewApi"})
     public void a(com.tsf.shell.e.WidgetContainer bVar) {
         this.j = bVar;
-        if (Build.VERSION.SDK_INT >= 16 && bVar != null && bVar.b != null && bVar.b.K() != null) {
-            LauncherAppWidgetInfo launcherAppWidgetInfo = (LauncherAppWidgetInfo) bVar.b.K();
+        if (Build.VERSION.SDK_INT >= 16 && bVar != null && bVar.b != null && bVar.WidgetInstanceTracker.K() != null) {
+            LauncherAppWidgetInfo launcherAppWidgetInfo = (LauncherAppWidgetInfo) bVar.WidgetInstanceTracker.K();
             if (launcherAppWidgetInfo.providerName != null) {
                 try {
                     int iAllocateAppWidgetId = this.e.allocateAppWidgetId();
-                    if (!this.f.bindAppWidgetIdIfAllowed(iAllocateAppWidgetId, launcherAppWidgetInfo.providerName)) {
+                    if (!this.AppPreviewLabel.bindAppWidgetIdIfAllowed(iAllocateAppWidgetId, launcherAppWidgetInfo.providerName)) {
                         Intent intent = new Intent("android.appwidget.action.APPWIDGET_BIND");
                         intent.putExtra("appWidgetId", iAllocateAppWidgetId);
                         intent.putExtra("appWidgetProvider", launcherAppWidgetInfo.providerName);
@@ -109,7 +109,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
         com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.2
             @Override // java.lang.Runnable
             public void run() {
-                int iA = com.tsf.shell.manager.app.WidgetLayoutManager.a.a();
+                int iA = com.tsf.shell.manager.app.WidgetLayoutManager.AppWidgetHostManager.a();
                 try {
                     if (!appWidgetManager.bindAppWidgetIdIfAllowed(iA, fVar.c())) {
                         Intent intent = new Intent("android.appwidget.action.APPWIDGET_BIND");
@@ -141,7 +141,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
     public void a(int i, int i2, int i3) {
         this.h = i2;
         this.i = i3;
-        AppWidgetProviderInfo appWidgetInfo = this.f.getAppWidgetInfo(i);
+        AppWidgetProviderInfo appWidgetInfo = this.AppPreviewLabel.getAppWidgetInfo(i);
         if (appWidgetInfo != null && appWidgetInfo.configure != null) {
             Intent intent = new Intent("android.appwidget.action.APPWIDGET_CONFIGURE");
             intent.setComponent(appWidgetInfo.configure);
@@ -154,14 +154,14 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
 
     @SuppressLint({"NewApi"})
     public void b(int i, int i2, int i3) {
-        AppWidgetProviderInfo appWidgetInfo = this.f.getAppWidgetInfo(i);
+        AppWidgetProviderInfo appWidgetInfo = this.AppPreviewLabel.getAppWidgetInfo(i);
         if (appWidgetInfo != null) {
             if (this.j != null) {
-                ((LauncherAppWidgetInfo) this.j.b.K()).appWidgetId = i;
+                ((LauncherAppWidgetInfo) this.j.WidgetInstanceTracker.K()).appWidgetId = i;
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("appWidgetId", Integer.valueOf(i));
-                this.j.b.a(contentValues);
-                c cVar = (c) this.e.createView(this.k, i, appWidgetInfo);
+                this.j.WidgetInstanceTracker.a(contentValues);
+                c cVar = (TSFAppWidgetHostView) this.e.createView(this.k, i, appWidgetInfo);
                 cVar.setAppWidget(i, appWidgetInfo);
                 this.j.a(cVar);
                 Home.b().l().a(this.j);
@@ -174,7 +174,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
                 this.e.deleteAppWidgetId(i);
                 return;
             }
-            int[] iArrA = com.tsf.shell.manager.app.StateHub.d.a(appWidgetInfo.minWidth, appWidgetInfo.minHeight);
+            int[] iArrA = com.tsf.shell.manager.app.StateHub.CellLayout.a(appWidgetInfo.minWidth, appWidgetInfo.minHeight);
             LauncherAppWidgetInfo launcherAppWidgetInfo = new LauncherAppWidgetInfo(i, appWidgetInfo.provider);
             launcherAppWidgetInfo.width = iArrA[0];
             launcherAppWidgetInfo.height = iArrA[1];
@@ -195,14 +195,14 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
             launcherAppWidgetInfo.heightH = i7;
             launcherAppWidgetInfo.height = i7;
             launcherAppWidgetInfo.container = -1;
-            final com.tsf.shell.f.i.b.b.ItemShell aVar = new com.tsf.shell.f.i.b.b.ItemShell(launcherAppWidgetInfo, appWidgetInfo.provider.getPackageName());
-            aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
-            aVar.g.a.setAppWidget(i, appWidgetInfo);
+            final com.tsf.shell.f.i.b.b.ItemShell aVar = new com.tsf.shell.f.i.b.WidgetInstanceTracker.ItemShell(launcherAppWidgetInfo, appWidgetInfo.provider.getPackageName());
+            aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (TSFAppWidgetHostView) this.e.createView(this.k, i, appWidgetInfo), aVar);
+            aVar.g.AppWidgetHostManager.setAppWidget(i, appWidgetInfo);
             if (Build.VERSION.SDK_INT >= 16) {
                 float f = com.censivn.C3DEngine.C3DEngine.d().getResources().getDisplayMetrics().density;
                 int i8 = (int) (launcherAppWidgetInfo.width / f);
                 int i9 = (int) (launcherAppWidgetInfo.height / f);
-                aVar.g.a.updateAppWidgetSize(null, i8, i9, i8, i9);
+                aVar.g.AppWidgetHostManager.updateAppWidgetSize(null, i8, i9, i8, i9);
             }
             Home.b().l().a(aVar.g, dVarS, launcherAppWidgetInfo.cellX, launcherAppWidgetInfo.cellY, launcherAppWidgetInfo.width, launcherAppWidgetInfo.height, Home.b().k());
             aVar.ad();
@@ -221,20 +221,20 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
         final g gVarD = com.tsf.shell.manager.app.StateHub.d(launcherAppWidgetInfo.screen);
         if (gVarD == null || gVarD.s() == null) {
             this.e.deleteAppWidgetId(launcherAppWidgetInfo.appWidgetId);
-            ShellModel.a.b(launcherAppWidgetInfo);
+            ShellModel.AppWidgetHostManager.b(launcherAppWidgetInfo);
             return;
         }
         com.tsf.shell.e.Workspace3D fVarL = Home.b().l();
         int i = launcherAppWidgetInfo.appWidgetId;
-        AppWidgetProviderInfo appWidgetInfo = this.f.getAppWidgetInfo(i);
+        AppWidgetProviderInfo appWidgetInfo = this.AppPreviewLabel.getAppWidgetInfo(i);
         String packageName = "";
         if (launcherAppWidgetInfo.providerName != null) {
             packageName = launcherAppWidgetInfo.providerName.getPackageName();
             launcherAppWidgetInfo.packagename = packageName;
         }
-        final com.tsf.shell.f.i.b.b.ItemShell aVar = new com.tsf.shell.f.i.b.b.ItemShell(launcherAppWidgetInfo, packageName);
-        aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (c) this.e.createView(this.k, i, appWidgetInfo), aVar);
-        aVar.g.a.setAppWidget(i, appWidgetInfo);
+        final com.tsf.shell.f.i.b.b.ItemShell aVar = new com.tsf.shell.f.i.b.WidgetInstanceTracker.ItemShell(launcherAppWidgetInfo, packageName);
+        aVar.g = new com.tsf.shell.e.WidgetContainer(this.k, (TSFAppWidgetHostView) this.e.createView(this.k, i, appWidgetInfo), aVar);
+        aVar.g.AppWidgetHostManager.setAppWidget(i, appWidgetInfo);
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.a.AppWidgetHostManager.4
             @Override // java.lang.Runnable
             public void run() {
@@ -291,7 +291,7 @@ public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityR
         if (intent != null && (intExtra = intent.getIntExtra("appWidgetId", -1)) != -1) {
             this.e.deleteAppWidgetId(intExtra);
         }
-        com.tsf.shell.manager.app.WidgetManager.a.templeteShow();
+        com.tsf.shell.manager.app.WidgetManager.AppWidgetHostManager.templeteShow();
     }
 
     public void c() {

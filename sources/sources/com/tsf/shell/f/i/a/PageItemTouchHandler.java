@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
-    public static n a;
+    public static PageTouchHandler a;
     public float b;
     public float d;
     boolean e;
@@ -93,7 +93,7 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventLi
                     }
                     cVar.A().g();
                 }
-                com.tsf.shell.manager.app.TaskScheduler.a((i) bVar, true);
+                com.tsf.shell.manager.app.TaskScheduler.a((IRenderable) bVar, true);
                 com.tsf.shell.manager.action.GestureHandler.a();
                 this.n = false;
                 this.o = false;
@@ -136,7 +136,7 @@ public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventLi
                 b(true);
                 if (!bVar.D()) {
                     com.tsf.shell.manager.app.StateHub.b().b();
-                    com.tsf.shell.manager.app.PanelStateManager.a((i) bVar);
+                    com.tsf.shell.manager.app.PanelStateManager.a((IRenderable) bVar);
                     if (com.tsf.shell.manager.app.StateHub.d.b()) {
                         com.tsf.shell.manager.app.WidgetAnimator.a(bVar, f, f2, true, 0, 1);
                         return;

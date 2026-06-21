@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class EditModeNode extends BaseRenderable {
-    private a a;
+    private WorkspaceEditor a;
     private ArrayList<Integer> b;
     private ArrayList<Integer> c;
     private boolean d = false;
@@ -32,11 +32,11 @@ public class EditModeNode extends BaseRenderable {
         return this.c;
     }
 
-    public void a(a aVar) {
+    public void a(WorkspaceEditor aVar) {
         this.a = aVar;
     }
 
-    public void b(a aVar) {
+    public void b(WorkspaceEditor aVar) {
         if (aVar == this.a) {
             this.a = null;
         }
@@ -62,7 +62,7 @@ public class EditModeNode extends BaseRenderable {
         return this.d;
     }
 
-    public i d() {
+    public IRenderable d() {
         return null;
     }
 }

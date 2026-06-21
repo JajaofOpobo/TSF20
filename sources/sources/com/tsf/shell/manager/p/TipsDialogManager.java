@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TipsDialogManager implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
     public static TipsDialogManager a;
-    public static a b;
+    public static ThemeTransitionAnimator b;
     private static ArrayList<PreferenceToggle> c;
     private static ArrayList<Integer> d;
     private static boolean e = false;

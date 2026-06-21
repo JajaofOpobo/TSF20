@@ -8,13 +8,13 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ProgressBarWidget extends BaseRenderable {
-    private b a;
+    private ProgressBarItem a;
     private GridRenderable b;
     private int c;
     private TextureElement d;
 
     public ProgressBarWidget(float f, int i, float f2) {
-        this.a = new b(f, i);
+        this.a = new ProgressBarItem(f, i);
         addChild(this.a);
         com.tsf.shell.manager.o.c.a(this.a, com.tsf.shell.manager.o.c.h);
         this.b = new GridRenderable(f2, f2, false);

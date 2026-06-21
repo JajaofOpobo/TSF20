@@ -11,7 +11,7 @@ import com.tsf.shell.f.f.a.FolderPage;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class DashEffectData implements A.InterfaceC0090a {
+public abstract class DashEffectData implements DashRendererBase.InterfaceC0090a {
     private int a;
     private boolean b = false;
     private boolean c = false;

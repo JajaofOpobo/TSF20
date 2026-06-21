@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class SliderRenderer extends com.tsf.shell.f.e.f.b {
+public class SliderRenderer extends com.tsf.shell.f.e.f.EditModeNode {
     private boolean a = false;
     private float b = 0.0f;
     private float c = 0.0f;
@@ -146,7 +146,7 @@ public class SliderRenderer extends com.tsf.shell.f.e.f.b {
         notifLayoutRefresh();
     }
 
-    @Override // com.tsf.shell.f.e.f.b, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
+    @Override // com.tsf.shell.f.e.f.EditModeNode, com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void dispatchDraw() {
         if (visible() && this.a) {
             if (a(true)) {

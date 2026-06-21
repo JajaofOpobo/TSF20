@@ -754,3 +754,11 @@ sources/sources/com/censivn/C3DEngine/b/f/sprite/TextureSpriteRenderable.java	(c
 sources/sources/com/censivn/C3DEngine/c/a/spring/DampedSpringConstraint.java	(ctor b→DampedSpringConstraint)
 sources/sources/com/censivn/C3DEngine/c/a/spring/SpringConstraint.java	(ctor a→SpringConstraint)
 sources/sources/com/censivn/C3DEngine/b/g/_c/orbit/OrbitTween.java	(ctor a→OrbitTween)
+
+# C3DEngine/b/c/ constructor entries (Phase 10)
+sources/sources/com/censivn/C3DEngine/b/c/ActivityResultBridge.java	(ctor a→ActivityResultBridge)
+sources/sources/com/censivn/C3DEngine/b/c/KeyboardHandler.java	(ctor b→KeyboardHandler)
+sources/sources/com/censivn/C3DEngine/b/c/TaskDispatcher.java	(ctor c→TaskDispatcher)
+sources/sources/com/censivn/C3DEngine/b/c/AnimationListener.java	(ctor d→AnimationListener)
+sources/sources/com/censivn/C3DEngine/b/c/WindowManager.java	(ctor e→WindowManager)
+sources/sources/com/censivn/C3DEngine/b/c/TextureFactory.java	(ctor f→TextureFactory)

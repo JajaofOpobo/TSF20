@@ -7,16 +7,16 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ItemNode extends BaseRenderable {
     private C0093a b;
-    private b c;
+    private ItemContainerNode c;
     private boolean d = false;
     private C0093a a = new C0093a(com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f), com.censivn.C3DEngine.b.b.ScreenConstants.E, 0);
 
     public ItemNode() {
-        this.a.setDefaultColor(new Color4(255, 255, 255, 100));
-        this.a.alpha(0.0f);
+        this.ItemNode.setDefaultColor(new Color4(255, 255, 255, 100));
+        this.ItemNode.alpha(0.0f);
         this.b = new C0093a(com.censivn.C3DEngine.b.b.ScreenConstants.a(20.0f), com.censivn.C3DEngine.b.b.ScreenConstants.E, 1);
-        this.b.setDefaultColor(new Color4(255, 255, 255, 100));
-        this.b.alpha(0.0f);
+        this.ItemContainerNode.setDefaultColor(new Color4(255, 255, 255, 100));
+        this.ItemContainerNode.alpha(0.0f);
         addChild(this.a);
         addChild(this.b);
         this.c = new ItemContainerNode() { // from class: com.tsf.shell.f.e.e.ItemNode.1
@@ -72,23 +72,23 @@ public class ItemNode extends BaseRenderable {
             this.d = true;
             removeFromParent();
             float fA = com.censivn.C3DEngine.b.b.ScreenConstants.C + a();
-            this.a.points().setYPX(0, fA);
-            this.a.points().setYPX(1, fA);
-            this.b.points().setYPX(0, fA);
-            this.b.points().setYPX(1, fA);
-            this.a.points().setYPX(2, com.censivn.C3DEngine.b.b.ScreenConstants.B);
-            this.a.points().setYPX(3, com.censivn.C3DEngine.b.b.ScreenConstants.B);
-            this.b.points().setYPX(2, com.censivn.C3DEngine.b.b.ScreenConstants.B);
-            this.b.points().setYPX(3, com.censivn.C3DEngine.b.b.ScreenConstants.B);
-            this.a.updatePointsVBO();
-            this.b.updatePointsVBO();
-            this.a.calAABB(6.0f, 1.0f, 1.0f);
-            this.b.calAABB(6.0f, 1.0f, 1.0f);
+            this.ItemNode.points().setYPX(0, fA);
+            this.ItemNode.points().setYPX(1, fA);
+            this.ItemContainerNode.points().setYPX(0, fA);
+            this.ItemContainerNode.points().setYPX(1, fA);
+            this.ItemNode.points().setYPX(2, com.censivn.C3DEngine.b.b.ScreenConstants.B);
+            this.ItemNode.points().setYPX(3, com.censivn.C3DEngine.b.b.ScreenConstants.B);
+            this.ItemContainerNode.points().setYPX(2, com.censivn.C3DEngine.b.b.ScreenConstants.B);
+            this.ItemContainerNode.points().setYPX(3, com.censivn.C3DEngine.b.b.ScreenConstants.B);
+            this.ItemNode.updatePointsVBO();
+            this.ItemContainerNode.updatePointsVBO();
+            this.ItemNode.calAABB(6.0f, 1.0f, 1.0f);
+            this.ItemContainerNode.calAABB(6.0f, 1.0f, 1.0f);
             com.tsf.shell.manager.app.TaskScheduler.a(this);
             com.tsf.shell.manager.app.StateManager.b(this.a);
             com.tsf.shell.manager.app.StateManager.b(this.b);
-            this.a.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
-            this.b.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A;
+            this.ItemNode.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
+            this.ItemContainerNode.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A;
         }
     }
 
@@ -116,7 +116,7 @@ public class ItemNode extends BaseRenderable {
 
         @Override // com.tsf.shell.f.e.e.ItemRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
         public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
-            w.a();
+            HapticFeedbackManager.a();
             ItemNode.this.c.b = fVar;
             ItemNode.this.c.c = this.a;
             com.censivn.C3DEngine.C3DEngine.a().b(ItemNode.this.c, 400L);

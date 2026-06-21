@@ -22,7 +22,7 @@ import java.util.Iterator;
 public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegistryManager.a, KeyEventListener.a, ToastOverlayController.a {
     private static A e;
     private BaseRenderable a;
-    private h b;
+    private LassoSelectionHandler b;
     private String c;
     private String d;
     private boolean f;
@@ -37,7 +37,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
 
         @Override // java.util.Comparator
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public int compare(i iVar, i iVar2) {
+        public int compare(IRenderable iVar, i iVar2) {
             float f = (com.censivn.C3DEngine.b.b.ScreenConstants.I - (iVar.position().y * com.censivn.C3DEngine.b.b.ScreenConstants.F)) + iVar.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.H;
             float f2 = (com.censivn.C3DEngine.b.b.ScreenConstants.I - (iVar2.position().y * com.censivn.C3DEngine.b.b.ScreenConstants.F)) + iVar2.position().x + com.censivn.C3DEngine.b.b.ScreenConstants.H;
             if (f > f2) {
@@ -67,10 +67,10 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             }
         };
         this.b = new KeyEventListener();
-        this.b.a(this.a);
-        this.b.a(this);
-        this.b.a(true);
-        this.a.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.a) { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2
+        this.WidgetFeatureConfig.a(this.a);
+        this.WidgetFeatureConfig.a(this);
+        this.WidgetFeatureConfig.a(true);
+        this.ToastOverlayController.setMouseEventListener(new com.censivn.C3DEngine.b.MultiSelectLinePicker.MouseEventListener(this.a) { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2
             boolean a = false;
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -80,24 +80,24 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-                if (!MultiSelectLinePicker.this.b.a()) {
-                    MultiSelectLinePicker.this.b.a(motionEvent, motionEvent2);
+                if (!MultiSelectLinePicker.this.WidgetFeatureConfig.a()) {
+                    MultiSelectLinePicker.this.WidgetFeatureConfig.a(motionEvent, motionEvent2);
                     return;
                 }
                 if (!this.a) {
                     final MotionEvent motionEventObtain = MotionEvent.obtain(motionEvent);
                     final MotionEvent motionEventObtain2 = MotionEvent.obtain(motionEvent2);
-                    final float[] fArrA = x.a(motionEvent);
+                    final float[] fArrA = GraphicsEngineBridge.a(motionEvent);
                     this.a = true;
                     com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.2.1
                         @Override // java.lang.Runnable
                         public void run() {
                             com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
-                            MultiSelectLinePicker.this.a.removeFromParent();
+                            MultiSelectLinePicker.this.ToastOverlayController.removeFromParent();
                             gVarN.a(MultiSelectLinePicker.this.a);
-                            MultiSelectLinePicker.this.a.position().x = fArrA[0];
-                            MultiSelectLinePicker.this.a.position().y = fArrA[1];
-                            MultiSelectLinePicker.this.b.a(motionEventObtain, motionEventObtain2);
+                            MultiSelectLinePicker.this.ToastOverlayController.position().x = fArrA[0];
+                            MultiSelectLinePicker.this.ToastOverlayController.position().y = fArrA[1];
+                            MultiSelectLinePicker.this.WidgetFeatureConfig.a(motionEventObtain, motionEventObtain2);
                         }
                     });
                 }
@@ -105,7 +105,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
-                MultiSelectLinePicker.this.b.a(motionEvent);
+                MultiSelectLinePicker.this.WidgetFeatureConfig.a(motionEvent);
                 MultiSelectLinePicker.this.c();
                 this.a = false;
             }
@@ -118,15 +118,15 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
 
     public void b() {
         if (!this.f) {
-            this.g = com.tsf.shell.manager.app.Notifier.a(this.g, x.c(b.i.notic_line_picker_notic));
+            this.g = com.tsf.shell.manager.app.Notifier.a(this.g, GraphicsEngineBridge.c(b.i.notic_line_picker_notic));
             this.f = true;
-            this.a.position().x = 0.0f;
-            this.a.position().y = 0.0f;
-            this.a.removeFromParent();
+            this.ToastOverlayController.position().x = 0.0f;
+            this.ToastOverlayController.position().y = 0.0f;
+            this.ToastOverlayController.removeFromParent();
             com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
             com.tsf.shell.manager.app.TaskScheduler.a(this.a);
-            this.a.setFocus();
-            this.a.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
+            this.ToastOverlayController.setFocus();
+            this.ToastOverlayController.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
             com.tsf.shell.manager.app.ObserverManager.a(this);
             A();
         }
@@ -148,7 +148,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             com.tsf.shell.manager.app.Notifier.b(this.g);
             this.f = false;
             com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
-            this.a.removeFromParent();
+            this.ToastOverlayController.removeFromParent();
             com.tsf.shell.manager.app.ObserverManager.b(this);
             A();
         }
@@ -162,7 +162,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.tsf.shell.f.e.h.PhotoPicker
-    public void a(m mVar) {
+    public void a(ILassoSelectable mVar) {
         if (this.h == null) {
             this.h = new ArrayList<>();
         }
@@ -174,29 +174,29 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
             com.tsf.shell.f.i.PageItem bVar2 = (com.tsf.shell.f.i.PageItem) mVar;
             this.i = true;
             bVar2.setDefaultColor(h.a);
-            this.h.add(bVar2);
+            this.LassoSelectionHandler.add(bVar2);
             return;
         }
         if (mVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
             com.tsf.shell.f.i.PageItem bVar3 = (com.tsf.shell.f.i.PageItem) mVar;
             this.i = true;
             bVar3.setDefaultColor(h.a);
-            this.h.add(bVar3);
+            this.LassoSelectionHandler.add(bVar3);
         }
     }
 
     @Override // com.tsf.shell.f.e.h.PhotoPicker
     public void f() {
-        Iterator<com.tsf.shell.f.i.PageItem> it = this.h.iterator();
+        Iterator<com.tsf.shell.f.i.PageItem> it = this.LassoSelectionHandler.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
         }
-        this.h.clear();
+        this.LassoSelectionHandler.clear();
     }
 
     @Override // com.tsf.shell.f.e.h.PhotoPicker
-    public n l_() {
-        return new n(this.a, this);
+    public LassoContextMenu l_() {
+        return new LassoContextMenu(this.a, this);
     }
 
     @Override // com.tsf.shell.f.e.LassoContextMenu.a
@@ -208,7 +208,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                 arrayList.add(bVar);
             }
         }
-        this.h.clear();
+        this.LassoSelectionHandler.clear();
         Iterator<com.tsf.shell.f.i.PageItem> it = arrayList.iterator();
         while (it.hasNext()) {
             it.next().clearDefaultColor();
@@ -216,20 +216,20 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
         switch (i) {
             case 0:
                 if (arrayList.size() > 1 && arrayList.get(0).z() != null) {
-                    com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC(arrayList.get(0).z(), true);
+                    com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.WidgetFeatureConfig.DesktopTouchHandlerC(arrayList.get(0).z(), true);
                     Collections.sort(arrayList, e);
                     cVar.c();
                     cVar.a(arrayList);
                 } else {
-                    com.tsf.shell.e.a(b.i.notic_arrangement_error);
+                    com.tsf.shell.WidgetRegistryManager.a(b.i.notic_arrangement_error);
                 }
                 break;
             case 1:
-                com.tsf.shell.e.a(this.c);
+                com.tsf.shell.WidgetRegistryManager.a(this.c);
                 break;
             case 2:
                 final ArrayList arrayList2 = (ArrayList) arrayList.clone();
-                com.tsf.shell.e.a(b.i.pop_menu_delete_notic, b.i.public_action_ok, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.3
+                com.tsf.shell.WidgetRegistryManager.a(b.i.pop_menu_delete_notic, b.i.public_action_ok, b.i.public_action_cancel, new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.3
                     @Override // java.lang.Runnable
                     public void run() {
                         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.r.c.MultiSelectLinePicker.3.1
@@ -237,7 +237,7 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
                             public void run() {
                                 Iterator it2 = arrayList2.iterator();
                                 while (it2.hasNext()) {
-                                    g.a((com.tsf.shell.f.i.PageItem) it2.next(), (Runnable) null);
+                                    WidgetDeleteAnimationUtil.a((com.tsf.shell.f.i.PageItem) it2.next(), (Runnable) null);
                                 }
                             }
                         });
@@ -289,6 +289,6 @@ public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegis
 
     @Override // com.censivn.C3DEngine.b.c.WindowManager.a
     public void a(int i, int i2, int i3, int i4) {
-        this.a.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
+        this.ToastOverlayController.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
     }
 }

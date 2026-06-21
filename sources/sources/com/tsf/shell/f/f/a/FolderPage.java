@@ -35,7 +35,7 @@ import com.tsf.shell.f.f.a.PageContainerView0133a;
 import com.tsf.shell.f.f.a.InterfaceC0101a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, InterfaceC0101a, c.a, d.a {
+public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements KeyboardHandler.a, InterfaceC0101a, AppListModel.a, FolderManager.a {
     public static int A;
     public static int B;
     public static int C;
@@ -59,15 +59,15 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     protected C0133a I;
     private BaseRenderable K;
     private BaseRenderable L;
-    private a M;
-    private a N;
+    private ToastOverlayController M;
+    private ToastOverlayController N;
     private com.tsf.shell.f.f.a._a.DrawerItemContainer O;
     private int P;
     private com.tsf.shell.f.e.PageIndicatorStrip T;
     private com.tsf.shell.f.f.a.d.DrawerSortManager U;
     private FolderManager V;
-    private ArrayList<a> W;
-    private l X;
+    private ArrayList<ToastOverlayController> W;
+    private DrawerTransitionManager X;
     private BaseRenderable Y;
     private com.censivn.C3DEngine.b.g.TweenParams Z;
     private com.censivn.C3DEngine.b.g.TweenParams aa;
@@ -76,9 +76,9 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private com.censivn.C3DEngine.b.d.MouseEventListener ae;
     private Runnable af;
     private float ag;
-    private f ai;
-    private g aj;
-    private e ak;
+    private PageGridRenderer ai;
+    private FolderRenameDialog aj;
+    private DragOverlayElement ak;
     private B al;
     private C0133a ao;
     private GridRenderable aq;
@@ -100,16 +100,16 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private Object at = new Object();
     private boolean av = false;
 
-    public i a(com.tsf.shell.f.i.PageItem bVar) {
+    public IRenderable a(com.tsf.shell.f.i.PageItem bVar) {
         i iVar;
         if (bVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
             com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) bVar;
             if (this.G == null) {
-                this.G = new com.tsf.shell.f.i.b.e.DrawerItemButton();
+                this.G = new com.tsf.shell.f.i.b.DragOverlayElement.DrawerItemButton();
             }
-            this.G.k.textures().clear();
+            this.G.GridRenderable.textures().clear();
             if (bVar2.aC() && !bVar2.t()) {
-                this.G.k.textures().addElement(bVar2.k.textures().get(0).textureElement);
+                this.G.GridRenderable.textures().addElement(bVar2.GridRenderable.textures().get(0).textureElement);
             }
             iVar = this.G;
         } else {
@@ -133,11 +133,11 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         return iVar;
     }
 
-    public void e(i iVar) {
+    public void e(IRenderable iVar) {
         if (iVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
-            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).k.textures().clear();
+            ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).GridRenderable.textures().clear();
         } else {
-            ((k) iVar).textures().clear();
+            ((GridRenderable) iVar).textures().clear();
         }
         iVar.removeFromParent();
     }
@@ -181,14 +181,14 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     public void a(com.tsf.shell.f.i.PageItem bVar, boolean z2, float f, float f2) {
         if (bVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) {
-            com.tsf.shell.manager.app.WidgetAnimator.a(bVar, f, f2, z2, 3);
+            com.tsf.shell.manager.app.WidgetAnimator.a(bVar, PageGridRenderer, f2, z2, 3);
         } else {
-            com.tsf.shell.manager.app.WidgetAnimator.a(bVar, f, f2, z2, 3, 5);
+            com.tsf.shell.manager.app.WidgetAnimator.a(bVar, PageGridRenderer, f2, z2, 3, 5);
         }
     }
 
     private void aP() {
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams();
         dVar.l(v);
         dVar.m(v);
         dVar.h(w);
@@ -197,7 +197,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void aQ() {
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.1
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 FolderPage.this.N();
@@ -211,7 +211,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void aR() {
-        this.ao = com.tsf.shell.manager.app.Notifier.a(this.ao, x.c(b.i.text_app_drawer_setting));
+        this.ao = com.tsf.shell.manager.app.Notifier.a(this.ao, GraphicsEngineBridge.c(b.i.text_app_drawer_setting));
     }
 
     private void aS() {
@@ -250,11 +250,11 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         return this.U;
     }
 
-    public b ao() {
+    public PageItemList ao() {
         return this.al;
     }
 
-    public a ap() {
+    public ToastOverlayController ap() {
         return this.M;
     }
 
@@ -407,7 +407,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public void au() {
         this.R = false;
         this.Q = true;
-        com.tsf.shell.d.ShellDataParser().a("PageApplication");
+        com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -418,7 +418,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     /* JADX INFO: Access modifiers changed from: private */
     public void aU() {
-        com.tsf.shell.d.ShellDataParser().b("PageApplication");
+        com.tsf.shell.AppClassifier.ShellDataParser().b("PageApplication");
         this.R = true;
         N();
         this.X.f();
@@ -494,7 +494,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         if (!com.tsf.shell.manager.b.ConfigManager.R()) {
             c(false, false);
         }
-        this.T = new com.tsf.shell.f.e.PageIndicatorStrip(z2) { // from class: com.tsf.shell.f.f.a.FolderPage.8
+        this.T = new com.tsf.shell.f.DragOverlayElement.PageIndicatorStrip(z2) { // from class: com.tsf.shell.f.f.a.FolderPage.8
             @Override // com.tsf.shell.f.e.PageIndicatorStrip
             public void a() {
                 FolderPage.this.at();
@@ -505,11 +505,11 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         F = 350.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
         this.Y = new BaseRenderable();
         this.Y.name(J);
-        this.ae = new com.censivn.C3DEngine.b.d.MouseEventListener(this.Y);
+        this.ae = new com.censivn.C3DEngine.b.AppClassifier.MouseEventListener(this.Y);
         this.ad = f(this.Y);
         this.Y.setMouseEventListener(this.ad);
         this.Y.mouseEnabled(true);
-        this.c.addChild(this.Y);
+        this.PageContainerView.addChild(this.Y);
         this.K = new BaseRenderable();
         this.L = new BaseRenderable() { // from class: com.tsf.shell.f.f.a.FolderPage.9
             @Override // com.censivn.C3DEngine.b.f.IRenderable
@@ -555,12 +555,12 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.K.addChild(this.T);
         this.K.addChild(this.aj);
         this.K.addChild(this.ak);
-        this.c.addChild(this.K);
+        this.PageContainerView.addChild(this.K);
         aW();
         aT();
         this.ai = new PageGridRenderer(this);
         this.ai.i();
-        this.c.addChild(this.ai);
+        this.PageContainerView.addChild(this.ai);
         aZ();
     }
 
@@ -591,7 +591,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     public void ay() {
-        Iterator<a> it = this.W.iterator();
+        Iterator<ToastOverlayController> it = this.W.iterator();
         while (it.hasNext()) {
             it.next().a(this.al.a());
         }
@@ -626,7 +626,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
     private void bc() {
         this.ab = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
-        this.Z = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.11
+        this.Z = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.11
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f) {
                 FolderPage.this.ag = FolderPage.this.ac * FolderPage.this.P * f;
@@ -637,10 +637,10 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                com.censivn.C3DEngine.b.g.TweenUtils.a(FolderPage.this.ab, h.D, FolderPage.this.aa);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(FolderPage.this.ab, FolderPage.D, FolderPage.this.aa);
             }
         };
-        this.aa = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.12
+        this.aa = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.12
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void b(float f) {
                 FolderPage.this.ag = FolderPage.this.ac * FolderPage.this.P * (1.0f - f);
@@ -704,7 +704,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     @Override // com.tsf.shell.f.f.a.InterfaceC0101a
-    public a i_() {
+    public ToastOverlayController i_() {
         return bg();
     }
 
@@ -748,21 +748,21 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     }
 
     private void bf() {
-        this.X = new l();
+        this.X = new DrawerTransitionManager();
     }
 
-    public l aC() {
+    public DrawerTransitionManager aC() {
         return this.X;
     }
 
     public com.tsf.shell.f.i.b.d.FolderShortcutItem b(ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList) {
-        return a(x.c(b.i.widget_folder), ap(), arrayList);
+        return a(GraphicsEngineBridge.c(b.i.widget_folder), ap(), arrayList);
     }
 
     private com.tsf.shell.f.i.b.d.FolderShortcutItem a(String str, A aVar, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList) {
         LauncherDrawerFolder3DInfo launcherDrawerFolder3DInfo = new LauncherDrawerFolder3DInfo(false);
         launcherDrawerFolder3DInfo.title = str;
-        com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = new com.tsf.shell.f.i.b.d.FolderShortcutItem(launcherDrawerFolder3DInfo);
+        com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = new com.tsf.shell.f.i.b.AppClassifier.FolderShortcutItem(launcherDrawerFolder3DInfo);
         bVar.setMouseEventListener(f(bVar));
         aVar.addChildAt(bVar, 0);
         a(bVar, aVar, 0);
@@ -775,7 +775,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public com.tsf.shell.f.i.b.d.FolderShortcutItem a(String str, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList, boolean z2) {
         LauncherDrawerFolder3DInfo launcherDrawerFolder3DInfo = new LauncherDrawerFolder3DInfo(false);
         launcherDrawerFolder3DInfo.title = str;
-        com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = new com.tsf.shell.f.i.b.d.FolderShortcutItem(launcherDrawerFolder3DInfo);
+        com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = new com.tsf.shell.f.i.b.AppClassifier.FolderShortcutItem(launcherDrawerFolder3DInfo);
         bVar.setMouseEventListener(f(bVar));
         if (z2) {
             this.al.a(bVar, 0);
@@ -793,7 +793,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             int iE = this.M.e();
             A aVarRemove = this.W.remove(0);
             float fAlpha = this.M.alpha();
-            Iterator<a> it = this.W.iterator();
+            Iterator<ToastOverlayController> it = this.W.iterator();
             while (it.hasNext()) {
                 it.next().destroy();
             }
@@ -842,7 +842,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.13
             @Override // java.lang.Runnable
             public void run() {
-                FolderPage.this.b(h.B, h.C);
+                FolderPage.this.b(h.B, FolderPage.C);
                 FolderPage.this.aD();
             }
         });
@@ -889,7 +889,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         this.X.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E, p, q, E);
     }
 
-    private a bg() {
+    private ToastOverlayController bg() {
         int size = this.W.size();
         A aVar = new PageContainerBase(this.X.h(), this);
         aVar.a(size);
@@ -922,7 +922,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public void aF() {
         this.R = false;
         this.Q = false;
-        com.tsf.shell.d.ShellDataParser().a("PageApplication");
+        com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -935,7 +935,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     public void aG() {
         this.R = false;
         this.Q = false;
-        com.tsf.shell.d.ShellDataParser().a("PageApplication");
+        com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -1063,7 +1063,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         return this.U.a(this.al.a(), bVar);
     }
 
-    public a e(int i) {
+    public ToastOverlayController e(int i) {
         int i2 = i / m;
         if (i2 >= this.W.size()) {
             return bg();
@@ -1098,7 +1098,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         e(i).a(bVar, i % m, false);
         bVar.K().index = i;
         bVar.a(this.h);
-        this.h.a((i) bVar);
+        this.FolderPage.a((IRenderable) bVar);
     }
 
     public void a(com.tsf.shell.f.i.PageItem bVar, com.tsf.shell.f.i.PageItem bVar2) {
@@ -1147,7 +1147,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 return true;
             }
             if (gVar.be()) {
-                this.I = com.tsf.shell.manager.app.Notifier.a(this.I, x.c(b.i.notic_uninstall_error), -52736, 2000);
+                this.I = com.tsf.shell.manager.app.Notifier.a(this.I, GraphicsEngineBridge.c(b.i.notic_uninstall_error), -52736, 2000);
                 return false;
             }
             gVar.bg();
@@ -1163,7 +1163,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
     private void e(final com.tsf.shell.f.i.PageItem bVar) {
         bVar.mouseEnabled(false);
         bVar.p_();
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.3
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.FolderPage.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 com.tsf.shell.manager.app.ServiceProvider.c().a(bVar.K());
@@ -1178,8 +1178,8 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
         com.censivn.C3DEngine.b.g.TweenUtils.a(bVar, VEasing.Back.easeIn, dVar);
     }
 
-    public com.censivn.C3DEngine.b.d.MouseEventListener f(i iVar) {
-        return new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.tsf.shell.f.f.a.FolderPage.4
+    public com.censivn.C3DEngine.b.d.MouseEventListener f(IRenderable iVar) {
+        return new com.censivn.C3DEngine.b.AppClassifier.MouseEventListener(iVar) { // from class: com.tsf.shell.f.f.a.FolderPage.4
             private float b;
             private com.tsf.shell.f.i.PageItem d;
             private com.tsf.shell.f.i.a.PageItemDropHandler g;
@@ -1199,7 +1199,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                     if (this.c instanceof com.tsf.shell.f.i.b.e.DrawerItemVisual) {
                         com.tsf.shell.f.i.b.e.DrawerItemVisual gVar = (com.tsf.shell.f.i.b.e.DrawerItemVisual) this.c;
                         if (gVar.aC()) {
-                            if (FolderPage.this.h.e()) {
+                            if (FolderPage.this.FolderPage.e()) {
                                 gVar.ap();
                                 return;
                             } else {
@@ -1246,10 +1246,10 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                     return;
                 }
                 if (this.e) {
-                    x.a(motionEvent2, this.i);
-                    if (this.d.a((int) this.i[0], (int) this.i[1]) == null) {
+                    GraphicsEngineBridge.a(motionEvent2, this.i);
+                    if (this.AppClassifier.a((int) this.i[0], (int) this.i[1]) == null) {
                         if (this.g != null) {
-                            this.g.a(motionEvent, motionEvent2);
+                            this.FolderRenameDialog.a(motionEvent, motionEvent2);
                             return;
                         }
                         return;
@@ -1257,14 +1257,14 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                         this.f = true;
                         this.e = false;
                         if (this.g != null) {
-                            this.g.a(false);
+                            this.FolderRenameDialog.a(false);
                         }
                         com.tsf.shell.manager.app.StateHub.C();
                         return;
                     }
                 }
                 if (this.f && this.g != null) {
-                    this.g.a(motionEvent, motionEvent2);
+                    this.FolderRenameDialog.a(motionEvent, motionEvent2);
                 }
             }
 
@@ -1293,12 +1293,12 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(final MotionEvent motionEvent, final MotionEvent motionEvent2, float f, float f2) {
                 if (FolderPage.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
-                    FolderPage.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
+                    FolderPage.this.ai.a((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, PageGridRenderer, f2);
                 }
                 com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.f.a.FolderPage.4.1
                     @Override // java.lang.Runnable
                     public void run() {
-                        if (com.censivn.C3DEngine.a.d.d().h() == this) {
+                        if (com.censivn.C3DEngine.a.AppClassifier.d().h() == this) {
                             if (!FolderPage.this.Q) {
                                 FolderPage.this.au();
                                 AnonymousClass4.this.b = FolderPage.this.ag = FolderPage.this.M.position().x;
@@ -1342,7 +1342,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (FolderPage.this.an && (this.c instanceof com.tsf.shell.f.i.ShortcutItem)) {
-                    FolderPage.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, f, f2);
+                    FolderPage.this.ai.b((com.tsf.shell.f.i.ShortcutItem) this.c, motionEvent, motionEvent2, PageGridRenderer, f2);
                 }
                 FolderPage.this.Q = false;
                 FolderPage.this.ag = 0.0f;
@@ -1365,7 +1365,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             this.M.g();
         }
         if (!this.R) {
-            com.tsf.shell.d.ShellDataParser().b("PageApplication");
+            com.tsf.shell.AppClassifier.ShellDataParser().b("PageApplication");
         }
     }
 
@@ -1376,7 +1376,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
             this.M.h();
         }
         if (!this.R) {
-            com.tsf.shell.d.ShellDataParser().a("PageApplication");
+            com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
         }
     }
 
@@ -1462,7 +1462,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements b.a, 
                 }
             }
             if (!aVarAp.visible()) {
-                com.tsf.shell.f.f.PageTransitionEffect lVarH = com.tsf.shell.manager.app.v.FlagHelper.b.h();
+                com.tsf.shell.f.f.PageTransitionEffect lVarH = com.tsf.shell.manager.app.v.FlagHelper.PageItemList.h();
                 lVarH.b((com.tsf.shell.f.f.WorkspacePage) this, false);
                 lVarH.a((com.tsf.shell.f.f.WorkspacePage) this, true);
                 aVarAp.a(true);

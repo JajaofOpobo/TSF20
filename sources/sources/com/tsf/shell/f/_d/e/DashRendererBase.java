@@ -8,7 +8,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DashRendererBase extends h {
+public class DashRendererBase extends GestureMenuRenderer {
     public static ArrayList<Number3d> a;
     public static float b;
     public static float c;

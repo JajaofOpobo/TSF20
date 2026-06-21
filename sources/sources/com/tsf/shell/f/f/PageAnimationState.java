@@ -79,7 +79,6 @@ public class PageAnimationState {
 
     public static class a {
         public Object a;
-        public TextureElement a;
 
         public void a() {
             if (this.b == null) {

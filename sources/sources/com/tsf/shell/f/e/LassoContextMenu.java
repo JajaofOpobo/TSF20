@@ -17,7 +17,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class LassoContextMenu implements b.a {
+public class LassoContextMenu implements KeyboardHandler.a {
     private static TextureElement a;
     private static TextureElement b;
     private static com.censivn.C3DEngine.b.f.BaseRenderable c;

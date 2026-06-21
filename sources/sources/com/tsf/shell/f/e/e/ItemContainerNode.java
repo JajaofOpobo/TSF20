@@ -91,7 +91,7 @@ public class ItemContainerNode extends BaseRenderable {
         if (f4 > this.e) {
             f4 = this.e;
         }
-        float fB = x.b(f2, f3, this.c, this.d);
+        float fB = GraphicsEngineBridge.b(f2, f3, this.c, this.d);
         float fAbs = (Math.abs(f2 - this.c) * f4) / fB;
         this.f = f2 > this.c ? fAbs + this.c : this.c - fAbs;
         float fAbs2 = (f4 * Math.abs(f3 - this.d)) / fB;

@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.f.BaseRenderable;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MenuItemHeader extends BaseRenderable {
     private com.tsf.shell.f.a.b.ShaderSlotElement a;
-    private i b;
+    private IRenderable b;
 
     public MenuItemHeader(float f, float f2) {
         this.a = new com.tsf.shell.f.a.b.ShaderSlotElement(f, f2, this.a);
@@ -18,7 +18,7 @@ public class MenuItemHeader extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         if (this.b != null) {
             final i iVar2 = this.b;
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._g.MenuItemHeader.1

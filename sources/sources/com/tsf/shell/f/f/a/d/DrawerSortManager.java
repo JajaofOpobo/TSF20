@@ -9,23 +9,24 @@ import com.tsf.shell.manager.app.DataCoordinator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import com.tsf.shell.f.f.a.d.a.DrawerEarliestSort;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerSortManager {
-    private e b;
-    private c d;
-    private d e;
+    private DrawerEarliestSort b;
+    private DrawerSortBase d;
+    private DrawerIndexSort e;
     private boolean a = false;
     private int f = -1;
-    private ArrayList<c> c = new ArrayList<>();
+    private ArrayList<DrawerSortBase> c = new ArrayList<>();
 
-    public DrawerSortManager(e eVar) {
+    public DrawerSortManager(DrawerEarliestSort eVar) {
         this.b = eVar;
-        this.c.add(new b(0));
+        this.c.add(new DrawerNameSort(0));
         this.c.add(new com.tsf.shell.f.f.a.d.a.DrawerEarliestSort(2));
-        this.c.add(new f(1));
+        this.c.add(new DrawerLatestSort(1));
         this.c.add(new com.tsf.shell.f.f.a.d.a.DrawerAlphabeticalSort(3));
-        this.e = new d(0);
+        this.e = new DrawerIndexSort(0);
         c(com.tsf.shell.manager.b.ConfigManager.an());
     }
 
@@ -33,11 +34,11 @@ public class DrawerSortManager {
         return this.c.size();
     }
 
-    public c a(int i) {
+    public DrawerSortBase a(int i) {
         return this.c.get(i);
     }
 
-    public c b() {
+    public DrawerSortBase b() {
         return this.d;
     }
 

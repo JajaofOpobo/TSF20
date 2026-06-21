@@ -12,7 +12,7 @@ import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
-import com.tsf.shell.f.i.A;
+import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.GraphicsEngineBridge;
@@ -46,7 +46,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
     private TextureElement f;
     private com.censivn.C3DEngine.b.d.MouseEventListener g;
     private e h;
-    private com.tsf.shell.f.i.A i;
+    private com.tsf.shell.f.i.MultiSelectController i;
     private ArrayList<Number3d> j;
     private float k;
     private float l;
@@ -208,14 +208,14 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
 
             @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerE
             public void b(MotionEvent motionEvent) {
-                com.tsf.shell.f.i.B bVarE = e(motionEvent);
+                com.tsf.shell.f.i.PageItem bVarE = e(motionEvent);
                 if (bVarE != null && c.this.i.e()) {
-                    ((com.tsf.shell.f.i.C) bVarE).ap();
+                    ((com.tsf.shell.f.i.ShortcutItem) bVarE).ap();
                 }
             }
         };
-        this.i = new com.tsf.shell.f.i.A(this, this) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.4
-            @Override // com.tsf.shell.f.i.A
+        this.i = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.4
+            @Override // com.tsf.shell.f.i.MultiSelectController
             public void a() {
                 c.this.f();
             }
@@ -351,7 +351,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
         h();
     }
 
-    public void a(com.tsf.shell.f.i.B bVar) {
+    public void a(com.tsf.shell.f.i.PageItem bVar) {
         this.j.add(bVar.position().m4clone());
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         dVar.e(0.0f);
@@ -361,8 +361,8 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
         h();
     }
 
-    public void a(ArrayList<com.tsf.shell.f.i.B> arrayList) {
-        for (com.tsf.shell.f.i.B bVar : arrayList) {
+    public void a(ArrayList<com.tsf.shell.f.i.PageItem> arrayList) {
+        for (com.tsf.shell.f.i.PageItem bVar : arrayList) {
             this.j.add(bVar.position().m4clone());
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
             dVar.e(0.0f);
@@ -581,7 +581,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
                 iVar.mouseEnabled(true);
                 iVar.removeFromParent();
                 this.O.a(iVar);
-                ((com.tsf.shell.f.i.B) iVar).ad();
+                ((com.tsf.shell.f.i.PageItem) iVar).ad();
             }
             this.j.clear();
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.7
@@ -646,12 +646,12 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
-    public void b(com.tsf.shell.f.i.B bVar) {
+    public void b(com.tsf.shell.f.i.PageItem bVar) {
         this.m = true;
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
-    public void c(com.tsf.shell.f.i.B bVar) {
+    public void c(com.tsf.shell.f.i.PageItem bVar) {
         this.m = false;
     }
 
@@ -665,7 +665,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
-    public void d(com.tsf.shell.f.i.B bVar) {
+    public void d(com.tsf.shell.f.i.PageItem bVar) {
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
@@ -681,11 +681,11 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
-    public void e(com.tsf.shell.f.i.B bVar) {
+    public void e(com.tsf.shell.f.i.PageItem bVar) {
     }
 
     @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerD
-    public void a(com.tsf.shell.f.i.B bVar, Number3d number3d) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, Number3d number3d) {
     }
 
     @Override // com.censivn.C3DEngine.b.c.WindowManager.a

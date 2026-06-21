@@ -106,13 +106,8 @@ public class DrawerItemVisual extends DrawerItemBase {
         return this.a.b();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem
-    public String c() {
+    public String getText() {
         return this.a != null ? this.a.e : "";
-    }
-
-    public String c() {
-        return r();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
@@ -163,7 +158,7 @@ public class DrawerItemVisual extends DrawerItemBase {
         return fVarB;
     }
 
-    public g ba() {
+    public DrawerItemVisual ba() {
         LauncherShortcutAppInfo launcherShortcutAppInfo = new LauncherShortcutAppInfo();
         launcherShortcutAppInfo.title = bd().e;
         g gVar = new DrawerItemVisual(launcherShortcutAppInfo, this.a, false);

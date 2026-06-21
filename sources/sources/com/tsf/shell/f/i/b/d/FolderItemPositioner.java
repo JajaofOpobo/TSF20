@@ -26,7 +26,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class FolderItemPositioner implements e.a {
+public class FolderItemPositioner implements WindowManager.a {
     public static FolderItemDotIndicator N;
     public static FolderItemDotIndicator O;
     public static float P;
@@ -39,7 +39,7 @@ public class FolderItemPositioner implements e.a {
     public com.censivn.C3DEngine.b.f.BaseRenderable G;
     public com.censivn.C3DEngine.b.f.GridRenderable H;
     public FolderItemIndicator I;
-    public n J;
+    public EmptyRenderable J;
     public int K;
     public ArrayList<ThemeFolderDescription.SystemFolderChild> L;
     public com.censivn.C3DEngine.b.d.MouseEventListener M;
@@ -71,7 +71,6 @@ public class FolderItemPositioner implements e.a {
     public float v;
     public float w;
     public float x;
-    public TextureElement a;
     private boolean V = false;
     private ThemeFolderManager Y = ThemeManager.mix.folder;
 

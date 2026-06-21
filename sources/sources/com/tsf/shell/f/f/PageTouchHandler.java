@@ -20,7 +20,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowManager.a {
+public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngine.b.c.WindowManager.a {
     public static int a;
     public static int b;
     public static float c;
@@ -34,18 +34,18 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     private ArrayList<Integer> L;
     private Runnable M;
     public com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler d;
-    private n f;
+    private PageTouchHandler f;
     private com.tsf.shell.f.e.PageIndicatorStrip g;
     private com.censivn.C3DEngine.b.f.BaseRenderable h;
     private com.censivn.C3DEngine.b.f.SortedContainerRenderable i;
     private com.tsf.shell.f.f.a.FolderPage j;
-    private ArrayList<g> k;
+    private ArrayList<WorkspacePage> k;
     private ArrayList<Integer> l;
-    private g m;
+    private WorkspacePage m;
     private int n;
     private com.tsf.shell.e.Workspace3D p;
-    private g q;
-    private g r;
+    private WorkspacePage q;
+    private WorkspacePage r;
     private int s;
     private Runnable u;
     private com.tsf.shell.manager.f.ScreenFadeController v;
@@ -55,12 +55,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     private com.censivn.C3DEngine.b.d.MouseEventListener z;
     private boolean o = false;
     private int t = 2;
-    private ArrayList<g> K = new ArrayList<>();
+    private ArrayList<WorkspacePage> K = new ArrayList<>();
     private boolean N = false;
     boolean e = true;
     private boolean O = false;
     private Object I = this;
-    private com.tsf.shell.f.e.e.ItemNode H = new com.tsf.shell.f.e.e.ItemNode() { // from class: com.tsf.shell.f.f.PageTouchHandler.1
+    private com.tsf.shell.f.e.e.ItemNode H = new com.tsf.shell.f.e.TransitionConfig.ItemNode() { // from class: com.tsf.shell.f.f.PageTouchHandler.1
         @Override // com.tsf.shell.f.e.e.ItemNode
         public void a(int i, Object obj) {
             c();
@@ -69,16 +69,16 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
 
         @Override // com.tsf.shell.f.e.e.ItemNode
         public float a() {
-            return com.tsf.shell.manager.app.WidgetPanelController.a.j() ? com.censivn.C3DEngine.b.b.ScreenConstants.g + (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2) : com.censivn.C3DEngine.b.b.ScreenConstants.h * 2;
+            return com.tsf.shell.manager.app.WidgetPanelController.PageShaderNode.j() ? com.censivn.C3DEngine.b.b.ScreenConstants.g + (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2) : com.censivn.C3DEngine.b.b.ScreenConstants.h * 2;
         }
     };
-    private o G = new PageEventDispatcher();
+    private PageEventDispatcher G = new PageEventDispatcher();
 
     public PageTouchHandler() {
-        this.G.a(new o.a() { // from class: com.tsf.shell.f.f.PageTouchHandler.8
+        this.G.a(new PageEventDispatcher.a() { // from class: com.tsf.shell.f.f.PageTouchHandler.8
             @Override // com.tsf.shell.f.f.PageEventDispatcher.a
-            public void a(g gVar) {
-                PageTouchHandler.this.g.b(gVar.r() - 1);
+            public void a(WorkspacePage gVar) {
+                PageTouchHandler.this.WorkspacePage.b(gVar.r() - 1);
             }
         });
         com.tsf.shell.f.i.a.WallpaperDragHandler.d = this;
@@ -97,7 +97,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         return this.H;
     }
 
-    public o c() {
+    public PageEventDispatcher c() {
         return this.G;
     }
 
@@ -110,12 +110,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     public void a(int i) {
-        this.g.a(i - 1);
+        this.WorkspacePage.a(i - 1);
     }
 
     public void e() {
-        g.w();
-        this.j.av();
+        WorkspacePage.w();
+        this.PageAnimationState.av();
     }
 
     @Override // com.censivn.C3DEngine.b.c.WindowManager.a
@@ -139,7 +139,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         a = (int) ((com.censivn.C3DEngine.b.b.ScreenConstants.F * 0.28f) + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 90.0f));
         b = (int) ((com.censivn.C3DEngine.b.b.ScreenConstants.G * 0.28f) + (com.censivn.C3DEngine.b.b.ScreenConstants.b * 90.0f));
         c = (a - (com.censivn.C3DEngine.b.b.ScreenConstants.b * 90.0f)) / 2.0f;
-        g.y();
+        WorkspacePage.y();
         if (this.F != null) {
             this.F.a(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G);
         }
@@ -147,26 +147,26 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         }
         if (this.x != null) {
-            this.x.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
+            this.GraphicsEngineBridge.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
         }
         if (this.w != null) {
-            this.w.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
+            this.HapticFeedbackManager.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
         }
     }
 
     public com.censivn.C3DEngine.b.f.BaseRenderable f() {
-        j.a();
-        this.d = new com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler();
-        this.g = new com.tsf.shell.f.e.PageIndicatorStrip(true) { // from class: com.tsf.shell.f.f.PageTouchHandler.10
+        PageAnimationState.a();
+        this.d = new com.tsf.shell.f.f.TransitionManager.WorkspaceShortcutTouchHandler();
+        this.g = new com.tsf.shell.f.TransitionConfig.PageIndicatorStrip(true) { // from class: com.tsf.shell.f.f.PageTouchHandler.10
             @Override // com.tsf.shell.f.e.PageIndicatorStrip
             public void a() {
-                com.tsf.shell.manager.app.WidgetPanelController.a.k();
+                com.tsf.shell.manager.app.WidgetPanelController.PageShaderNode.k();
             }
         };
-        this.i = new com.censivn.C3DEngine.b.f.SortedContainerRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.11
+        this.i = new com.censivn.C3DEngine.b.TransitionRenderer.SortedContainerRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.11
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                PageTouchHandler.this.x.c();
+                PageTouchHandler.this.GraphicsEngineBridge.c();
                 PageTouchHandler.this.M();
             }
 
@@ -175,8 +175,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 PageTouchHandler.this.N();
             }
         };
-        this.D = new com.tsf.shell.f.g.a.GestureMenuOverlay();
-        this.F = new com.tsf.shell.f.f.d.ScrollStateAggregator(this) { // from class: com.tsf.shell.f.f.PageTouchHandler.12
+        this.D = new com.tsf.shell.f.g.PageShaderNode.GestureMenuOverlay();
+        this.F = new com.tsf.shell.f.f.ItemTransitionManager.ScrollStateAggregator(this) { // from class: com.tsf.shell.f.f.PageTouchHandler.12
             @Override // com.tsf.shell.f.f.d.ScrollStateAggregator
             public void a() {
                 com.tsf.shell.manager.app.WidgetAnimator.c();
@@ -186,7 +186,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             @Override // com.tsf.shell.f.f.d.ScrollStateAggregator
             public void b() {
                 PageTouchHandler.this.t = 1;
-                PageTouchHandler.this.i.setAnimationObjectState(false);
+                PageTouchHandler.this.ItemPageTransition.setAnimationObjectState(false);
                 if (PageTouchHandler.this.C != null) {
                     PageTouchHandler.this.C.run();
                     PageTouchHandler.this.C = null;
@@ -200,13 +200,13 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         };
         S();
         this.w = new PageRenderBuffer();
-        this.h = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.13
+        this.h = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.13
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             @SuppressLint({"WrongCall"})
             public void onDrawStart() {
             }
         };
-        this.E = new com.tsf.shell.manager.r.c.MultiSelectLinePicker() { // from class: com.tsf.shell.f.f.PageTouchHandler.14
+        this.E = new com.tsf.shell.manager.r.TransitionManager.MultiSelectLinePicker() { // from class: com.tsf.shell.f.f.PageTouchHandler.14
             @Override // com.tsf.shell.manager.r.c.MultiSelectLinePicker
             public void e() {
             }
@@ -216,13 +216,13 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             }
         };
         this.x = new TransitionManager();
-        this.i.setAnimationObjectState(true);
+        this.ItemPageTransition.setAnimationObjectState(true);
         this.p = Home.b().l();
-        this.B = new com.censivn.C3DEngine.b.f.BaseRenderable();
-        this.v = new com.tsf.shell.manager.f.ScreenFadeController(this.B);
+        this.B = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable();
+        this.v = new com.tsf.shell.manager.TransitionRenderer.ScreenFadeController(this.B);
         this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
-        this.y = new com.tsf.shell.f.i.a.WallpaperDragHandler(this.B);
-        this.z = new com.censivn.C3DEngine.b.d.MouseEventListener(this.B);
+        this.y = new com.tsf.shell.f.i.PageShaderNode.WallpaperDragHandler(this.B);
+        this.z = new com.censivn.C3DEngine.b.ItemTransitionManager.MouseEventListener(this.B);
         this.B.setMouseEventListener(this.y);
         this.B.mouseEnabled(false);
         this.A = new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.15
@@ -234,7 +234,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                         if (PageTouchHandler.this.m.s() != null && PageTouchHandler.this.m != PageTouchHandler.this.q) {
                             if (!PageTouchHandler.this.m.s().a(aVar.K().width * aVar.K().height, aVar.g)) {
                                 PageTouchHandler.this.y();
-                                com.tsf.shell.e.a(b.i.out_of_space);
+                                com.tsf.shell.TransitionConfig.a(b.i.out_of_space);
                             }
                         }
                         PageTouchHandler.this.x();
@@ -246,18 +246,18 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 PageTouchHandler.this.x();
             }
         };
-        for (int i = 0; i < this.k.size(); i++) {
-            g gVar = this.k.get(ItemPageTransition);
+        for (int i = 0; i < this.PageContentType.size(); i++) {
+            g gVar = this.PageContentType.get(ItemPageTransition);
             gVar.x();
             d(gVar);
         }
-        this.h.addChild(this.B);
-        this.h.addChild(this.i);
+        this.PageConfig.addChild(this.B);
+        this.PageConfig.addChild(this.i);
         this.x = new TransitionManager();
         ac();
         this.v.a(this.m);
         if (this.r == null) {
-            a(this.k.get(1));
+            a(this.PageContentType.get(1));
         }
         this.r.D();
         ae();
@@ -279,24 +279,24 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void c(g gVar) {
-        this.k.remove(gVar);
+    public void c(WorkspacePage gVar) {
+        this.PageContentType.remove(gVar);
         this.K.add(gVar);
     }
 
-    private g e(int i) {
+    private WorkspacePage e(int i) {
         g gVarW = W();
         gVarW.b(ItemPageTransition);
-        this.k.add(gVarW);
+        this.PageContentType.add(gVarW);
         return gVarW;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public g V() {
+    public WorkspacePage V() {
         if (this.K.size() == 0) {
             g gVarW = W();
             gVarW.b(Z().intValue());
-            this.k.add(gVarW);
+            this.PageContentType.add(gVarW);
             return gVarW;
         }
         g gVarRemove = this.K.remove(0);
@@ -305,15 +305,15 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         return gVarRemove;
     }
 
-    private g W() {
+    private WorkspacePage W() {
         return new PageContentType();
     }
 
-    private g X() {
+    private WorkspacePage X() {
         if (this.j == null) {
-            this.j = new com.tsf.shell.f.f.a.FolderPage();
-            this.j.b(-1);
-            this.k.add(this.j);
+            this.j = new com.tsf.shell.f.f.PageShaderNode.FolderPage();
+            this.PageAnimationState.b(-1);
+            this.PageContentType.add(this.j);
         }
         return this.j;
     }
@@ -321,20 +321,20 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     private void Y() {
         this.l = new ArrayList<>();
         for (int i = 0; i < 15; i++) {
-            this.l.add(Integer.valueOf(ItemPageTransition));
+            this.PageTransitionEffect.add(Integer.valueOf(ItemPageTransition));
         }
     }
 
     private Integer a(Integer num) {
-        if (!this.l.contains(num)) {
-            return this.l.remove(0);
+        if (!this.PageTransitionEffect.contains(num)) {
+            return this.PageTransitionEffect.remove(0);
         }
-        this.l.remove(num);
+        this.PageTransitionEffect.remove(num);
         return num;
     }
 
     private Integer Z() {
-        return this.l.remove(0);
+        return this.PageTransitionEffect.remove(0);
     }
 
     public boolean b(int i) {
@@ -392,30 +392,30 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         if (this.j == null) {
             X();
         }
-        int size2 = this.k.size();
+        int size2 = this.PageContentType.size();
         for (int i3 = 0; i3 < size2; i3++) {
-            g gVar = this.k.get(i3);
+            g gVar = this.PageContentType.get(i3);
             gVar.a(i3);
             if (i3 > 0) {
                 if (i3 == 1) {
                     if (size2 == 2) {
-                        gVar.b((g) null);
-                        gVar.a((g) null);
+                        gVar.b((WorkspacePage) null);
+                        gVar.a((WorkspacePage) null);
                     } else {
-                        gVar.b(this.k.get(i3 + 1));
-                        gVar.a(this.k.get(size2 - 1));
+                        gVar.b(this.PageContentType.get(i3 + 1));
+                        gVar.a(this.PageContentType.get(size2 - 1));
                     }
                 } else if (i3 == size2 - 1) {
                     if (size2 == 3) {
-                        gVar.b((g) null);
-                        gVar.a(this.k.get(1));
+                        gVar.b((WorkspacePage) null);
+                        gVar.a(this.PageContentType.get(1));
                     } else {
-                        gVar.b(this.k.get(1));
-                        gVar.a(this.k.get(i3 - 1));
+                        gVar.b(this.PageContentType.get(1));
+                        gVar.a(this.PageContentType.get(i3 - 1));
                     }
                 } else {
-                    gVar.b(this.k.get(i3 + 1));
-                    gVar.a(this.k.get(i3 - 1));
+                    gVar.b(this.PageContentType.get(i3 + 1));
+                    gVar.a(this.PageContentType.get(i3 - 1));
                 }
             }
             gVar.position().x = i3 * c;
@@ -428,11 +428,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             }
         }
         if (this.m == null) {
-            this.m = this.k.get(1);
+            this.m = this.PageContentType.get(1);
         }
         int iR = this.m.r();
         for (int i4 = 0; i4 < size2; i4++) {
-            g gVar2 = this.k.get(i4);
+            g gVar2 = this.PageContentType.get(i4);
             if (i4 < iR) {
                 gVar2.g = -1.0f;
             } else if (i4 > iR) {
@@ -449,25 +449,25 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
 
     public void a(boolean z) {
         if (!z || this.n == 2 || this.n == 3) {
-            this.k.get(1).a((g) null);
-            this.k.get(this.n - 1).b((g) null);
+            this.PageContentType.get(1).a((WorkspacePage) null);
+            this.PageContentType.get(this.n - 1).b((WorkspacePage) null);
         } else {
-            this.k.get(1).a(this.k.get(this.n - 1));
-            this.k.get(this.n - 1).b(this.k.get(1));
+            this.PageContentType.get(1).a(this.PageContentType.get(this.n - 1));
+            this.PageContentType.get(this.n - 1).b(this.PageContentType.get(1));
         }
-        this.j.a((g) null);
-        this.j.b((g) null);
+        this.PageAnimationState.a((WorkspacePage) null);
+        this.PageAnimationState.b((WorkspacePage) null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void d(final g gVar) {
+    public void d(final WorkspacePage gVar) {
         com.censivn.C3DEngine.b.f.IRenderable iVarN = gVar.n();
         if (iVarN != null) {
             iVarN.calAABB(1.0f, 1.5f, 1.0f);
             A aVar = new PageShaderNode(iVarN);
             aVar.a(gVar);
             gVar.b(aVar);
-            gVar.a(new com.tsf.shell.f.i.a.WallpaperDragHandler(iVarN) { // from class: com.tsf.shell.f.f.PageTouchHandler.2
+            gVar.a(new com.tsf.shell.f.i.PageShaderNode.WallpaperDragHandler(iVarN) { // from class: com.tsf.shell.f.f.PageTouchHandler.2
                 @Override // com.tsf.shell.f.i.a.WallpaperDragHandler, com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (PageTouchHandler.this.t == 1 || PageTouchHandler.this.t == 3) {
@@ -483,7 +483,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     public void ac() {
         int i;
         int i2 = 0;
-        Iterator<g> it = this.k.iterator();
+        Iterator<WorkspacePage> it = this.PageContentType.iterator();
         while (true) {
             i = i2;
             if (!it.hasNext()) {
@@ -507,7 +507,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         return this.g;
     }
 
-    public void a(g gVar) {
+    public void a(WorkspacePage gVar) {
         if (!gVar.q() && gVar.t() != -1) {
             if (this.t == 2) {
                 this.r = gVar;
@@ -522,7 +522,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
     }
 
-    public b i() {
+    public PageRenderBuffer i() {
         return this.w;
     }
 
@@ -530,7 +530,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         return this.D;
     }
 
-    public g k() {
+    public WorkspacePage k() {
         return this.q;
     }
 
@@ -548,20 +548,20 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         return this.t;
     }
 
-    public g n() {
+    public WorkspacePage n() {
         return this.m;
     }
 
-    public g o() {
-        return this.k.get(1);
+    public WorkspacePage o() {
+        return this.PageContentType.get(1);
     }
 
-    public g p() {
-        return this.k.get(this.k.size() - 1);
+    public WorkspacePage p() {
+        return this.PageContentType.get(this.PageContentType.size() - 1);
     }
 
     public int q() {
-        return this.k.get(1).t();
+        return this.PageContentType.get(1).t();
     }
 
     public com.tsf.shell.f.f.d.ScrollStateAggregator r() {
@@ -572,7 +572,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         return this.x;
     }
 
-    public g d(int i) {
+    public WorkspacePage d(int i) {
         for (g gVar : this.k) {
             if (gVar.t() == i) {
                 return gVar;
@@ -599,26 +599,26 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     public void w() {
-        if (!this.o && !this.x.a()) {
+        if (!this.o && !this.GraphicsEngineBridge.a()) {
             this.s = 1;
-            this.i.invalidate();
+            this.ItemPageTransition.invalidate();
         }
     }
 
     public void x() {
         ad();
         this.s = 2;
-        this.i.invalidate();
+        this.ItemPageTransition.invalidate();
     }
 
-    public void b(g gVar) {
+    public void b(WorkspacePage gVar) {
         this.q = gVar;
     }
 
     public void y() {
         if (this.q != null) {
             if (this.q.t() == -1) {
-                Iterator<g> it = this.k.iterator();
+                Iterator<WorkspacePage> it = this.PageContentType.iterator();
                 while (true) {
                     if (!it.hasNext()) {
                         break;
@@ -645,10 +645,10 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     public void ae() {
         float fC = c(this.m.r());
         this.m.position().x = -fC;
-        this.i.position().x = fC;
+        this.ItemPageTransition.position().x = fC;
     }
 
-    public boolean a(g gVar, Runnable runnable, Runnable runnable2) {
+    public boolean a(WorkspacePage gVar, Runnable runnable, Runnable runnable2) {
         if (B()) {
             try {
                 if (gVar != this.m) {
@@ -656,7 +656,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                         runnable.run();
                     }
                     com.tsf.shell.manager.app.StateHub.af();
-                    this.x.b(gVar, runnable2);
+                    this.GraphicsEngineBridge.b(gVar, runnable2);
                 }
                 return true;
             } catch (Exception e) {
@@ -675,13 +675,13 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     private void af() {
-        this.j.b(o());
-        o().a((g) this.j);
-        p().b((g) null);
+        this.PageAnimationState.b(o());
+        o().a((WorkspacePage) this.j);
+        p().b((WorkspacePage) null);
     }
 
     public void z() {
-        if (com.censivn.C3DEngine.a.e.l()) {
+        if (com.censivn.C3DEngine.a.TransitionConfig.l()) {
             if (this.r != this.m) {
                 if (this.m == this.j) {
                     this.q = this.r;
@@ -703,7 +703,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     public void A() {
-        if (com.censivn.C3DEngine.a.e.l()) {
+        if (com.censivn.C3DEngine.a.TransitionConfig.l()) {
             if (B()) {
                 try {
                     if (this.r != this.m) {
@@ -758,7 +758,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     public void b(float f, float f2, float f3, float f4) {
         if (this.t != 4 && this.t != 2) {
             com.tsf.shell.manager.app.LauncherAppInfo.a(f / com.censivn.C3DEngine.b.b.ScreenConstants.D);
-            g gVar = this.k.get(this.F.a(this.n, f, f2, f3, f4, this.O));
+            g gVar = this.PageContentType.get(this.F.a(this.n, TransitionRenderer, f2, f3, f4, this.O));
             if (gVar != this.m) {
                 a(gVar, true, false);
                 ad();
@@ -768,7 +768,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
     }
 
-    public void a(g gVar, boolean z, boolean z2) {
+    public void a(WorkspacePage gVar, boolean z, boolean z2) {
         if (z) {
             this.m.killFocus();
             this.m = gVar;
@@ -789,7 +789,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void e(g gVar) {
+    public void e(WorkspacePage gVar) {
         com.tsf.shell.f.i.b.e.DrawerItemGather.h(((-gVar.r()) / this.n) * 360.0f);
     }
 
@@ -799,13 +799,13 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     private void aj() {
-        this.j.position().x = -c;
-        this.j.position().y = 0.0f;
-        this.j.rotation().y = 0.0f;
-        this.j.d(false);
-        this.j.removeFromParent();
-        this.i.addChild(this.j);
-        a((g) this.j, true, true);
+        this.PageAnimationState.position().x = -c;
+        this.PageAnimationState.position().y = 0.0f;
+        this.PageAnimationState.rotation().y = 0.0f;
+        this.PageAnimationState.d(false);
+        this.PageAnimationState.removeFromParent();
+        this.ItemPageTransition.addChild(this.j);
+        a((WorkspacePage) this.j, true, true);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -836,14 +836,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.v.b();
             this.G.a();
             com.tsf.shell.manager.app.AppListModel.a(this.I);
-            this.i.setAnimationObjectState(true);
+            this.ItemPageTransition.setAnimationObjectState(true);
             if (this.t == 2) {
                 this.m.V();
                 this.q = this.m;
                 this.B.mouseEnabled(true);
             }
             this.r.C();
-            this.j.aw();
+            this.PageAnimationState.aw();
             this.m.d(true);
             this.t = 3;
             if (this.u != null) {
@@ -865,18 +865,18 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.G.b();
             this.G.a(this.m);
             com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
-            this.i.setAnimationObjectState(true);
+            this.ItemPageTransition.setAnimationObjectState(true);
             if (this.O && !this.N) {
                 this.o = true;
                 if (F() == -1) {
-                    com.tsf.shell.e.a(com.censivn.C3DEngine.C3DEngine.d().getString(b.i.notic_widget_forbid_add));
+                    com.tsf.shell.TransitionConfig.a(com.censivn.C3DEngine.C3DEngine.d().getString(b.i.notic_widget_forbid_add));
                     y();
                 }
             }
             this.N = false;
             this.t = 4;
             this.r.D();
-            this.j.ax();
+            this.PageAnimationState.ax();
             this.F.a(this, this.k, this.m, this.O);
             this.m.g = 0.0f;
             a(true, "hdieSelect");
@@ -891,9 +891,9 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             @Override // java.lang.Runnable
             public void run() {
                 if (PageTouchHandler.this.m.t() == -1) {
-                    com.censivn.C3DEngine.a.d.d().c().a(false);
+                    com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(false);
                 } else {
-                    com.censivn.C3DEngine.a.d.d().c().a(true);
+                    com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(true);
                 }
                 PageTouchHandler.this.ah();
                 com.tsf.shell.manager.b.ConfigManager.n(PageTouchHandler.this.m.t());
@@ -915,7 +915,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         this.m.M();
         this.m.g = 0.0f;
         this.m.W();
-        this.i.setAnimationObjectState(false);
+        this.ItemPageTransition.setAnimationObjectState(false);
         al();
     }
 
@@ -936,15 +936,15 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
 
     public void H() {
         ag();
-        com.censivn.C3DEngine.a.d.d().c().a(false);
+        com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(false);
     }
 
     public void I() {
         if (this.t == 2) {
             if (this.m.t() == -1) {
-                com.censivn.C3DEngine.a.d.d().c().a(false);
+                com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(false);
             } else {
-                com.censivn.C3DEngine.a.d.d().c().a(true);
+                com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(true);
             }
             ah();
         }
@@ -955,14 +955,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     public void K() {
-        Iterator<g> it = this.k.iterator();
+        Iterator<WorkspacePage> it = this.PageContentType.iterator();
         while (it.hasNext()) {
             it.next().P();
         }
     }
 
     private void ap() {
-        this.i.invalidate();
+        this.ItemPageTransition.invalidate();
         for (g gVar : this.k) {
             if (this.m != gVar) {
                 gVar.N();
@@ -973,13 +973,13 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             }
         }
         this.m.removeFromParent();
-        this.i.addChild(this.m);
+        this.ItemPageTransition.addChild(this.m);
         this.m.M();
         com.tsf.shell.manager.app.LauncherAppInfo.d();
         com.tsf.shell.f._d.c().b();
-        this.i.setAnimationObjectState(false);
+        this.ItemPageTransition.setAnimationObjectState(false);
         if (this.m.t() == -1) {
-            com.censivn.C3DEngine.a.d.d().c().a(false);
+            com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(false);
         }
     }
 
@@ -988,7 +988,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             w();
             am();
             N();
-            this.w.g();
+            this.HapticFeedbackManager.g();
         }
     }
 
@@ -1009,7 +1009,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     public void O() {
         if (this.m != null) {
             this.m.ac();
-            Iterator<g> it = this.k.iterator();
+            Iterator<WorkspacePage> it = this.PageContentType.iterator();
             while (it.hasNext()) {
                 it.next().T();
             }
@@ -1019,7 +1019,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     public void P() {
         if (this.m != null) {
             this.m.ab();
-            Iterator<g> it = this.k.iterator();
+            Iterator<WorkspacePage> it = this.PageContentType.iterator();
             while (it.hasNext()) {
                 it.next().U();
             }
@@ -1029,11 +1029,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            if (!this.w.a()) {
+            if (!this.HapticFeedbackManager.a()) {
                 com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
                 x();
             } else {
-                this.w.l();
+                this.HapticFeedbackManager.l();
             }
         }
     }
@@ -1051,11 +1051,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             @Override // java.lang.Runnable
             public void run() {
                 if (com.tsf.shell.manager.app.FeatureConfig.a()) {
-                    com.censivn.C3DEngine.a.d.d().i();
+                    com.censivn.C3DEngine.a.ItemTransitionManager.d().i();
                     if (!PageTouchHandler.this.E.a() && com.tsf.shell.manager.app.StateHub.B() && com.tsf.shell.manager.app.StateHub.F() != -1) {
                         PageTouchHandler.this.E.b();
                         com.tsf.shell.manager.p.TipsDialogManager.a(5);
-                        com.tsf.shell.e.a(b.i.notic_page_lasso_mode_enable);
+                        com.tsf.shell.TransitionConfig.a(b.i.notic_page_lasso_mode_enable);
                     }
                 }
             }
@@ -1071,10 +1071,10 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         private com.censivn.C3DEngine.b.d.MouseEventListener F;
         private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper G;
         private com.censivn.C3DEngine.b.g.TweenParams H;
-        private g I;
+        private WorkspacePage I;
         private float J;
         private float K;
-        private g L;
+        private WorkspacePage L;
         private Runnable M;
         l c;
         private float f;
@@ -1131,7 +1131,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 while (true) {
                     int i6 = i5;
                     if (i6 < PageTouchHandler.this.n) {
-                        g gVar = (g) PageTouchHandler.this.k.get(i6);
+                        g gVar = (WorkspacePage) PageTouchHandler.this.PageContentType.get(i6);
                         gVar.position().z = (float) (Math.cos(((double) i6) * this.C) * ((double) this.n));
                         gVar.position().x = (float) (Math.sin(((double) i6) * this.C) * ((double) this.n));
                         gVar.rotation().y = this.D * i6;
@@ -1148,7 +1148,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
 
         public C() {
-            com.censivn.C3DEngine.a.d.d().c().a(this);
+            com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(this);
             this.G = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
             this.E = new PageShaderNode();
             i();
@@ -1157,14 +1157,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         private void i() {
             this.o = -this.n;
             this.p = -((int) (this.n * 3.5f));
-            this.B = new com.censivn.C3DEngine.b.f.BaseRenderable();
-            this.A = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.1
+            this.B = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable();
+            this.A = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.1
                 @Override // com.censivn.C3DEngine.b.f.BaseRenderable
                 public void onDrawChildStart() {
                     boolean z;
                     for (com.censivn.C3DEngine.b.f.IRenderable iVar : TransitionManager.this.A.children()) {
-                        g gVar = (g) iVar;
-                        float fA = x.a(iVar.rotation().y + rotation().y);
+                        g gVar = (WorkspacePage) iVar;
+                        float fA = GraphicsEngineBridge.a(iVar.rotation().y + rotation().y);
                         if (fA <= 90.0f || fA >= 270.0f) {
                             z = true;
                         } else {
@@ -1186,7 +1186,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                             if (i2 >= PageTouchHandler.this.n) {
                                 break;
                             }
-                            ((g) PageTouchHandler.this.k.get(i2)).a(fAbs);
+                            ((WorkspacePage) PageTouchHandler.this.PageContentType.get(i2)).a(fAbs);
                             i = i2 + 1;
                         }
                         if (TransitionManager.this.I == null) {
@@ -1214,7 +1214,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                                     while (true) {
                                         int i4 = i3;
                                         if (i4 < PageTouchHandler.this.n) {
-                                            g gVar = (g) PageTouchHandler.this.k.get(i4);
+                                            g gVar = (WorkspacePage) PageTouchHandler.this.PageContentType.get(i4);
                                             if (gVar != PageTouchHandler.this.m) {
                                                 gVar.J().alpha((int) (255.0f * f2));
                                             }
@@ -1246,7 +1246,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.A.renderChildren(false);
             this.A.position().z = this.o;
             this.B.setAABBPX(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, 0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B, 0.0f);
-            com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.B) { // from class: com.tsf.shell.f.f.PageTouchHandler.c.3
+            com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.ItemTransitionManager.MouseEventListener(this.B) { // from class: com.tsf.shell.f.f.PageTouchHandler.c.3
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                     TransitionManager.this.q = TransitionManager.this.J + (((motionEvent2.getX() - motionEvent.getX()) / com.censivn.C3DEngine.b.b.ScreenConstants.F) * 360.0f * 1.2f);
@@ -1276,7 +1276,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
 
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void f(MotionEvent motionEvent) {
-                    TransitionManager.this.a((g) null);
+                    TransitionManager.this.a((WorkspacePage) null);
                 }
 
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -1300,7 +1300,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             while (true) {
                 int i2 = i;
                 if (i2 < PageTouchHandler.this.n) {
-                    g gVar = (g) PageTouchHandler.this.k.get(i2);
+                    g gVar = (WorkspacePage) PageTouchHandler.this.PageContentType.get(i2);
                     if (gVar != PageTouchHandler.this.m) {
                         gVar.J().alpha(255.0f);
                     }
@@ -1347,7 +1347,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         public void k() {
             this.B.removeFromParent();
             for (int i = 0; i < PageTouchHandler.this.n; i++) {
-                g gVar = (g) PageTouchHandler.this.k.get(ItemPageTransition);
+                g gVar = (WorkspacePage) PageTouchHandler.this.PageContentType.get(ItemPageTransition);
                 gVar.f(false);
                 gVar.position().z = 0.0f;
                 gVar.position().x = 0.0f;
@@ -1358,7 +1358,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             }
             PageTouchHandler.this.m.H();
             PageTouchHandler.this.m.M();
-            PageTouchHandler.this.i.addChild(PageTouchHandler.this.m);
+            PageTouchHandler.this.ItemPageTransition.addChild(PageTouchHandler.this.m);
             com.tsf.shell.manager.app.AppListModel.a(PageTouchHandler.this.I, true);
             com.tsf.shell.manager.app.AppListModel.b(PageTouchHandler.this.I);
             com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
@@ -1393,7 +1393,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 com.tsf.shell.manager.app.AppListModel.c(PageTouchHandler.this.I);
                 this.w = false;
                 for (int i = 0; i < PageTouchHandler.this.n; i++) {
-                    g gVar = (g) PageTouchHandler.this.k.get(ItemPageTransition);
+                    g gVar = (WorkspacePage) PageTouchHandler.this.PageContentType.get(ItemPageTransition);
                     if (gVar != PageTouchHandler.this.m) {
                         gVar.O();
                     }
@@ -1413,7 +1413,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 number3dRotation.y = fL;
                 this.q = fL;
                 this.B.removeFromParent();
-                PageTouchHandler.this.h.addChild(this.B);
+                PageTouchHandler.this.PageConfig.addChild(this.B);
             }
             this.u = this.A.rotation().y;
             this.v = this.A.position().z;
@@ -1422,35 +1422,35 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
 
         public void c() {
             boolean z;
-            if (this.c != null && !this.c.a()) {
-                com.tsf.shell.manager.app.v.ObjectHelper.b.a(true);
-                com.tsf.shell.manager.app.v.ObjectHelper.b.a(PageTouchHandler.this.m);
+            if (this.c != null && !this.TransitionManager.a()) {
+                com.tsf.shell.manager.app.v.ObjectHelper.PageRenderBuffer.a(true);
+                com.tsf.shell.manager.app.v.ObjectHelper.PageRenderBuffer.a(PageTouchHandler.this.m);
             } else {
-                com.tsf.shell.manager.app.v.ObjectHelper.b.a(false);
+                com.tsf.shell.manager.app.v.ObjectHelper.PageRenderBuffer.a(false);
             }
             if (!this.k) {
                 if (this.L != null) {
                     if (this.g < 0.0f) {
-                        this.c.b(PageTouchHandler.this.m.g, this.g);
+                        this.TransitionManager.b(PageTouchHandler.this.m.g, this.g);
                         PageTouchHandler.this.m.a(PageTouchHandler.this.m, this.g, true, false, this.c);
                         z = false;
                     } else {
-                        this.c.b(PageTouchHandler.this.m.g, this.g);
+                        this.TransitionManager.b(PageTouchHandler.this.m.g, this.g);
                         PageTouchHandler.this.m.a(PageTouchHandler.this.m, this.g, false, true, this.c);
                         z = false;
                     }
                 } else if (this.j) {
                     float f = PageTouchHandler.this.m.g + ((this.g - PageTouchHandler.this.m.g) * 0.25f);
-                    this.c.b(PageTouchHandler.this.m.g, f);
+                    this.TransitionManager.b(PageTouchHandler.this.m.g, TransitionRenderer);
                     if (f < 0.0f) {
-                        PageTouchHandler.this.m.a(PageTouchHandler.this.m, f, true, false, this.c);
+                        PageTouchHandler.this.m.a(PageTouchHandler.this.m, TransitionRenderer, true, false, this.c);
                     } else {
-                        PageTouchHandler.this.m.a(PageTouchHandler.this.m, f, false, true, this.c);
+                        PageTouchHandler.this.m.a(PageTouchHandler.this.m, TransitionRenderer, false, true, this.c);
                     }
                     z = false;
-                } else if (!this.c.b() || Math.abs(PageTouchHandler.this.m.g - this.g) >= 0.001d) {
+                } else if (!this.TransitionManager.b() || Math.abs(PageTouchHandler.this.m.g - this.g) >= 0.001d) {
                     float f2 = PageTouchHandler.this.m.g + ((this.g - PageTouchHandler.this.m.g) * this.b);
-                    this.c.b(PageTouchHandler.this.m.g, f2);
+                    this.TransitionManager.b(PageTouchHandler.this.m.g, f2);
                     if (f2 < 0.0f) {
                         PageTouchHandler.this.m.a(PageTouchHandler.this.m, f2, true, false, this.c);
                         z = false;
@@ -1459,17 +1459,17 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                         z = false;
                     }
                 } else {
-                    this.c.b(PageTouchHandler.this.m.g, this.g);
+                    this.TransitionManager.b(PageTouchHandler.this.m.g, this.g);
                     PageTouchHandler.this.m.a(PageTouchHandler.this.m, this.g, true, false, this.c);
                     z = true;
                 }
                 if (this.L == null && !z) {
                     PageTouchHandler.this.a(false, "onDrawFrame");
                 }
-                PageTouchHandler.this.i.a();
-                Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = PageTouchHandler.this.i.children().iterator();
+                PageTouchHandler.this.ItemPageTransition.a();
+                Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = PageTouchHandler.this.ItemPageTransition.children().iterator();
                 while (it.hasNext()) {
-                    g gVar = (g) it.next();
+                    g gVar = (WorkspacePage) it.next();
                     gVar.i();
                     gVar.af();
                 }
@@ -1483,36 +1483,36 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             a((PageTransitionEffect) null);
         }
 
-        public void a(l lVar) {
+        public void a(PageTransitionEffect lVar) {
             if (this.i) {
                 if (lVar == null) {
                     lVar = com.tsf.shell.manager.app.v.FlagHelper.C0126a.h();
                 }
                 this.c = lVar;
-                this.c.d();
+                this.TransitionManager.d();
                 com.tsf.shell.manager.app.v.FlagHelper.C0126PageShaderNode.a2(this.c);
                 this.h = false;
                 this.i = false;
                 this.f = PageTouchHandler.this.m.g;
-                PageTouchHandler.this.h.setAnimationObjectState(true);
-                PageTouchHandler.this.h.invalidate();
+                PageTouchHandler.this.PageConfig.setAnimationObjectState(true);
+                PageTouchHandler.this.PageConfig.invalidate();
                 if (this.k) {
                     this.k = false;
                     PageTouchHandler.this.ag();
                     PageTouchHandler.this.m.V();
                 }
-                PageTouchHandler.this.i.position().x = 0.0f;
+                PageTouchHandler.this.ItemPageTransition.position().x = 0.0f;
                 com.tsf.shell.manager.app.PanelStateManager.i();
             }
         }
 
-        public void a(g gVar) {
+        public void a(WorkspacePage gVar) {
             this.y = false;
             this.r = 0.0f;
             if (!this.h) {
                 if (gVar == null) {
                     if (this.A.numChildren() != 0) {
-                        PageTouchHandler.this.a((g) this.A.getChildAt(this.A.numChildren() - 1), false, true);
+                        PageTouchHandler.this.a((WorkspacePage) this.A.getChildAt(this.A.numChildren() - 1), false, true);
                     }
                 } else {
                     PageTouchHandler.this.a(gVar, false, true);
@@ -1538,16 +1538,16 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 this.t = this.q - this.A.rotation().y;
                 this.z = true;
                 for (int i = 0; i < PageTouchHandler.this.n; i++) {
-                    ((g) PageTouchHandler.this.k.get(ItemPageTransition)).A();
+                    ((WorkspacePage) PageTouchHandler.this.PageContentType.get(ItemPageTransition)).A();
                 }
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.4
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.4
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
                         int i2 = 0;
                         while (true) {
                             int i3 = i2;
                             if (i3 < PageTouchHandler.this.n) {
-                                g gVar2 = (g) PageTouchHandler.this.k.get(i3);
+                                g gVar2 = (WorkspacePage) PageTouchHandler.this.PageContentType.get(i3);
                                 if (gVar2 != PageTouchHandler.this.m) {
                                     gVar2.J().alpha((int) (255.0f - (255.0f * f)));
                                 }
@@ -1609,7 +1609,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
 
         public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-            this.F.b(motionEvent, motionEvent2, f, f2);
+            this.F.b(motionEvent, motionEvent2, TransitionRenderer, f2);
         }
 
         public boolean f() {
@@ -1685,10 +1685,10 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 }
                 this.g = this.f + ((motionEvent2.getX() - motionEvent.getX()) / com.censivn.C3DEngine.b.b.ScreenConstants.F);
                 if (PageTouchHandler.this.m.ah() == null && this.g < 0.0f) {
-                    this.g = com.tsf.shell.f.e.c.a(this.g);
+                    this.g = com.tsf.shell.f.e.TransitionManager.a(this.g);
                 }
                 if (PageTouchHandler.this.m.ag() == null && this.g > 0.0f) {
-                    this.g = com.tsf.shell.f.e.c.a(this.g);
+                    this.g = com.tsf.shell.f.e.TransitionManager.a(this.g);
                 }
                 this.j = true;
             }
@@ -1713,14 +1713,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             }
         }
 
-        private g n() {
+        private WorkspacePage n() {
             float f;
             g gVar;
             g gVar2 = null;
             float f2 = Float.MAX_VALUE;
             int i = 1;
             while (i < PageTouchHandler.this.n) {
-                g gVar3 = (g) PageTouchHandler.this.k.get(ItemPageTransition);
+                g gVar3 = (WorkspacePage) PageTouchHandler.this.PageContentType.get(ItemPageTransition);
                 float fAbs = Math.abs(gVar3.g);
                 if (fAbs < f2) {
                     gVar = gVar3;
@@ -1740,7 +1740,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.i = true;
             this.k = true;
             this.d = false;
-            PageTouchHandler.this.h.setAnimationObjectState(false);
+            PageTouchHandler.this.PageConfig.setAnimationObjectState(false);
             if (z) {
                 PageTouchHandler.this.m.a(this.c);
             }
@@ -1751,22 +1751,22 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.f = 0.0f;
             gVar.g = 0.0f;
             if (this.c != null) {
-                this.c.c();
+                this.TransitionManager.c();
             }
             PageTouchHandler.this.ae();
             PageTouchHandler.this.g();
             com.tsf.shell.manager.app.v.FlagHelper.C0126a();
-            h.a(false);
+            PageConfig.a(false);
             com.tsf.shell.manager.app.PanelStateManager.j();
         }
 
-        private void a(g gVar, Runnable runnable) {
+        private void a(WorkspacePage gVar, Runnable runnable) {
             a(gVar, runnable, (PageTransitionEffect) null);
         }
 
-        private void a(g gVar, Runnable runnable, l lVar) {
-            h.a(true);
-            com.censivn.C3DEngine.a.d.d().c().a(false);
+        private void a(WorkspacePage gVar, Runnable runnable, l lVar) {
+            PageConfig.a(true);
+            com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(false);
             this.L = gVar;
             PageTouchHandler.this.a(this.L, true, "hdieSelect");
             if (this.M != null) {
@@ -1780,7 +1780,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.m = true;
         }
 
-        private void a(final g gVar, int i, Runnable runnable, final boolean z, final l lVar) {
+        private void a(final WorkspacePage gVar, int i, Runnable runnable, final boolean z, final l lVar) {
             if (this.d || gVar == null || this.L == gVar || gVar == PageTouchHandler.this.m || !this.k) {
                 if (runnable != null) {
                     runnable.run();
@@ -1802,17 +1802,17 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             lVar.a(gVar, true);
             if (z) {
                 gVar.b(gVar2);
-                gVar.a((g) null);
+                gVar.a((WorkspacePage) null);
                 gVar2.a(gVar);
-                gVar2.b((g) null);
+                gVar2.b((WorkspacePage) null);
             } else {
-                gVar.b((g) null);
+                gVar.b((WorkspacePage) null);
                 gVar.a(gVar2);
-                gVar2.a((g) null);
+                gVar2.a((WorkspacePage) null);
                 gVar2.b(gVar);
             }
             final float f = z ? 1.0f : -1.0f;
-            this.H = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.7
+            this.H = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.7
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     lVar.a(gVar2, false);
@@ -1825,7 +1825,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                     gVar.a(gVarAg2);
                     gVar.b(gVarAh2);
                     PageTouchHandler.this.a(gVar, false, true);
-                    com.censivn.C3DEngine.a.d.d().c().a(true);
+                    com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(true);
                     TransitionManager.this.L = null;
                     if (TransitionManager.this.M != null) {
                         com.censivn.C3DEngine.C3DEngine.a().c(TransitionManager.this.M);
@@ -1839,11 +1839,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 }
             };
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.G);
-            com.censivn.C3DEngine.b.g.TweenUtils.a(this.G, i, this.H);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.G, ItemPageTransition, this.H);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public void b(final g gVar, Runnable runnable) {
+        public void b(final WorkspacePage gVar, Runnable runnable) {
             if (!this.d && this.L != gVar && gVar != PageTouchHandler.this.m) {
                 PageTouchHandler.this.G.a(gVar);
                 PageTouchHandler.this.e(gVar);
@@ -1852,14 +1852,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 int iR = gVar.r() - PageTouchHandler.this.m.r();
                 final float f = PageTouchHandler.this.m.g;
                 final float f2 = -iR;
-                this.H = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.8
+                this.H = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.8
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         TransitionManager.this.j = false;
                         TransitionManager.this.m = false;
                         TransitionManager.this.g = 0.0f;
                         PageTouchHandler.this.a(gVar, false, true);
-                        com.censivn.C3DEngine.a.d.d().c().a(true);
+                        com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(true);
                         TransitionManager.this.L = null;
                         if (TransitionManager.this.M != null) {
                             com.censivn.C3DEngine.C3DEngine.a().c(TransitionManager.this.M);
@@ -1891,7 +1891,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             if (this.N) {
                 this.N = false;
                 final float f = PageTouchHandler.this.m.g;
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.9
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.9
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         TransitionManager.this.j = false;
@@ -1908,7 +1908,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                     }
                 };
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.G);
-                com.censivn.C3DEngine.b.g.TweenUtils.a(this.G, i, dVar);
+                com.censivn.C3DEngine.b.g.TweenUtils.a(this.G, ItemPageTransition, dVar);
             }
         }
 
@@ -1917,7 +1917,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
 
         public void c(final int i) {
-            if (com.censivn.C3DEngine.a.e.l()) {
+            if (com.censivn.C3DEngine.a.TransitionConfig.l()) {
                 if (PageTouchHandler.this.t().aJ() && this.k) {
                     g gVarN = PageTouchHandler.this.n();
                     if (gVarN.t() == -1) {
@@ -1926,11 +1926,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                         if (gVarK == null || gVarK.t() == -1) {
                             gVarK = PageTouchHandler.this.o();
                         }
-                        a(gVarK, i, null, false, com.tsf.shell.manager.app.v.FlagHelper.b.h());
+                        a(gVarK, ItemPageTransition, null, false, com.tsf.shell.manager.app.v.FlagHelper.PageRenderBuffer.h());
                         com.tsf.shell.manager.app.AppListModel.a(PageTouchHandler.this.I, false);
                         return;
                     }
-                    a(PageTouchHandler.this.t(), i, null, true, com.tsf.shell.manager.app.v.FlagHelper.b.h());
+                    a(PageTouchHandler.this.t(), ItemPageTransition, null, true, com.tsf.shell.manager.app.v.FlagHelper.PageRenderBuffer.h());
                     com.tsf.shell.manager.app.AppListModel.a(PageTouchHandler.this.I);
                     return;
                 }
@@ -1953,7 +1953,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             final boolean z = PageTouchHandler.this.m.ah() != null;
             d();
             final float f = PageTouchHandler.this.m.g;
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.2
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     TransitionManager.this.b(i2);
@@ -1969,7 +1969,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 }
             };
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.G);
-            com.censivn.C3DEngine.b.g.TweenUtils.a(this.G, i, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(this.G, ItemPageTransition, dVar);
             this.k = false;
             this.j = true;
             this.m = true;
@@ -1998,12 +1998,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(g gVar, boolean z, String str) {
+    public void a(WorkspacePage gVar, boolean z, String str) {
         com.tsf.shell.manager.app.LauncherAppInfo.a(gVar, z, true);
     }
 
     public class b {
-        private g C;
+        private WorkspacePage C;
         private DynamicTextureElement D;
         private com.censivn.C3DEngine.b.f.BaseRenderable c;
         private boolean e;
@@ -2011,7 +2011,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         private float g;
         private float l;
         private float t;
-        private g u;
+        private WorkspacePage u;
         private Number3d v;
         private int y;
         private float m = 32.0f;
@@ -2024,7 +2024,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         private int B = 0;
         private boolean G = false;
         private com.tsf.shell.f.e.e.ItemContainerNode F = com.tsf.shell.manager.app.WidgetAnimator.d();
-        private com.censivn.C3DEngine.b.f.GridRenderable E = new com.censivn.C3DEngine.b.f.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g, false);
+        private com.censivn.C3DEngine.b.f.GridRenderable E = new com.censivn.C3DEngine.b.TransitionRenderer.GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.g, com.tsf.shell.manager.g.LayoutDimensionConstants.g, false);
         private float b = 0.017453292f;
         private float h = com.censivn.C3DEngine.b.b.ScreenConstants.D;
         private float o = (-this.h) - (200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b);
@@ -2034,10 +2034,10 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         private float i = 360.0f / (((float) (((double) (2.0f * this.h)) * 3.141592653589793d)) / (n.a - 40));
         private float k = this.i / (n.a - 40);
         private float j = this.i * this.b;
-        private com.censivn.C3DEngine.b.f.BaseRenderable d = new com.censivn.C3DEngine.b.f.BaseRenderable();
+        private com.censivn.C3DEngine.b.f.BaseRenderable d = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable();
 
         public b() {
-            this.c = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.1
+            this.c = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.1
                 @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (!PageRenderBuffer.this.r) {
@@ -2086,10 +2086,10 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.j = this.i * this.b;
             if (this.e) {
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.c);
-                this.c.position().z = this.o;
-                this.c.rotation().x = this.m;
-                this.c.position().y = this.p;
-                this.c.rotation().y = this.t;
+                this.TransitionManager.position().z = this.o;
+                this.TransitionManager.rotation().x = this.m;
+                this.TransitionManager.position().y = this.p;
+                this.TransitionManager.rotation().y = this.t;
                 for (g gVar : PageTouchHandler.this.k) {
                     if (gVar != this.C) {
                         b(gVar);
@@ -2126,19 +2126,19 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                     Number3d number3dLocalToGlobal = gVar.localToGlobal(new Number3d());
                     Number3d number3dLocalRotationToGlobal = gVar.localRotationToGlobal(new Number3d());
                     gVar.removeFromParent();
-                    this.c.globalToLocal(number3dLocalToGlobal);
+                    this.TransitionManager.globalToLocal(number3dLocalToGlobal);
                     gVar.position().setAllFrom(number3dLocalToGlobal);
                     gVar.rotation().setAllFrom(number3dLocalRotationToGlobal);
                     gVar.removeFromParent();
-                    this.c.addChild(gVar);
+                    this.TransitionManager.addChild(gVar);
                     b(gVar, 750);
                 }
                 k();
-                this.d.removeFromParent();
-                this.c.removeFromParent();
-                PageTouchHandler.this.h.addChildAt(this.d, 1);
-                PageTouchHandler.this.h.addChildAt(this.c, 1);
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.2
+                this.ItemTransitionManager.removeFromParent();
+                this.TransitionManager.removeFromParent();
+                PageTouchHandler.this.PageConfig.addChildAt(this.d, 1);
+                PageTouchHandler.this.PageConfig.addChildAt(this.c, 1);
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.2
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         PageRenderBuffer.this.r = false;
@@ -2160,7 +2160,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.F.removeFromParent();
             this.F.position().x = 0.0f;
             this.F.a(0.0f, com.censivn.C3DEngine.b.b.ScreenConstants.C + (100.0f * com.censivn.C3DEngine.b.b.ScreenConstants.b), true);
-            PageTouchHandler.this.h.addChild(this.F);
+            PageTouchHandler.this.PageConfig.addChild(this.F);
             this.F.b();
         }
 
@@ -2169,14 +2169,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
 
         public void c() {
-            w.a(3);
+            HapticFeedbackManager.a(3);
         }
 
         public void d() {
         }
 
         public void a(float f, float f2) {
-            this.F.a(x.b(this.F.c, this.F.d, f, f2), f, f2);
+            this.F.a(GraphicsEngineBridge.b(this.F.c, this.F.d, TransitionRenderer, f2), TransitionRenderer, f2);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -2194,8 +2194,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.C.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
             this.C.a(true);
             this.C.d(false);
-            this.d.addChild(this.C);
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            this.ItemTransitionManager.addChild(this.C);
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams();
             dVar.h(0.0f);
             dVar.f(0.0f);
             dVar.l(1.0f);
@@ -2204,12 +2204,12 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
 
         private void k() {
-            this.f = this.g - ((this.c.numChildren() - 1) * this.i);
+            this.f = this.g - ((this.TransitionManager.numChildren() - 1) * this.i);
         }
 
-        private void b(final g gVar, int i) {
+        private void b(final WorkspacePage gVar, int i) {
             gVar.mouseEnabled(false);
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.3
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     gVar.mouseEnabled(true);
@@ -2224,10 +2224,10 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             dVar.d(aVarC.c);
             dVar.l(1.0f);
             dVar.m(1.0f);
-            com.censivn.C3DEngine.b.g.TweenUtils.a(gVar, i, dVar);
+            com.censivn.C3DEngine.b.g.TweenUtils.a(gVar, ItemPageTransition, dVar);
         }
 
-        private void b(g gVar) {
+        private void b(WorkspacePage gVar) {
             com.censivn.C3DEngine.b.g.TweenUtils.a(gVar);
             A aVarC = c(gVar);
             gVar.position().setAll(aVarC.a, 0.0f, aVarC.b);
@@ -2235,7 +2235,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             gVar.scale().setAll(1.0f, 1.0f, 1.0f);
         }
 
-        private a c(g gVar) {
+        private PageShaderNode c(WorkspacePage gVar) {
             A aVar = new PageShaderNode();
             int iR = gVar.r();
             aVar.a = (float) (Math.cos(((double) (iR * (-this.j))) - 3.141592653589793d) * ((double) this.h));
@@ -2248,8 +2248,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         public void l() {
             if (this.e && !this.r && !this.G) {
                 com.tsf.shell.manager.app.ServiceFactory.i();
-                ArrayList arrayList = (ArrayList) this.d.children().clone();
-                if (this.d.numChildren() > 0) {
+                ArrayList arrayList = (ArrayList) this.ItemTransitionManager.children().clone();
+                if (this.ItemTransitionManager.numChildren() > 0) {
                     Iterator it = arrayList.iterator();
                     while (it.hasNext()) {
                         g gVar = (g) ((com.censivn.C3DEngine.b.f.IRenderable) it.next());
@@ -2268,27 +2268,27 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 while (true) {
                     int i2 = i;
                     if (i2 < PageTouchHandler.this.n) {
-                        g gVar2 = (g) PageTouchHandler.this.k.get(i2);
+                        g gVar2 = (WorkspacePage) PageTouchHandler.this.PageContentType.get(i2);
                         if (i2 > 0) {
                             if (i2 == 1) {
                                 if (PageTouchHandler.this.n != 2) {
-                                    gVar2.b((g) PageTouchHandler.this.k.get(i2 + 1));
-                                    gVar2.a((g) PageTouchHandler.this.k.get(PageTouchHandler.this.n - 1));
+                                    gVar2.b((WorkspacePage) PageTouchHandler.this.PageContentType.get(i2 + 1));
+                                    gVar2.a((WorkspacePage) PageTouchHandler.this.PageContentType.get(PageTouchHandler.this.n - 1));
                                 } else {
-                                    gVar2.b((g) null);
-                                    gVar2.a((g) null);
+                                    gVar2.b((WorkspacePage) null);
+                                    gVar2.a((WorkspacePage) null);
                                 }
                             } else if (i2 == PageTouchHandler.this.n - 1) {
                                 if (PageTouchHandler.this.n != 3) {
-                                    gVar2.b((g) PageTouchHandler.this.k.get(1));
-                                    gVar2.a((g) PageTouchHandler.this.k.get(i2 - 1));
+                                    gVar2.b((WorkspacePage) PageTouchHandler.this.PageContentType.get(1));
+                                    gVar2.a((WorkspacePage) PageTouchHandler.this.PageContentType.get(i2 - 1));
                                 } else {
-                                    gVar2.b((g) null);
-                                    gVar2.a((g) PageTouchHandler.this.k.get(i2 - 1));
+                                    gVar2.b((WorkspacePage) null);
+                                    gVar2.a((WorkspacePage) PageTouchHandler.this.PageContentType.get(i2 - 1));
                                 }
                             } else {
-                                gVar2.b((g) PageTouchHandler.this.k.get(i2 + 1));
-                                gVar2.a((g) PageTouchHandler.this.k.get(i2 - 1));
+                                gVar2.b((WorkspacePage) PageTouchHandler.this.PageContentType.get(i2 + 1));
+                                gVar2.a((WorkspacePage) PageTouchHandler.this.PageContentType.get(i2 - 1));
                             }
                         }
                         gVar2.o();
@@ -2296,17 +2296,17 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                         Number3d number3dLocalRotationToGlobal = gVar2.localRotationToGlobal(new Number3d());
                         gVar2.removeFromParent();
                         gVar2.mouseEnabled(true);
-                        PageTouchHandler.this.i.globalToLocal(number3dLocalToGlobal);
+                        PageTouchHandler.this.ItemPageTransition.globalToLocal(number3dLocalToGlobal);
                         gVar2.position().setAllFrom(number3dLocalToGlobal);
                         gVar2.rotation().setAllFrom(number3dLocalRotationToGlobal);
-                        PageTouchHandler.this.i.addChild(gVar2);
-                        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                        PageTouchHandler.this.ItemPageTransition.addChild(gVar2);
+                        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams();
                         com.censivn.C3DEngine.b.g.TweenUtils.a(gVar2);
                         PageTouchHandler.this.F.a(dVar, gVar2);
                         com.censivn.C3DEngine.b.g.TweenUtils.a(gVar2, 500, dVar);
                         i = i2 + 1;
                     } else {
-                        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.4
+                        com.censivn.C3DEngine.b.g.TweenUtils.a(this.c, 500, new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.4
                             @Override // com.censivn.C3DEngine.b.g.TweenParams
                             public void a() {
                                 PageRenderBuffer.this.E.textures().clear();
@@ -2314,17 +2314,17 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                                     com.censivn.C3DEngine.C3DEngine.g().a(PageRenderBuffer.this.D);
                                     PageRenderBuffer.this.D = null;
                                 }
-                                PageRenderBuffer.this.c.removeFromParent();
-                                PageRenderBuffer.this.d.removeFromParent();
+                                PageRenderBuffer.this.TransitionManager.removeFromParent();
+                                PageRenderBuffer.this.ItemTransitionManager.removeFromParent();
                                 PageRenderBuffer.this.r = false;
                                 PageRenderBuffer.this.e = false;
                                 PageTouchHandler.this.U();
                                 String str = "";
-                                Iterator it2 = PageTouchHandler.this.k.iterator();
+                                Iterator it2 = PageTouchHandler.this.PageContentType.iterator();
                                 while (true) {
                                     String str2 = str;
                                     if (it2.hasNext()) {
-                                        str = str2 + ((g) it2.next()).t() + ",";
+                                        str = str2 + ((WorkspacePage) it2.next()).t() + ",";
                                     } else {
                                         com.tsf.shell.manager.b.ConfigManager.i(str2.substring(0, str2.length() - 1));
                                         return;
@@ -2332,10 +2332,10 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                                 }
                             }
                         });
-                        this.c.position().z = 0.0f;
-                        this.c.position().y = 0.0f;
-                        this.c.rotation().x = 0.0f;
-                        this.c.rotation().y = 0.0f;
+                        this.TransitionManager.position().z = 0.0f;
+                        this.TransitionManager.position().y = 0.0f;
+                        this.TransitionManager.rotation().x = 0.0f;
+                        this.TransitionManager.rotation().y = 0.0f;
                         PageTouchHandler.this.m.setFocus();
                         PageTouchHandler.this.g();
                         return;
@@ -2346,11 +2346,11 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
 
         public void e() {
             this.s = true;
-            float f = this.c.rotation().y;
+            float f = this.TransitionManager.rotation().y;
             this.l = f;
             this.t = f;
-            this.c.setAnimationObjectState(true);
-            this.c.invalidate();
+            this.TransitionManager.setAnimationObjectState(true);
+            this.TransitionManager.invalidate();
         }
 
         public void f() {
@@ -2365,22 +2365,22 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.t = this.l + (this.k * f);
         }
 
-        public void a(g gVar, MotionEvent motionEvent) {
+        public void a(WorkspacePage gVar, MotionEvent motionEvent) {
             if (gVar.t() != -1 && !gVar.q() && PageTouchHandler.this.n > 2) {
                 h();
             }
-            w.a();
+            HapticFeedbackManager.a();
             this.u = gVar;
             gVar.setAnimationObjectState(true);
             Number3d number3dLocalToGlobal = gVar.localToGlobal(new Number3d());
             Number3d number3dLocalRotationToGlobal = gVar.localRotationToGlobal(new Number3d());
             gVar.removeFromParent();
-            this.d.globalToLocal(number3dLocalToGlobal);
-            this.d.globalRotationToLocal(number3dLocalRotationToGlobal);
+            this.ItemTransitionManager.globalToLocal(number3dLocalToGlobal);
+            this.ItemTransitionManager.globalRotationToLocal(number3dLocalRotationToGlobal);
             gVar.position().setAllFrom(number3dLocalToGlobal);
             gVar.rotation().setAllFrom(number3dLocalRotationToGlobal);
-            this.d.addChild(gVar);
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            this.ItemTransitionManager.addChild(gVar);
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams();
             com.censivn.C3DEngine.b.g.TweenUtils.a(gVar);
             dVar.l(1.1f);
             dVar.m(1.1f);
@@ -2396,7 +2396,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.v.z = this.w;
         }
 
-        public void b(g gVar, MotionEvent motionEvent) {
+        public void b(WorkspacePage gVar, MotionEvent motionEvent) {
             boolean z;
             if (gVar.t() == -1 || gVar.q() || PageTouchHandler.this.n <= 2) {
                 z = false;
@@ -2407,7 +2407,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             }
             this.y = this.B;
             gVar.setAnimationObjectState(false);
-            float[] fArrA = x.a(motionEvent);
+            float[] fArrA = GraphicsEngineBridge.a(motionEvent);
             if (fArrA[1] - this.q > -50.0f) {
                 a(fArrA[0], fArrA[1], gVar, true);
                 a(gVar, 250);
@@ -2428,7 +2428,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                     f(gVar);
                     z = false;
                 } else {
-                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams();
                     com.censivn.C3DEngine.b.g.TweenUtils.a(gVar);
                     dVar.l(1.0f);
                     dVar.m(1.0f);
@@ -2438,7 +2438,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 }
             }
             if (z) {
-                float[] fArrA2 = x.a(motionEvent);
+                float[] fArrA2 = GraphicsEngineBridge.a(motionEvent);
                 if (this.F.calTouchCollision(fArrA2[0], fArrA2[1])) {
                     f(gVar);
                 }
@@ -2446,8 +2446,8 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             PageTouchHandler.this.G.a(PageTouchHandler.this.m);
         }
 
-        public void a(final g gVar, MotionEvent motionEvent, final MotionEvent motionEvent2) {
-            final float[] fArrA = x.a(motionEvent2);
+        public void a(final WorkspacePage gVar, MotionEvent motionEvent, final MotionEvent motionEvent2) {
+            final float[] fArrA = GraphicsEngineBridge.a(motionEvent2);
             this.u.position().x = this.v.x + ((motionEvent2.getX() - motionEvent.getX()) * 1.3f);
             this.u.position().y = this.v.y - (motionEvent2.getY() - motionEvent.getY());
             com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.5
@@ -2468,7 +2468,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                         PageRenderBuffer.this.a(fArrA[0], fArrA[1], gVar);
                     }
                     if (gVar.t() != -1 && !gVar.q() && PageTouchHandler.this.n > 2) {
-                        float[] fArrA2 = x.a(motionEvent2);
+                        float[] fArrA2 = GraphicsEngineBridge.a(motionEvent2);
                         if (PageRenderBuffer.this.F.calTouchCollision(fArrA2[0], fArrA2[1])) {
                             PageRenderBuffer.this.d(gVar);
                         } else {
@@ -2480,7 +2480,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public void d(g gVar) {
+        public void d(WorkspacePage gVar) {
             if (!this.x) {
                 this.x = true;
                 gVar.setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.c);
@@ -2489,7 +2489,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public void e(g gVar) {
+        public void e(WorkspacePage gVar) {
             if (this.x) {
                 this.x = false;
                 gVar.clearDefaultColor();
@@ -2511,37 +2511,37 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         private void a(float f, float f2, g gVar, boolean z) {
             g gVarO;
             this.y = this.B;
-            com.censivn.C3DEngine.b.f.IRenderable hittingTarget = this.c.getHittingTarget(f, f2, true);
+            com.censivn.C3DEngine.b.f.IRenderable hittingTarget = this.TransitionManager.getHittingTarget(f, f2, true);
             if (hittingTarget != null) {
                 if (hittingTarget == null) {
-                    float f3 = this.c.rotation().y;
+                    float f3 = this.TransitionManager.rotation().y;
                     if (f3 > this.g) {
                         f3 = this.g;
                     } else if (f3 < this.f) {
                         f3 = this.f;
                     }
-                    gVarO = (g) PageTouchHandler.this.k.get(((int) (((this.g - f3) / (this.g - this.f)) * (this.c.numChildren() - 1))) + 1);
+                    gVarO = (WorkspacePage) PageTouchHandler.this.PageContentType.get(((int) (((this.g - f3) / (this.g - this.f)) * (this.TransitionManager.numChildren() - 1))) + 1);
                 } else {
-                    gVarO = (g) hittingTarget.parent();
+                    gVarO = (WorkspacePage) hittingTarget.parent();
                 }
                 if (gVarO.t() == -1 && gVar == (gVarO = PageTouchHandler.this.o())) {
                     gVar.a(1);
                     return;
                 }
                 int iR = gVarO.r();
-                int size = iR == -1 ? PageTouchHandler.this.k.size() - 1 : iR;
+                int size = iR == -1 ? PageTouchHandler.this.PageContentType.size() - 1 : iR;
                 int iR2 = gVar.r();
                 if (iR2 == -1) {
-                    int size2 = PageTouchHandler.this.k.size();
+                    int size2 = PageTouchHandler.this.PageContentType.size();
                     for (int i = size; i < size2; i++) {
-                        g gVar2 = (g) PageTouchHandler.this.k.get(ItemPageTransition);
+                        g gVar2 = (WorkspacePage) PageTouchHandler.this.PageContentType.get(ItemPageTransition);
                         if (gVar2.r() != -1) {
                             gVar2.a(i + 1);
                             b(gVar2, 250);
                         }
                     }
-                    PageTouchHandler.this.k.remove(gVar);
-                    PageTouchHandler.this.k.add(size, gVar);
+                    PageTouchHandler.this.PageContentType.remove(gVar);
+                    PageTouchHandler.this.PageContentType.add(size, gVar);
                     gVar.a(size);
                     return;
                 }
@@ -2550,33 +2550,33 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                     while (true) {
                         int i3 = i2;
                         if (i3 < size + 1) {
-                            g gVar3 = (g) PageTouchHandler.this.k.get(i3);
+                            g gVar3 = (WorkspacePage) PageTouchHandler.this.PageContentType.get(i3);
                             gVar3.a(i3 - 1);
                             b(gVar3, 250);
                             i2 = i3 + 1;
                         } else {
-                            PageTouchHandler.this.k.remove(gVar);
-                            PageTouchHandler.this.k.add(size, gVar);
+                            PageTouchHandler.this.PageContentType.remove(gVar);
+                            PageTouchHandler.this.PageContentType.add(size, gVar);
                             gVar.a(size);
                             return;
                         }
                     }
                 } else {
                     for (int i4 = size; i4 < iR2; i4++) {
-                        g gVar4 = (g) PageTouchHandler.this.k.get(i4);
+                        g gVar4 = (WorkspacePage) PageTouchHandler.this.PageContentType.get(i4);
                         gVar4.a(i4 + 1);
                         b(gVar4, 250);
                     }
-                    PageTouchHandler.this.k.remove(gVar);
-                    PageTouchHandler.this.k.add(size, gVar);
+                    PageTouchHandler.this.PageContentType.remove(gVar);
+                    PageTouchHandler.this.PageContentType.add(size, gVar);
                     gVar.a(size);
                 }
             }
         }
 
-        private void f(final g gVar) {
+        private void f(final WorkspacePage gVar) {
             this.G = true;
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.6
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WorkspacePage.TweenParams() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.6
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     PageTouchHandler.this.c(gVar);
@@ -2599,24 +2599,24 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             dVar.h(com.censivn.C3DEngine.b.b.ScreenConstants.C);
             com.censivn.C3DEngine.b.g.TweenUtils.a(gVar);
             com.censivn.C3DEngine.b.g.TweenUtils.a(gVar, 500, dVar);
-            PageTouchHandler.this.k.remove(gVar);
+            PageTouchHandler.this.PageContentType.remove(gVar);
             PageTouchHandler.this.ac();
             if (PageTouchHandler.this.m == gVar) {
-                PageTouchHandler.this.a((g) PageTouchHandler.this.k.get(1), false, true);
+                PageTouchHandler.this.a((WorkspacePage) PageTouchHandler.this.PageContentType.get(1), false, true);
             }
             if (PageTouchHandler.this.r == gVar) {
-                PageTouchHandler.this.a((g) PageTouchHandler.this.k.get(1));
+                PageTouchHandler.this.a((WorkspacePage) PageTouchHandler.this.PageContentType.get(1));
             }
         }
 
-        private void g(g gVar) {
+        private void g(WorkspacePage gVar) {
             int iR = gVar.r();
-            int size = PageTouchHandler.this.k.size();
+            int size = PageTouchHandler.this.PageContentType.size();
             gVar.a(-1);
-            PageTouchHandler.this.k.remove(gVar);
-            PageTouchHandler.this.k.add(gVar);
+            PageTouchHandler.this.PageContentType.remove(gVar);
+            PageTouchHandler.this.PageContentType.add(gVar);
             for (int i = iR; i < size; i++) {
-                g gVar2 = (g) PageTouchHandler.this.k.get(ItemPageTransition);
+                g gVar2 = (WorkspacePage) PageTouchHandler.this.PageContentType.get(ItemPageTransition);
                 if (gVar2.r() != -1) {
                     gVar2.a(ItemPageTransition);
                     b(gVar2, 250);
@@ -2625,31 +2625,31 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             k();
         }
 
-        public void a(g gVar, int i) {
+        public void a(WorkspacePage gVar, int i) {
             Number3d number3dLocalToGlobal = gVar.localToGlobal(new Number3d());
             Number3d number3dLocalRotationToGlobal = gVar.localRotationToGlobal(new Number3d());
             gVar.removeFromParent();
-            this.c.globalToLocal(number3dLocalToGlobal);
-            this.c.globalRotationToLocal(number3dLocalRotationToGlobal);
+            this.TransitionManager.globalToLocal(number3dLocalToGlobal);
+            this.TransitionManager.globalRotationToLocal(number3dLocalRotationToGlobal);
             number3dLocalRotationToGlobal.z = 0.0f;
             number3dLocalRotationToGlobal.x = 0.0f;
             number3dLocalRotationToGlobal.y = 0.0f;
             gVar.position().setAllFrom(number3dLocalToGlobal);
             gVar.rotation().x = 0.0f;
-            gVar.rotation().y = -this.c.rotation().y;
+            gVar.rotation().y = -this.TransitionManager.rotation().y;
             gVar.rotation().z = 0.0f;
             gVar.setTag(null);
             if (gVar.r() == -1) {
-                gVar.a(this.c.numChildren());
+                gVar.a(this.TransitionManager.numChildren());
             }
-            this.c.addChild(gVar);
+            this.TransitionManager.addChild(gVar);
             k();
-            PageTouchHandler.this.k.remove(gVar);
-            PageTouchHandler.this.k.add(gVar.r(), gVar);
-            b(gVar, i);
+            PageTouchHandler.this.PageContentType.remove(gVar);
+            PageTouchHandler.this.PageContentType.add(gVar.r(), gVar);
+            b(gVar, ItemPageTransition);
         }
 
-        public void a(g gVar) {
+        public void a(WorkspacePage gVar) {
             if (!gVar.q()) {
                 if (PageTouchHandler.this.r == gVar) {
                     PageTouchHandler.this.a(gVar, false, true);
@@ -2682,7 +2682,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
     class A extends com.censivn.C3DEngine.b.d.MouseEventListener {
         boolean a;
         boolean b;
-        private g e;
+        private WorkspacePage e;
         private boolean f;
         private boolean g;
 
@@ -2692,14 +2692,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
             this.b = false;
         }
 
-        public void a(g gVar) {
+        public void a(WorkspacePage gVar) {
             this.e = gVar;
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void c(MotionEvent motionEvent) {
-            if (!this.g && this.e.t() != -1) {
-                PageTouchHandler.this.w.a(this.e, motionEvent);
+            if (!this.g && this.TransitionConfig.t() != -1) {
+                PageTouchHandler.this.HapticFeedbackManager.a(this.e, motionEvent);
                 this.g = true;
             }
         }
@@ -2707,23 +2707,23 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
             if (this.g) {
-                PageTouchHandler.this.w.a(this.e, motionEvent, motionEvent2);
+                PageTouchHandler.this.HapticFeedbackManager.a(this.e, motionEvent, motionEvent2);
             }
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent) {
-            w.b();
-            PageTouchHandler.this.w.a(this.e);
+            HapticFeedbackManager.b();
+            PageTouchHandler.this.HapticFeedbackManager.a(this.e);
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
             if (this.g) {
                 this.g = false;
-                PageTouchHandler.this.w.b(this.e, motionEvent);
+                PageTouchHandler.this.HapticFeedbackManager.b(this.e, motionEvent);
             }
-            PageTouchHandler.this.w.f();
+            PageTouchHandler.this.HapticFeedbackManager.f();
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -2739,7 +2739,7 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 this.f = false;
                 if (Math.abs(TransitionRenderer) > Math.abs(f2)) {
                     this.b = true;
-                    PageTouchHandler.this.w.e();
+                    PageTouchHandler.this.HapticFeedbackManager.e();
                 } else {
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.a.1
                         @Override // java.lang.Runnable
@@ -2750,14 +2750,14 @@ public class PageTouchHandler implements b.a, com.censivn.C3DEngine.b.c.WindowMa
                 }
             }
             if (this.b) {
-                PageTouchHandler.this.w.b(motionEvent2.getX() - motionEvent.getX());
+                PageTouchHandler.this.HapticFeedbackManager.b(motionEvent2.getX() - motionEvent.getX());
             }
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             if (this.b && Math.abs(TransitionRenderer) > 250.0f) {
-                PageTouchHandler.this.w.a(f / 2.0f);
+                PageTouchHandler.this.HapticFeedbackManager.a(f / 2.0f);
             }
         }
     }

@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.view.Window;
-import android.view.WindowManager;
+// android.view.WindowManager used via fully-qualified name
 import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.tsf.b;
 import com.tsf.shell.Home;
@@ -257,11 +257,11 @@ public class WindowManager {
             return;
         }
         if (z) {
-            WindowManager.LayoutParams attributes = activity.getWindow().getAttributes();
+            android.view.WindowManager.LayoutParams attributes = activity.getWindow().getAttributes();
             attributes.flags |= 1024;
             activity.getWindow().setAttributes(attributes);
         } else {
-            WindowManager.LayoutParams attributes2 = activity.getWindow().getAttributes();
+            android.view.WindowManager.LayoutParams attributes2 = activity.getWindow().getAttributes();
             attributes2.flags &= -1025;
             activity.getWindow().setAttributes(attributes2);
         }
@@ -292,12 +292,12 @@ public class WindowManager {
     public void a(boolean z) {
         if (this.g_ != z) {
             if (z) {
-                WindowManager.LayoutParams attributes = Home.b().getWindow().getAttributes();
+                android.view.WindowManager.LayoutParams attributes = Home.b().getWindow().getAttributes();
                 attributes.flags |= 1024;
                 Home.b().getWindow().setAttributes(attributes);
                 this.g_ = true;
             } else {
-                WindowManager.LayoutParams attributes2 = Home.b().getWindow().getAttributes();
+                android.view.WindowManager.LayoutParams attributes2 = Home.b().getWindow().getAttributes();
                 attributes2.flags &= -1025;
                 Home.b().getWindow().setAttributes(attributes2);
                 this.g_ = false;

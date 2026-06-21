@@ -3,12 +3,12 @@ package com.tsf.shell.f.f;
 import com.censivn.C3DEngine.common.renderer.MatrixStack;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageRenderBuffer extends com.censivn.C3DEngine.b.f.BaseColoredRectRenderable {
-    public PageRenderBuffer() {
-        super(com.censivn.C3DEngine.b.b.ScreenConstants.F, com.censivn.C3DEngine.b.b.ScreenConstants.G, 1, 1, false);
+public class B extends com.censivn.C3DEngine.b.f.h {
+    public B() {
+        super(com.censivn.C3DEngine.b.b.A.F, com.censivn.C3DEngine.b.b.A.G, 1, 1, false);
     }
 
-    @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
+    @Override // com.censivn.C3DEngine.b.f.j, com.censivn.C3DEngine.b.f.i
     public void dispatchDraw() {
         if (visible()) {
             onDrawStart();
@@ -20,16 +20,16 @@ public class PageRenderBuffer extends com.censivn.C3DEngine.b.f.BaseColoredRectR
         }
     }
 
-    public void a(WorkspacePage gVar) {
+    public void a(g gVar) {
         if (visible()) {
             onDrawStart();
-            h.PageShaderNode.position().setAllFrom(position());
-            h.PageShaderNode.rotation().setAllFrom(rotation());
-            h.PageShaderNode.scale().setAllFrom(scale());
+            h.a.position().setAllFrom(position());
+            h.a.rotation().setAllFrom(rotation());
+            h.a.scale().setAllFrom(scale());
             gVar.u();
-            h.PageShaderNode.position().reset();
-            h.PageShaderNode.rotation().reset();
-            h.PageShaderNode.scale().setAll(1.0f, 1.0f, 1.0f);
+            h.a.position().reset();
+            h.a.rotation().reset();
+            h.a.scale().setAll(1.0f, 1.0f, 1.0f);
             MatrixStack.glPushMatrix();
             draw();
             MatrixStack.glColor(alpha(), getDefaultColor());

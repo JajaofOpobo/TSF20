@@ -4,7 +4,7 @@ import android.view.KeyEvent;
 import com.censivn.C3DEngine.b.c.KeyboardHandler;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class ShellKeyEventHandler implements b.a {
+public class ShellKeyEventHandler implements KeyboardHandler.a {
     @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
     }

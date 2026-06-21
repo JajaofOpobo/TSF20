@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerItemLaunchAction extends DrawerShortcutItemBase {
     private int a;
-    private j b;
+    private DrawerItemSettingsAction b;
 
     public DrawerItemLaunchAction(int i, LauncherShortcut3DInfo launcherShortcut3DInfo, com.tsf.shell.manager.o.ButtonMetrics aVar, boolean z) {
         super(launcherShortcut3DInfo, aVar);
@@ -32,7 +32,7 @@ public class DrawerItemLaunchAction extends DrawerShortcutItemBase {
         }
     }
 
-    public j q() {
+    public DrawerItemSettingsAction q() {
         return this.b;
     }
 
@@ -51,7 +51,7 @@ public class DrawerItemLaunchAction extends DrawerShortcutItemBase {
         com.tsf.shell.manager.app.FolderManager.c.a(this);
     }
 
-    public void a(j jVar) {
+    public void a(DrawerItemSettingsAction jVar) {
         this.b = jVar;
     }
 

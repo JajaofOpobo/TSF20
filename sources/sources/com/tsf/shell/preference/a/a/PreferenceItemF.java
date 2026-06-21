@@ -31,7 +31,7 @@ public class PreferenceItemF extends i {
             }
         });
         b(jVar);
-        com.censivn.C3DEngine.b.e.IconButtonRenderer aVar = new com.censivn.C3DEngine.b.e.IconButtonRenderer();
+        com.censivn.C3DEngine.b.e.IconButtonRenderer aVar = new com.censivn.C3DEngine.b.PreferenceItemE.IconButtonRenderer();
         this.a = aVar;
         aVar.h(com.tsf.b.i.mn_folder_auto_close);
         aVar.i(com.tsf.b.i.mn_folder_auto_close_summary);
@@ -50,7 +50,7 @@ public class PreferenceItemF extends i {
         AlertDialog.Builder builder = new AlertDialog.Builder(com.censivn.C3DEngine.C3DEngine.d());
         builder.setTitle(com.tsf.b.i.mn_folder_animation);
         final int iAr = com.tsf.shell.manager.b.ConfigManager.ar();
-        builder.setSingleChoiceItems(new String[]{x.c(com.tsf.b.i.mn_folder_animation_quick), x.c(com.tsf.b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.3
+        builder.setSingleChoiceItems(new String[]{GraphicsEngineBridge.c(com.tsf.b.i.mn_folder_animation_quick), GraphicsEngineBridge.c(com.tsf.b.i.mn_folder_animation_normal)}, iAr, new DialogInterface.OnClickListener() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.3
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialogInterface, int i) {
                 PreferenceItemF.this.c = i;
@@ -76,10 +76,10 @@ public class PreferenceItemF extends i {
     public void i() {
         switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
             case 0:
-                this.b.b(x.c(com.tsf.b.i.mn_folder_animation_quick));
+                this.PreferenceItemB.b(GraphicsEngineBridge.c(com.tsf.b.i.mn_folder_animation_quick));
                 break;
             case 1:
-                this.b.b(x.c(com.tsf.b.i.mn_folder_animation_normal));
+                this.PreferenceItemB.b(GraphicsEngineBridge.c(com.tsf.b.i.mn_folder_animation_normal));
                 break;
         }
     }

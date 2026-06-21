@@ -12,17 +12,17 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     public boolean a;
     private DesktopTouchHandlerE b;
     private DesktopTouchHandlerD d;
-    private com.tsf.shell.f.i.B e;
+    private com.tsf.shell.f.i.PageItem e;
     private float f;
     private float g;
     private boolean h;
 
-    public DesktopTouchHandler(i iVar) {
+    public DesktopTouchHandler(IRenderable iVar) {
         super(iVar);
         this.h = false;
     }
 
-    public void a(e eVar) {
+    public void a(DesktopTouchHandlerE eVar) {
         this.b = eVar;
         this.d = eVar.a();
     }
@@ -63,20 +63,20 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
         super.c(motionEvent);
         if (this.b.a(true)) {
             this.h = false;
-            com.tsf.shell.f.i.B bVarE = this.b.e(motionEvent);
-            if (bVarE != null && (bVarE instanceof com.tsf.shell.f.i.C)) {
-                com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) bVarE;
+            com.tsf.shell.f.i.PageItem bVarE = this.b.e(motionEvent);
+            if (bVarE != null && (bVarE instanceof com.tsf.shell.f.i.ShortcutItem)) {
+                com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) bVarE;
                 w.a();
                 this.e = cVar;
                 this.a = true;
                 if (cVar.A().e()) {
                     int i = Integer.MAX_VALUE;
-                    ArrayList<com.tsf.shell.f.i.C> arrayListI = cVar.A().i();
+                    ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayListI = cVar.A().i();
                     cVar.rotation().z = 0.0f;
                     int size = arrayListI.size();
                     int i2 = 0;
                     while (i2 < size) {
-                        com.tsf.shell.f.i.C cVar2 = arrayListI.get(i2);
+                        com.tsf.shell.f.i.ShortcutItem cVar2 = arrayListI.get(i2);
                         if (cVar2 != cVar) {
                             iJ = cVar2.J();
                             if (iJ >= i) {
@@ -96,7 +96,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
                 }
                 com.tsf.shell.manager.A.j.a((IRenderable) this.e, true);
                 a();
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
                 dVar.l(1.2f);
                 dVar.m(1.2f);
                 dVar.n(1.2f);
@@ -121,7 +121,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
             boolean zA = this.b.a(this.e, motionEvent.getX(), motionEvent.getY(), false, true);
             com.tsf.shell.manager.A.j.b(this.e);
             if (zA && this.b.e(this.e)) {
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
                 dVar.n(1.0f);
@@ -131,29 +131,29 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
                 this.b.d(this.e);
                 return;
             }
-            this.b.b().globalToLocal(this.e.position());
-            this.b.b().addChildAt(this.e, this.e.J());
-            Number3d number3dA = this.b.a(this.e.J());
-            if (this.e instanceof com.tsf.shell.f.i.C) {
-                com.tsf.shell.f.i.C cVar = (com.tsf.shell.f.i.C) this.e;
+            this.b.b().globalToLocal(this.DesktopTouchHandlerE.position());
+            this.b.b().addChildAt(this.e, this.DesktopTouchHandlerE.J());
+            Number3d number3dA = this.b.a(this.DesktopTouchHandlerE.J());
+            if (this.e instanceof com.tsf.shell.f.i.ShortcutItem) {
+                com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) this.e;
                 if (cVar.as()) {
-                    ArrayList<com.tsf.shell.f.i.C> arrayListAw = cVar.aw();
-                    ArrayList<com.tsf.shell.f.i.B> arrayList = new ArrayList<>();
+                    ArrayList<com.tsf.shell.f.i.ShortcutItem> arrayListAw = cVar.aw();
+                    ArrayList<com.tsf.shell.f.i.PageItem> arrayList = new ArrayList<>();
                     int size = arrayListAw == null ? 0 : arrayListAw.size();
                     if (size > 0) {
                         int iJ = cVar.J() + 1;
                         for (int i = 0; i < size; i++) {
-                            com.tsf.shell.f.i.C cVar2 = arrayListAw.get(i);
+                            com.tsf.shell.f.i.ShortcutItem cVar2 = arrayListAw.get(i);
                             arrayList.add(cVar2);
-                            cVar2.position().x = cVar.position().x + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
-                            cVar2.position().y = cVar.position().y + (com.tsf.shell.f.i.b.e.b.j * (i + 1));
+                            cVar2.position().x = cVar.position().x + (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.j * (i + 1));
+                            cVar2.position().y = cVar.position().y + (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.j * (i + 1));
                             cVar2.removeFromParent();
                         }
                         this.b.a(arrayList, iJ);
                     }
                 }
             }
-            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
             this.b.d(this.e);
             dVar2.l(1.0f);
             dVar2.m(1.0f);
@@ -163,8 +163,8 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
             dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar2);
-            if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e.f.b) && (this.e instanceof com.tsf.shell.f.i.C)) {
-                ((com.tsf.shell.f.i.C) this.e).ai();
+            if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e.f.EditModeNode) && (this.e instanceof com.tsf.shell.f.i.ShortcutItem)) {
+                ((com.tsf.shell.f.i.ShortcutItem) this.e).ai();
             }
         }
     }
@@ -174,15 +174,15 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
         super.a(motionEvent, motionEvent2);
         if (this.a) {
             if (this.h) {
-                this.e.position().x = (int) (this.f + (motionEvent2.getX() - motionEvent.getX()));
-                this.e.position().y = (int) (this.g - (motionEvent2.getY() - motionEvent.getY()));
+                this.DesktopTouchHandlerE.position().x = (int) (this.f + (motionEvent2.getX() - motionEvent.getX()));
+                this.DesktopTouchHandlerE.position().y = (int) (this.g - (motionEvent2.getY() - motionEvent.getY()));
                 this.b.a(this.e, motionEvent2.getX(), motionEvent2.getY());
                 return;
             }
-            if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 60.0f) {
+            if (GraphicsEngineBridge.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 60.0f) {
                 this.h = true;
-                if (this.e instanceof com.tsf.shell.f.i.B) {
-                    this.e.ab();
+                if (this.e instanceof com.tsf.shell.f.i.PageItem) {
+                    this.DesktopTouchHandlerE.ab();
                     return;
                 }
                 return;
@@ -198,7 +198,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     }
 
     public void a() {
-        a(this.e.position().x, this.e.position().y);
+        a(this.DesktopTouchHandlerE.position().x, this.DesktopTouchHandlerE.position().y);
     }
 
     public void a(float f, float f2) {

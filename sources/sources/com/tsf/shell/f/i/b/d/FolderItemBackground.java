@@ -12,22 +12,22 @@ public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorCon
             @Override
             public void a() {
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    w.b();
+                    HapticFeedbackManager.b();
                     com.tsf.shell.f.i.b.d.FolderShortcutItem.n.a(com.tsf.shell.f.i.b.d.FolderShortcutItem.k);
                 }
             }
 
             @Override
             public boolean b() {
-                return (com.tsf.shell.f.i.b.d.FolderShortcutItem.k == null || com.tsf.shell.f.i.b.d.FolderShortcutItem.k.aC()) ? false : true;
+                return (com.tsf.shell.f.i.b.d.FolderShortcutItem.k == null || com.tsf.shell.f.i.b.d.FolderShortcutItem.ItemPositionAnimator.aC()) ? false : true;
             }
         });
         arrayList.add(new FolderItemState.C0092c(com.tsf.b.i.menu_multiple_choice, com.tsf.b.d.widget_folder_multi_choice) {
             @Override
             public void a() {
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    w.b();
-                    com.tsf.shell.f.i.b.d.FolderShortcutItem.k.aE().d();
+                    HapticFeedbackManager.b();
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem.ItemPositionAnimator.aE().d();
                 }
             }
         });
@@ -35,7 +35,7 @@ public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorCon
             @Override
             public void a() {
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    w.b();
+                    HapticFeedbackManager.b();
                     com.tsf.shell.f.i.b.d.FolderShortcutItem.l.a(com.tsf.shell.f.i.b.d.FolderShortcutItem.k);
                 }
             }
@@ -43,7 +43,7 @@ public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorCon
         arrayList.add(new FolderItemState.C0092c(com.tsf.b.i.text_preferences, com.tsf.b.d.widget_folder_preferences) {
             @Override
             public void a() {
-                w.b();
+                HapticFeedbackManager.b();
                 com.tsf.shell.f.i.b.d.FolderShortcutItem.l.a();
             }
         });
@@ -59,8 +59,8 @@ public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorCon
             @Override
             public void a() {
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    w.b();
-                    com.tsf.shell.f.i.b.d.FolderShortcutItem.k.b(0);
+                    HapticFeedbackManager.b();
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem.ItemPositionAnimator.b(0);
                 }
             }
         });
@@ -68,8 +68,8 @@ public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorCon
             @Override
             public void a() {
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    w.b();
-                    com.tsf.shell.f.i.b.d.FolderShortcutItem.k.b(2);
+                    HapticFeedbackManager.b();
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem.ItemPositionAnimator.b(2);
                 }
             }
         });
@@ -77,8 +77,8 @@ public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorCon
             @Override
             public void a() {
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    w.b();
-                    com.tsf.shell.f.i.b.d.FolderShortcutItem.k.b(1);
+                    HapticFeedbackManager.b();
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem.ItemPositionAnimator.b(1);
                 }
             }
         });
@@ -86,8 +86,8 @@ public class FolderItemBackground extends com.tsf.shell.f.e.d.a.DropIndicatorCon
             @Override
             public void a() {
                 if (com.tsf.shell.f.i.b.d.FolderShortcutItem.k != null) {
-                    w.b();
-                    com.tsf.shell.f.i.b.d.FolderShortcutItem.k.b(3);
+                    HapticFeedbackManager.b();
+                    com.tsf.shell.f.i.b.d.FolderShortcutItem.ItemPositionAnimator.b(3);
                 }
             }
         });

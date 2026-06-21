@@ -42,12 +42,12 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     private boolean A = false;
     private boolean F = false;
     private Number3d G = new Number3d();
-    private ArrayList<i> H = new ArrayList<>();
+    private ArrayList<IRenderable> H = new ArrayList<>();
     private ArrayList<Integer> I = new ArrayList<>();
     private ArrayList<Integer> J = new ArrayList<>();
-    private ArrayList<i> K = new ArrayList<>();
-    private ArrayList<a> B = new ArrayList<>();
-    private ArrayList<a> C = new ArrayList<>();
+    private ArrayList<IRenderable> K = new ArrayList<>();
+    private ArrayList<DesktopTouchHandler> B = new ArrayList<>();
+    private ArrayList<DesktopTouchHandler> C = new ArrayList<>();
     private BaseRenderable d = new BaseRenderable();
     private BaseRenderable b = new BaseRenderable();
     private BaseRenderable c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.2
@@ -58,7 +58,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     };
 
     public void a(final float f, final float f2, final float f3, final float f4) {
-        if (com.censivn.C3DEngine.a.e.l()) {
+        if (com.censivn.C3DEngine.a.DesktopTouchHandlerE.l()) {
             c(f3 - f, f4 - f2);
         } else {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.1
@@ -120,7 +120,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        int i = -((int) ((this.c.position().x - (this.f / 2.0f)) / this.f));
+        int i = -((int) ((this.DesktopTouchHandlerC.position().x - (this.f / 2.0f)) / this.f));
         if (i > this.z - 1) {
             i = this.z - 1;
         }
@@ -136,14 +136,14 @@ public class DesktopTouchHandlerH extends BaseRenderable {
         }
         p();
         this.x = (-this.y) * this.f;
-        this.c.setAnimationObjectState(true);
+        this.DesktopTouchHandlerC.setAnimationObjectState(true);
     }
 
     public void b(float f, float f2) {
-        PositionNumber3d positionNumber3dPosition = this.c.position();
+        PositionNumber3d positionNumber3dPosition = this.DesktopTouchHandlerC.position();
         this.d.position().x = f;
         positionNumber3dPosition.x = f;
-        PositionNumber3d positionNumber3dPosition2 = this.c.position();
+        PositionNumber3d positionNumber3dPosition2 = this.DesktopTouchHandlerC.position();
         this.d.position().y = f2;
         positionNumber3dPosition2.y = f2;
     }
@@ -160,8 +160,8 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     }
 
     public void c() {
-        while (!this.c.children().isEmpty()) {
-            i iVarRemoveChildAt = this.c.removeChildAt(0);
+        while (!this.DesktopTouchHandlerC.children().isEmpty()) {
+            i iVarRemoveChildAt = this.DesktopTouchHandlerC.removeChildAt(0);
             this.H.add(iVarRemoveChildAt);
             this.K.add(iVarRemoveChildAt);
         }
@@ -174,11 +174,11 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     public void d() {
         this.F = true;
         if (this.D != null) {
-            Iterator<i> it = this.c.children().iterator();
+            Iterator<IRenderable> it = this.DesktopTouchHandlerC.children().iterator();
             while (it.hasNext()) {
                 it.next().setDisplayTag(-1);
             }
-            Iterator<i> it2 = this.H.iterator();
+            Iterator<IRenderable> it2 = this.H.iterator();
             while (it2.hasNext()) {
                 it2.next().setDisplayTag(-1);
             }
@@ -187,7 +187,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
 
     public void e() {
         a(0);
-        this.c.position().x = this.x;
+        this.DesktopTouchHandlerC.position().x = this.x;
     }
 
     private void i() {
@@ -209,7 +209,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
                 }
             }
             g();
-            this.c.setAnimationObjectState(true);
+            this.DesktopTouchHandlerC.setAnimationObjectState(true);
         }
     }
 
@@ -217,7 +217,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
         a aVarRemove;
         int size = this.B.size();
         if (this.C.isEmpty()) {
-            aVarRemove = new a();
+            aVarRemove = new DesktopTouchHandler();
         } else {
             aVarRemove = this.C.remove(0);
         }
@@ -251,7 +251,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
 
     private void b(int i, i iVar) {
         iVar.setDisplayTag(i);
-        this.c.addChild(iVar);
+        this.DesktopTouchHandlerC.addChild(iVar);
         a(i, iVar);
     }
 
@@ -272,18 +272,18 @@ public class DesktopTouchHandlerH extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 h.this.A = true;
-                this.a = h.this.c.position().x;
-                h.this.c.setAnimationObjectState(true);
+                this.a = h.this.DesktopTouchHandlerC.position().x;
+                h.this.DesktopTouchHandlerC.setAnimationObjectState(true);
                 h.this.x = this.a;
-                float[] fArrA = x.a(motionEvent);
+                float[] fArrA = GraphicsEngineBridge.a(motionEvent);
                 h.this.G.reset();
                 h.this.G.x = fArrA[0];
                 h.this.G.y = fArrA[1];
-                h.this.G = h.this.c.globalToLocal(h.this.G);
+                h.this.G = h.this.DesktopTouchHandlerC.globalToLocal(h.this.G);
                 int iD = h.this.d(h.this.G.x, h.this.G.y);
                 this.d = null;
                 if (iD != -1) {
-                    for (i iVar : h.this.c.children()) {
+                    for (i iVar : h.this.DesktopTouchHandlerC.children()) {
                         if (iVar.getDisplayTag() == iD) {
                             this.d = iVar;
                             return;
@@ -301,7 +301,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
                 h.a = 0.3f;
                 h.this.x = this.a + (motionEvent2.getX() - motionEvent.getX());
-                h.this.x = com.tsf.shell.f.e.c.a(h.this.x, h.this.w, h.this.v);
+                h.this.x = com.tsf.shell.f.e.DesktopTouchHandlerC.a(h.this.x, h.this.w, h.this.v);
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -414,27 +414,27 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     }
 
     private void n() {
-        if (com.censivn.C3DEngine.a.e.l()) {
-            this.u = x.b(b.d.scrollcontainer_arrow);
+        if (com.censivn.C3DEngine.a.DesktopTouchHandlerE.l()) {
+            this.u = GraphicsEngineBridge.b(b.d.scrollcontainer_arrow);
             this.s = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 24.0f, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
             this.s.rotation().z = 180.0f;
             this.s.textures().addElement(this.u);
-            com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.DesktopTouchHandlerC.a(this.s, com.tsf.shell.manager.o.c.h);
             this.t = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 24.0f, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
             this.t.textures().addElement(this.u);
-            com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.DesktopTouchHandlerC.a(this.t, com.tsf.shell.manager.o.c.h);
             this.s.calAABB(3.0f, 3.0f, 1.0f);
             this.t.calAABB(3.0f, 3.0f, 1.0f);
         } else {
             this.s = new GridRenderable(0.0f, 0.0f, false);
             this.s.rotation().z = 180.0f;
-            com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.DesktopTouchHandlerC.a(this.s, com.tsf.shell.manager.o.c.h);
             this.t = new GridRenderable(0.0f, 0.0f, false);
-            com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
+            com.tsf.shell.manager.o.DesktopTouchHandlerC.a(this.t, com.tsf.shell.manager.o.c.h);
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.4
                 @Override // java.lang.Runnable
                 public void run() {
-                    h.this.u = x.b(b.d.scrollcontainer_arrow);
+                    h.this.u = GraphicsEngineBridge.b(b.d.scrollcontainer_arrow);
                     h.this.s.a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 24.0f);
                     h.this.t.a(com.censivn.C3DEngine.b.b.ScreenConstants.c * 24.0f);
                     h.this.s.b(com.censivn.C3DEngine.b.b.ScreenConstants.c * 45.0f);
@@ -475,19 +475,19 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     public void f() {
         i next;
         i();
-        if (this.c.getAnimationObjectState()) {
+        if (this.DesktopTouchHandlerC.getAnimationObjectState()) {
             this.K.clear();
-            this.c.position().x += (this.x - this.c.position().x) * a;
-            if (!this.A && Math.abs(this.c.position().x - this.x) < 0.1f) {
-                this.c.position().x = this.x;
-                this.c.setAnimationObjectState(false);
+            this.DesktopTouchHandlerC.position().x += (this.x - this.DesktopTouchHandlerC.position().x) * a;
+            if (!this.A && Math.abs(this.DesktopTouchHandlerC.position().x - this.x) < 0.1f) {
+                this.DesktopTouchHandlerC.position().x = this.x;
+                this.DesktopTouchHandlerC.setAnimationObjectState(false);
             }
             c();
             if (this.D == null || this.e <= 0) {
                 o();
                 return;
             }
-            float f = this.c.position().x;
+            float f = this.DesktopTouchHandlerC.position().x;
             int i = this.e - 1;
             int i2 = (int) ((-f) / this.f);
             if (i2 < 0) {
@@ -507,7 +507,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
                 Iterator<Integer> it = this.J.iterator();
                 while (it.hasNext()) {
                     int iIntValue = it.next().intValue();
-                    Iterator<i> it2 = this.H.iterator();
+                    Iterator<IRenderable> it2 = this.H.iterator();
                     while (true) {
                         if (!it2.hasNext()) {
                             next = null;
@@ -552,7 +552,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
                         return true;
                     }
                 } else {
-                    float f = this.B.get(i6).a + this.c.position().x;
+                    float f = this.B.get(i6).a + this.DesktopTouchHandlerC.position().x;
                     if (f - (this.l / 2.0f) < this.f / 2.0f && f + (this.l / 2.0f) > (-this.f) / 2.0f) {
                         this.J.add(Integer.valueOf(i6));
                     }
@@ -587,7 +587,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
             this.d.addChild(kVar);
         }
         if (kVar.alpha() != 255.0f) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
             dVar.a(255);
             com.censivn.C3DEngine.b.g.TweenUtils.a(kVar);
             com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
@@ -597,7 +597,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.7
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.7
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     h.this.d.removeChild(kVar);

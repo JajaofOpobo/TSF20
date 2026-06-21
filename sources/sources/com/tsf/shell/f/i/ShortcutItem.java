@@ -15,7 +15,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShortcutItem extends PageItem {
-    private static k b;
+    private static GridRenderable b;
     public static TextureElement f;
     public static TextureElement g;
     public static TextureElement h;
@@ -253,7 +253,7 @@ public class ShortcutItem extends PageItem {
             g gVarZ = z();
             if (gVarZ.c(this)) {
                 ArrayList<C> arrayListAw = aw();
-                com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC(gVarZ, true);
+                com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.PageItem.DesktopTouchHandlerC(gVarZ, true);
                 if (400 > com.censivn.C3DEngine.b.b.ScreenConstants.D) {
                     i = (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2) - 20;
                 } else {
@@ -273,7 +273,7 @@ public class ShortcutItem extends PageItem {
 
     public void ay() {
         if (as()) {
-            j jVar = (j) parent();
+            j jVar = (BaseRenderable) parent();
             int childIndexOf = jVar.getChildIndexOf(this);
             ArrayList<C> arrayListAw = aw();
             int size = arrayListAw.size();

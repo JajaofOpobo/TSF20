@@ -151,7 +151,7 @@ public class HorizontalPageRenderer extends BaseRenderable {
                     }
                     HorizontalPageRenderer.this.h = this.a - (motionEvent2.getY() - motionEvent.getY());
                     if (!HorizontalPageRenderer.this.l) {
-                        HorizontalPageRenderer.this.h = com.tsf.shell.f.e.c.a(HorizontalPageRenderer.this.h, HorizontalPageRenderer.this.g, HorizontalPageRenderer.this.f, e.a);
+                        HorizontalPageRenderer.this.h = com.tsf.shell.f.e.SpringEasing.a(HorizontalPageRenderer.this.h, HorizontalPageRenderer.this.g, HorizontalPageRenderer.this.f, e.a);
                     }
                 }
             }
@@ -162,7 +162,7 @@ public class HorizontalPageRenderer extends BaseRenderable {
                     if (f2 < 0.0f && HorizontalPageRenderer.this.l) {
                         HorizontalPageRenderer.this.d();
                     }
-                    HorizontalPageRenderer.this.h = com.tsf.shell.f.e.c.b(HorizontalPageRenderer.this.h, f2);
+                    HorizontalPageRenderer.this.h = com.tsf.shell.f.e.SpringEasing.b(HorizontalPageRenderer.this.h, f2);
                 }
             }
 
@@ -442,7 +442,7 @@ public class HorizontalPageRenderer extends BaseRenderable {
                     this.j = 1;
                     f5 = f6;
                 }
-                this.p = (f5 / com.tsf.shell.f.e.c.a) * 1.5f;
+                this.p = (f5 / com.tsf.shell.f.e.SpringEasing.a) * 1.5f;
                 if (this.p > 0.0f) {
                     if (this.s != this.j && this.q) {
                         p();

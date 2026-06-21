@@ -7,7 +7,7 @@ import com.tsf.shell.f.i.b.e.DrawerItemVisual;
 public interface AlignmentListener {
     static void a(int i, int i2) {}
 
-    void a(i iVar, DrawerItemVisual gVar);
+    void a(IRenderable iVar, DrawerItemVisual gVar);
 
     void e();
 
