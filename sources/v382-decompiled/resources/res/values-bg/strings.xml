@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cubeclock_app_name">Kell</string>
+    <string name="abbrev_wday_month_day_no_year">d MMMM, EEE</string>
+    <string name="full_wday_month_day_no_year">d MMMM, EEEE</string>
+    <string name="alarm_app_name">Kell</string>
+    <string name="update_notic_update_available">Налична е актуализация</string>
+    <string name="update_notic_updateapk_beta">Бета</string>
+    <string name="plugin_crop_cancel">Отказ</string>
+    <string name="plugin_crop_crop_free">Безплатно</string>
+    <string name="plugin_crop_crop_square">Квадрат</string>
+    <string name="plugin_crop_custom">По избор</string>
+    <string name="plugin_crop_ok">OK</string>
+    <string name="theme_picker_discard_changes">Отхвърляне на промените</string>
+    <string name="theme_picker_edit_shortcut">Редакция на пряк път</string>
+    <string name="theme_picker_info_target_label">Информация за приложението</string>
+    <string name="theme_picker_system">Система</string>
+    <string name="theme_picker_theme_picker_gallery_apps">Галерия с приложения</string>
+    <string name="theme_picker_delete_target_uninstall_label">Деинсталиране</string>
+</resources>

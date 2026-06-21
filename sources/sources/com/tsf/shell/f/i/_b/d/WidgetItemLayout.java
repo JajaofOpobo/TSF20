@@ -45,7 +45,7 @@ public class WidgetItemLayout {
         }
     }
 
-    public void a(b bVar) {
+    public void a(WorkspaceShortcutItem bVar) {
         if (bVar.u != null) {
             boolean z = bVar.x;
             if (z) {
@@ -102,21 +102,21 @@ public class WidgetItemLayout {
         }
     }
 
-    public void b(b bVar) {
+    public void b(WorkspaceShortcutItem bVar) {
         if (bVar.x) {
             bVar.x = false;
             d(bVar);
         }
     }
 
-    public void c(b bVar) {
+    public void c(WorkspaceShortcutItem bVar) {
         if (!bVar.x) {
             bVar.x = true;
             e(bVar);
         }
     }
 
-    public void d(b bVar) {
+    public void d(WorkspaceShortcutItem bVar) {
         bVar.o.visible(true);
         if (bVar.q != null) {
             bVar.q.visible(true);
@@ -133,7 +133,7 @@ public class WidgetItemLayout {
         bVar.t.visible(false);
     }
 
-    public void e(b bVar) {
+    public void e(WorkspaceShortcutItem bVar) {
         bVar.o.visible(false);
         if (bVar.q != null) {
             bVar.q.visible(false);

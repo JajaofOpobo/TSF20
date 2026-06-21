@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cubeclock_app_name">Hodiny</string>
+    <string name="abbrev_wday_month_day_no_year">EEE d MMMM</string>
+    <string name="full_wday_month_day_no_year">EEEE d MMMM</string>
+    <string name="alarm_app_name">Hodiny</string>
+    <string name="update_notic_update_available">Hi ha una actualització</string>
+    <string name="update_notic_updateapk_beta">Beta</string>
+    <string name="plugin_crop_cancel">Cancel·la</string>
+    <string name="plugin_crop_crop_free">Gratuït</string>
+    <string name="plugin_crop_crop_square">Quadrat</string>
+    <string name="plugin_crop_custom">Personalitzat</string>
+    <string name="plugin_crop_ok">D\'acord</string>
+    <string name="theme_picker_discard_changes">Descarta els canvis</string>
+    <string name="theme_picker_edit_shortcut">Edita la drecera</string>
+    <string name="theme_picker_info_target_label">Informació de l\'aplicació</string>
+    <string name="theme_picker_system">Sistema</string>
+    <string name="theme_picker_theme_picker_gallery_apps">Galeria d\'apps</string>
+    <string name="theme_picker_delete_target_uninstall_label">Desinstal·la</string>
+</resources>

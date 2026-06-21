@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cubeclock_app_name">Laikrodis</string>
+    <string name="abbrev_wday_month_day_no_year">E MMMM d</string>
+    <string name="full_wday_month_day_no_year">E MMMM d</string>
+    <string name="alarm_app_name">Laikrodis</string>
+    <string name="update_notic_update_available">Galimas atnaujinimas</string>
+    <string name="update_notic_updateapk_beta">Beta</string>
+    <string name="plugin_crop_cancel">Atšaukti</string>
+    <string name="plugin_crop_crop_free">Nemokamai</string>
+    <string name="plugin_crop_crop_square">Kvadratas</string>
+    <string name="plugin_crop_custom">Pasirinktinis</string>
+    <string name="plugin_crop_ok">Gerai</string>
+    <string name="theme_picker_discard_changes">Atšaukti pakeitimus</string>
+    <string name="theme_picker_edit_shortcut">Redaguoti nuorodą</string>
+    <string name="theme_picker_info_target_label">Programos informacija</string>
+    <string name="theme_picker_system">Sistema</string>
+    <string name="theme_picker_theme_picker_gallery_apps">Galerijos programos</string>
+    <string name="theme_picker_delete_target_uninstall_label">Pašalinti</string>
+</resources>

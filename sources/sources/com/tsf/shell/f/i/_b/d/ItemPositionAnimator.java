@@ -13,7 +13,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ItemPositionAnimator {
     private static int b = 800;
-    private b c;
+    private WorkspaceShortcutItem c;
     private com.censivn.C3DEngine.b.f.BaseRenderable d;
     private com.tsf.shell.f.i.PageItem e;
     private int h;
@@ -37,7 +37,7 @@ public class ItemPositionAnimator {
             k.this.i();
         }
     };
-    private com.tsf.shell.f.b.ShellKeyEventHandler q = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.2
+    private com.tsf.shell.f.b.ShellKeyEventHandler q = new com.tsf.shell.f.WorkspaceShortcutItem.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.2
         @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
         public void a(int i, KeyEvent keyEvent) {
             if (i == 4 && k.this.t) {
@@ -50,14 +50,14 @@ public class ItemPositionAnimator {
         }
     };
 
-    public ItemPositionAnimator(b bVar) {
+    public ItemPositionAnimator(WorkspaceShortcutItem bVar) {
         this.c = bVar;
         this.e = this.c;
     }
 
     public void a() {
         this.f.destroy();
-        this.g.clear();
+        this.WidgetItemGrid.clear();
         this.g = null;
         this.c = null;
         this.d = null;
@@ -70,30 +70,30 @@ public class ItemPositionAnimator {
         this.n = false;
         this.o = false;
         this.p = true;
-        this.g.clear();
+        this.WidgetItemGrid.clear();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void g() {
-        if (this.e.K().container != -1 || (this.e.K() instanceof LauncherDrawerFolder3DInfo)) {
+        if (this.WidgetItemAnimation.K().container != -1 || (this.WidgetItemAnimation.K() instanceof LauncherDrawerFolder3DInfo)) {
             Number3d.TEMPNUMBER3D.reset();
-            this.e.localToGlobal(Number3d.TEMPNUMBER3D);
-            this.u = com.tsf.shell.f.c.DrawerPanelController(this.e);
-            ((com.censivn.C3DEngine.b.f.BaseRenderable) this.e.parent()).replaceChild(this.e, this.u);
-            this.e.position().setAllFrom(Number3d.TEMPNUMBER3D);
+            this.WidgetItemAnimation.localToGlobal(Number3d.TEMPNUMBER3D);
+            this.u = com.tsf.shell.f.WidgetItemState.DrawerPanelController(this.e);
+            ((com.censivn.C3DEngine.b.f.BaseRenderable) this.WidgetItemAnimation.parent()).replaceChild(this.e, this.u);
+            this.WidgetItemAnimation.position().setAllFrom(Number3d.TEMPNUMBER3D);
         }
-        this.r = this.e.rotation().z;
+        this.r = this.WidgetItemAnimation.rotation().z;
         if (this.r != 0.0f) {
             this.s = true;
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
             dVar.e(0.0f);
             dVar.l(1.0f);
             dVar.m(1.0f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar);
         } else {
-            if (this.e.scale().x != 1.0f) {
-                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+            if (this.WidgetItemAnimation.scale().x != 1.0f) {
+                com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                 dVar2.l(1.0f);
                 dVar2.m(1.0f);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
@@ -102,10 +102,10 @@ public class ItemPositionAnimator {
             this.s = false;
         }
         WorkspaceShortcutItem.m.b(this.c);
-        com.tsf.shell.d.ShellDataParser().a("LineViewer");
-        this.c.o(false);
-        this.e.mouseSkip(true);
-        this.e.removeFromParent();
+        com.tsf.shell.WidgetItemLayout.ShellDataParser().a("LineViewer");
+        this.WidgetItemState.o(false);
+        this.WidgetItemAnimation.mouseSkip(true);
+        this.WidgetItemAnimation.removeFromParent();
         com.censivn.C3DEngine.b.f.BaseRenderable jVarA = com.tsf.shell.manager.app.TaskScheduler.a(this.q);
         com.tsf.shell.manager.app.TaskScheduler.c();
         jVarA.addChild(this.e);
@@ -114,7 +114,7 @@ public class ItemPositionAnimator {
 
     public void a(final boolean z) {
         this.t = false;
-        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = this.d.children().iterator();
+        Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = this.WidgetItemLayout.children().iterator();
         while (it.hasNext()) {
             ((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it.next()).mouseEnabled(false);
         }
@@ -122,17 +122,17 @@ public class ItemPositionAnimator {
             this.r = this.u.rotation().z;
         }
         if (!z) {
-            this.e.rotation().z = this.r;
+            this.WidgetItemAnimation.rotation().z = this.r;
         }
-        this.c.a(new Runnable() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.3
+        this.WidgetItemState.a(new Runnable() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.3
             @Override // java.lang.Runnable
             public void run() {
                 com.tsf.shell.manager.app.TaskScheduler.b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.ItemPositionAnimator.3.1
                     @Override // java.lang.Runnable
                     public void run() {
                         if (!k.this.s) {
-                            if (k.this.u != null && k.this.e.scale().x != k.this.u.scale().x) {
-                                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                            if (k.this.u != null && k.this.WidgetItemAnimation.scale().x != k.this.u.scale().x) {
+                                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                                 dVar.l(k.this.u.scale().x);
                                 dVar.m(k.this.u.scale().y);
                                 com.censivn.C3DEngine.b.g.TweenUtils.a(k.this.e);
@@ -140,10 +140,10 @@ public class ItemPositionAnimator {
                             }
                         } else if (!z) {
                             if (k.this.u != null) {
-                                k.this.e.scale().setAllFrom(k.this.u.scale());
+                                k.this.WidgetItemAnimation.scale().setAllFrom(k.this.u.scale());
                             }
                         } else {
-                            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+                            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                             if (k.this.u != null) {
                                 dVar2.l(k.this.u.scale().x);
                                 dVar2.m(k.this.u.scale().y);
@@ -153,18 +153,18 @@ public class ItemPositionAnimator {
                             com.censivn.C3DEngine.b.g.TweenUtils.a(k.this.e, 250, dVar2);
                         }
                         com.tsf.shell.f.f.WorkspacePage gVarN = com.tsf.shell.manager.app.StateHub.n();
-                        k.this.e.removeFromParent();
+                        k.this.WidgetItemAnimation.removeFromParent();
                         if (k.this.u != null) {
                             ((com.censivn.C3DEngine.b.f.BaseRenderable) k.this.u.parent()).replaceChild(k.this.u, k.this.e);
-                            com.tsf.shell.f.c.DrawerPanelController(k.this.u);
+                            com.tsf.shell.f.WidgetItemState.DrawerPanelController(k.this.u);
                             k.this.u = null;
                         } else {
                             gVarN.a(k.this.e);
                         }
-                        k.this.e.mouseSkip(false);
-                        k.this.c.o(true);
+                        k.this.WidgetItemAnimation.mouseSkip(false);
+                        k.this.WidgetItemState.o(true);
                         com.tsf.shell.manager.app.TaskScheduler.b();
-                        com.tsf.shell.d.ShellDataParser().b("LineViewer");
+                        com.tsf.shell.WidgetItemLayout.ShellDataParser().b("LineViewer");
                         k.this.i = 0;
                         k.this.f();
                         com.tsf.shell.manager.app.ObserverManager.c(Home.b());
@@ -191,8 +191,8 @@ public class ItemPositionAnimator {
             while (true) {
                 int i2 = i;
                 if (i2 < this.h) {
-                    com.censivn.C3DEngine.b.f.IRenderable childAt = this.d.getChildAt(i2);
-                    float[] fArr = this.g.get((int) ((((i2 / this.h) * 0.9f) + 0.1f) * this.i));
+                    com.censivn.C3DEngine.b.f.IRenderable childAt = this.WidgetItemLayout.getChildAt(i2);
+                    float[] fArr = this.WidgetItemGrid.get((int) ((((i2 / this.h) * 0.9f) + 0.1f) * this.i));
                     PositionNumber3d positionNumber3dPosition = childAt.position();
                     positionNumber3dPosition.x = (float) (((double) positionNumber3dPosition.x) + (((double) (fArr[0] - childAt.position().x)) * 0.2d));
                     PositionNumber3d positionNumber3dPosition2 = childAt.position();
@@ -208,7 +208,7 @@ public class ItemPositionAnimator {
                             childAt.scale().y = 1.0f;
                         }
                     }
-                    if (this.n && i2 == 0 && x.b(childAt.position().x, childAt.position().y, fArr[0], fArr[1]) < 5.0f) {
+                    if (this.n && i2 == 0 && GraphicsEngineBridge.b(childAt.position().x, childAt.position().y, fArr[0], fArr[1]) < 5.0f) {
                         this.o = true;
                         ItemPositionAnimator();
                     }
@@ -234,20 +234,20 @@ public class ItemPositionAnimator {
                     k.this.g();
                     k.this.n = false;
                     k.this.f.setAnimationObjectState(true);
-                    k.this.e.addChild(k.this.f);
-                    k.this.g.clear();
-                    k.this.d = k.this.c.aF();
-                    k.this.h = k.this.d.numChildren();
+                    k.this.WidgetItemAnimation.addChild(k.this.f);
+                    k.this.WidgetItemGrid.clear();
+                    k.this.d = k.this.WidgetItemState.aF();
+                    k.this.h = k.this.WidgetItemLayout.numChildren();
                     for (int i = 0; i < k.this.h; i++) {
-                        k.this.g.add(new float[]{0.0f, 0.0f});
+                        k.this.WidgetItemGrid.add(new float[]{0.0f, 0.0f});
                     }
                     k.this.i = k.this.h;
-                    Number3d number3dLocalToGlobal = k.this.d.localToGlobal(new Number3d(0.0f, 0.0f, 0.0f));
+                    Number3d number3dLocalToGlobal = k.this.WidgetItemLayout.localToGlobal(new Number3d(0.0f, 0.0f, 0.0f));
                     k.this.j = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.H + number3dLocalToGlobal.x);
                     k.this.k = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.I - number3dLocalToGlobal.y);
                     k.this.l = motionEvent2.getX();
                     k.this.m = motionEvent2.getY();
-                    Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = k.this.d.children().iterator();
+                    Iterator<com.censivn.C3DEngine.b.f.IRenderable> it = k.this.WidgetItemLayout.children().iterator();
                     while (it.hasNext()) {
                         com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) it.next();
                         bVar.alpha(255.0f);
@@ -262,12 +262,12 @@ public class ItemPositionAnimator {
         if (this.i <= b && this.a) {
             float x = motionEvent2.getX();
             float y = motionEvent2.getY();
-            int iB = (int) (x.b(x, y, this.l, this.m) / 5.0f);
+            int iB = (int) (GraphicsEngineBridge.b(x, y, this.l, this.m) / 5.0f);
             if (iB >= 1) {
                 float f = (x - this.l) / iB;
                 float f2 = (y - this.m) / iB;
                 for (int i = 0; i < iB; i++) {
-                    this.g.add(new float[]{(((i + 1) * f) + this.l) - this.j, this.k - (((i + 1) * f2) + this.m)});
+                    this.WidgetItemGrid.add(new float[]{(((i + 1) * f) + this.l) - this.j, this.k - (((i + 1) * f2) + this.m)});
                     this.i++;
                 }
                 this.l = x;

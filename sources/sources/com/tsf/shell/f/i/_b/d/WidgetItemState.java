@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetItemState {
-    protected void a(b bVar) {
+    protected void a(WorkspaceShortcutItem bVar) {
         if (com.tsf.shell.manager.app.FeatureConfig.a()) {
             ArrayList arrayList = new ArrayList();
             for (com.censivn.C3DEngine.b.f.IRenderable iVar : bVar.aG()) {

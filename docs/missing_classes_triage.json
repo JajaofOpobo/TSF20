@@ -1,0 +1,754 @@
+{
+  "a/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.a.a"
+  },
+  "a.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 7,
+    "v3_subclasses": [
+      "EngineController.java",
+      "GLSurfaceViewWrapper.java",
+      "GestureDetector.java",
+      "MatrixUtils.java",
+      "RendererImpl.java"
+    ],
+    "ref_count": 620,
+    "v1_fqn": "com.censivn.C3DEngine.a"
+  },
+  "api/core/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.core.a"
+  },
+  "api/core/b.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.core.b"
+  },
+  "api/core/c.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.core.c"
+  },
+  "api/core/d.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.core.d"
+  },
+  "api/core/e.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.core.e"
+  },
+  "api/element/WidgetInformation.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.element.WidgetInformation"
+  },
+  "api/element/info/LauncherItem3DInfo.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherItem3DInfo"
+  },
+  "api/element/info/LauncherShortcut3DInfo.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.element.info.LauncherShortcut3DInfo"
+  },
+  "api/event/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.event.a"
+  },
+  "api/message/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.message.a"
+  },
+  "api/message/b.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.message.b"
+  },
+  "api/primitives/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.primitives.a"
+  },
+  "api/primitives/b.java": {
+    "category": 0,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 15,
+    "v1_fqn": "com.censivn.C3DEngine.api.primitives.b"
+  },
+  "api/primitives/button/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.a"
+  },
+  "api/primitives/button/b.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.b"
+  },
+  "api/primitives/button/c.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.primitives.button.c"
+  },
+  "api/shell/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.shell.a"
+  },
+  "api/tween/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.api.tween.a"
+  },
+  "b/a/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.a.a"
+  },
+  "b/a.java": {
+    "category": 1,
+    "has_package": true,
+    "subclass_count": 1,
+    "v3_subclasses": [
+      "MeshData.java"
+    ],
+    "ref_count": 2,
+    "v1_fqn": "com.censivn.C3DEngine.b.a"
+  },
+  "b/aa.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.aa"
+  },
+  "b/ab.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.ab"
+  },
+  "b/ac.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.ac"
+  },
+  "b/ad.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.ad"
+  },
+  "b/ae.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.ae"
+  },
+  "b/af.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.af"
+  },
+  "b/b/a.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 5,
+    "v3_subclasses": [
+      "BaseSliderRenderer.java",
+      "HorizontalPageRenderer.java",
+      "SliderRenderer.java",
+      "TitleBarRenderer.java",
+      "VerticalPageRenderer.java"
+    ],
+    "ref_count": 6,
+    "v1_fqn": "com.censivn.C3DEngine.b.b.a"
+  },
+  "b/b.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 9,
+    "v3_subclasses": [
+      "DesktopRenderer.java",
+      "ScreenConstants.java",
+      "TouchState.java",
+      "ZoomRenderer.java",
+      "a/BaseSliderRenderer.java"
+    ],
+    "ref_count": 319,
+    "v1_fqn": "com.censivn.C3DEngine.b.b"
+  },
+  "b/c.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 6,
+    "v3_subclasses": [
+      "ActivityResultBridge.java",
+      "AnimationListener.java",
+      "KeyboardHandler.java",
+      "TaskDispatcher.java",
+      "TextureFactory.java"
+    ],
+    "ref_count": 82,
+    "v1_fqn": "com.censivn.C3DEngine.b.c"
+  },
+  "b/d.java": {
+    "category": 1,
+    "has_package": true,
+    "subclass_count": 1,
+    "v3_subclasses": [
+      "MouseEventListener.java"
+    ],
+    "ref_count": 114,
+    "v1_fqn": "com.censivn.C3DEngine.b.d"
+  },
+  "b/e.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 10,
+    "v3_subclasses": [
+      "AbstractPanelRenderer.java",
+      "ActionButtonRenderer.java",
+      "DesktopPanelRenderer.java",
+      "IconButtonRenderer.java",
+      "IconLabelRenderer.java"
+    ],
+    "ref_count": 48,
+    "v1_fqn": "com.censivn.C3DEngine.b.e"
+  },
+  "b/f.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 22,
+    "v3_subclasses": [
+      "AltColoredRectRenderable.java",
+      "BaseColoredRectRenderable.java",
+      "BaseRenderable.java",
+      "Box3DRenderable.java",
+      "ButtonRenderable.java"
+    ],
+    "ref_count": 470,
+    "v1_fqn": "com.censivn.C3DEngine.b.f"
+  },
+  "b/g.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 13,
+    "v3_subclasses": [
+      "EasingFunctions.java",
+      "EasingInterpolator.java",
+      "TweenCallback.java",
+      "TweenManager.java",
+      "TweenParams.java"
+    ],
+    "ref_count": 208,
+    "v1_fqn": "com.censivn.C3DEngine.b.g"
+  },
+  "b/h.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 16,
+    "v3_subclasses": [
+      "a/PageThumbnailRenderer.java",
+      "a/SparkleEffect.java",
+      "b/DesktopTouchHandler.java",
+      "b/DesktopTouchHandlerB.java",
+      "b/DesktopTouchHandlerC.java"
+    ],
+    "ref_count": 54,
+    "v1_fqn": "com.censivn.C3DEngine.b.h"
+  },
+  "b/i.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.i"
+  },
+  "b/j.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.j"
+  },
+  "b/k.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.k"
+  },
+  "b/l.java": {
+    "category": 0,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 3,
+    "v1_fqn": "com.censivn.C3DEngine.b.l"
+  },
+  "b/m.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.m"
+  },
+  "b/n.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.n"
+  },
+  "b/o.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.o"
+  },
+  "b/p.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.p"
+  },
+  "b/q.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.q"
+  },
+  "b/r.java": {
+    "category": 0,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 6,
+    "v1_fqn": "com.censivn.C3DEngine.b.r"
+  },
+  "b/s.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.s"
+  },
+  "b/t.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.t"
+  },
+  "b/u.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.u"
+  },
+  "b/v.java": {
+    "category": 0,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 1,
+    "v1_fqn": "com.censivn.C3DEngine.b.v"
+  },
+  "b/w.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.w"
+  },
+  "b/x.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.x"
+  },
+  "b/y.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.y"
+  },
+  "b/z.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.b.z"
+  },
+  "c/a/a.java": {
+    "category": 1,
+    "has_package": true,
+    "subclass_count": 2,
+    "v3_subclasses": [
+      "a.java",
+      "b.java"
+    ],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.c.a.a"
+  },
+  "c/a/b.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.c.a.b"
+  },
+  "c/a/c.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.c.a.c"
+  },
+  "c/a/d.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.c.a.d"
+  },
+  "c/a/e.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.c.a.e"
+  },
+  "c/a.java": {
+    "category": 2,
+    "has_package": true,
+    "subclass_count": 9,
+    "v3_subclasses": [
+      "BaseParticle.java",
+      "ConstraintList.java",
+      "Particle.java",
+      "ParticleData.java",
+      "ParticleTransform.java"
+    ],
+    "ref_count": 16,
+    "v1_fqn": "com.censivn.C3DEngine.c.a"
+  },
+  "c/b/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.c.b.a"
+  },
+  "c/b/b.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.c.b.b"
+  },
+  "c/b.java": {
+    "category": 1,
+    "has_package": true,
+    "subclass_count": 3,
+    "v3_subclasses": [
+      "ConstraintPhysicsSystem.java",
+      "SpringPhysicsSystem.java",
+      "WavePhysicsSystem.java"
+    ],
+    "ref_count": 7,
+    "v1_fqn": "com.censivn.C3DEngine.c.b"
+  },
+  "d/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.d.a"
+  },
+  "d/b.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.d.b"
+  },
+  "d/c.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.d.c"
+  },
+  "e/a.java": {
+    "category": 1,
+    "has_package": true,
+    "subclass_count": 3,
+    "v3_subclasses": [
+      "a.java",
+      "b.java",
+      "c.java"
+    ],
+    "ref_count": 3,
+    "v1_fqn": "com.censivn.C3DEngine.e.a"
+  },
+  "e/b.java": {
+    "category": 1,
+    "has_package": true,
+    "subclass_count": 2,
+    "v3_subclasses": [
+      "a.java",
+      "b.java"
+    ],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.e.b"
+  },
+  "e/c.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.e.c"
+  },
+  "f/a.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.a"
+  },
+  "f/b.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.b"
+  },
+  "f/c.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.c"
+  },
+  "f/d.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.d"
+  },
+  "f/e.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.e"
+  },
+  "f/f.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.f"
+  },
+  "f/g.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.g"
+  },
+  "f/h.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.h"
+  },
+  "f/i.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.i"
+  },
+  "f/j.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.j"
+  },
+  "f/k.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.k"
+  },
+  "f/l.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.l"
+  },
+  "f/m.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.m"
+  },
+  "f/n.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.n"
+  },
+  "f/o.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.o"
+  },
+  "f/p.java": {
+    "category": 3,
+    "has_package": false,
+    "subclass_count": 0,
+    "v3_subclasses": [],
+    "ref_count": 0,
+    "v1_fqn": "com.censivn.C3DEngine.f.p"
+  }
+}

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class EditTarget extends BaseRenderable {
-    private a a;
+    private WorkspaceEditor a;
     private ArrayList<Integer> b;
     private ArrayList<Integer> C;
     private boolean d = false;
@@ -32,11 +32,11 @@ public class EditTarget extends BaseRenderable {
         return this.C;
     }
 
-    public void a(a aVar) {
+    public void a(WorkspaceEditor aVar) {
         this.a = aVar;
     }
 
-    public void b(a aVar) {
+    public void b(WorkspaceEditor aVar) {
         if (aVar == this.a) {
             this.a = null;
         }
@@ -47,7 +47,7 @@ public class EditTarget extends BaseRenderable {
         super.dispatchDraw();
     }
 
-    public void a(C cVar) {
+    public void a(ShortcutItem cVar) {
     }
 
     public void t() {
@@ -62,7 +62,7 @@ public class EditTarget extends BaseRenderable {
         return this.d;
     }
 
-    public i d() {
+    public IRenderable d() {
         return null;
     }
 }

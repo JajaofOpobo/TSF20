@@ -1,0 +1,11 @@
+package android.support.v4.a;
+
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+
+/* loaded from: classes.dex */
+class b {
+    public static Drawable a(Context context, int i) {
+        return context.getDrawable(i);
+    }
+}

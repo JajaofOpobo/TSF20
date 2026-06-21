@@ -14,7 +14,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     private static boolean h = false;
     private static float i = 5.0f;
     private static float j = 0.0f;
-    private b a;
+    private WorkspaceShortcutItem a;
     private float m;
     private float n;
     private float o;
@@ -24,13 +24,13 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     private boolean k = true;
     private boolean l = true;
     private boolean q = false;
-    private ArrayList<a> b = new ArrayList<>();
-    private ArrayList<a> c = new ArrayList<>();
-    private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase f = new com.tsf.shell.f.i._b.e.WidgetDrawerItemButton();
+    private ArrayList<WidgetTouchHandler> b = new ArrayList<>();
+    private ArrayList<WidgetTouchHandler> c = new ArrayList<>();
+    private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase f = new com.tsf.shell.f.i._b.WidgetItemAnimation.WidgetDrawerItemButton();
 
-    public WidgetItemGrid(b bVar) {
+    public WidgetItemGrid(WorkspaceShortcutItem bVar) {
         this.a = bVar;
-        this.f.k.removeFromParent();
+        this.f.ItemPositionAnimator.removeFromParent();
         this.f.parent(this);
         WidgetItemGrid();
     }
@@ -46,9 +46,9 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
             cVar.mouseEnabled(false);
             Number3d.TEMPNUMBER3D2.reset();
             Number3d number3dLocalToGlobal = cVar.localToGlobal(Number3d.TEMPNUMBER3D2);
-            number3dLocalToGlobal.y += this.a.aF().m();
+            number3dLocalToGlobal.y += this.WidgetTouchHandler.aF().m();
             cVar.position().setAllFrom(number3dLocalToGlobal);
-            this.a.b((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) cVar);
+            this.WidgetTouchHandler.b((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) cVar);
             com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil.a(cVar, (Runnable) null);
         }
     }
@@ -60,7 +60,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         int iNumChildren = numChildren();
         for (int i6 = 0; i6 < iNumChildren; i6++) {
             com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) getChildAt(i6);
-            a aVar = this.b.get(i6);
+            a aVar = this.WorkspaceShortcutItem.get(i6);
             a(aVar, bVar, (iNumChildren - i6) - 1);
             if (this.e) {
                 bVar.position().setAll(aVar.a, aVar.b, 0.0f);
@@ -303,8 +303,8 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         return m();
     }
 
-    public a a(int i2) {
-        return this.b.get(i2);
+    public WidgetTouchHandler a(int i2) {
+        return this.WorkspaceShortcutItem.get(i2);
     }
 
     public void a(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar) {
@@ -325,7 +325,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         if (iIndexOf != -1) {
             bVar.parent(this);
             children().set(iIndexOf, bVar);
-            this.b.get(iIndexOf).q = false;
+            this.WorkspaceShortcutItem.get(iIndexOf).q = false;
             this.d = false;
             setAnimationObjectState(true);
             invalidate();
@@ -348,7 +348,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         int i4;
         int i5;
         int iNumChildren = numChildren();
-        this.b.get((iNumChildren - i3) - 1);
+        this.WorkspaceShortcutItem.get((iNumChildren - i3) - 1);
         com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) getChildAt((iNumChildren - i3) - 1);
         if (!bVar.visible() || bVar.o) {
             return false;
@@ -367,7 +367,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         }
         int i6 = i4 > iNumChildren + (-1) ? iNumChildren - 1 : i4;
         while (i5 < i6 + 1) {
-            this.b.get((iNumChildren - i5) - 1).q = false;
+            this.WorkspaceShortcutItem.get((iNumChildren - i5) - 1).q = false;
             i5++;
         }
         this.d = false;
@@ -379,7 +379,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     public void o() {
         int iNumChildren = numChildren();
         for (int i2 = 0; i2 < iNumChildren; i2++) {
-            this.b.get(i2).q = false;
+            this.WorkspaceShortcutItem.get(i2).q = false;
         }
         this.d = false;
         setAnimationObjectState(true);
@@ -393,7 +393,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         } else {
             MatrixStack.glTranslatef(position().x, position().y, position().z);
         }
-        com.censivn.C3DEngine.a.c.a(MatrixStack.rMVPMatrix, 0, MatrixStack.rSceneMatrix, 0, MatrixStack.matrix, MatrixStack.topIndex);
+        com.censivn.C3DEngine.a.WidgetItemState.a(MatrixStack.rMVPMatrix, 0, MatrixStack.rSceneMatrix, 0, MatrixStack.matrix, MatrixStack.topIndex);
         System.arraycopy(MatrixStack.rMVPMatrix, 0, this.AABB_MATRIX, 0, 16);
         GLES20.glUniformMatrix4fv(ShaderManager.CURRENT_SHADER.muMVPMatrixHandle, 1, false, MatrixStack.rMVPMatrix, 0);
     }
@@ -444,7 +444,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         super.dispatchDraw();
     }
 
-    private void a(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar, a aVar, int i2, float f, float f2) {
+    private void a(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar, WidgetTouchHandler aVar, int i2, float f, float f2) {
         float f3 = f2 / WorkspaceShortcutItem.l.j;
         if (!bVar.o) {
             bVar.mouseEnabled(false);
@@ -522,7 +522,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         }
     }
 
-    private void a(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar, a aVar, int i2, float f) {
+    private void a(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar, WidgetTouchHandler aVar, int i2, float f) {
         if (bVar.o) {
             bVar.mouseEnabled(true);
             bVar.o = false;
@@ -608,7 +608,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
                 int i2 = WorkspaceShortcutItem.l.a;
                 for (int i3 = 0; i3 < size; i3++) {
                     com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) children().get((size - 1) - i3);
-                    a aVar = this.b.get((size - 1) - i3);
+                    a aVar = this.WorkspaceShortcutItem.get((size - 1) - i3);
                     if (aVar.h + bVar.maxY() + f7 > WorkspaceShortcutItem.l.u) {
                         float fMaxY = ((aVar.h + bVar.maxY()) + f7) - WorkspaceShortcutItem.l.u;
                         if (fMaxY >= bVar.maxY()) {
@@ -667,7 +667,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
                 this.d = true;
                 for (int i4 = 0; i4 < children().size(); i4++) {
                     com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) children().get(i4);
-                    a aVar2 = this.b.get(i4);
+                    a aVar2 = this.WorkspaceShortcutItem.get(i4);
                     if (!aVar2.q) {
                         float f8 = aVar2.a;
                         float f9 = aVar2.b;
@@ -713,16 +713,16 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         }
     }
 
-    private void a(a aVar, com.censivn.C3DEngine.b.f.IRenderable iVar) {
-        a(aVar, iVar, this.b.size() - 1);
+    private void a(WidgetTouchHandler aVar, com.censivn.C3DEngine.b.f.IRenderable iVar) {
+        a(aVar, iVar, this.WorkspaceShortcutItem.size() - 1);
     }
 
-    private void a(a aVar, com.censivn.C3DEngine.b.f.IRenderable iVar, int i2) {
+    private void a(WidgetTouchHandler aVar, com.censivn.C3DEngine.b.f.IRenderable iVar, int i2) {
         ThemeFolderDescription.SystemFolderChild systemFolderChild;
         int iJ = j();
         int i3 = WorkspaceShortcutItem.l.c;
         ArrayList<ThemeFolderDescription.SystemFolderChild> arrayList = WorkspaceShortcutItem.l.c().folder.sampleList;
-        Number3d number3dD = this.a.d(i2);
+        Number3d number3dD = this.WidgetTouchHandler.d(i2);
         float f = number3dD.x;
         aVar.i = f;
         aVar.g = f;
@@ -774,7 +774,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         a aVarY = y();
-        this.b.add(0, aVarY);
+        this.WorkspaceShortcutItem.add(0, aVarY);
         super.addChild(iVar);
         a(aVarY, iVar);
         WidgetItemGrid();
@@ -784,7 +784,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(com.censivn.C3DEngine.b.f.IRenderable iVar, int i2) {
         a aVarY = y();
-        this.b.add(0, aVarY);
+        this.WorkspaceShortcutItem.add(0, aVarY);
         super.addChildAt(iVar, i2);
         a(aVarY, getChildAt(0));
         WidgetItemGrid();
@@ -802,7 +802,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     public boolean removeChild(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
-            a(this.b.remove(0));
+            a(this.WorkspaceShortcutItem.remove(0));
             WidgetItemGrid();
             WidgetItemGrid();
             WidgetItemGrid();
@@ -814,7 +814,7 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
     public com.censivn.C3DEngine.b.f.IRenderable removeChildAt(int i2) {
         com.censivn.C3DEngine.b.f.IRenderable iVarRemoveChildAt = super.removeChildAt(i2);
         if (iVarRemoveChildAt != null) {
-            a(this.b.remove(0));
+            a(this.WorkspaceShortcutItem.remove(0));
             WidgetItemGrid();
             WidgetItemGrid();
             WidgetItemGrid();
@@ -822,17 +822,17 @@ public class WidgetItemGrid extends com.tsf.shell.f.e._f.EditTarget {
         return iVarRemoveChildAt;
     }
 
-    private a y() {
-        if (this.c.isEmpty()) {
+    private WidgetTouchHandler y() {
+        if (this.WidgetItemState.isEmpty()) {
             return new WidgetTouchHandler();
         }
-        a aVarRemove = this.c.remove(0);
+        a aVarRemove = this.WidgetItemState.remove(0);
         aVarRemove.a();
         return aVarRemove;
     }
 
-    private void a(a aVar) {
-        this.c.add(aVar);
+    private void a(WidgetTouchHandler aVar) {
+        this.WidgetItemState.add(aVar);
     }
 
     public class a {

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cubeclock_app_name">นาฬิกา</string>
+    <string name="abbrev_wday_month_day_no_year">&gt;E d MMMM</string>
+    <string name="full_wday_month_day_no_year">&gt;E d MMMM</string>
+    <string name="alarm_app_name">นาฬิกา</string>
+    <string name="update_notic_update_available">อัพเดทใช้งานได้</string>
+    <string name="update_notic_updateapk_beta">เบต้า</string>
+    <string name="plugin_crop_cancel">ยกเลิก</string>
+    <string name="plugin_crop_crop_free">ฟรี</string>
+    <string name="plugin_crop_crop_square">สแควร์</string>
+    <string name="plugin_crop_custom">แบบกำหนดเอง</string>
+    <string name="plugin_crop_ok">ตกลง</string>
+    <string name="packageapp_category_sys">ระบบ</string>
+    <string name="packageapp_category_tool">เครื่องมือ</string>
+    <string name="packageapp_category_reading">ค่าที่อ่านได้</string>
+    <string name="packageapp_category_media">มีเดีย</string>
+    <string name="packageapp_category_edu">การศึกษา</string>
+    <string name="packageapp_category_theme">ธีม</string>
+    <string name="packageapp_category_social">สังคม</string>
+    <string name="packageapp_category_life">ไลฟ์สไตล์</string>
+    <string name="packageapp_category_game">เกม</string>
+    <string name="packageapp_category_other">อื่นๆ</string>
+    <string name="packageapp_category_shopping">ช้อปปิ้ง</string>
+    <string name="packageapp_category_travel">เดินทาง</string>
+    <string name="httpError">เกิดข้อผิดพลาดของเครือข่าย</string>
+    <string name="theme_picker_discard_changes">ละทิ้งการเปลี่ยนแปลง</string>
+    <string name="theme_picker_edit_shortcut">แก้ไขทางลัด</string>
+    <string name="theme_picker_info_target_label">ข้อมูลแอพ</string>
+    <string name="theme_picker_system">ระบบ</string>
+    <string name="theme_picker_theme_picker_gallery_apps">Gallery Apps</string>
+    <string name="theme_picker_delete_target_uninstall_label">ถอนการติดตั้ง</string>
+</resources>

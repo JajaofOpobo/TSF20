@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cubeclock_app_name">Hodiny</string>
+    <string name="abbrev_wday_month_day_no_year">E, d. MMMM</string>
+    <string name="full_wday_month_day_no_year">E, d. MMMM</string>
+    <string name="alarm_app_name">Hodiny</string>
+    <string name="update_notic_update_available">Dostupná aktualizácia</string>
+    <string name="update_notic_updateapk_beta">Beta</string>
+    <string name="plugin_crop_cancel">Zrušiť</string>
+    <string name="plugin_crop_crop_free">Voľné</string>
+    <string name="plugin_crop_crop_square">Štvorec</string>
+    <string name="plugin_crop_custom">Vlastné</string>
+    <string name="plugin_crop_ok">OK</string>
+    <string name="theme_picker_discard_changes">Zahodiť zmeny</string>
+    <string name="theme_picker_edit_shortcut">Upraviť odkaz</string>
+    <string name="theme_picker_info_target_label">Informácie o aplikácii</string>
+    <string name="theme_picker_system">Systém</string>
+    <string name="theme_picker_theme_picker_gallery_apps">Aplikácie galérie</string>
+    <string name="theme_picker_delete_target_uninstall_label">Odinštalovať</string>
+</resources>

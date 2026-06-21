@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cubeclock_app_name">Kello</string>
+    <string name="abbrev_wday_month_day_no_year">E d. MMMM</string>
+    <string name="full_wday_month_day_no_year">E d. MMMM</string>
+    <string name="alarm_app_name">Kello</string>
+    <string name="update_notic_update_available">Päivitys saatavilla</string>
+    <string name="update_notic_updateapk_beta">Beta</string>
+    <string name="plugin_crop_cancel">Peruuta</string>
+    <string name="plugin_crop_crop_free">Vapaa</string>
+    <string name="plugin_crop_crop_square">Neliö</string>
+    <string name="plugin_crop_custom">Mukautettu</string>
+    <string name="plugin_crop_ok">Ok</string>
+    <string name="theme_picker_discard_changes">Hylkää muutokset</string>
+    <string name="theme_picker_edit_shortcut">Muokkaa pikakuvaketta</string>
+    <string name="theme_picker_info_target_label">Sovelluksen tiedot</string>
+    <string name="theme_picker_system">Järjestelmä</string>
+    <string name="theme_picker_theme_picker_gallery_apps">Galleria-sovellukset</string>
+    <string name="theme_picker_delete_target_uninstall_label">Poista</string>
+</resources>
