@@ -25,22 +25,23 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import com.tsf.shell.f.i.ShortcutItem;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f.e._a.DropTarget, m, com.tsf.shell.f.i._a.InterfaceC0113a {
+public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implements com.tsf.shell.f.e._a.DropTarget, ILassoSelectable, com.tsf.shell.f.i._a.InterfaceC0113a {
     private static ArrayList<Integer> C;
     private static ArrayList<Integer> D;
     private static ArrayList<Integer> E;
     private static ArrayList<Integer> F;
     private static com.tsf.shell.f.e.LassoSelectionHandler G;
-    public static b k;
-    public static j l;
-    public static d m;
-    public static c n;
+    public static WorkspaceShortcutItem k;
+    public static WidgetItemPositioner l;
+    public static WidgetItemLayout m;
+    public static WidgetItemState n;
     boolean A;
     private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase H;
     private int I;
-    private e J;
+    private WidgetItemAnimation J;
     private int K;
     private Number3d L;
     private Number3d M;
@@ -48,7 +49,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     private com.censivn.C3DEngine.b.d.MouseEventListener O;
     private com.censivn.C3DEngine.b.d.MouseEventListener P;
     private com.censivn.C3DEngine.b.d.MouseEventListener Q;
-    private k R;
+    private ItemPositionAnimator R;
     private com.tsf.shell.f.b.ShellKeyEventHandler S;
     private com.censivn.C3DEngine.b.f.BaseRenderable T;
     private int U;
@@ -64,7 +65,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     private boolean ae;
     private boolean af;
     private boolean ag;
-    protected g o;
+    protected WidgetItemGrid o;
     protected com.censivn.C3DEngine.b.f.GridRenderable p;
     protected com.censivn.C3DEngine.b.f.GridRenderable q;
     protected com.censivn.C3DEngine.b.f.GridRenderable r;
@@ -76,7 +77,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     protected boolean x;
     protected boolean y;
     protected boolean z;
-    private static ArrayList<b> B = new ArrayList<>();
+    private static ArrayList<WorkspaceShortcutItem> B = new ArrayList<>();
     public static int a = 0;
     public static int b = 1;
 
@@ -94,7 +95,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         E.add(2);
         E.add(1);
         C = new ArrayList<>();
-        C.add(4);
+        ShortcutItem.add(4);
         F = new ArrayList<>();
     }
 
@@ -104,18 +105,18 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         kVar.uvs().set(1, 0.0f, 0.0f);
         kVar.uvs().set(2, 1.0f, 1.0f);
         kVar.uvs().set(3, 0.0f, 1.0f);
-        kVar.points().setPX(0, m.g, m.f, 0.0f);
-        kVar.points().setPX(1, m.e, m.f, 0.0f);
-        kVar.points().setPX(2, m.g, m.h, 0.0f);
-        kVar.points().setPX(3, m.e, m.h, 0.0f);
+        kVar.points().setPX(0, ILassoSelectable.g, ILassoSelectable.f, 0.0f);
+        kVar.points().setPX(1, ILassoSelectable.e, ILassoSelectable.f, 0.0f);
+        kVar.points().setPX(2, ILassoSelectable.g, ILassoSelectable.h, 0.0f);
+        kVar.points().setPX(3, ILassoSelectable.e, ILassoSelectable.h, 0.0f);
         kVar.updateUvsVBO();
         return kVar;
     }
 
     public static void q() {
         l.f();
-        m.a();
-        Iterator<b> it = PageItem.iterator();
+        ILassoSelectable.a();
+        Iterator<WorkspaceShortcutItem> it = PageItem.iterator();
         while (it.hasNext()) {
             it.next().aK();
         }
@@ -123,19 +124,19 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     public static void a(int i, int i2, int i3, int i4) {
-        Iterator<b> it = PageItem.iterator();
+        Iterator<WorkspaceShortcutItem> it = PageItem.iterator();
         while (it.hasNext()) {
             it.next().b(i, i2, i3, i4);
         }
     }
 
-    public static b a(int i, int i2, int i3) {
+    public static WorkspaceShortcutItem a(int i, int i2, int i3) {
         LauncherFolder3DInfo launcherFolder3DInfo = new LauncherFolder3DInfo();
         launcherFolder3DInfo.screen = i;
         launcherFolder3DInfo.cellX = i2;
         launcherFolder3DInfo.cellY = i3;
         launcherFolder3DInfo.rotation = 0;
-        b bVar = new b(launcherFolder3DInfo);
+        b bVar = new WorkspaceShortcutItem(launcherFolder3DInfo);
         bVar.position().x = launcherFolder3DInfo.cellX;
         bVar.position().y = launcherFolder3DInfo.cellY;
         bVar.rotation().z = launcherFolder3DInfo.rotation;
@@ -146,27 +147,27 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         return bVar;
     }
 
-    public static b a(LauncherFolder3DInfo launcherFolder3DInfo) {
-        b bVar = new b(launcherFolder3DInfo);
+    public static WorkspaceShortcutItem a(LauncherFolder3DInfo launcherFolder3DInfo) {
+        b bVar = new WorkspaceShortcutItem(launcherFolder3DInfo);
         bVar.setMouseEventListener(new com.tsf.shell.f.i._a.WidgetItemTouchHandler(bVar));
         return bVar;
     }
 
-    public b az() {
+    public WorkspaceShortcutItem az() {
         LauncherFolder3DInfo launcherFolder3DInfo = new LauncherFolder3DInfo();
         launcherFolder3DInfo.packagename = "";
         ContentValues contentValues = new ContentValues();
         launcherFolder3DInfo.updateName(contentValues, K().title, false);
-        ShellModel.a.a(contentValues, launcherFolder3DInfo, (Runnable) null);
+        ShellModel.WidgetTouchHandler.a(contentValues, launcherFolder3DInfo, (Runnable) null);
         for (com.censivn.C3DEngine.b.f.IRenderable iVar : this.o.children()) {
             if (iVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) {
                 LauncherShortcutAppInfo launcherShortcutAppInfoBb = ((com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual) iVar).bb();
                 launcherShortcutAppInfoBb.container = launcherFolder3DInfo.id;
-                ShellModel.a.a(new ContentValues(), launcherShortcutAppInfoBb, (Runnable) null);
+                ShellModel.WidgetTouchHandler.a(new ContentValues(), launcherShortcutAppInfoBb, (Runnable) null);
                 launcherFolder3DInfo.add(launcherShortcutAppInfoBb);
             }
         }
-        b bVar = new b(launcherFolder3DInfo);
+        b bVar = new WorkspaceShortcutItem(launcherFolder3DInfo);
         bVar.position().setAllFrom(position());
         bVar.scale().setAllFrom(scale());
         bVar.rotation().setAllFrom(rotation());
@@ -176,11 +177,11 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
 
     public void a(com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar, final com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar2, com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (this.H == null) {
-            bVar.k.visible(false);
-            bVar2.k.textures().addElement(bVar.k.textures().get(0).textureElement);
+            bVar.ItemPositionAnimator.visible(false);
+            bVar2.ItemPositionAnimator.textures().addElement(bVar.ItemPositionAnimator.textures().get(0).textureElement);
             bVar.addChild(bVar2);
             int childIndexOf = bVar.getChildIndexOf(bVar2);
-            m.b(this);
+            ILassoSelectable.b(this);
             mouseEnabled(false);
             this.H = bVar2;
             Number3d.TEMPNUMBER3D.reset();
@@ -192,7 +193,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             position().setAllFrom(bVar2.position());
             bVar2.position().setAllFrom(this.o.globalToLocal(Number3d.TEMPNUMBER3D));
         }
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.1
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.1
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 b.this.n(true);
@@ -215,7 +216,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     public void a(com.censivn.C3DEngine.b.f.IRenderable iVar, final Runnable runnable) {
-        m.b(this);
+        ILassoSelectable.b(this);
         mouseEnabled(false);
         this.J.b();
         Number3d.TEMPNUMBER3D.reset();
@@ -223,7 +224,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         this.o.globalToLocal(Number3d.TEMPNUMBER3D);
         float f = Number3d.TEMPNUMBER3D.x;
         float f2 = Number3d.TEMPNUMBER3D.y;
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.12
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.12
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f3) {
                 b.this.H.g(f3);
@@ -234,7 +235,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 com.censivn.C3DEngine.b.f.BaseRenderable jVar = (com.censivn.C3DEngine.b.f.BaseRenderable) b.this.parent();
                 int childIndexOf = jVar.getChildIndexOf(b.this);
                 b.this.H.removeFromParent();
-                jVar.children().set(childIndexOf, b.this.H);
+                jVar.children().set(childIndexOf, WorkspaceShortcutItem.this.H);
                 b.this.H.parent(jVar);
                 b.this.H.position().setAllFrom(b.this.position());
                 b.this.H.mouseEnabled(true);
@@ -254,7 +255,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.H);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.H, 300, dVar);
         if (iVar != null) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
             dVar2.l(1.0f);
             dVar2.m(1.0f);
             com.censivn.C3DEngine.b.g.TweenUtils.a(iVar);
@@ -268,7 +269,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             a(new LauncherFolder3DInfo());
             this.ae = false;
             this.af = false;
-            this.o.a(D, C);
+            this.o.a(D, ShortcutItem);
         }
         if (itemInfoK instanceof LauncherDrawerFolder3DInfo) {
             ((LauncherDrawerFolder3DInfo) itemInfoK).isPreviewFolder = false;
@@ -325,14 +326,14 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         be();
         bd();
         if (G == null) {
-            G = new com.tsf.shell.f.e.LassoSelectionHandler();
+            G = new com.tsf.shell.f.WidgetItemAnimation.LassoSelectionHandler();
         }
         this.R = new ItemPositionAnimator(this);
         this.o = new WidgetItemGrid(this);
         if (this.ae) {
             this.o.a(E, F);
         } else {
-            this.o.a(D, C);
+            this.o.a(D, ShortcutItem);
         }
         this.o.position().x = l.c().folder.childContainerX;
         this.o.position().y = l.c().folder.childContainerY;
@@ -357,8 +358,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             }
         }
         addChild(this.t);
-        com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
-        this.O = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.15
+        com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
+        this.O = new com.censivn.C3DEngine.b.WidgetItemLayout.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.15
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 b.G.a((WidgetItemIndicator.a) b.this);
@@ -377,7 +378,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                w.b();
+                HapticFeedbackManager.b();
                 if (b.this.K == b.b) {
                     b.this.aR();
                 } else {
@@ -385,7 +386,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 }
             }
         };
-        this.P = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.16
+        this.P = new com.censivn.C3DEngine.b.WidgetItemLayout.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.16
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 b.this.R.a(motionEvent, motionEvent2);
@@ -398,7 +399,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                w.b();
+                HapticFeedbackManager.b();
                 if (b.this.K == b.b) {
                     b.this.aR();
                 } else {
@@ -406,10 +407,10 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 }
             }
         };
-        this.Q = new com.censivn.C3DEngine.b.d.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.17
+        this.Q = new com.censivn.C3DEngine.b.WidgetItemLayout.MouseEventListener(this.p) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.17
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                w.b();
+                HapticFeedbackManager.b();
                 if (b.this.K == b.b) {
                     b.this.aR();
                 } else {
@@ -417,7 +418,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 }
             }
         };
-        this.W = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.18
+        this.W = new com.tsf.shell.f.ScrollingIndicator.MultiSelectController(this, this) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.18
             @Override // com.tsf.shell.f.i.MultiSelectController
             public void h() {
             }
@@ -484,12 +485,12 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 b.this.a((com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) bVar, false);
                 if (iA < b.l.K) {
                     b.this.aB();
-                    b.m.a(b.this);
-                    b.m.c(b.this);
+                    b.ILassoSelectable.a(b.this);
+                    b.ILassoSelectable.c(b.this);
                 }
             }
         };
-        this.S = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.19
+        this.S = new com.tsf.shell.f.WorkspaceShortcutItem.ShellKeyEventHandler() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.19
             @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void a(int i, KeyEvent keyEvent) {
                 if (i == 4 && b.this.K == b.a && b.this.mouseEnabled() && !b.this.o.v()) {
@@ -515,8 +516,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         n(true);
         aY();
         bh();
-        m.a(this);
-        m.c(this);
+        ILassoSelectable.a(this);
+        ILassoSelectable.c(this);
         if (!PageItem.contains(this)) {
             PageItem.add(this);
         }
@@ -568,7 +569,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         return this.W;
     }
 
-    public g aF() {
+    public WidgetItemGrid aF() {
         return this.o;
     }
 
@@ -585,7 +586,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         if (this.X) {
             l.a(this, aN());
         }
-        m.a(this);
+        ILassoSelectable.a(this);
         this.X = false;
     }
 
@@ -643,7 +644,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                     break;
             }
         }
-        com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
+        com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
         l.a(this, aN());
         b(0, 0, 0, 0);
         a((Runnable) null, false);
@@ -671,22 +672,22 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
 
     private void be() {
         if (this.t == null) {
-            this.t = new com.censivn.C3DEngine.b.f.GridRenderable(m.c, m.d, 1, 1, false);
+            this.t = new com.censivn.C3DEngine.b.f.GridRenderable(m.c, ILassoSelectable.d, 1, 1, false);
         }
         if (!this.af) {
             if (this.u == null) {
-                this.u = com.censivn.C3DEngine.C3DEngine.g().a(m.c, m.d, false);
+                this.u = com.censivn.C3DEngine.C3DEngine.g().a(m.c, ILassoSelectable.d, false);
             } else if (this.u.width != m.c || this.u.height != m.d) {
                 com.censivn.C3DEngine.C3DEngine.g().a(this.u);
-                this.u = com.censivn.C3DEngine.C3DEngine.g().a(m.c, m.d, false);
+                this.u = com.censivn.C3DEngine.C3DEngine.g().a(m.c, ILassoSelectable.d, false);
             }
             this.t.textures().clear();
             this.t.textures().addElement(this.u);
         }
-        this.t.points().setPX(0, m.g, m.f, 0.0f);
-        this.t.points().setPX(1, m.e, m.f, 0.0f);
-        this.t.points().setPX(2, m.g, m.h, 0.0f);
-        this.t.points().setPX(3, m.e, m.h, 0.0f);
+        this.t.points().setPX(0, ILassoSelectable.g, ILassoSelectable.f, 0.0f);
+        this.t.points().setPX(1, ILassoSelectable.e, ILassoSelectable.f, 0.0f);
+        this.t.points().setPX(2, ILassoSelectable.g, ILassoSelectable.h, 0.0f);
+        this.t.points().setPX(3, ILassoSelectable.e, ILassoSelectable.h, 0.0f);
         this.t.updatePointsVBO();
         this.t.uvs().set(0, 1.0f, 0.0f);
         this.t.uvs().set(1, 0.0f, 0.0f);
@@ -709,7 +710,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             this.p.textures().addElement(l.z);
             this.p.position().x = l.c().folder.backPlaneX;
             this.p.position().y = l.c().folder.backPlaneY;
-            com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
+            com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
         } else if (this.p != null) {
             this.p.textures().clear();
             this.p.removeFromParent();
@@ -795,10 +796,10 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         if (l.c().folder.nameTextFormat.auto) {
             if (!this.y || z) {
                 this.y = true;
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, false);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, false);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, false);
-                m.a(this);
+                com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, false);
+                com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this, false);
+                ILassoSelectable.a(this);
             }
         }
     }
@@ -811,10 +812,10 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         if (l.c().folder.nameTextFormat.auto || z) {
             if (this.y || z) {
                 this.y = false;
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, true);
-                com.tsf.shell.manager.o.ButtonPresetManager.a.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
-                m.a(this);
+                com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this.p, -this.p.position().x, -this.p.position().y, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this.t, true);
+                com.tsf.shell.manager.o.ButtonPresetManager.WidgetTouchHandler.a((com.censivn.C3DEngine.b.f.IRenderable) this, true);
+                ILassoSelectable.a(this);
             }
         }
     }
@@ -833,13 +834,13 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             } else {
                 K().onUpdateName(str, false);
             }
-            com.censivn.C3DEngine.C3DEngine.a().c(new RenderRunnable(i, i) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.20
+            com.censivn.C3DEngine.C3DEngine.a().c(new RenderRunnable(i, ScrollingIndicator) { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.20
                 @Override // com.censivn.C3DEngine.api.message.RenderRunnable, java.lang.Runnable
                 public void run() {
                     b.l.a(b.this, str);
                     b.l.a(str);
                     if (b.this.x) {
-                        b.m.a(b.this);
+                        b.ILassoSelectable.a(b.this);
                     }
                 }
             });
@@ -851,20 +852,20 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     public void aO() {
-        com.tsf.shell.d.ShellDataParser().a("WidgetFolderBox");
+        com.tsf.shell.WidgetItemLayout.ShellDataParser().a("WidgetFolderBox");
     }
 
     public void aP() {
-        com.tsf.shell.d.ShellDataParser().b("WidgetFolderBox");
+        com.tsf.shell.WidgetItemLayout.ShellDataParser().b("WidgetFolderBox");
     }
 
     public void c(int i) {
         com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.21
             @Override // java.lang.Runnable
             public void run() {
-                com.tsf.shell.d.ShellDataParser().b("WidgetFolderBox");
+                com.tsf.shell.WidgetItemLayout.ShellDataParser().b("WidgetFolderBox");
             }
-        }, i);
+        }, ScrollingIndicator);
     }
 
     public void aQ() {
@@ -930,7 +931,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         this.o.i();
         boolean z = this.y;
         this.y = false;
-        m.b(this);
+        ILassoSelectable.b(this);
         this.y = z;
         aO();
         l.a(aN());
@@ -943,7 +944,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
             localToGlobal(Number3d.TEMPNUMBER3D);
             localScaleToGlobale(Number3d.TEMPNUMBER3D2);
-            this.aa = com.tsf.shell.f.c.DrawerPanelController(this);
+            this.aa = com.tsf.shell.f.WidgetItemState.DrawerPanelController(this);
             ((com.censivn.C3DEngine.b.f.BaseRenderable) parent()).replaceChild(this, this.aa);
             position().setAllFrom(Number3d.TEMPNUMBER3D);
             scale().setAllFrom(Number3d.TEMPNUMBER3D2);
@@ -955,23 +956,23 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         this.T = com.tsf.shell.manager.app.TaskScheduler.a(this.S);
         switch (com.tsf.shell.manager.b.ConfigManager.ar()) {
             case 0:
-                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.WorkspaceShortcutItem.c());
                 break;
             case 1:
-                dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.3
+                dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.3
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         b.this.bj();
                     }
                 };
-                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.WorkspaceShortcutItem.c());
                 break;
             default:
-                dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                 bj();
-                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.b.c());
+                dVar.a((com.censivn.C3DEngine.b.g.EasingInterpolator) new WidgetTouchHandler.WorkspaceShortcutItem.c());
                 break;
         }
         dVar.l(1.0f);
@@ -1014,7 +1015,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                     WidgetItemPositioner.O.alpha(0.0f);
                     if (b.this.aa != null) {
                         if (b.this.aa.parent() instanceof com.tsf.shell.f.c.b.DrawerSettingsItemType) {
-                            com.tsf.shell.f.c.b.DrawerSettingsData bVarA = com.tsf.shell.manager.app.WidgetPanelController.a.a(b.this.aa);
+                            com.tsf.shell.f.c.b.DrawerSettingsData bVarA = com.tsf.shell.manager.app.WidgetPanelController.WidgetTouchHandler.a(b.this.aa);
                             b.this.L.x = bVarA.a;
                             b.this.L.y = bVarA.b;
                             b.this.M.z = bVarA.e;
@@ -1031,7 +1032,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         if (b.this.aa != null) {
                             Number3d.TEMPNUMBER3D2.setAll(1.0f, 1.0f, 1.0f);
                             b.this.aa.localScaleToGlobale(Number3d.TEMPNUMBER3D2);
-                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                            dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                             dVar.f(b.this.L.x);
                             dVar.h(b.this.L.y);
                             dVar.l(Number3d.TEMPNUMBER3D2.x);
@@ -1048,7 +1049,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                                 b.this.L.y = b.this.K().cellYH;
                                 b.this.M.z = b.this.K().rotationH;
                             }
-                            dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+                            dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams();
                             dVar.f(b.this.L.x);
                             dVar.h(b.this.L.y);
                             dVar.e(b.this.M.z);
@@ -1076,8 +1077,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                             b.this.removeFromParent();
                             b.l.F.removeFromParent();
                             if (b.this.aa != null) {
-                                ((com.censivn.C3DEngine.b.f.BaseRenderable) b.this.aa.parent()).replaceChild(b.this.aa, b.this);
-                                com.tsf.shell.f.c.DrawerPanelController(b.this.aa);
+                                ((com.censivn.C3DEngine.b.f.BaseRenderable) b.this.aa.parent()).replaceChild(b.this.aa, WorkspaceShortcutItem.this);
+                                com.tsf.shell.f.WidgetItemState.DrawerPanelController(b.this.aa);
                                 b.this.aa = null;
                             } else {
                                 com.tsf.shell.manager.app.StateHub.n().a(b.this);
@@ -1091,7 +1092,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                                     }
                                 }
                                 if (!((WidgetTouchHandler) b.this.N.getMouseEventListener()).a()) {
-                                    b.this.N.getMouseEventListener().d(com.censivn.C3DEngine.a.d.d().f());
+                                    b.this.N.getMouseEventListener().d(com.censivn.C3DEngine.a.WidgetItemLayout.d().f());
                                 }
                                 b.this.N.mouseEnabled(true);
                                 b.this.N = null;
@@ -1168,7 +1169,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     public int b(float f, float f2) {
-        float[] fArrB = x.b(f, f2);
+        float[] fArrB = GraphicsEngineBridge.b(f, f2);
         float f3 = fArrB[0];
         float f4 = fArrB[1];
         int iA = this.o.a(f3, f4);
@@ -1253,7 +1254,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         int i5 = VEasing.Linear.easeNone;
         int i6 = 0;
         if (iAW > 0) {
-            m.b(this);
+            ILassoSelectable.b(this);
             int i7 = l.c().folder.sampleCount;
             com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = null;
             int i8 = iAW - 1;
@@ -1268,7 +1269,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         bVar2.rotation().setAllFrom(systemFolderChild.rotation);
                     }
                     bVar2.alpha(255.0f);
-                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.5
+                    dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.5
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             if (bVar2.aJ() != 0.0f) {
@@ -1306,7 +1307,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 } else {
                     ThemeFolderDescription.SystemFolderChild systemFolderChild2 = l.c().folder.sampleList.get(i8 % i7);
                     if (bVar2.visible()) {
-                        dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.6
+                        dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.6
                             @Override // com.censivn.C3DEngine.b.g.TweenParams
                             public void a() {
                                 bVar2.visible(false);
@@ -1436,8 +1437,8 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
             runnable.run();
         }
         if (!this.A && !this.af) {
-            m.a(this);
-            m.c(this);
+            ILassoSelectable.a(this);
+            ILassoSelectable.c(this);
         }
         this.V = null;
         mouseEnabled(true);
@@ -1474,7 +1475,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 final com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar2 = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) this.o.children().get(i4);
                 bVar2.alpha(255.0f);
                 Number3d number3dD = d((iAW - i4) - 1);
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.9
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.9
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a(float f) {
                         bVar2.visible(true);
@@ -1567,7 +1568,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     @Override // com.tsf.shell.f.e._h.PhotoSelectorHelper
-    public n l_() {
+    public LassoContextMenu l_() {
         return null;
     }
 
@@ -1589,7 +1590,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     }
 
     @Override // com.tsf.shell.f.e._h.PhotoSelectorHelper
-    public void a(m mVar) {
+    public void a(ILassoSelectable mVar) {
         if (mVar instanceof com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) {
             com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase bVar = (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase) mVar;
             if (this.ad == null) {
@@ -1613,7 +1614,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
         if (this.ad != null) {
             int size = this.ad.size();
             if (size > 0) {
-                m.b(this);
+                ILassoSelectable.b(this);
                 mouseEnabled(false);
             }
             for (int i = 0; i < size; i++) {
@@ -1623,7 +1624,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                 bVar.removeFromParent();
                 this.o.addChild(bVar);
                 if (i == size - 1) {
-                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.10
+                    dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.10
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
                             Iterator it = b.this.ad.iterator();
@@ -1643,7 +1644,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
                         }
                     };
                 } else {
-                    dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.11
+                    dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.11
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a(float f) {
                             bVar.g(1.0f - f);
@@ -1678,7 +1679,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
     @Override // com.tsf.shell.f.e._a.DropTarget
     public void e() {
         this.z = true;
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.13
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.13
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = b.this.p.alpha();
@@ -1696,7 +1697,7 @@ public class WorkspaceShortcutItem extends com.tsf.shell.f.i.ShortcutItem implem
 
     @Override // com.tsf.shell.f.e._a.DropTarget
     public void i() {
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.14
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetItemGrid.TweenParams() { // from class: com.tsf.shell.f.i._b.d.WorkspaceShortcutItem.14
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 float fAlpha = b.this.p.alpha();

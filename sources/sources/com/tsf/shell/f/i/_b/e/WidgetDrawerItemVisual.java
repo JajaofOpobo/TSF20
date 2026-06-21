@@ -38,8 +38,8 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
             launcherShortcutAppInfo.intent = fVar.a;
         }
         if (z) {
-            com.tsf.shell.manager.bind.ShellBindController.b.a(this);
-        } else if (com.censivn.C3DEngine.a.e.l()) {
+            com.tsf.shell.manager.bind.ShellBindController.DrawerSectionManager.a(this);
+        } else if (com.censivn.C3DEngine.a.WidgetDrawerItemEffect.l()) {
             WidgetDrawerItemVisual();
         } else {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual.1
@@ -103,7 +103,7 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
 
     public TextureElement aA() {
         aA();
-        return this.a.b();
+        return this.WidgetDrawerItemBase.b();
     }
 
     @Override // com.tsf.shell.f.i.PageItem
@@ -164,10 +164,10 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
         return fVarB;
     }
 
-    public g ba() {
+    public WidgetDrawerItemVisual ba() {
         LauncherShortcutAppInfo launcherShortcutAppInfo = new LauncherShortcutAppInfo();
         launcherShortcutAppInfo.title = bd().e;
-        g gVar = new g(launcherShortcutAppInfo, this.a, false);
+        g gVar = new WidgetDrawerItemVisual(launcherShortcutAppInfo, this.a, false);
         gVar.position().setAll(position().x, position().y, 0.0f);
         gVar.scale().setAll(1.0f, 1.0f, 1.0f);
         gVar.rotation().setAll(0.0f, 0.0f, 0.0f);
@@ -204,7 +204,7 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
         if (this.a == null) {
             return true;
         }
-        return this.a.c();
+        return this.WidgetDrawerItemBase.c();
     }
 
     public boolean bf() {
@@ -221,14 +221,14 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
 
     public void bg() {
         if (!be()) {
-            com.tsf.shell.utils.PackageManagerHelper.a(bd().b.getPackageName());
+            com.tsf.shell.utils.PackageManagerHelper.a(bd().DrawerSectionManager.getPackageName());
         } else {
-            com.tsf.shell.e.a(WidgetDrawerShortcutItemBase.i.notic_uninstall_error);
+            com.tsf.shell.WidgetDrawerItemEffect.a(WidgetDrawerShortcutItemBase.i.notic_uninstall_error);
         }
     }
 
     public void bh() {
-        com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.C3DEngine.d(), bd().b.getPackageName());
+        com.tsf.shell.utils.PackageManagerHelper.a(com.censivn.C3DEngine.C3DEngine.d(), bd().DrawerSectionManager.getPackageName());
     }
 
     public void aV() {
@@ -253,13 +253,13 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
 
     @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void n_() {
-        com.tsf.shell.d.ShellDataParser().a("WidgetShortcutApp");
+        com.tsf.shell.WidgetDrawerItemAction.ShellDataParser().a("WidgetShortcutApp");
         super.n_();
     }
 
     @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
     public void c() {
-        com.tsf.shell.d.ShellDataParser().b("WidgetShortcutApp");
+        com.tsf.shell.WidgetDrawerItemAction.ShellDataParser().b("WidgetShortcutApp");
         super.c();
     }
 

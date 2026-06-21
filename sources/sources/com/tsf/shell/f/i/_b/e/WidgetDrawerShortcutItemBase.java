@@ -9,9 +9,9 @@ import com.tsf.shell.utils.HapticFeedbackManager;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutItem implements m {
+public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.ShortcutItem implements ILassoSelectable {
     private static int[] a = {0, 0};
-    private static ArrayList<a> v = new ArrayList<>();
+    private static ArrayList<WidgetDrawerItemBase> v = new ArrayList<>();
     private static int w = 0;
     private static int x = 2;
     private boolean b;
@@ -25,7 +25,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
     private boolean r;
     private com.tsf.shell.f._d.a.DashElementBase s;
     private boolean t;
-    private a u;
+    private WidgetDrawerItemBase u;
 
     protected abstract void k();
 
@@ -80,7 +80,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
     @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
     public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
         if ((fVar instanceof b) && this.u != null) {
-            com.tsf.shell.f.i._b.d.WorkspaceShortcutItem bVarA = a((b) fVar, false);
+            com.tsf.shell.f.i._b.d.WorkspaceShortcutItem bVarA = a((WidgetDrawerShortcutItemBase) fVar, false);
             bVarA.K().screen = K().screen;
             bVarA.ad();
             bVarA.setMouseEventListener(new com.tsf.shell.f.i._a.WidgetItemTouchHandler(bVarA));
@@ -197,29 +197,29 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         if (f != this.m.o.x) {
             this.m.o.x = f;
             this.m.o.y = f;
-            this.m.f();
+            this.ILassoSelectable.f();
             if (f == 0.0f) {
                 aL();
-            } else if (!this.m.l()) {
+            } else if (!this.ILassoSelectable.l()) {
                 aM();
             }
         }
     }
 
     public boolean aK() {
-        return !this.m.l();
+        return !this.ILassoSelectable.l();
     }
 
     public void aL() {
-        if (this.m.l()) {
-            this.m.a((Boolean) false);
+        if (this.ILassoSelectable.l()) {
+            this.ILassoSelectable.a((Boolean) false);
             aO();
         }
     }
 
     public void aM() {
-        if (!this.m.l()) {
-            this.m.a((Boolean) true);
+        if (!this.ILassoSelectable.l()) {
+            this.ILassoSelectable.a((Boolean) true);
             aO();
         }
     }
@@ -230,7 +230,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
 
     public void aO() {
         if (this.n != null) {
-            this.n.a(this, this.m.l());
+            this.n.a(this, this.ILassoSelectable.l());
         }
     }
 
@@ -267,7 +267,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
     }
 
     public void l() {
-        w.b();
+        HapticFeedbackManager.b();
     }
 
     @Override // com.tsf.shell.f.i.ShortcutItem, com.tsf.shell.f.i.PageItem
@@ -299,28 +299,28 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         if (this.u == null) {
             return false;
         }
-        this.u.a.a(this, this.u.b, iVar);
+        this.u.WidgetDrawerItemBase.a(this, this.u.b, iVar);
         return true;
     }
 
     public void b(com.censivn.C3DEngine.b.f.IRenderable iVar) {
         if (this.u != null) {
-            this.u.a.a(iVar, new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.1
+            this.u.WidgetDrawerItemBase.a(iVar, new Runnable() { // from class: com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.1
                 @Override // java.lang.Runnable
                 public void run() {
-                    b.this.u.b.removeFromParent();
+                    b.this.u.WidgetDrawerShortcutItemBase.removeFromParent();
                     b.this.k.visible(true);
-                    b.a(b.this.u);
+                    WidgetDrawerShortcutItemBase.a(b.this.u);
                     b.this.u = null;
                 }
             });
         }
     }
 
-    public com.tsf.shell.f.i._b.d.WorkspaceShortcutItem a(b bVar, boolean z) {
+    public com.tsf.shell.f.i._b.d.WorkspaceShortcutItem a(WidgetDrawerShortcutItemBase bVar, boolean z) {
         com.tsf.shell.f.i._b.d.WorkspaceShortcutItem bVar2 = this.u.a;
-        this.u.a.removeFromParent();
-        this.u.a.a(this, bVar, z);
+        this.u.WidgetDrawerItemBase.removeFromParent();
+        this.u.WidgetDrawerItemBase.a(this, bVar, z);
         this.u = null;
         this.k.visible(true);
         aT();
@@ -331,7 +331,7 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         return w < x || v.size() > 0;
     }
 
-    public static a aS() {
+    public static WidgetDrawerItemBase aS() {
         if (v.isEmpty()) {
             if (w >= x) {
                 return null;
@@ -345,22 +345,22 @@ public abstract class WidgetDrawerShortcutItemBase extends com.tsf.shell.f.i.Sho
         w--;
     }
 
-    public static a aU() {
+    public static WidgetDrawerItemBase aU() {
         a aVar = new WidgetDrawerItemBase();
-        aVar.a = new com.tsf.shell.f.i._b.d.WorkspaceShortcutItem(new LauncherDrawerFolder3DInfo(true));
+        aVar.a = new com.tsf.shell.f.i._b.WidgetDrawerItemAction.WorkspaceShortcutItem(new LauncherDrawerFolder3DInfo(true));
         aVar.b = new WidgetDrawerItemButton();
         w++;
         return aVar;
     }
 
-    public static void a(a aVar) {
+    public static void a(WidgetDrawerItemBase aVar) {
         aVar.b.k.textures().clear();
         v.add(aVar);
     }
 
     static class a {
         public com.tsf.shell.f.i._b.d.WorkspaceShortcutItem a;
-        public h b;
+        public WidgetDrawerItemButton b;
 
         a() {
         }
