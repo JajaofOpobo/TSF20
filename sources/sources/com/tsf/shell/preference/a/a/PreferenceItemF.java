@@ -11,15 +11,15 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PreferenceItemF extends i {
     private com.censivn.C3DEngine.b.e.IconButtonRenderer a;
-    private j b;
+    private ActionButtonRenderer b;
     private int c;
 
     public PreferenceItemF() {
         a(com.tsf.b.i.text_preferences);
-        j jVar = new j();
+        j jVar = new ActionButtonRenderer();
         this.b = jVar;
         jVar.h(com.tsf.b.i.mn_folder_animation);
-        jVar.a(new j.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1
+        jVar.a(new ActionButtonRenderer.a() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1
             @Override // com.censivn.C3DEngine.b.e.ActionButtonRenderer.a
             public void a() {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.preference.a.a.PreferenceItemF.1.1

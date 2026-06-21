@@ -51,7 +51,7 @@ public class DockRenderer extends BaseRenderable {
     public void a() {
     }
 
-    public DockRenderer(i iVar, float f, float f2, float f3, float f4, float f5) {
+    public DockRenderer(IRenderable iVar, float f, float f2, float f3, float f4, float f5) {
         this.l = 1;
         this.m = 0.0f;
         this.n = 0.0f;
@@ -99,12 +99,12 @@ public class DockRenderer extends BaseRenderable {
                 }
             }
         };
-        this.e = new com.tsf.shell.f.a.b.b(this.f - (2.0f * f4), this.g, this.c);
-        this.b.addChild(this.c);
+        this.e = new com.tsf.shell.f.a.DockRendererB.b(this.f - (2.0f * f4), this.g, this.c);
+        this.DockRendererB.addChild(this.c);
         super.addChild(this.b);
         super.addChild(this.d);
         iVar = iVar == null ? this.b : iVar;
-        this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.2
+        this.DockRendererB.setMouseEventListener(new com.censivn.C3DEngine.b.TweenParams.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.2
             float a;
             private com.censivn.C3DEngine.b.d.MouseEventListener d;
             private boolean e = false;
@@ -112,11 +112,11 @@ public class DockRenderer extends BaseRenderable {
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                float[] fArrA = x.a(motionEvent);
+                float[] fArrA = GraphicsEngineBridge.a(motionEvent);
                 i hittingTarget = a.this.c.getHittingTarget(fArrA[0], fArrA[1], true);
                 if (hittingTarget != null && hittingTarget.getMouseEventListener() != null) {
                     this.d = hittingTarget.getMouseEventListener();
-                    this.d.e(motionEvent);
+                    this.TweenParams.e(motionEvent);
                 }
                 a aVar = a.this;
                 float f6 = a.this.c.position().x;
@@ -134,7 +134,7 @@ public class DockRenderer extends BaseRenderable {
                 this.f = false;
                 a.this.p = false;
                 if (this.d != null) {
-                    this.d.f(motionEvent);
+                    this.TweenParams.f(motionEvent);
                     this.d = null;
                 }
             }
@@ -142,7 +142,7 @@ public class DockRenderer extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
                 if (this.d != null) {
-                    this.d.c(motionEvent);
+                    this.TweenParams.c(motionEvent);
                 }
             }
 
@@ -151,21 +151,21 @@ public class DockRenderer extends BaseRenderable {
                 a.a = 0.15f;
                 a.this.m();
                 if (this.d != null) {
-                    this.d.d(motionEvent);
+                    this.TweenParams.d(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.d != null) {
-                    this.d.a(motionEvent, motionEvent2);
+                    this.TweenParams.a(motionEvent, motionEvent2);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (this.d != null) {
-                    this.d.a(motionEvent);
+                    this.TweenParams.a(motionEvent);
                 }
             }
 
@@ -185,7 +185,7 @@ public class DockRenderer extends BaseRenderable {
                     return;
                 }
                 if (this.d != null) {
-                    this.d.a(motionEvent, motionEvent2, f6, f7);
+                    this.TweenParams.a(motionEvent, motionEvent2, f6, f7);
                 }
             }
 
@@ -225,7 +225,7 @@ public class DockRenderer extends BaseRenderable {
                 }
             }
         });
-        this.v = x.b(b.d.scrollcontainer_arrow);
+        this.v = GraphicsEngineBridge.b(b.d.scrollcontainer_arrow);
         this.t = new GridRenderable(24.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
         this.t.rotation().z = 180.0f;
         com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
@@ -235,14 +235,14 @@ public class DockRenderer extends BaseRenderable {
         this.u.textures().addElement(this.v);
         this.t.calAABB(3.0f, 3.0f, 1.0f);
         this.u.calAABB(3.0f, 3.0f, 1.0f);
-        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.3
+        this.t.setMouseEventListener(new com.censivn.C3DEngine.b.TweenParams.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.3
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 a.a = 0.1f;
                 a.this.k();
             }
         });
-        this.u.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.4
+        this.u.setMouseEventListener(new com.censivn.C3DEngine.b.TweenParams.MouseEventListener(iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.4
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 a.a = 0.1f;
@@ -327,9 +327,9 @@ public class DockRenderer extends BaseRenderable {
     private void a(GridRenderable kVar) {
         if (this.y) {
             if (kVar.parent() == null) {
-                this.d.addChild(kVar);
+                this.TweenParams.addChild(kVar);
             }
-            d dVar = new d();
+            d dVar = new TweenParams();
             dVar.a(255);
             com.censivn.C3DEngine.b.g.TweenUtils.a(kVar);
             com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
@@ -339,10 +339,10 @@ public class DockRenderer extends BaseRenderable {
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
-            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.5
+            d dVar = new TweenParams() { // from class: com.censivn.C3DEngine.b.h.e.DockRenderer.5
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    a.this.d.removeChild(kVar);
+                    a.this.TweenParams.removeChild(kVar);
                 }
             };
             dVar.a(0);
@@ -353,7 +353,7 @@ public class DockRenderer extends BaseRenderable {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         if ((iVar.position().x - (this.j / 2.0f)) + this.c.position().x >= this.f / 2.0f || iVar.position().x + (this.j / 2.0f) + this.c.position().x <= (-this.f) / 2.0f) {
             iVar.visible(false);
         } else {
@@ -399,7 +399,7 @@ public class DockRenderer extends BaseRenderable {
     }
 
     public void i() {
-        this.b.setAABBPX((-this.f) / 2.0f, (-this.g) / 2.0f, 0.0f, this.f / 2.0f, this.g / 2.0f, 1.0f);
+        this.DockRendererB.setAABBPX((-this.f) / 2.0f, (-this.g) / 2.0f, 0.0f, this.f / 2.0f, this.g / 2.0f, 1.0f);
         this.t.position().x = ((-this.f) / 2.0f) + this.t.b();
         this.u.position().x = (this.f / 2.0f) - this.t.b();
         this.e.a(this.f - (this.h * 2.0f));
@@ -422,20 +422,20 @@ public class DockRenderer extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public void addChildAt(i iVar, int i) {
-        this.c.addChildAt(iVar, i);
+    public void addChildAt(IRenderable iVar, int i) {
+        this.c.addChildAt(iVar, IRenderable);
         c(i);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         int iNumChildren = this.c.numChildren();
         this.c.addChild(iVar);
         c(iNumChildren);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public boolean removeChild(i iVar) {
+    public boolean removeChild(IRenderable iVar) {
         int childIndexOf = this.c.getChildIndexOf(iVar);
         if (childIndexOf == -1) {
             return false;

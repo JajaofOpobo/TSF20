@@ -8,10 +8,10 @@ public class DesktopTouchHandlerB {
         return 0;
     }
 
-    public IRenderable a(int i, i iVar) {
+    public IRenderable a(int i, IRenderable iVar) {
         return null;
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
     }
 }

@@ -88,7 +88,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     private boolean mMouseSkip;
     private String mName;
     private boolean mNormalsEnabled;
-    private f mParent;
+    private IRenderableContainer mParent;
     private float mPointSize;
     private boolean mPointSmoothing;
     private PositionNumber3d mPosition;
@@ -581,7 +581,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         this.mName = str;
     }
 
-    public f parent() {
+    public IRenderableContainer parent() {
         return this.mParent;
     }
 
@@ -593,7 +593,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
         }
     }
 
-    public void parent(f fVar) {
+    public void parent(IRenderableContainer fVar) {
         this.mParent = fVar;
     }
 
@@ -1133,7 +1133,7 @@ public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
     }
 
     public void setAABBPX(float f, float f2) {
-        setAABBPX((-f) / 2.0f, (-f2) / 2.0f, 0.0f, f / 2.0f, f2 / 2.0f, 0.0f);
+        setAABBPX((-f) / 2.0f, (-f2) / 2.0f, 0.0f, IRenderableContainer / 2.0f, f2 / 2.0f, 0.0f);
     }
 
     public void setAABBPX(float f, float f2, float f3, float f4, float f5, float f6) {

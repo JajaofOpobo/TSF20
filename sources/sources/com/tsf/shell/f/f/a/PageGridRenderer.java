@@ -21,20 +21,20 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
     public static float b;
     public static float c;
     public static float d;
-    private h e;
-    private i f;
-    private i h;
-    private i i;
-    private i j;
+    private FolderPage e;
+    private FolderPageItemBase f;
+    private FolderPageItemBase h;
+    private FolderPageItemBase i;
+    private FolderPageItemBase j;
     private com.tsf.shell.f.f.a.c.FolderShortcutGrid k;
     private k l;
     private boolean q = false;
     private com.censivn.C3DEngine.b.g._b.TweenTargetWrapper r = new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper();
-    private ArrayList<i> g = new ArrayList<>();
+    private ArrayList<FolderPageItemBase> g = new ArrayList<>();
     private BaseRenderable m = new BaseRenderable();
     private BaseRenderable n = new BaseRenderable();
     private BaseRenderable o = new BaseRenderable();
-    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable p = new com.censivn.C3DEngine.b.f.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, h.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.PageGridRenderer.1
+    private com.censivn.C3DEngine.b.f.BaseColoredRectRenderable p = new com.censivn.C3DEngine.b.PageGridRenderer.BaseColoredRectRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, FolderPage.F * 2.0f, false, true) { // from class: com.tsf.shell.f.f.a.PageGridRenderer.1
         @Override // com.censivn.C3DEngine.b.f.BaseColoredRectRenderable, com.censivn.C3DEngine.b.f.IRenderable
         public void draw() {
             com.censivn.C3DEngine.C3DEngine.e().a(this);
@@ -87,22 +87,22 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
         }
     }
 
-    public i b() {
+    public FolderPageItemBase b() {
         return this.h;
     }
 
-    public i c() {
+    public FolderPageItemBase c() {
         return this.f;
     }
 
-    public PageGridRenderer(h hVar) {
+    public PageGridRenderer(FolderPage hVar) {
         this.e = hVar;
         this.p.moveAllPointsPX(0.0f, (h.F * 2.0f) / 2.0f, 0.0f);
         this.p.alpha(0.0f);
         this.p.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.K;
-        this.m.addChild(this.p);
-        this.m.addChild(this.o);
-        this.m.addChild(this.n);
+        this.FolderMultiWidgetPage.addChild(this.p);
+        this.FolderMultiWidgetPage.addChild(this.o);
+        this.FolderMultiWidgetPage.addChild(this.n);
         g();
     }
 
@@ -116,7 +116,7 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
 
     public void e() {
         final float fAlpha = this.n.alpha();
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.2
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 PageGridRenderer.this.n.alpha(fAlpha + ((0.0f - fAlpha) * f));
@@ -129,7 +129,7 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
 
     public void f() {
         final float fAlpha = this.n.alpha();
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.3
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f) {
                 PageGridRenderer.this.n.alpha(fAlpha + ((255.0f - fAlpha) * f));
@@ -149,7 +149,7 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
         a = h.F - (120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c);
         position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
         this.p.a(com.censivn.C3DEngine.b.b.ScreenConstants.D);
-        Iterator<i> it = this.g.iterator();
+        Iterator<FolderPageItemBase> it = this.FolderRenameDialog.iterator();
         while (it.hasNext()) {
             it.next().a(com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.A, com.censivn.C3DEngine.b.b.ScreenConstants.B);
         }
@@ -161,19 +161,19 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
 
     public void i() {
         this.n.position().y = (-h.F) / 2.0f;
-        this.h = new com.tsf.shell.f.f.a.c.FolderContentList(this.e, this);
-        this.i = new com.tsf.shell.f.f.a.c.FolderAppMenu(this.e, this);
-        this.j = new m(this.e, this);
-        this.k = new com.tsf.shell.f.f.a.c.FolderShortcutGrid(this.e, this);
+        this.h = new com.tsf.shell.f.f.a.PageContainerView.FolderContentList(this.e, this);
+        this.i = new com.tsf.shell.f.f.a.PageContainerView.FolderAppMenu(this.e, this);
+        this.j = new FolderMultiWidgetPage(this.e, this);
+        this.k = new com.tsf.shell.f.f.a.PageContainerView.FolderShortcutGrid(this.e, this);
         this.l = new k(this.e, this);
-        this.g.add(this.i);
-        this.g.add(this.j);
-        this.g.add(this.k);
-        this.g.add(this.h);
-        this.g.add(this.l);
+        this.FolderRenameDialog.add(this.i);
+        this.FolderRenameDialog.add(this.j);
+        this.FolderRenameDialog.add(this.k);
+        this.FolderRenameDialog.add(this.h);
+        this.FolderRenameDialog.add(this.l);
         position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C;
         d = 200.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c;
-        c = ((-d) * (this.g.size() - 1)) / 2.0f;
+        c = ((-d) * (this.FolderRenameDialog.size() - 1)) / 2.0f;
     }
 
     public void j() {
@@ -185,11 +185,11 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
     }
 
     private void n() {
-        this.m.removeFromParent();
+        this.FolderMultiWidgetPage.removeFromParent();
         addChild(this.m);
         final float fAlpha = this.n.alpha();
         final float f = this.n.position().y;
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.4
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.4
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 PageGridRenderer.this.n.alpha(fAlpha + ((255.0f - fAlpha) * f2));
@@ -201,14 +201,14 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
         dVar.a(com.censivn.C3DEngine.b.g.a.n);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.r);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.r, 800, dVar);
-        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams();
         dVar2.a(255);
         dVar2.a(com.censivn.C3DEngine.b.g.a.n);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, 800, dVar2);
         float f2 = c;
         if (this.n.numChildren() == 0) {
-            Iterator<i> it = this.g.iterator();
+            Iterator<FolderPageItemBase> it = this.FolderRenameDialog.iterator();
             while (true) {
                 float f3 = f2;
                 if (!it.hasNext()) {
@@ -221,21 +221,21 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
                 f2 = d + f3;
             }
         }
-        Iterator<i> it2 = this.g.iterator();
+        Iterator<FolderPageItemBase> it2 = this.FolderRenameDialog.iterator();
         while (it2.hasNext()) {
             it2.next().n();
         }
     }
 
     public boolean l() {
-        return (this.f == null ? true : this.f.l()) && this.e.ao().g();
+        return (this.f == null ? true : this.PageGridRenderer.l()) && this.DragOverlayElement.ao().g();
     }
 
     private void o() {
         m();
         final float fAlpha = this.n.alpha();
         final float f = this.n.position().y;
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.5
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.PageGridRenderer.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a(float f2) {
                 PageGridRenderer.this.n.alpha(fAlpha + ((0.0f - fAlpha) * f2));
@@ -244,29 +244,29 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
 
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                PageGridRenderer.this.m.removeFromParent();
-                Iterator it = PageGridRenderer.this.g.iterator();
+                PageGridRenderer.this.FolderMultiWidgetPage.removeFromParent();
+                Iterator it = PageGridRenderer.this.FolderRenameDialog.iterator();
                 while (it.hasNext()) {
-                    ((i) it.next()).p();
+                    ((FolderPageItemBase) it.next()).p();
                 }
             }
         };
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.r);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.r, VEasing.Linear.easeNone, dVar);
-        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+        com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams();
         dVar2.a(0);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.p);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.p, VEasing.Linear.easeNone, dVar2);
-        Iterator<i> it = this.g.iterator();
+        Iterator<FolderPageItemBase> it = this.FolderRenameDialog.iterator();
         while (it.hasNext()) {
             it.next().o();
         }
     }
 
     public void m() {
-        if (this.f != null && this.f.l()) {
+        if (this.f != null && this.PageGridRenderer.l()) {
             q();
-            this.f.i();
+            this.PageGridRenderer.i();
             this.f = null;
         }
     }
@@ -279,7 +279,7 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
                 iVar.g();
                 iVar.k();
             }
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams();
             dVar.h(h.F - b);
             dVar.l(0.6f);
             dVar.m(0.6f);
@@ -296,7 +296,7 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
                 iVar.f();
                 iVar.j();
             }
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams();
             dVar.h(h.F / 2.0f);
             dVar.l(1.0f);
             dVar.m(1.0f);
@@ -307,29 +307,29 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
         }
     }
 
-    private boolean b(i iVar) {
+    private boolean b(FolderPageItemBase iVar) {
         return a(iVar, false);
     }
 
-    private boolean a(i iVar, boolean z) {
+    private boolean a(FolderPageItemBase iVar, boolean z) {
         if (iVar == this.f) {
             return false;
         }
         p();
         if (this.f != null) {
-            this.f.i();
-            this.f.k();
+            this.PageGridRenderer.i();
+            this.PageGridRenderer.k();
         }
         this.f = iVar;
-        this.f.c(z);
+        this.PageGridRenderer.c(z);
         if (z) {
-            this.f.h();
+            this.PageGridRenderer.h();
         }
-        this.f.j();
+        this.PageGridRenderer.j();
         return true;
     }
 
-    public boolean a(i iVar) {
+    public boolean a(FolderPageItemBase iVar) {
         return a(iVar, true);
     }
 
@@ -346,18 +346,18 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
 
     public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if (this.f != null) {
-            this.f.a(cVar, motionEvent);
+            this.PageGridRenderer.a(cVar, motionEvent);
         }
     }
 
     public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
         if (this.f != null) {
-            this.f.b(cVar, motionEvent);
+            this.PageGridRenderer.b(cVar, motionEvent);
         }
     }
 
     public void c(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent) {
-        this.h.c(cVar, motionEvent);
+        this.FolderPage.c(cVar, motionEvent);
         if (this.f != this.h && this.f != this.k) {
             b(this.h);
         }
@@ -368,25 +368,25 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
             b(this.h);
         }
         if (this.f != null) {
-            this.f.d(cVar, motionEvent);
+            this.PageGridRenderer.d(cVar, motionEvent);
         }
     }
 
     public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2) {
         if (this.f != null) {
-            this.f.a(cVar, motionEvent, motionEvent2);
+            this.PageGridRenderer.a(cVar, motionEvent, motionEvent2);
         }
     }
 
     public void a(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.f != null) {
-            this.f.a(cVar, motionEvent, motionEvent2, f, f2);
+            this.PageGridRenderer.a(cVar, motionEvent, motionEvent2, PageGridRenderer, f2);
         }
     }
 
     public void b(com.tsf.shell.f.i.ShortcutItem cVar, MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
         if (this.f != null) {
-            this.f.b(cVar, motionEvent, motionEvent2, f, f2);
+            this.PageGridRenderer.b(cVar, motionEvent, motionEvent2, PageGridRenderer, f2);
         }
     }
 
@@ -396,10 +396,10 @@ public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.
             return;
         }
         if (this.f != this.k && this.f != this.h) {
-            this.h.e(cVar, motionEvent);
+            this.FolderPage.e(cVar, motionEvent);
             b(this.h);
         } else if (this.f != null) {
-            this.f.e(cVar, motionEvent);
+            this.PageGridRenderer.e(cVar, motionEvent);
         }
     }
 }

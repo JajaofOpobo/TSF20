@@ -40,7 +40,7 @@ public class TweenParams {
     public void a() {
     }
 
-    public void a(B bVar) {
+    public void a(EasingInterpolator bVar) {
         this.b = bVar;
     }
 
@@ -60,7 +60,7 @@ public class TweenParams {
     protected void f() {
         c();
         if (this.d != null) {
-            this.d.run();
+            this.TweenParams.run();
         }
     }
 

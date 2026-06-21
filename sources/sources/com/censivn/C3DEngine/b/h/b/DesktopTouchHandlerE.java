@@ -12,7 +12,7 @@ import java.util.Iterator;
 public class DesktopTouchHandlerE extends BaseRenderable {
     private BaseRenderable a;
     private ArrayList<Number3d> b;
-    private d d;
+    private DesktopTouchHandlerD d;
     private Number3d c = new Number3d();
     private int f = com.censivn.C3DEngine.b.b.ScreenConstants.B;
     private int g = com.censivn.C3DEngine.b.b.ScreenConstants.C;
@@ -33,15 +33,15 @@ public class DesktopTouchHandlerE extends BaseRenderable {
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawStart() {
-        this.d.e();
+        this.DesktopTouchHandlerD.e();
     }
 
-    public void a(d dVar) {
+    public void a(DesktopTouchHandlerD dVar) {
         this.d = dVar;
         this.DesktopTouchHandlerE.a(this);
     }
 
-    public d a() {
+    public DesktopTouchHandlerD a() {
         return this.d;
     }
 
@@ -69,7 +69,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderable
     public void destroy() {
         if (this.b != null) {
-            this.b.clear();
+            this.DesktopTouchHandlerB.clear();
         }
         this.d = null;
         this.c = null;
@@ -84,7 +84,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
             this.DesktopTouchHandler.addChildAt(bVar, i2);
             bVar.a(i2);
             i2++;
-            this.d.e(bVar);
+            this.DesktopTouchHandlerD.e(bVar);
         }
         b(i);
     }
@@ -114,11 +114,11 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     }
 
     public Number3d a(int i) {
-        return this.b.get(i);
+        return this.DesktopTouchHandlerB.get(i);
     }
 
     public boolean a(com.tsf.shell.f.i.PageItem bVar, float f, float f2) {
-        return a(bVar, f, f2, false, false);
+        return a(bVar, DesktopTouchHandlerF, f2, false, false);
     }
 
     public boolean a(com.tsf.shell.f.i.PageItem bVar, float f, float f2, boolean z, boolean z2) {
@@ -135,24 +135,24 @@ public class DesktopTouchHandlerE extends BaseRenderable {
         if (this.j) {
             if (!z) {
                 if (f3 > this.i) {
-                    return this.d.a(5);
+                    return this.DesktopTouchHandlerD.a(5);
                 }
                 if (f3 < this.h) {
-                    return this.d.a(-4);
+                    return this.DesktopTouchHandlerD.a(-4);
                 }
             }
             if (!z2) {
                 if (f4 > this.f) {
-                    return this.d.a(-2);
+                    return this.DesktopTouchHandlerD.a(-2);
                 }
                 if (f4 < this.g) {
-                    return this.d.a(-3);
+                    return this.DesktopTouchHandlerD.a(-3);
                 }
             }
         }
         int iNumChildren = this.DesktopTouchHandler.numChildren() + 1;
         for (int i5 = 0; i5 < iNumChildren; i5++) {
-            Number3d number3d = this.b.get(i5);
+            Number3d number3d = this.DesktopTouchHandlerB.get(i5);
             if (f5 > i + number3d.x && f5 < i3 + number3d.x && f6 > i2 + number3d.y) {
                 if (f6 < number3d.y + i4 && iJ != i5) {
                     a(bVar, i5);
@@ -160,7 +160,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
                 }
             }
         }
-        this.d.a(-1);
+        this.DesktopTouchHandlerD.a(-1);
         return false;
     }
 
@@ -204,7 +204,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
 
     private void f(com.tsf.shell.f.i.PageItem bVar) {
         Number3d number3dA = a(bVar.J());
-        this.d.a(bVar, number3dA);
+        this.DesktopTouchHandlerD.a(bVar, number3dA);
         if (bVar.visible()) {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
             dVar.f(number3dA.x);
@@ -219,7 +219,7 @@ public class DesktopTouchHandlerE extends BaseRenderable {
 
     public void c(com.tsf.shell.f.i.PageItem bVar) {
         e();
-        this.d.b(bVar);
+        this.DesktopTouchHandlerD.b(bVar);
     }
 
     public void e() {
@@ -242,12 +242,12 @@ public class DesktopTouchHandlerE extends BaseRenderable {
     }
 
     public void d(com.tsf.shell.f.i.PageItem bVar) {
-        this.d.c(bVar);
+        this.DesktopTouchHandlerD.c(bVar);
     }
 
     public boolean e(com.tsf.shell.f.i.PageItem bVar) {
         b(bVar);
-        this.d.d(bVar);
+        this.DesktopTouchHandlerD.d(bVar);
         return true;
     }
 

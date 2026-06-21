@@ -29,31 +29,31 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void f(MotionEvent motionEvent) {
-        this.d.c(motionEvent);
+        this.DesktopTouchHandlerD.c(motionEvent);
     }
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void g(MotionEvent motionEvent) {
-        this.d.b(motionEvent);
+        this.DesktopTouchHandlerD.b(motionEvent);
     }
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void a(MotionEvent motionEvent) {
-        this.d.f(motionEvent);
-        this.b.b(motionEvent);
+        this.DesktopTouchHandlerD.f(motionEvent);
+        this.DesktopTouchHandlerB.b(motionEvent);
     }
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void k(MotionEvent motionEvent) {
-        this.d.e(motionEvent);
-        this.b.d(motionEvent);
+        this.DesktopTouchHandlerD.e(motionEvent);
+        this.DesktopTouchHandlerB.d(motionEvent);
     }
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void h(MotionEvent motionEvent) {
-        if (this.b.a(false)) {
-            this.d.d(motionEvent);
-            this.b.a(motionEvent);
+        if (this.DesktopTouchHandlerB.a(false)) {
+            this.DesktopTouchHandlerD.d(motionEvent);
+            this.DesktopTouchHandlerB.a(motionEvent);
         }
     }
 
@@ -61,9 +61,9 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     public void c(MotionEvent motionEvent) {
         int iJ;
         super.c(motionEvent);
-        if (this.b.a(true)) {
+        if (this.DesktopTouchHandlerB.a(true)) {
             this.h = false;
-            com.tsf.shell.f.i.PageItem bVarE = this.b.e(motionEvent);
+            com.tsf.shell.f.i.PageItem bVarE = this.DesktopTouchHandlerB.e(motionEvent);
             if (bVarE != null && (bVarE instanceof com.tsf.shell.f.i.ShortcutItem)) {
                 com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) bVarE;
                 w.a();
@@ -82,16 +82,16 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
                             if (iJ >= i) {
                                 iJ = i;
                             }
-                            this.d.d(cVar2);
+                            this.DesktopTouchHandlerD.d(cVar2);
                             cVar.a(cVar2);
-                            this.b.d();
+                            this.DesktopTouchHandlerB.d();
                         } else {
                             iJ = i;
                         }
                         i2++;
                         i = iJ;
                     }
-                    this.b.a(i, cVar);
+                    this.DesktopTouchHandlerB.a(i, cVar);
                     cVar.A().g();
                 }
                 com.tsf.shell.manager.A.j.a((IRenderable) this.e, true);
@@ -102,15 +102,15 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
                 dVar.n(1.2f);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
-                this.b.c(this.e);
+                this.DesktopTouchHandlerB.c(this.e);
             }
         }
     }
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void e(MotionEvent motionEvent) {
-        this.d.a(motionEvent);
-        this.b.c(motionEvent);
+        this.DesktopTouchHandlerD.a(motionEvent);
+        this.DesktopTouchHandlerB.c(motionEvent);
     }
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -118,9 +118,9 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
         super.d(motionEvent);
         if (this.a) {
             this.a = false;
-            boolean zA = this.b.a(this.e, motionEvent.getX(), motionEvent.getY(), false, true);
+            boolean zA = this.DesktopTouchHandlerB.a(this.e, motionEvent.getX(), motionEvent.getY(), false, true);
             com.tsf.shell.manager.A.j.b(this.e);
-            if (zA && this.b.e(this.e)) {
+            if (zA && this.DesktopTouchHandlerB.e(this.e)) {
                 com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
                 dVar.l(1.0f);
                 dVar.m(1.0f);
@@ -128,12 +128,12 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
                 dVar.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
                 com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar);
-                this.b.d(this.e);
+                this.DesktopTouchHandlerB.d(this.e);
                 return;
             }
-            this.b.b().globalToLocal(this.DesktopTouchHandlerE.position());
-            this.b.b().addChildAt(this.e, this.DesktopTouchHandlerE.J());
-            Number3d number3dA = this.b.a(this.DesktopTouchHandlerE.J());
+            this.DesktopTouchHandlerB.b().globalToLocal(this.DesktopTouchHandlerE.position());
+            this.DesktopTouchHandlerB.b().addChildAt(this.e, this.DesktopTouchHandlerE.J());
+            Number3d number3dA = this.DesktopTouchHandlerB.a(this.DesktopTouchHandlerE.J());
             if (this.e instanceof com.tsf.shell.f.i.ShortcutItem) {
                 com.tsf.shell.f.i.ShortcutItem cVar = (com.tsf.shell.f.i.ShortcutItem) this.e;
                 if (cVar.as()) {
@@ -149,12 +149,12 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
                             cVar2.position().y = cVar.position().y + (com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase.j * (i + 1));
                             cVar2.removeFromParent();
                         }
-                        this.b.a(arrayList, iJ);
+                        this.DesktopTouchHandlerB.a(arrayList, iJ);
                     }
                 }
             }
             com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.DesktopTouchHandlerG.TweenParams();
-            this.b.d(this.e);
+            this.DesktopTouchHandlerB.d(this.e);
             dVar2.l(1.0f);
             dVar2.m(1.0f);
             dVar2.n(1.0f);
@@ -163,7 +163,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
             dVar2.a(com.censivn.C3DEngine.b.g.a.RenderableTween);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 500, dVar2);
-            if (!this.h && (this.b.b() instanceof com.tsf.shell.f.e.f.EditModeNode) && (this.e instanceof com.tsf.shell.f.i.ShortcutItem)) {
+            if (!this.h && (this.DesktopTouchHandlerB.b() instanceof com.tsf.shell.f.e.f.EditModeNode) && (this.e instanceof com.tsf.shell.f.i.ShortcutItem)) {
                 ((com.tsf.shell.f.i.ShortcutItem) this.e).ai();
             }
         }
@@ -176,7 +176,7 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
             if (this.h) {
                 this.DesktopTouchHandlerE.position().x = (int) (this.f + (motionEvent2.getX() - motionEvent.getX()));
                 this.DesktopTouchHandlerE.position().y = (int) (this.g - (motionEvent2.getY() - motionEvent.getY()));
-                this.b.a(this.e, motionEvent2.getX(), motionEvent2.getY());
+                this.DesktopTouchHandlerB.a(this.e, motionEvent2.getX(), motionEvent2.getY());
                 return;
             }
             if (GraphicsEngineBridge.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 60.0f) {
@@ -189,12 +189,12 @@ class DesktopTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
             }
             return;
         }
-        this.d.a(motionEvent, motionEvent2);
+        this.DesktopTouchHandlerD.a(motionEvent, motionEvent2);
     }
 
     @Override // com.censivn.C3DEngine.b.d.MouseEventListener
     public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
-        this.d.a(motionEvent, motionEvent2, f, f2);
+        this.DesktopTouchHandlerD.a(motionEvent, motionEvent2, DesktopTouchHandlerF, f2);
     }
 
     public void a() {

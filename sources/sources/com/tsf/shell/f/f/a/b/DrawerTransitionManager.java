@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.api.element.Number3d;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerTransitionManager extends com.tsf.shell.f.f.TransitionManager<k> {
+public class DrawerTransitionManager extends com.tsf.shell.f.f.TransitionManager<DrawerTransitionBase> {
     public DrawerTransitionManager() {
         ArrayList<com.tsf.shell.f.f.TransitionRenderer> arrayList = new ArrayList<>();
         arrayList.add(new DrawerSmoothTransition(10, false));
@@ -33,7 +33,7 @@ public class DrawerTransitionManager extends com.tsf.shell.f.f.TransitionManager
     }
 
     @Override // com.tsf.shell.f.f.TransitionManager
-    public void a(k kVar) {
+    public void a(DrawerTransitionBase kVar) {
     }
 
     @Override // com.tsf.shell.f.f.TransitionManager

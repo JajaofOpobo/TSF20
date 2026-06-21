@@ -6,5 +6,5 @@ import com.censivn.C3DEngine.b.g.a.AbstractTween;
 public interface ITweenTarget {
     c getTweenChild();
 
-    void setTweenChild(c cVar);
+    void setTweenChild(AbstractTween cVar);
 }

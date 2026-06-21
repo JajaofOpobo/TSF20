@@ -44,7 +44,7 @@ public abstract class LauncherShortcut3DInfo extends ItemInfo {
         return this.iconType != 0 && this.titleType == 1;
     }
 
-    public Bitmap getIcon(boolean z, a aVar) {
+    public Bitmap getIcon(boolean z, GridPosition aVar) {
         return getIcon(z, aVar.H, aVar.I);
     }
 
@@ -65,7 +65,7 @@ public abstract class LauncherShortcut3DInfo extends ItemInfo {
                 }
                 break;
             case 2:
-                bitmapA = BitmapTransformationHelper.a(ShellModel.a.a(this));
+                bitmapA = BitmapTransformationHelper.a(ShellModel.GridPosition.a(this));
                 break;
         }
         if (bitmapA != null) {

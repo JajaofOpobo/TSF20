@@ -14,7 +14,7 @@ public class PageContainerBase extends PageContainerView {
     private A c;
     private A d;
     private int e;
-    private k f;
+    private DrawerTransitionBase f;
     public float a = 0.0f;
     private boolean g = false;
     private boolean h = false;
@@ -32,7 +32,7 @@ public class PageContainerBase extends PageContainerView {
 
     public void a() {
         int i = 0;
-        Iterator<i> it = children().iterator();
+        Iterator<IRenderable> it = children().iterator();
         while (true) {
             int i2 = i;
             if (it.hasNext()) {
@@ -56,20 +56,20 @@ public class PageContainerBase extends PageContainerView {
         }
     }
 
-    public PageContainerBase(k kVar, InterfaceC0101a interfaceC0101a) {
+    public PageContainerBase(DrawerTransitionBase kVar, InterfaceC0101a interfaceC0101a) {
         this.b = interfaceC0101a;
         a(kVar);
     }
 
-    public void a(k kVar) {
+    public void a(DrawerTransitionBase kVar) {
         if (this.f != null) {
-            this.f.a(this);
+            this.PageGridRenderer.a(this);
         }
         this.f = kVar;
-        this.f.b(this);
+        this.PageGridRenderer.b(this);
     }
 
-    public k b() {
+    public DrawerTransitionBase b() {
         return this.f;
     }
 
@@ -79,7 +79,7 @@ public class PageContainerBase extends PageContainerView {
         this.b = null;
         this.c = null;
         this.d = null;
-        this.f.a(this);
+        this.PageGridRenderer.a(this);
         this.f = null;
         this.h = true;
         removeFromParent();
@@ -93,23 +93,23 @@ public class PageContainerBase extends PageContainerView {
         super.visible(Boolean.valueOf(z));
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         super.addChild(iVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         a(iVar, numChildren(), true);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public void addChildAt(i iVar, int i) {
-        a(iVar, i, true);
+    public void addChildAt(IRenderable iVar, int i) {
+        a(iVar, IRenderable, true);
     }
 
-    public void a(i iVar, int i, boolean z) {
+    public void a(IRenderable iVar, int i, boolean z) {
         boolean z2;
-        this.b.j_();
+        this.PageItemList.j_();
         int iNumChildren = numChildren();
         if (iNumChildren == h.m) {
             com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) children().get(iNumChildren - 1);
@@ -117,7 +117,7 @@ public class PageContainerBase extends PageContainerView {
                 final i iVarA = com.tsf.shell.manager.app.StateHub.t().a(bVar);
                 iVarA.removeFromParent();
                 com.tsf.shell.manager.app.StateHub.t().addChild(iVarA);
-                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.1
+                com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a._a.1
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         com.tsf.shell.manager.app.StateHub.t().e(iVarA);
@@ -128,10 +128,10 @@ public class PageContainerBase extends PageContainerView {
                 com.censivn.C3DEngine.b.g.TweenUtils.a(iVarA, VEasing.Linear.easeNone, dVar);
             }
             children().remove(bVar);
-            if (this.d != null && this.d.e() != 0) {
-                this.d.addChildAt(bVar, 0);
+            if (this.d != null && this.AppClassifier.e() != 0) {
+                this.AppClassifier.addChildAt(bVar, 0);
             } else {
-                this.b.i_().addChildAt(bVar, 0);
+                this.PageItemList.i_().addChildAt(bVar, 0);
             }
             z2 = true;
         } else {
@@ -140,21 +140,21 @@ public class PageContainerBase extends PageContainerView {
         if (i >= iNumChildren) {
             i = z2 ? iNumChildren - 1 : iNumChildren;
         }
-        super.addChildAt(iVar, i);
+        super.addChildAt(iVar, IRenderable);
         a(i, z);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public boolean removeChild(i iVar) {
-        this.b.j_();
+    public boolean removeChild(IRenderable iVar) {
+        this.PageItemList.j_();
         int childIndexOf = getChildIndexOf(iVar);
         boolean zRemoveChild = super.removeChild(iVar);
         if (numChildren() == 0) {
-            this.b.a(this, this.c, this.d);
+            this.PageItemList.a(this, this.c, this.d);
         } else {
-            if (this.d != null && this.d.e() != 0) {
-                com.tsf.shell.f.i.PageItem bVarC = this.d.c();
-                this.d.removeChild(bVarC);
+            if (this.d != null && this.AppClassifier.e() != 0) {
+                com.tsf.shell.f.i.PageItem bVarC = this.AppClassifier.c();
+                this.AppClassifier.removeChild(bVarC);
                 super.addChild(bVarC);
                 bVarC.position().y = h.E.get(numChildren() - 1).y;
                 bVarC.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A + com.tsf.shell.manager.o.ButtonPresetManager.a.T;
@@ -176,7 +176,7 @@ public class PageContainerBase extends PageContainerView {
         this.d = aVar;
     }
 
-    public a d() {
+    public PageContainerBase d() {
         return this.d;
     }
 
@@ -213,7 +213,7 @@ public class PageContainerBase extends PageContainerView {
                 com.tsf.shell.f.i.PageItem bVar = arrayList.get(i2);
                 bVar.parent(this);
                 children().add(bVar);
-                b(bVar, i, false);
+                b(bVar, IRenderable, false);
                 i++;
             }
         }
@@ -223,7 +223,7 @@ public class PageContainerBase extends PageContainerView {
         com.censivn.C3DEngine.b.g.TweenParams dVar = null;
         for (final i iVar : children()) {
             if (iVar instanceof com.tsf.shell.f.i.PageItem) {
-                dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.2
+                dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a._a.2
                     @Override // com.censivn.C3DEngine.b.g.TweenParams
                     public void a() {
                         PageElement.this.children().remove(iVar);
@@ -240,7 +240,7 @@ public class PageContainerBase extends PageContainerView {
         while (i < iNumChildren) {
             com.tsf.shell.f.i.PageItem bVar = arrayList.get((h.m * e()) + i);
             Number3d number3d = h.E.get(i);
-            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar2 = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams();
             dVar2.f(number3d.x);
             dVar2.h(number3d.y);
             if (!children().contains(bVar)) {
@@ -263,44 +263,44 @@ public class PageContainerBase extends PageContainerView {
     }
 
     public void g() {
-        this.f.g(this);
+        this.PageGridRenderer.g(this);
     }
 
     public void h() {
-        this.f.h(this);
+        this.PageGridRenderer.h(this);
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
     public void onDrawEnd() {
-        this.b.a(this);
+        this.PageItemList.a(this);
     }
 
     public void a(float f) {
         this.a = f;
         if (this.f != null) {
-            this.f.a(this, f);
+            this.PageGridRenderer.a(this, PageGridRenderer);
         }
     }
 
     public void i() {
         if (this.d != null) {
-            this.d.a(this.a + 1.0f);
+            this.AppClassifier.a(this.a + 1.0f);
         }
     }
 
     public void j() {
         if (this.c != null) {
-            this.c.a(this.a - 1.0f);
+            this.PageContainerView.a(this.a - 1.0f);
         }
     }
 
     private void u() {
         if (this.d != null) {
             if (this.a < 0.0f) {
-                this.d.a(this.a + 1.0f);
-                this.d.a(true);
+                this.AppClassifier.a(this.a + 1.0f);
+                this.AppClassifier.a(true);
             } else {
-                this.d.a(false);
+                this.AppClassifier.a(false);
             }
         }
     }
@@ -308,10 +308,10 @@ public class PageContainerBase extends PageContainerView {
     private void v() {
         if (this.c != null) {
             if (this.a > 0.0f) {
-                this.c.a(this.a - 1.0f);
-                this.c.a(true);
+                this.PageContainerView.a(this.a - 1.0f);
+                this.PageContainerView.a(true);
             } else {
-                this.c.a(false);
+                this.PageContainerView.a(false);
             }
         }
     }
@@ -320,39 +320,39 @@ public class PageContainerBase extends PageContainerView {
         a(PageGridRenderer);
         if (this.a < 0.0f) {
             if (this.d != null) {
-                this.d.a(f + 1.0f);
-                this.d.u();
-                this.d.a(true);
+                this.AppClassifier.a(f + 1.0f);
+                this.AppClassifier.u();
+                this.AppClassifier.a(true);
             }
             if (this.c != null) {
-                this.c.a(false);
+                this.PageContainerView.a(false);
                 return;
             }
             return;
         }
         if (this.a > 0.0f) {
             if (this.c != null) {
-                this.c.a(f - 1.0f);
-                this.c.v();
-                this.c.a(true);
+                this.PageContainerView.a(f - 1.0f);
+                this.PageContainerView.v();
+                this.PageContainerView.a(true);
             }
             if (this.d != null) {
-                this.d.a(false);
+                this.AppClassifier.a(false);
                 return;
             }
             return;
         }
         if (this.d != null) {
-            this.d.a(false);
+            this.AppClassifier.a(false);
         }
         if (this.c != null) {
-            this.c.a(false);
+            this.PageContainerView.a(false);
         }
     }
 
     public void k() {
-        this.f.a(this, 0.0f);
-        this.f.e(this);
+        this.PageGridRenderer.a(this, 0.0f);
+        this.PageGridRenderer.e(this);
     }
 
     public void l() {
@@ -360,32 +360,32 @@ public class PageContainerBase extends PageContainerView {
     }
 
     public void m() {
-        this.f.c(this);
+        this.PageGridRenderer.c(this);
     }
 
     public void n() {
-        this.f.d(this);
+        this.PageGridRenderer.d(this);
     }
 
     public void o() {
         this.g = false;
-        this.f.e(this);
+        this.PageGridRenderer.e(this);
     }
 
     public void p() {
         this.g = true;
-        this.f.f(this);
+        this.PageGridRenderer.f(this);
     }
 
     private void a(int i, boolean z) {
         int iNumChildren = numChildren();
         while (i < iNumChildren) {
-            b(getChildAt(i), i, z);
+            b(getChildAt(i), IRenderable, z);
             i++;
         }
     }
 
-    private void b(i iVar, int i, boolean z) {
+    private void b(IRenderable iVar, int i, boolean z) {
         if (this.g && z) {
             iVar.setAnimationObjectState(true);
             return;

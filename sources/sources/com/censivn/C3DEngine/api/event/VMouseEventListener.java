@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.b.d.MouseEventListener;
 public class VMouseEventListener {
     public VMouseEventListener mThis;
     public VObject3d target;
-    public a vTarget;
+    public MouseEventListener vTarget;
 
     public VMouseEventListener() {
     }
@@ -16,7 +16,7 @@ public class VMouseEventListener {
     public VMouseEventListener(VObject3d vObject3d) {
         this.target = vObject3d;
         this.mThis = this;
-        this.vTarget = new a(vObject3d.vTarget) { // from class: com.censivn.C3DEngine.api.event.VMouseEventListener.1
+        this.vTarget = new MouseEventListener(vObject3d.vTarget) { // from class: com.censivn.C3DEngine.api.event.VMouseEventListener.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 VMouseEventListener.this.mThis.onSingleTapUp(motionEvent);

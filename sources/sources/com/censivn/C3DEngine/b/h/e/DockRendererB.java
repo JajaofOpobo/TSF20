@@ -11,6 +11,7 @@ import com.tsf.shell.f.e.C;
 import com.tsf.shell.utils.w;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
+import com.censivn.C3DEngine.C3DEngine;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DockRendererB extends BaseRenderable {
@@ -37,7 +38,7 @@ public class DockRendererB extends BaseRenderable {
     private GridRenderable s;
     private GridRenderable t;
     private TextureElement u;
-    private ArrayList<a> v;
+    private ArrayList<DockRenderer> v;
     private float w;
     private boolean x;
     private boolean y;
@@ -55,7 +56,7 @@ public class DockRendererB extends BaseRenderable {
         this.z = false;
     }
 
-    public DockRendererB(i iVar, float f, float f2, float f3, float f4, float f5, float f6) {
+    public DockRendererB(IRenderable iVar, float f, float f2, float f3, float f4, float f5, float f6) {
         this.l = 0.0f;
         this.m = 0.0f;
         this.n = 0.0f;
@@ -86,7 +87,7 @@ public class DockRendererB extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
                 b.this.k();
-                if (b.this.y && b.this.b.getAnimationObjectState()) {
+                if (b.this.y && b.this.DockRendererB.getAnimationObjectState()) {
                     this.b = true;
                     com.tsf.shell.manager.A.u.a(b.this.d);
                 } else {
@@ -95,7 +96,7 @@ public class DockRendererB extends BaseRenderable {
             }
 
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-            public void onDrawChildEnd(i iVar2) {
+            public void onDrawChildEnd(IRenderable iVar2) {
                 b.this.c(iVar2);
             }
 
@@ -107,11 +108,11 @@ public class DockRendererB extends BaseRenderable {
             }
 
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-            public void addChildAt(i iVar2, int i) {
+            public void addChildAt(IRenderable iVar2, int i) {
                 iVar2.setAnimationObjectState(true);
                 b.this.o();
                 b.this.h(iVar2);
-                super.addChildAt(iVar2, i);
+                super.addChildAt(iVar2, IRenderable);
                 b.this.a(numChildren());
                 b.this.t();
                 b.this.c(i);
@@ -119,7 +120,7 @@ public class DockRendererB extends BaseRenderable {
             }
 
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-            public void addChild(i iVar2) {
+            public void addChild(IRenderable iVar2) {
                 iVar2.setAnimationObjectState(true);
                 b.this.o();
                 b.this.h(iVar2);
@@ -130,8 +131,8 @@ public class DockRendererB extends BaseRenderable {
             }
 
             @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-            public boolean removeChild(i iVar2) {
-                int childIndexOf = b.this.b.getChildIndexOf(iVar2);
+            public boolean removeChild(IRenderable iVar2) {
+                int childIndexOf = b.this.DockRendererB.getChildIndexOf(iVar2);
                 if (childIndexOf != -1) {
                     b.this.p();
                     super.removeChildAt(childIndexOf);
@@ -147,7 +148,7 @@ public class DockRendererB extends BaseRenderable {
         };
         super.addChild(this.b);
         super.addChild(this.c);
-        setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(iVar == null ? this : iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.2
+        setMouseEventListener(new com.censivn.C3DEngine.b.TweenParams.MouseEventListener(iVar == null ? this : iVar) { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.2
             private float b;
             private com.censivn.C3DEngine.b.d.MouseEventListener g;
             private IRenderable h;
@@ -164,17 +165,17 @@ public class DockRendererB extends BaseRenderable {
                 this.e = false;
                 b.this.o = true;
                 this.d = false;
-                this.b = b.this.b.position().x;
-                b.this.b.setAnimationObjectState(true);
+                this.b = b.this.DockRendererB.position().x;
+                b.this.DockRendererB.setAnimationObjectState(true);
                 b.this.n = this.b;
-                this.h = b.this.b.getHittingObjectTarget(motionEvent, true);
+                this.h = b.this.DockRendererB.getHittingObjectTarget(motionEvent, true);
                 if (b.this.B != null) {
                     this.g = b.this.B;
                     this.g.e(motionEvent);
                     return;
                 }
                 if (b.this.x && this.h != null && this.h.getMouseEventListener() != null) {
-                    this.h = b.this.b.getChildAt(0);
+                    this.h = b.this.DockRendererB.getChildAt(0);
                 }
                 if (this.h != null && this.h.getMouseEventListener() != null) {
                     this.g = this.h.getMouseEventListener();
@@ -194,7 +195,7 @@ public class DockRendererB extends BaseRenderable {
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
                 b.a = 0.3f;
                 b.this.n = this.b + (motionEvent2.getX() - motionEvent.getX());
-                b.this.n = c.a(b.this.n, b.this.m, b.this.l);
+                b.this.n = c.a(b.this.n, DockRendererB.this.m, DockRendererB.this.l);
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -208,16 +209,16 @@ public class DockRendererB extends BaseRenderable {
                                 AnonymousClass2.this.f = false;
                                 if (AnonymousClass2.this.d) {
                                     if (!AnonymousClass2.this.e) {
-                                        if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
+                                        if (GraphicsEngineBridge.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
                                             AnonymousClass2.this.e = true;
                                             return;
                                         }
                                         return;
                                     }
-                                    x.a(motionEvent2, AnonymousClass2.this.j);
+                                    GraphicsEngineBridge.a(motionEvent2, AnonymousClass2.this.j);
                                     AnonymousClass2.this.k.x = AnonymousClass2.this.j[0];
                                     AnonymousClass2.this.k.y = AnonymousClass2.this.j[1];
-                                    b.this.b.globalToLocal(AnonymousClass2.this.k);
+                                    b.this.DockRendererB.globalToLocal(AnonymousClass2.this.k);
                                     float f7 = AnonymousClass2.this.k.x + (b.this.e / 2.0f);
                                     int i = (int) (f7 / b.this.e);
                                     float f8 = f7 - (i * b.this.e);
@@ -226,15 +227,15 @@ public class DockRendererB extends BaseRenderable {
                                         if (f8 < b.this.g) {
                                             b.this.j();
                                         } else if (f8 <= b.this.e - b.this.g) {
-                                            if (!b.this.b.getAnimationObjectState()) {
+                                            if (!b.this.DockRendererB.getAnimationObjectState()) {
                                                 int iNumChildren = i2 >= 0 ? i2 : 0;
-                                                if (iNumChildren > b.this.b.numChildren() - 1) {
-                                                    iNumChildren = b.this.b.numChildren() - 1;
+                                                if (iNumChildren > b.this.DockRendererB.numChildren() - 1) {
+                                                    iNumChildren = b.this.DockRendererB.numChildren() - 1;
                                                 }
                                                 if (b.this.q == i && AnonymousClass2.this.l != iNumChildren) {
                                                     AnonymousClass2.this.l = iNumChildren;
-                                                    b.this.A.removeFromParent();
-                                                    b.this.b.addChildAt(b.this.A, AnonymousClass2.this.l);
+                                                    b.this.C3DEngine.removeFromParent();
+                                                    b.this.DockRendererB.addChildAt(b.this.A, AnonymousClass2.this.l);
                                                 }
                                             }
                                         } else {
@@ -262,13 +263,13 @@ public class DockRendererB extends BaseRenderable {
                 if (b.this.z) {
                     if (this.h != null) {
                         w.a();
-                        this.l = b.this.b.getChildIndexOf(this.h);
-                        this.i.reset();
+                        this.l = b.this.DockRendererB.getChildIndexOf(this.h);
+                        this.IRenderable.reset();
                         this.i = this.h.localToGlobal(this.i);
-                        b.this.b.replaceChild(this.h, b.this.A);
+                        b.this.DockRendererB.replaceChild(this.h, DockRendererB.this.A);
                         this.h.position().setAllFrom(this.i);
                         this.h.setAnimationObjectState(true);
-                        com.tsf.shell.manager.A.j.a(this.h);
+                        com.tsf.shell.manager.A.BaseRenderable.a(this.h);
                         this.d = true;
                         return;
                     }
@@ -286,10 +287,10 @@ public class DockRendererB extends BaseRenderable {
                 if (b.this.z) {
                     if (this.h != null) {
                         this.d = false;
-                        this.i.setAllFrom(this.h.position());
-                        com.tsf.shell.manager.A.j.b(this.h);
-                        b.this.b.globalToLocal(this.i);
-                        b.this.b.replaceChild(b.this.A, this.h);
+                        this.IRenderable.setAllFrom(this.h.position());
+                        com.tsf.shell.manager.A.BaseRenderable.b(this.h);
+                        b.this.DockRendererB.globalToLocal(this.i);
+                        b.this.DockRendererB.replaceChild(b.this.A, this.h);
                         this.h.position().setAllFrom(this.i);
                         return;
                     }
@@ -324,7 +325,7 @@ public class DockRendererB extends BaseRenderable {
                     return;
                 }
                 if (f7 > 0.0f && b.this.q > 0) {
-                    if (b.this.b.position().x > b.this.r) {
+                    if (b.this.DockRendererB.position().x > b.this.r) {
                         b.this.b(b.this.q - 1);
                         return;
                     } else {
@@ -334,15 +335,15 @@ public class DockRendererB extends BaseRenderable {
                 }
                 if (f7 >= 0.0f || b.this.q >= b.this.p - 1) {
                     b.this.r();
-                } else if (b.this.b.position().x < b.this.r) {
+                } else if (b.this.DockRendererB.position().x < b.this.r) {
                     b.this.b(b.this.q + 1);
                 } else {
                     b.this.r();
                 }
             }
         });
-        this.d = new com.tsf.shell.f.a.b.b(this.e - (2.0f * f4), this.f, this.b);
-        this.u = x.b(b.d.scrollcontainer_arrow);
+        this.d = new com.tsf.shell.f.a.DockRendererB.b(this.e - (2.0f * f4), this.f, this.b);
+        this.u = GraphicsEngineBridge.b(b.d.scrollcontainer_arrow);
         this.s = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 24.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 45.0f, false);
         this.s.rotation().z = 180.0f;
         com.tsf.shell.manager.o.c.a(this.s, com.tsf.shell.manager.o.c.h);
@@ -358,7 +359,7 @@ public class DockRendererB extends BaseRenderable {
     }
 
     public IRenderable a(MotionEvent motionEvent) {
-        return this.b.getHittingObjectTarget(motionEvent, true);
+        return this.DockRendererB.getHittingObjectTarget(motionEvent, true);
     }
 
     public BaseRenderable c() {
@@ -384,42 +385,42 @@ public class DockRendererB extends BaseRenderable {
         return this.q;
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
     }
 
-    public void b(i iVar) {
+    public void b(IRenderable iVar) {
     }
 
     public void h() {
     }
 
-    public void c(i iVar) {
+    public void c(IRenderable iVar) {
     }
 
     public void i() {
-        if (!this.b.getAnimationObjectState() && this.q < this.p - 1) {
+        if (!this.DockRendererB.getAnimationObjectState() && this.q < this.p - 1) {
             w.a();
             b(this.q + 1);
         }
     }
 
     public void j() {
-        if (!this.b.getAnimationObjectState() && this.q > 0) {
+        if (!this.DockRendererB.getAnimationObjectState() && this.q > 0) {
             w.a();
             b(this.q - 1);
         }
     }
 
     public void k() {
-        if (this.b.getAnimationObjectState()) {
-            this.b.position().x += (this.n - this.b.position().x) * a;
-            if (!this.o && Math.abs(this.b.position().x - this.n) < 0.1f) {
-                this.b.position().x = this.n;
-                this.b.setAnimationObjectState(false);
+        if (this.DockRendererB.getAnimationObjectState()) {
+            this.DockRendererB.position().x += (this.n - this.DockRendererB.position().x) * a;
+            if (!this.o && Math.abs(this.DockRendererB.position().x - this.n) < 0.1f) {
+                this.DockRendererB.position().x = this.n;
+                this.DockRendererB.setAnimationObjectState(false);
             }
         }
-        for (int i = 0; i < this.b.numChildren(); i++) {
-            i childAt = this.b.getChildAt(i);
+        for (int i = 0; i < this.DockRendererB.numChildren(); i++) {
+            i childAt = this.DockRendererB.getChildAt(i);
             if (g(childAt)) {
                 childAt.visible(true);
             } else {
@@ -466,7 +467,7 @@ public class DockRendererB extends BaseRenderable {
     /* JADX INFO: Access modifiers changed from: private */
     public void o() {
         int size = this.v.size();
-        a aVar = new a();
+        a aVar = new DockRenderer();
         aVar.a = d(size);
         aVar.b = 0.0f;
         this.v.add(aVar);
@@ -478,8 +479,8 @@ public class DockRendererB extends BaseRenderable {
     }
 
     public void m() {
-        for (int i = 0; i < this.b.numChildren(); i++) {
-            this.b.getChildAt(i).setAnimationObjectState(true);
+        for (int i = 0; i < this.DockRendererB.numChildren(); i++) {
+            this.DockRendererB.getChildAt(i).setAnimationObjectState(true);
         }
     }
 
@@ -506,7 +507,7 @@ public class DockRendererB extends BaseRenderable {
         if (kVar.parent() == null) {
             this.c.addChild(kVar);
         }
-        d dVar = new d();
+        d dVar = new TweenParams();
         dVar.a(255);
         com.censivn.C3DEngine.b.g.TweenUtils.a(kVar);
         com.censivn.C3DEngine.b.g.TweenUtils.a(kVar, 250, dVar);
@@ -514,7 +515,7 @@ public class DockRendererB extends BaseRenderable {
 
     private void b(final GridRenderable kVar) {
         if (kVar.parent() != null) {
-            d dVar = new d() { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.3
+            d dVar = new TweenParams() { // from class: com.censivn.C3DEngine.b.h.e.DockRendererB.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
                     b.this.c.removeChild(kVar);
@@ -526,17 +527,17 @@ public class DockRendererB extends BaseRenderable {
         }
     }
 
-    private boolean g(i iVar) {
+    private boolean g(IRenderable iVar) {
         return a(iVar.position().x);
     }
 
     private boolean a(float f) {
-        return (f - (this.i / 2.0f)) + this.b.position().x <= this.e / 2.0f && ((this.i / 2.0f) + f) + this.b.position().x >= (-this.e) / 2.0f;
+        return (f - (this.i / 2.0f)) + this.DockRendererB.position().x <= this.e / 2.0f && ((this.i / 2.0f) + f) + this.DockRendererB.position().x >= (-this.e) / 2.0f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void r() {
-        int i = -((int) ((this.b.position().x - (this.e / 2.0f)) / this.e));
+        int i = -((int) ((this.DockRendererB.position().x - (this.e / 2.0f)) / this.e));
         if (i > this.p - 1) {
             i = this.p - 1;
         }
@@ -553,8 +554,8 @@ public class DockRendererB extends BaseRenderable {
         this.r = f;
         this.n = f;
         t();
-        this.b.setAnimationObjectState(true);
-        this.b.invalidate();
+        this.DockRendererB.setAnimationObjectState(true);
+        this.DockRendererB.invalidate();
     }
 
     public void a(float f, float f2, float f3, float f4) {
@@ -567,17 +568,17 @@ public class DockRendererB extends BaseRenderable {
         setAABBPX((-this.e) / 2.0f, (-this.f) / 2.0f, 0.0f, this.e / 2.0f, this.f / 2.0f, 1.0f);
         this.s.position().x = ((-this.e) / 2.0f) + this.s.b();
         this.t.position().x = (this.e / 2.0f) - this.s.b();
-        this.d.a(this.e - (this.g * 2.0f));
-        this.d.b(this.f);
+        this.TweenParams.a(this.e - (this.g * 2.0f));
+        this.TweenParams.b(this.f);
         s();
         t();
         int size = this.v.size();
         for (int i = 0; i < size; i++) {
             this.v.get(i).a = d(i);
         }
-        int size2 = this.b.children().size();
+        int size2 = this.DockRendererB.children().size();
         for (int i2 = 0; i2 < size2; i2++) {
-            i iVar = this.b.children().get(i2);
+            i iVar = this.DockRendererB.children().get(i2);
             iVar.position().x = this.v.get(i2).a;
         }
     }
@@ -589,18 +590,18 @@ public class DockRendererB extends BaseRenderable {
         this.j = (f - (this.k * this.i)) / (this.k - 1);
     }
 
-    public void d(i iVar) {
-        this.b.addChildAt(iVar, this.k * this.q);
+    public void d(IRenderable iVar) {
+        this.DockRendererB.addChildAt(iVar, this.k * this.q);
     }
 
-    public void e(i iVar) {
+    public void e(IRenderable iVar) {
         int i = this.k * this.q;
-        this.b.addChildAt(iVar, i);
+        this.DockRendererB.addChildAt(iVar, IRenderable);
         a aVar = this.v.get(i);
         iVar.position().x = aVar.a;
         iVar.position().y = aVar.b;
         iVar.scale().setAll(0.0f, 0.0f, 1.0f);
-        d dVar = new d();
+        d dVar = new TweenParams();
         dVar.l(this.w);
         dVar.m(this.w);
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
@@ -609,17 +610,17 @@ public class DockRendererB extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
-        this.b.addChild(iVar);
+    public void addChild(IRenderable iVar) {
+        this.DockRendererB.addChild(iVar);
     }
 
-    public void f(i iVar) {
-        this.b.addChild(iVar);
-        a aVar = this.v.get(this.b.numChildren() - 1);
+    public void f(IRenderable iVar) {
+        this.DockRendererB.addChild(iVar);
+        a aVar = this.v.get(this.DockRendererB.numChildren() - 1);
         iVar.position().x = aVar.a;
         iVar.position().y = aVar.b;
         iVar.scale().setAll(0.0f, 0.0f, 1.0f);
-        d dVar = new d();
+        d dVar = new TweenParams();
         dVar.l(this.w);
         dVar.m(this.w);
         dVar.a(com.censivn.C3DEngine.b.g.a.e);
@@ -628,16 +629,16 @@ public class DockRendererB extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public boolean removeChild(i iVar) {
-        return this.b.removeChild(iVar);
+    public boolean removeChild(IRenderable iVar) {
+        return this.DockRendererB.removeChild(iVar);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void h(i iVar) {
+    public void h(IRenderable iVar) {
         if (iVar.parent() != null) {
             Number3d.TEMPNUMBER3D.reset();
             iVar.localToGlobal(Number3d.TEMPNUMBER3D);
-            this.b.globalToLocal(Number3d.TEMPNUMBER3D);
+            this.DockRendererB.globalToLocal(Number3d.TEMPNUMBER3D);
             iVar.position().setAllFrom(Number3d.TEMPNUMBER3D);
             iVar.removeFromParent();
         }
@@ -645,7 +646,7 @@ public class DockRendererB extends BaseRenderable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void t() {
-        this.p = this.b.numChildren() % this.k == 0 ? this.b.numChildren() / this.k : (this.b.numChildren() / this.k) + 1;
+        this.p = this.DockRendererB.numChildren() % this.k == 0 ? this.DockRendererB.numChildren() / this.k : (this.DockRendererB.numChildren() / this.k) + 1;
         this.m = 0.0f;
         this.l = ((-this.p) * this.e) + this.e;
         this.l = this.l > 0.0f ? 0.0f : this.l;
@@ -654,9 +655,9 @@ public class DockRendererB extends BaseRenderable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void c(int i) {
-        int size = this.b.children().size();
+        int size = this.DockRendererB.children().size();
         while (i < size) {
-            this.b.children().get(i).setAnimationObjectState(true);
+            this.DockRendererB.children().get(i).setAnimationObjectState(true);
             i++;
         }
     }

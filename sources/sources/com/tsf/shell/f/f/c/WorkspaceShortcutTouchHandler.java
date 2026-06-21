@@ -99,8 +99,8 @@ public class WorkspaceShortcutTouchHandler implements KeyboardHandler.a, WindowM
                         ((KeyboardHandler) WorkspaceShortcutTouchHandler.this.a.WorkspaceShortcutTouchHandler.a(i).a()).c = 23.0f;
                     }
                     if (WorkspaceShortcutTouchHandler.this.d != null) {
-                        float f = (WorkspaceShortcutTouchHandler.this.d.position().x + (WorkspaceShortcutTouchHandler.this.a.f / 2.0f)) - ((WorkspaceShortcutTouchHandler.this.i * WorkspaceShortcutTouchHandler.this.a.f) / 2.0f);
-                        float f2 = WorkspaceShortcutTouchHandler.this.d.position().y + (WorkspaceShortcutTouchHandler.this.a.g / 2.0f) + ((WorkspaceShortcutTouchHandler.this.j * WorkspaceShortcutTouchHandler.this.a.g) / 2.0f);
+                        float f = (WorkspaceShortcutTouchHandler.this.TweenParams.position().x + (WorkspaceShortcutTouchHandler.this.a.f / 2.0f)) - ((WorkspaceShortcutTouchHandler.this.i * WorkspaceShortcutTouchHandler.this.a.f) / 2.0f);
+                        float f2 = WorkspaceShortcutTouchHandler.this.TweenParams.position().y + (WorkspaceShortcutTouchHandler.this.a.g / 2.0f) + ((WorkspaceShortcutTouchHandler.this.j * WorkspaceShortcutTouchHandler.this.a.g) / 2.0f);
                         if (f < com.censivn.C3DEngine.b.b.ScreenConstants.r) {
                             f = com.censivn.C3DEngine.b.b.ScreenConstants.r;
                         }
@@ -169,18 +169,18 @@ public class WorkspaceShortcutTouchHandler implements KeyboardHandler.a, WindowM
         this.e = true;
         gVar.addChildAt(this.c, 0);
         this.m = com.tsf.shell.manager.app.Notifier.a(this.m, "Desktop reference grid");
-        this.c.children().clear();
+        this.TweenManager.children().clear();
         this.a.WorkspaceShortcutTouchHandler.removeFromParent();
-        this.c.addChild(this.a.a);
-        c.a(this.c);
+        this.TweenManager.addChild(this.a.a);
+        TweenManager.a(this.c);
         return true;
     }
 
     public void a(com.tsf.shell.f.i.PageItem bVar) {
         this.d = bVar;
-        float fU = this.d.u();
-        this.g = (this.d.maxX() - this.d.minX()) * fU;
-        this.h = fU * (this.d.maxY() - this.d.minY());
+        float fU = this.TweenParams.u();
+        this.g = (this.TweenParams.maxX() - this.TweenParams.minX()) * fU;
+        this.h = fU * (this.TweenParams.maxY() - this.TweenParams.minY());
         this.i = (int) (this.g / this.a.f);
         this.i = this.g % this.a.f != 0.0f ? this.i + 1 : this.i;
         this.i = this.i < 1 ? 1 : this.i;
@@ -222,7 +222,7 @@ public class WorkspaceShortcutTouchHandler implements KeyboardHandler.a, WindowM
                 ((KeyboardHandler) bVarA.a()).c = bVarA.c();
             }
             final C0109a c0109a = this.a;
-            d dVar = new d() { // from class: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler.2
+            d dVar = new TweenParams() { // from class: com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     int i2 = 0;
@@ -246,7 +246,7 @@ public class WorkspaceShortcutTouchHandler implements KeyboardHandler.a, WindowM
                         bVarA2.a(0.0f);
                     }
                     WorkspaceShortcutTouchHandler.this.d = null;
-                    WorkspaceShortcutTouchHandler.this.c.removeFromParent();
+                    WorkspaceShortcutTouchHandler.this.TweenManager.removeFromParent();
                     WorkspaceShortcutTouchHandler.this.f = false;
                 }
 
@@ -255,8 +255,8 @@ public class WorkspaceShortcutTouchHandler implements KeyboardHandler.a, WindowM
                     WorkspaceShortcutTouchHandler.this.f = false;
                 }
             };
-            c.a(this.c);
-            c.a(this.c, 300, dVar);
+            TweenManager.a(this.c);
+            TweenManager.a(this.c, 300, dVar);
             this.f = true;
             com.tsf.shell.manager.app.Notifier.b(this.m);
         }

@@ -33,50 +33,50 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
     public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable e() {
         if (this.e == null) {
             this.e = FolderLabelConfig.a();
-            this.e.textures().addElement(this.g);
-            com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.1
+            this.FolderLabelElement.textures().addElement(this.g);
+            com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.FolderAppMenu.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.1
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (FolderPageItemBase.this.h) {
                         if (FolderPageItemBase.this.j != null) {
-                            FolderPageItemBase.this.j.run();
+                            FolderPageItemBase.this.DrawerLabelConfig.run();
                         }
-                    } else if (!FolderPageItemBase.this.b.a(FolderPageItemBase.this)) {
-                        FolderPageItemBase.this.b.m();
+                    } else if (!FolderPageItemBase.this.FolderWidgetTouchHandler.a(FolderPageItemBase.this)) {
+                        FolderPageItemBase.this.FolderWidgetTouchHandler.m();
                     }
                 }
             };
-            this.e.calAABB();
-            this.e.a(true);
-            this.e.setMouseEventListener(aVar);
+            this.FolderLabelElement.calAABB();
+            this.FolderLabelElement.a(true);
+            this.FolderLabelElement.setMouseEventListener(aVar);
         }
         return this.e;
     }
 
     public void f() {
-        this.e.a(1).a((Boolean) true);
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.2
+        this.FolderLabelElement.a(1).a((Boolean) true);
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderCountdownBadge.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.2
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
             }
         };
         dVar.l(1.0f);
         dVar.m(1.0f);
-        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1));
-        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1), 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.FolderLabelElement.a(1));
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.FolderLabelElement.a(1), 500, dVar);
     }
 
     public void g() {
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.3
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderCountdownBadge.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.3
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
-                FolderPageItemBase.this.e.a(1).a((Boolean) false);
+                FolderPageItemBase.this.FolderLabelElement.a(1).a((Boolean) false);
             }
         };
         dVar.l(0.0f);
         dVar.m(0.0f);
-        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1));
-        com.censivn.C3DEngine.b.g.TweenUtils.a(this.e.a(1), 500, dVar);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.FolderLabelElement.a(1));
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.FolderLabelElement.a(1), 500, dVar);
     }
 
     public void c(boolean z) {
@@ -85,7 +85,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
             this.f = com.tsf.shell.manager.app.Notifier.a(this.f, this.d);
         }
         b(z);
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.4
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderCountdownBadge.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.4
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 FolderPageItemBase.this.i = true;
@@ -97,7 +97,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         com.censivn.C3DEngine.b.g.TweenUtils.a(this);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this, 500, dVar);
         removeFromParent();
-        this.b.h().addChild(this);
+        this.FolderWidgetTouchHandler.h().addChild(this);
     }
 
     private void c() {
@@ -117,7 +117,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
         this.i = false;
         com.tsf.shell.manager.app.Notifier.b(this.f);
         a();
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.5
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderCountdownBadge.TweenParams() { // from class: com.tsf.shell.f.f.a.c.FolderPageItemBase.5
             @Override // com.censivn.C3DEngine.b.g.TweenParams
             public void a() {
                 FolderPageItemBase.this.removeFromParent();
@@ -132,7 +132,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
 
     public void j() {
         if (this.e != null) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderCountdownBadge.TweenParams();
             dVar.a(VEasing.Back.easeIn);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 150, dVar);
@@ -141,7 +141,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
 
     public void k() {
         if (this.e != null) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderCountdownBadge.TweenParams();
             dVar.a(50);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 150, dVar);

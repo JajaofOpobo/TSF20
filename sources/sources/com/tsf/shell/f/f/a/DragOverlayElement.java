@@ -10,13 +10,13 @@ import com.tsf.b;
 public class DragOverlayElement extends BaseRenderable {
     private static final float c = com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
     private static final int d = com.censivn.C3DEngine.b.b.ScreenConstants.b(100.0f);
-    private h b;
+    private FolderPage b;
     private A e;
     private BaseRenderable a = new BaseRenderable();
     private A f = new PageContainerBase(b.d.drawer_more_button) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.1
         @Override // com.tsf.shell.f.f.a.DragOverlayElement.a
         public void a() {
-            DragOverlayElement.this.b.aj();
+            DragOverlayElement.this.PageItemList.aj();
         }
     };
     private A g = new PageContainerBase(b.d.drawer_search_button) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.2
@@ -31,21 +31,21 @@ public class DragOverlayElement extends BaseRenderable {
         private TextureElement a;
         private int d;
         private boolean f;
-        private e.a g;
+        private DragOverlayElement.a g;
 
         public A(int i) {
-            super(e.d, e.d, false);
+            super(e.d, DragOverlayElement.d, false);
             this.a = new TextureElement(0, false);
             this.d = 0;
             this.f = false;
             textures().addElement(this.a);
             calAABB(1.2f, 1.2f, 1.0f);
             this.d = i;
-            setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.a.1
+            setMouseEventListener(new com.censivn.C3DEngine.b.AppClassifier.MouseEventListener(this) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.a.1
                 @Override // com.censivn.C3DEngine.b.d.MouseEventListener
                 public void a(MotionEvent motionEvent) {
                     if (PageElement.this.g != null) {
-                        PageElement.this.g.b();
+                        PageElement.this.FolderRenameDialog.b();
                     }
                     PageElement.this.a();
                 }
@@ -54,9 +54,9 @@ public class DragOverlayElement extends BaseRenderable {
 
         public void a(int i) {
             this.g = com.tsf.shell.manager.app.AppListManager.a(i);
-            if (this.g.a()) {
+            if (this.FolderRenameDialog.a()) {
                 d();
-                    this.g.a(new com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a() { // from class: com.tsf.shell.f.f.a.DragOverlayElement.a.2
+                    this.FolderRenameDialog.a(new com.tsf.shell.manager.p.ThemePreferenceProvider.PageContainerBase.C0142a() { // from class: com.tsf.shell.f.f.a.DragOverlayElement.a.2
                         @Override // com.tsf.shell.manager.p.ThemePreferenceProvider.a.C0142a
                     public void a() {
                         PageElement.this.e();
@@ -71,13 +71,13 @@ public class DragOverlayElement extends BaseRenderable {
         @Override // com.censivn.C3DEngine.b.f.IRenderable
         public void onDrawStart() {
             if (this.a.id == 0) {
-                com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d, e.d, e.d);
+                com.censivn.C3DEngine.C3DEngine.g().a(this.a, this.d, DragOverlayElement.d, DragOverlayElement.d);
             }
         }
 
         public void d() {
             if (e == null) {
-                e = new com.tsf.shell.f.e.CircleDotNode();
+                e = new com.tsf.shell.f.DragOverlayElement.CircleDotNode();
                 DragOverlayElement.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
                 DragOverlayElement.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
             }
@@ -96,11 +96,11 @@ public class DragOverlayElement extends BaseRenderable {
         }
     }
 
-    public DragOverlayElement(h hVar) {
+    public DragOverlayElement(FolderPage hVar) {
         this.b = hVar;
-        this.g.a(com.tsf.shell.manager.p.ThemePreferenceProvider.n);
+        this.FolderRenameDialog.a(com.tsf.shell.manager.p.ThemePreferenceProvider.n);
         this.e = new PageContainerBase(b.d.drawer_home);
-        this.e.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.3
+        this.DragOverlayElement.setMouseEventListener(new com.censivn.C3DEngine.b.AppClassifier.MouseEventListener(this.e) { // from class: com.tsf.shell.f.f.a.DragOverlayElement.3
             private float b;
             private float d;
             private boolean e = false;
@@ -137,9 +137,9 @@ public class DragOverlayElement extends BaseRenderable {
                 }
             }
         });
-        this.a.addChild(this.e);
-        this.a.addChild(this.f);
-        this.a.addChild(this.g);
+        this.PageContainerBase.addChild(this.e);
+        this.PageContainerBase.addChild(this.f);
+        this.PageContainerBase.addChild(this.g);
         addChild(this.a);
     }
 
@@ -150,10 +150,10 @@ public class DragOverlayElement extends BaseRenderable {
     public void a(boolean z, final Runnable runnable) {
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
         if (z) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a.DragOverlayElement.4
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams() { // from class: com.tsf.shell.f.f.a.DragOverlayElement.4
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    DragOverlayElement.this.a.visible(false);
+                    DragOverlayElement.this.PageContainerBase.visible(false);
                     if (runnable != null) {
                         runnable.run();
                     }
@@ -164,8 +164,8 @@ public class DragOverlayElement extends BaseRenderable {
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 350, dVar);
             return;
         }
-        this.a.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
-        this.a.alpha(0.0f);
+        this.PageContainerBase.position().y = -com.censivn.C3DEngine.b.b.ScreenConstants.a(200.0f);
+        this.PageContainerBase.alpha(0.0f);
         if (runnable != null) {
             runnable.run();
         }
@@ -173,22 +173,22 @@ public class DragOverlayElement extends BaseRenderable {
 
     public void b(boolean z) {
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.a);
-        this.a.visible(true);
+        this.PageContainerBase.visible(true);
         if (z) {
-            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+            com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.FolderRenameDialog.TweenParams();
             dVar.a(255);
             dVar.h(0.0f);
             dVar.a(com.censivn.C3DEngine.b.g.a.n);
             com.censivn.C3DEngine.b.g.TweenUtils.a(this.a, 600, dVar);
             return;
         }
-        this.a.position().y = 0.0f;
-        this.a.alpha(255.0f);
+        this.PageContainerBase.position().y = 0.0f;
+        this.PageContainerBase.alpha(255.0f);
     }
 
     public void a(int i, int i2, int i3, int i4) {
         position().y = com.censivn.C3DEngine.b.b.ScreenConstants.C + (c / 2.0f);
-        this.f.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(125.0f);
-        this.g.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(125.0f);
+        this.PageGridRenderer.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A - com.censivn.C3DEngine.b.b.ScreenConstants.a(125.0f);
+        this.FolderRenameDialog.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z + com.censivn.C3DEngine.b.b.ScreenConstants.a(125.0f);
     }
 }

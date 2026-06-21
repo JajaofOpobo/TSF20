@@ -27,7 +27,7 @@ public class DesktopRenderer extends BaseRenderable {
     /* JADX INFO: Access modifiers changed from: private */
     public IRenderableContainer a(IRenderable iVar) {
         if ((iVar instanceof f) && iVar.parent() != null && iVar.parent() == this) {
-            return (f) iVar;
+            return (AbstractPanelRenderer) iVar;
         }
         if (iVar.parent() != null && (iVar.parent() instanceof IRenderable)) {
             return a((IRenderable) iVar.parent());
@@ -39,9 +39,9 @@ public class DesktopRenderer extends BaseRenderable {
         setLayoutParams(this.h);
         this.d = (int) ScreenConstants.a(4.0f);
         this.f = new GridRenderable(this.a, this.d, false);
-        this.f.setDefaultColor(new Color4(255, 255, 255, 70));
-        this.f.useVBO(false);
-        this.i = new com.censivn.C3DEngine.b.d.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.b.DesktopRenderer.1
+        this.AbstractPanelRenderer.setDefaultColor(new Color4(255, 255, 255, 70));
+        this.AbstractPanelRenderer.useVBO(false);
+        this.i = new com.censivn.C3DEngine.b.ZoomRenderer.MouseEventListener(this) { // from class: com.censivn.C3DEngine.b.b.DesktopRenderer.1
             private com.censivn.C3DEngine.b.d.MouseEventListener b;
             private IRenderable d;
 
@@ -49,9 +49,9 @@ public class DesktopRenderer extends BaseRenderable {
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = GraphicsEngineBridge.a(motionEvent);
                 this.d = c.this.getHittingTarget(fArrA[0], fArrA[1], true);
-                if (this.d != null && this.d.getMouseEventListener() != null) {
-                    this.b = this.d.getMouseEventListener();
-                    this.b.e(motionEvent);
+                if (this.d != null && this.ZoomRenderer.getMouseEventListener() != null) {
+                    this.b = this.ZoomRenderer.getMouseEventListener();
+                    this.TouchState.e(motionEvent);
                     f fVarA = c.this.a(this.d);
                     if (fVarA != null && fVarA.k()) {
                         c.this.b(this.d);
@@ -62,7 +62,7 @@ public class DesktopRenderer extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
                 if (this.b != null) {
-                    this.b.f(motionEvent);
+                    this.TouchState.f(motionEvent);
                     this.b = null;
                     c.this.e();
                 }
@@ -71,21 +71,21 @@ public class DesktopRenderer extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (this.b != null) {
-                    this.b.a(motionEvent, motionEvent2);
+                    this.TouchState.a(motionEvent, motionEvent2);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
                 if (this.b != null) {
-                    this.b.a(motionEvent);
+                    this.TouchState.a(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
                 if (this.b != null) {
-                    this.b.a(motionEvent, motionEvent2, f, f2);
+                    this.TouchState.a(motionEvent, motionEvent2, AbstractPanelRenderer, f2);
                 }
                 c.this.e();
             }
@@ -252,10 +252,10 @@ public class DesktopRenderer extends BaseRenderable {
                         childAt.dispatchDraw();
                         onDrawChildEnd(childAt);
                         if (this.e && i != size - 1 && !layoutParams.l) {
-                            this.f.position().y = ((childAt.position().y + layoutParams.i) - layoutParams.b) - (this.d / 2.0f);
-                            this.f.a(layoutParams.e);
-                            this.f.alpha(childAt.alpha());
-                            this.f.dispatchDraw();
+                            this.AbstractPanelRenderer.position().y = ((childAt.position().y + layoutParams.i) - layoutParams.b) - (this.d / 2.0f);
+                            this.AbstractPanelRenderer.a(layoutParams.e);
+                            this.AbstractPanelRenderer.alpha(childAt.alpha());
+                            this.AbstractPanelRenderer.dispatchDraw();
                         }
                     } else {
                         childAt.setRendererVisibility(false);
