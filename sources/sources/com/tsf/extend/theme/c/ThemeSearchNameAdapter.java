@@ -1,0 +1,47 @@
+package com.tsf.extend.theme.c;
+
+import android.content.Context;
+import android.view.View;
+import android.widget.TextView;
+import com.tsf.extend.ResourceIds;
+import com.tsf.extend.theme.ThemeBaseAdapter;
+import java.util.List;
+
+/* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
+class b extends ThemeBaseAdapter {
+    public b(Context context, List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
+        super(context, list, onClickListener);
+    }
+
+    @Override // com.tsf.extend.theme.ThemeBaseAdapter
+    protected int c() {
+        return ResourceIds.C0052f.theme_all_item_with_name;
+    }
+
+    @Override // com.tsf.extend.theme.ThemeBaseAdapter
+    protected void a(ThemeBaseAdapter.d dVar, View view) {
+        dVar.g = (TextView) view.findViewById(ResourceIds.e.theme_name_left);
+        dVar.u = (TextView) view.findViewById(ResourceIds.e.theme_name_mid);
+        dVar.n = (TextView) view.findViewById(ResourceIds.e.theme_name_right);
+    }
+
+    @Override // com.tsf.extend.theme.ThemeBaseAdapter
+    protected void a(ThemeBaseAdapter.d dVar, ThemeBaseAdapter.b bVar) {
+        if (dVar != null && bVar != null) {
+            if (dVar.g != null && bVar.a() != null) {
+                dVar.g.setText(bVar.a().i());
+            }
+            if (dVar.u != null && bVar.b() != null) {
+                dVar.u.setText(bVar.b().i());
+            }
+            if (dVar.n != null && bVar.c() != null) {
+                dVar.n.setText(bVar.c().i());
+            }
+        }
+    }
+
+    @Override // com.tsf.extend.theme.ThemeBaseAdapter
+    protected int d() {
+        return com.tsf.extend.base.j.DisplayUtils.a(42.0f);
+    }
+}
