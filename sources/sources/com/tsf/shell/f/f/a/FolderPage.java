@@ -79,7 +79,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     private PageGridRenderer ai;
     private FolderRenameDialog aj;
     private DragOverlayElement ak;
-    private B al;
+    private FolderManager al;
     private C0133a ao;
     private GridRenderable aq;
     private TextureElement ar;

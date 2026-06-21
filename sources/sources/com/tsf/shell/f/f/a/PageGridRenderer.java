@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class PageGridRenderer extends BaseRenderable implements b.a {
+public class PageGridRenderer extends BaseRenderable implements KeyboardHandler.a {
     public static float a;
     public static float b;
     public static float c;

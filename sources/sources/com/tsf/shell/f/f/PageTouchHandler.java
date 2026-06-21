@@ -49,8 +49,8 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
     private int s;
     private Runnable u;
     private com.tsf.shell.manager.f.ScreenFadeController v;
-    private B w;
-    private C x;
+    private PageRenderBuffer w;
+    private TransitionManager x;
     private com.censivn.C3DEngine.b.d.MouseEventListener y;
     private com.censivn.C3DEngine.b.d.MouseEventListener z;
     private boolean o = false;
