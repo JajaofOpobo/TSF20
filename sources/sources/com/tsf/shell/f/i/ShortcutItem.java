@@ -212,12 +212,12 @@ public class ShortcutItem extends PageItem {
         }
     }
 
-    public void a(C cVar) {
+    public void a(ShortcutItem cVar) {
         ItemStubHelper.c(this);
         ItemStubHelper.d(cVar);
     }
 
-    public void b(ArrayList<C> arrayList) {
+    public void b(ArrayList<ShortcutItem> arrayList) {
         if (arrayList.size() > 0) {
             ItemStubHelper.c(this);
             ItemStubHelper.a(arrayList);
@@ -239,11 +239,11 @@ public class ShortcutItem extends PageItem {
         return ItemStubHelper.b(this);
     }
 
-    public ArrayList<C> av() {
+    public ArrayList<ShortcutItem> av() {
         return ItemStubHelper.b();
     }
 
-    public ArrayList<C> aw() {
+    public ArrayList<ShortcutItem> aw() {
         return ItemStubHelper.c();
     }
 
@@ -252,7 +252,7 @@ public class ShortcutItem extends PageItem {
         if (as() && z() != null) {
             g gVarZ = z();
             if (gVarZ.c(this)) {
-                ArrayList<C> arrayListAw = aw();
+                ArrayList<ShortcutItem> arrayListAw = aw();
                 com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC cVar = new com.censivn.C3DEngine.b.h.PageItem.DesktopTouchHandlerC(gVarZ, true);
                 if (400 > com.censivn.C3DEngine.b.b.ScreenConstants.D) {
                     i = (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2) - 20;
@@ -260,8 +260,8 @@ public class ShortcutItem extends PageItem {
                     i = VEasing.Back.easeIn;
                 }
                 cVar.a(i, i);
-                ArrayList<B> arrayList = new ArrayList<>();
-                Iterator<C> it = arrayListAw.iterator();
+                ArrayList<PageItem> arrayList = new ArrayList<>();
+                Iterator<ShortcutItem> it = arrayListAw.iterator();
                 while (it.hasNext()) {
                     arrayList.add(it.next());
                 }
@@ -275,7 +275,7 @@ public class ShortcutItem extends PageItem {
         if (as()) {
             j jVar = (BaseRenderable) parent();
             int childIndexOf = jVar.getChildIndexOf(this);
-            ArrayList<C> arrayListAw = aw();
+            ArrayList<ShortcutItem> arrayListAw = aw();
             int size = arrayListAw.size();
             for (int i = 0; i < size; i++) {
                 C cVar = arrayListAw.get(i);

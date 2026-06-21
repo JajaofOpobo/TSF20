@@ -7,8 +7,10 @@ import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.TweenParams;
-import com.tsf.shell.f.e.C;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.f.e.SpringEasing;
+
+import com.tsf.shell.utils.HapticFeedbackManager;
+
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import com.censivn.C3DEngine.C3DEngine;
@@ -20,7 +22,7 @@ public class DockRendererB extends BaseRenderable {
     private com.censivn.C3DEngine.b.d.MouseEventListener B;
     private BaseRenderable b;
     private BaseRenderable c;
-    private com.tsf.shell.f.a.b.b d;
+    private com.tsf.shell.f.a.b.ShaderSlotElement d;
     private float e;
     private float f;
     private float g;

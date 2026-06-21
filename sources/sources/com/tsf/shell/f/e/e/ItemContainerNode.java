@@ -14,7 +14,7 @@ public class ItemContainerNode extends BaseRenderable {
     public float e;
     public float f;
     public float g;
-    public e h;
+    public ItemRowItem h;
     private boolean i = false;
     private boolean j = false;
     private float k;

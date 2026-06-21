@@ -682,7 +682,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
         } else {
             D = 350;
         }
-        com.censivn.C3DEngine.b.g.TweenUtils.a(this.ab, D, this.Z);
+        com.censivn.C3DEngine.b.g.TweenUtils.a(this.ab, AppClassifier, this.Z);
         aZ();
         au();
     }
@@ -699,7 +699,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     }
 
     @Override // com.tsf.shell.f.f.a.InterfaceC0101a
-    public void a(A aVar) {
+    public void a(PageContainerBase aVar) {
         this.N = aVar;
     }
 
@@ -716,7 +716,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     }
 
     @Override // com.tsf.shell.f.f.a.InterfaceC0101a
-    public void a(A aVar, A aVar2, A aVar3) {
+    public void a(PageContainerBase aVar, PageContainerBase aVar2, PageContainerBase aVar3) {
         if (this.W.size() != 1) {
             this.W.remove(aVar);
             if (this.M == aVar) {
@@ -759,7 +759,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
         return a(GraphicsEngineBridge.c(b.i.widget_folder), ap(), arrayList);
     }
 
-    private com.tsf.shell.f.i.b.d.FolderShortcutItem a(String str, A aVar, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList) {
+    private com.tsf.shell.f.i.b.d.FolderShortcutItem a(String str, PageContainerBase aVar, ArrayList<com.tsf.shell.f.i.b.e.DrawerShortcutItemBase> arrayList) {
         LauncherDrawerFolder3DInfo launcherDrawerFolder3DInfo = new LauncherDrawerFolder3DInfo(false);
         launcherDrawerFolder3DInfo.title = str;
         com.tsf.shell.f.i.b.d.FolderShortcutItem bVar = new com.tsf.shell.f.i.b.AppClassifier.FolderShortcutItem(launcherDrawerFolder3DInfo);
@@ -1105,7 +1105,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
         this.al.a(bVar2, bVar);
     }
 
-    public void a(com.tsf.shell.f.i.PageItem bVar, A aVar, int i) {
+    public void a(com.tsf.shell.f.i.PageItem bVar, PageContainerBase aVar, int i) {
         int iE = (aVar.e() * m) + i;
         this.al.b(bVar);
         this.al.a(bVar, iE);

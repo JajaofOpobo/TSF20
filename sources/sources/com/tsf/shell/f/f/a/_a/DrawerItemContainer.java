@@ -24,9 +24,9 @@ public class DrawerItemContainer {
     private com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy> h;
     private ArrayList<com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData> i;
     private EmptyRenderable j;
-    private f k;
-    private e l;
-    private d m;
+    private DrawerItemAnimationManager k;
+    private DrawerVisualFrame l;
+    private DrawerDragEffectController m;
     private a n;
     private com.tsf.shell.manager.p.GestureTipElement p;
     private int q;
@@ -39,15 +39,15 @@ public class DrawerItemContainer {
         }
 
         @Override // com.tsf.shell.manager.app.AppListModel.a
-        public void a(g gVar, boolean z) {
+        public void a(WidgetDrawerItemVisual gVar, boolean z) {
         }
 
         @Override // com.tsf.shell.manager.app.AppListModel.a
-        public void a(g gVar) {
+        public void a(WidgetDrawerItemVisual gVar) {
         }
 
         @Override // com.tsf.shell.manager.app.AppListModel.a
-        public void b(g gVar, boolean z) {
+        public void b(WidgetDrawerItemVisual gVar, boolean z) {
         }
 
         @Override // com.tsf.shell.manager.app.AppListModel.a
@@ -61,7 +61,7 @@ public class DrawerItemContainer {
 
     public void a() {
         this.q = this.q == b ? c : b;
-        Iterator<com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData> it = this.i.iterator();
+        Iterator<com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData> it = this.IRenderable.iterator();
         while (it.hasNext()) {
             it.next().a(this.q, true);
         }
@@ -92,18 +92,18 @@ public class DrawerItemContainer {
         this.q = i;
         this.n = new a() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.1
             @Override // com.tsf.shell.f.f.a._a.DrawerItemContainer.a, com.tsf.shell.manager.app.AppListModel.a
-            public void a(g gVar, boolean z) {
-                String strA = b.a(gVar);
+            public void a(WidgetDrawerItemVisual gVar, boolean z) {
+                String strA = DrawerSectionManager.a(gVar);
                 com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy bVarA = c.this.a(strA);
                 if (bVarA == null) {
-                    c.this.b(b.a(strA, gVar));
+                    c.this.b(DrawerSectionManager.a(strA, gVar));
                 } else {
                     bVarA.a(gVar);
                 }
             }
 
             @Override // com.tsf.shell.f.f.a._a.DrawerItemContainer.a, com.tsf.shell.manager.app.AppListModel.a
-            public void b(g gVar, boolean z) {
+            public void b(WidgetDrawerItemVisual gVar, boolean z) {
                 com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy bVarA = c.this.a(gVar);
                 if (bVarA != null) {
                     bVarA.b(gVar);
@@ -116,7 +116,7 @@ public class DrawerItemContainer {
         this.m = new DrawerDragEffectController(this);
         this.e = new BaseRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.3
             @Override // com.censivn.C3DEngine.b.f.IRenderable
-            public i getHittingTarget(float f, float f2, boolean z) {
+            public IRenderable getHittingTarget(float f, float f2, boolean z) {
                 i hittingTarget = c.this.l.getHittingTarget(f, f2, false);
                 if (hittingTarget == null) {
                     i hittingTarget2 = c.this.m.getHittingTarget(f, f2, false);
@@ -125,21 +125,21 @@ public class DrawerItemContainer {
                 return hittingTarget;
             }
         };
-        this.f = new com.censivn.C3DEngine.b.f.ButtonRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.4
+        this.f = new com.censivn.C3DEngine.b.DrawerItemAnimationManager.ButtonRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.4
             @Override // com.censivn.C3DEngine.b.f.ButtonRenderable
             public void d() {
                 super.d();
                 if (c.this.d != null) {
-                    c.this.d.b();
+                    c.this.DrawerDragEffectController.b();
                 }
             }
         };
-        this.f.b(false);
-        this.f.a(1);
-        this.f.addChild(this.l);
-        this.d = new com.censivn.C3DEngine.b.b.ZoomRenderer(this.f);
-        this.d.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E - (com.censivn.C3DEngine.b.b.ScreenConstants.B - this.d.position().y));
-        this.g = new com.tsf.shell.f.b.ShellKeyEventHandler() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.5
+        this.DrawerItemAnimationManager.b(false);
+        this.DrawerItemAnimationManager.a(1);
+        this.DrawerItemAnimationManager.addChild(this.l);
+        this.d = new com.censivn.C3DEngine.b.DrawerSectionManager.ZoomRenderer(this.f);
+        this.DrawerDragEffectController.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E - (com.censivn.C3DEngine.b.b.ScreenConstants.B - this.DrawerDragEffectController.position().y));
+        this.g = new com.tsf.shell.f.DrawerSectionManager.ShellKeyEventHandler() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.5
             @Override // com.tsf.shell.f.b.ShellKeyEventHandler, com.censivn.C3DEngine.b.c.KeyboardHandler.a
             public void a(int i2, KeyEvent keyEvent) {
                 if (i2 == 4 && !c.this.o) {
@@ -157,7 +157,7 @@ public class DrawerItemContainer {
             }
         };
         this.j = new EmptyRenderable();
-        com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.d.MouseEventListener(this.j) { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.6
+        com.censivn.C3DEngine.b.d.MouseEventListener aVar = new com.censivn.C3DEngine.b.DrawerDragEffectController.MouseEventListener(this.j) { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.6
             private boolean b = false;
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -184,11 +184,11 @@ public class DrawerItemContainer {
                 }
             }
         };
-        this.j.maxX(com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f));
-        this.j.minX(com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f));
-        this.j.setMouseEventListener(aVar);
-        this.e.addChild(this.d);
-        this.e.addChild(this.j);
+        this.BaseRenderable.maxX(com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f));
+        this.BaseRenderable.minX(com.censivn.C3DEngine.b.b.ScreenConstants.a(-150.0f));
+        this.BaseRenderable.setMouseEventListener(aVar);
+        this.DrawerVisualFrame.addChild(this.d);
+        this.DrawerVisualFrame.addChild(this.j);
         this.h = new com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy>() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.7
             @Override // com.tsf.shell.f.e.ObjectPool
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
@@ -207,28 +207,28 @@ public class DrawerItemContainer {
     }
 
     public void d() {
-        this.d.b(this.d.a(), 0.2f);
+        this.DrawerDragEffectController.b(this.DrawerDragEffectController.a(), 0.2f);
     }
 
     public void b(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
-        this.d.b(-cVar.position().y, 0.2f);
+        this.DrawerDragEffectController.b(-cVar.position().y, 0.2f);
     }
 
     public void e() {
-        this.f.a((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f)), 0);
-        this.d.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E);
-        this.d.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.B;
+        this.DrawerItemAnimationManager.a((int) (com.censivn.C3DEngine.b.b.ScreenConstants.D - com.censivn.C3DEngine.b.b.ScreenConstants.a(30.0f)), 0);
+        this.DrawerDragEffectController.a(com.censivn.C3DEngine.b.b.ScreenConstants.D, com.censivn.C3DEngine.b.b.ScreenConstants.E);
+        this.DrawerDragEffectController.position().y = com.censivn.C3DEngine.b.b.ScreenConstants.B;
         i();
         this.k.a();
     }
 
     private void i() {
-        this.j.maxY(com.censivn.C3DEngine.b.b.ScreenConstants.B);
-        this.j.minY(com.censivn.C3DEngine.b.b.ScreenConstants.C);
+        this.BaseRenderable.maxY(com.censivn.C3DEngine.b.b.ScreenConstants.B);
+        this.BaseRenderable.minY(com.censivn.C3DEngine.b.b.ScreenConstants.C);
         if (this.q == b) {
-            this.j.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
+            this.BaseRenderable.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.z;
         } else {
-            this.j.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A;
+            this.BaseRenderable.position().x = com.censivn.C3DEngine.b.b.ScreenConstants.A;
         }
     }
 
@@ -266,7 +266,7 @@ public class DrawerItemContainer {
                     c.this.p.a(-20.0f, new Runnable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.8.1.1
                         @Override // java.lang.Runnable
                         public void run() {
-                            c.this.a(fB, fC, f);
+                            c.this.a(fB, fC, DrawerItemAnimationManager);
                         }
                     });
                 }
@@ -300,7 +300,7 @@ public class DrawerItemContainer {
 
         @Override // com.censivn.C3DEngine.b.g.TweenParams
         public void a() {
-            com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 1500, new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.9.1
+            com.censivn.C3DEngine.b.g.TweenUtils.a(new com.censivn.C3DEngine.b.g._b.TweenTargetWrapper(), 1500, new com.censivn.C3DEngine.b.WidgetDrawerItemVisual.TweenParams() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.9.1
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f) {
                     float f2 = AnonymousClass9.this.c - (AnonymousClass9.this.b * f);
@@ -316,7 +316,7 @@ public class DrawerItemContainer {
                         public void run() {
                             c.this.l();
                             c.this.p.removeFromParent();
-                            c.this.e.mouseEnabled(true);
+                            c.this.DrawerVisualFrame.mouseEnabled(true);
                             c.this.o = false;
                             com.tsf.shell.manager.p.TipsDialogManager.a(14, false, true);
                         }
@@ -327,29 +327,29 @@ public class DrawerItemContainer {
     }
 
     public void f() {
-        if (this.e.parent() == null && com.tsf.shell.manager.app.ServiceProvider.a().b()) {
+        if (this.DrawerVisualFrame.parent() == null && com.tsf.shell.manager.app.ServiceProvider.a().b()) {
             this.o = com.tsf.shell.manager.p.TipsDialogManager.b(14);
             if (this.o) {
-                this.e.mouseEnabled(false);
+                this.DrawerVisualFrame.mouseEnabled(false);
             }
             com.tsf.shell.manager.app.ServiceProvider.a().a(this.n);
-            this.e.alpha(255.0f);
+            this.DrawerVisualFrame.alpha(255.0f);
             final j jVarA = com.tsf.shell.manager.app.TaskScheduler.a(this.g);
             boolean zAM = com.tsf.shell.manager.app.StateHub.t().aM();
             Runnable runnable = new Runnable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.10
                 @Override // java.lang.Runnable
                 public void run() {
                     com.tsf.shell.manager.app.StateHub.t().aN();
-                    ArrayList<g> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().d();
+                    ArrayList<WidgetDrawerItemVisual> arrayListD = com.tsf.shell.manager.app.ServiceProvider.a().d();
                     ArrayList arrayList = new ArrayList();
                     for (g gVar : arrayListD) {
                         if (gVar.K() != null && !((LauncherShortcutAppInfo) gVar.K()).isHide) {
                             arrayList.add(gVar);
                         }
                     }
-                    ArrayList<com.tsf.shell.f.f.a._a.DrawerSectionManager.c> arrayListA = b.a((ArrayList<b.a>) arrayList);
-                    c.this.f.addChild(c.this.m);
-                    c.this.i.add(c.this.m);
+                    ArrayList<com.tsf.shell.f.f.a._a.DrawerSectionManager.c> arrayListA = DrawerSectionManager.a((ArrayList<b.a>) arrayList);
+                    c.this.DrawerItemAnimationManager.addChild(c.this.m);
+                    c.this.IRenderable.add(c.this.m);
                     c.this.m.a(c.this.q, false);
                     c.this.m.e();
                     Iterator<com.tsf.shell.f.f.a._a.DrawerSectionManager.c> it = arrayListA.iterator();
@@ -361,13 +361,13 @@ public class DrawerItemContainer {
                     jVarA.addChild(c.this.e);
                     c.this.e();
                     c.this.m.g();
-                    c.this.d.c();
+                    c.this.DrawerDragEffectController.c();
                     c.this.l.f();
-                    c.this.j.mouseEnabled(false);
-                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.10.1
+                    c.this.BaseRenderable.mouseEnabled(false);
+                    com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetDrawerItemVisual.TweenParams() { // from class: com.tsf.shell.f.f.a._a.DrawerItemContainer.10.1
                         @Override // com.censivn.C3DEngine.b.g.TweenParams
                         public void a() {
-                            c.this.j.mouseEnabled(true);
+                            c.this.BaseRenderable.mouseEnabled(true);
                             if (c.this.o) {
                                 c.this.j();
                             }
@@ -387,7 +387,7 @@ public class DrawerItemContainer {
     }
 
     private void c(com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar) {
-        this.i.remove(cVar);
+        this.IRenderable.remove(cVar);
         cVar.f();
         cVar.removeFromParent();
         if (!(cVar instanceof d)) {
@@ -399,8 +399,8 @@ public class DrawerItemContainer {
     public com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData a(com.tsf.shell.f.f.a._a.DrawerSectionManager.c cVar) {
         com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy bVarC = this.h.c();
         bVarC.a(cVar);
-        this.f.addChild(bVarC);
-        this.i.add(bVarC);
+        this.DrawerItemAnimationManager.addChild(bVarC);
+        this.IRenderable.add(bVarC);
         return bVarC;
     }
 
@@ -408,12 +408,12 @@ public class DrawerItemContainer {
     public com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData b(com.tsf.shell.f.f.a._a.DrawerSectionManager.c cVar) {
         com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy bVarC = this.h.c();
         bVarC.a(cVar);
-        this.f.addChildAt(bVarC, b.a(this.i, bVarC) + 1);
+        this.DrawerItemAnimationManager.addChildAt(bVarC, DrawerSectionManager.a(this.i, bVarC) + 1);
         return bVarC;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy a(g gVar) {
+    public com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy a(WidgetDrawerItemVisual gVar) {
         for (com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar : this.i) {
             if (cVar instanceof com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy) {
                 com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy bVar = (com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy) cVar;
@@ -427,8 +427,8 @@ public class DrawerItemContainer {
 
     public void g() {
         com.tsf.shell.manager.app.ServiceProvider.a().b(this.n);
-        this.j.mouseEnabled(false);
-        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
+        this.BaseRenderable.mouseEnabled(false);
+        com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.WidgetDrawerItemVisual.TweenParams();
         dVar.a(0);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.e);
         com.censivn.C3DEngine.b.g.TweenUtils.a(this.e, 250, dVar);
@@ -437,16 +437,16 @@ public class DrawerItemContainer {
             public void run() {
                 c.this.l.e();
                 com.tsf.shell.manager.app.TaskScheduler.b();
-                c.this.e.removeFromParent();
+                c.this.DrawerVisualFrame.removeFromParent();
                 for (com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData cVar : c.this.i) {
                     cVar.f();
                     cVar.removeFromParent();
                     if (!(cVar instanceof d)) {
                         c.this.h.a((com.tsf.shell.f.f.a._a.a.DrawerWidgetLayoutStrategy) cVar);
                     }
-                    c.this.e.alpha(255.0f);
+                    c.this.DrawerVisualFrame.alpha(255.0f);
                 }
-                c.this.i.clear();
+                c.this.IRenderable.clear();
                 if (c.this.r != c.this.q) {
                     c.this.r = c.this.q;
                     com.tsf.shell.manager.b.ConfigManager.q(c.this.q);

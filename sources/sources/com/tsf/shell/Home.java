@@ -271,7 +271,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
 
     public void c() {
         if (this.s) {
-            com.tsf.shell.manager.GlobalServiceLocator.C.b();
+            com.tsf.shell.manager.GlobalServiceLocator.ShellBackgroundRenderer.b();
             this.t = true;
             com.tsf.shell.manager.b.TempPreferenceManager.a(false);
             Intent intent = new Intent(this, (Class<?>) RestartActivity.class);
@@ -591,7 +591,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
             if (aVar.a == null) {
                 this.NoticeStateProvider.setAllowLongPress(false);
             } else {
-                if (!com.tsf.shell.manager.GlobalServiceLocator.A.a()) {
+                if (!com.tsf.shell.manager.GlobalServiceLocator.ShellCoreInterface.a()) {
                     return true;
                 }
                 aVar.ShellContentManager.setPressed(false);
@@ -719,7 +719,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 this.n.f();
             }
             if (com.tsf.shell.manager.GlobalServiceLocator.A != null) {
-                com.tsf.shell.manager.GlobalServiceLocator.A.e();
+                com.tsf.shell.manager.GlobalServiceLocator.ShellCoreInterface.e();
             }
         }
     }
@@ -737,7 +737,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                 }
             } catch (Exception e) {
             }
-            com.tsf.shell.manager.GlobalServiceLocator.C.b();
+            com.tsf.shell.manager.GlobalServiceLocator.ShellBackgroundRenderer.b();
         }
         super.onDestroy();
         if (this.s) {

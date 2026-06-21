@@ -3,7 +3,8 @@ package com.censivn.C3DEngine.b.h.b;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.tsf.shell.utils.w;
+import com.tsf.shell.utils.HapticFeedbackManager;
+
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 

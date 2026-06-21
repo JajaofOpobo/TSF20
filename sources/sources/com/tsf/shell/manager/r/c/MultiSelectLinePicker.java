@@ -20,7 +20,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class MultiSelectLinePicker implements WidgetFeatureConfig.a, WidgetRegistryManager.a, KeyEventListener.a, ToastOverlayController.a {
-    private static A e;
+    private static IconRenderer e;
     private BaseRenderable a;
     private LassoSelectionHandler b;
     private String c;

@@ -11,8 +11,8 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageContainerBase extends PageContainerView {
     private InterfaceC0101a b;
-    private A c;
-    private A d;
+    private PageContainerBase c;
+    private PageContainerBase d;
     private int e;
     private DrawerTransitionBase f;
     public float a = 0.0f;
@@ -21,9 +21,9 @@ public class PageContainerBase extends PageContainerView {
 
     /* JADX INFO: renamed from: com.tsf.shell.f.f.a.PageContainerBase$a, reason: collision with other inner class name */
     public interface InterfaceC0101a {
-        void a(A aVar);
+        void a(PageContainerBase aVar);
 
-        void a(A aVar, A aVar2, A aVar3);
+        void a(PageContainerBase aVar, PageContainerBase aVar2, PageContainerBase aVar3);
 
         a i_();
 
@@ -168,11 +168,11 @@ public class PageContainerBase extends PageContainerView {
         return (com.tsf.shell.f.i.PageItem) getChildAt(0);
     }
 
-    public void a(A aVar) {
+    public void a(PageContainerBase aVar) {
         this.c = aVar;
     }
 
-    public void b(A aVar) {
+    public void b(PageContainerBase aVar) {
         this.d = aVar;
     }
 
@@ -244,7 +244,7 @@ public class PageContainerBase extends PageContainerView {
             dVar2.f(number3d.x);
             dVar2.h(number3d.y);
             if (!children().contains(bVar)) {
-                ((A) bVar.parent()).children().remove(bVar);
+                ((PageContainerBase) bVar.parent()).children().remove(bVar);
                 bVar.parent(null);
                 a(bVar);
                 bVar.position().x = number3d.x + com.censivn.C3DEngine.b.b.ScreenConstants.D;

@@ -309,7 +309,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         com.tsf.shell.manager.app.ObserverManager.b(this);
         l();
         this.PageConfig.c();
-        this.C.clear();
+        this.TransitionManager.clear();
         if (this.l != null) {
             com.censivn.C3DEngine.C3DEngine.g().a(this.l);
             this.l = null;
@@ -768,7 +768,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         if (!this.E) {
             this.E = true;
             mouseEnabled(false);
-            Iterator<MultiSelectController> it = this.C.iterator();
+            Iterator<MultiSelectController> it = this.TransitionManager.iterator();
             while (it.hasNext()) {
                 it.next().a();
             }
@@ -779,7 +779,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         if (this.E) {
             this.E = false;
             mouseEnabled(true);
-            Iterator<MultiSelectController> it = this.C.iterator();
+            Iterator<MultiSelectController> it = this.TransitionManager.iterator();
             while (it.hasNext()) {
                 it.next().b();
             }

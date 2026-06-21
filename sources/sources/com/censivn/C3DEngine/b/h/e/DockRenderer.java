@@ -7,7 +7,8 @@ import com.censivn.C3DEngine.b.f.BaseRenderable;
 import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.censivn.C3DEngine.b.g.TweenParams;
 import com.tsf.b;
-import com.tsf.shell.f.e.C;
+import com.tsf.shell.f.e.SpringEasing;
+
 import com.tsf.shell.utils.GraphicsEngineBridge;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -87,7 +88,7 @@ public class DockRenderer extends BaseRenderable {
                         a.this.b(a.this.r);
                     }
                     for (int i = 0; i < numChildren(); i++) {
-                        a.this.a(a.this.c.getChildAt(i));
+                        a.this.a(a.this.SpringEasing.getChildAt(i));
                     }
                 }
             }
@@ -113,16 +114,16 @@ public class DockRenderer extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = GraphicsEngineBridge.a(motionEvent);
-                i hittingTarget = a.this.c.getHittingTarget(fArrA[0], fArrA[1], true);
+                i hittingTarget = a.this.SpringEasing.getHittingTarget(fArrA[0], fArrA[1], true);
                 if (hittingTarget != null && hittingTarget.getMouseEventListener() != null) {
                     this.d = hittingTarget.getMouseEventListener();
                     this.TweenParams.e(motionEvent);
                 }
                 a aVar = a.this;
-                float f6 = a.this.c.position().x;
+                float f6 = a.this.SpringEasing.position().x;
                 this.a = f6;
                 aVar.o = f6;
-                a.this.c.setAnimationObjectState(true);
+                a.this.SpringEasing.setAnimationObjectState(true);
                 this.f = false;
                 this.e = true;
                 a.this.p = true;
@@ -181,7 +182,7 @@ public class DockRenderer extends BaseRenderable {
                 }
                 if (this.f) {
                     a.this.o = this.a + (motionEvent2.getX() - motionEvent.getX());
-                    a.this.o = c.a(a.this.o, a.this.n, a.this.m);
+                    a.this.o = SpringEasing.a(a.this.o, a.this.n, a.this.m);
                     return;
                 }
                 if (this.d != null) {
@@ -208,7 +209,7 @@ public class DockRenderer extends BaseRenderable {
                     return;
                 }
                 if (f6 > 0.0f && a.this.r > 0) {
-                    if (a.this.c.position().x > a.this.s) {
+                    if (a.this.SpringEasing.position().x > a.this.s) {
                         a.this.a(a.this.r - 1, true);
                         return;
                     } else {
@@ -218,7 +219,7 @@ public class DockRenderer extends BaseRenderable {
                 }
                 if (f6 >= 0.0f || a.this.r >= a.this.q - 1) {
                     a.this.m();
-                } else if (a.this.c.position().x < a.this.s) {
+                } else if (a.this.SpringEasing.position().x < a.this.s) {
                     a.this.a(a.this.r + 1, true);
                 } else {
                     a.this.m();
@@ -228,9 +229,9 @@ public class DockRenderer extends BaseRenderable {
         this.v = GraphicsEngineBridge.b(b.d.scrollcontainer_arrow);
         this.t = new GridRenderable(24.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
         this.t.rotation().z = 180.0f;
-        com.tsf.shell.manager.o.c.a(this.t, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.SpringEasing.a(this.t, com.tsf.shell.manager.o.c.h);
         this.u = new GridRenderable(24.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
-        com.tsf.shell.manager.o.c.a(this.u, com.tsf.shell.manager.o.c.h);
+        com.tsf.shell.manager.o.SpringEasing.a(this.u, com.tsf.shell.manager.o.c.h);
         this.t.textures().addElement(this.v);
         this.u.textures().addElement(this.v);
         this.t.calAABB(3.0f, 3.0f, 1.0f);
@@ -354,7 +355,7 @@ public class DockRenderer extends BaseRenderable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void a(IRenderable iVar) {
-        if ((iVar.position().x - (this.j / 2.0f)) + this.c.position().x >= this.f / 2.0f || iVar.position().x + (this.j / 2.0f) + this.c.position().x <= (-this.f) / 2.0f) {
+        if ((iVar.position().x - (this.j / 2.0f)) + this.SpringEasing.position().x >= this.f / 2.0f || iVar.position().x + (this.j / 2.0f) + this.SpringEasing.position().x <= (-this.f) / 2.0f) {
             iVar.visible(false);
         } else {
             iVar.visible(true);
@@ -363,7 +364,7 @@ public class DockRenderer extends BaseRenderable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
-        int i = -((int) ((this.c.position().x - (this.f / 2.0f)) / this.f));
+        int i = -((int) ((this.SpringEasing.position().x - (this.f / 2.0f)) / this.f));
         if (i < 0) {
             i = 0;
         } else if (i > this.q - 1) {
@@ -374,19 +375,19 @@ public class DockRenderer extends BaseRenderable {
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public IRenderable getChildAt(int i) {
-        return this.c.getChildAt(i);
+        return this.SpringEasing.getChildAt(i);
     }
 
     public void a(int i, boolean z) {
-        if (this.r < this.c.numChildren()) {
+        if (this.r < this.SpringEasing.numChildren()) {
             this.r = i;
             float f = (-this.r) * this.f;
             this.s = f;
             this.o = f;
-            this.c.setAnimationObjectState(true);
+            this.SpringEasing.setAnimationObjectState(true);
             l();
             if (!z) {
-                this.c.position().x = this.o;
+                this.SpringEasing.position().x = this.o;
             }
             a(this.r);
         }
@@ -423,35 +424,35 @@ public class DockRenderer extends BaseRenderable {
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public void addChildAt(IRenderable iVar, int i) {
-        this.c.addChildAt(iVar, IRenderable);
+        this.SpringEasing.addChildAt(iVar, IRenderable);
         c(i);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public void addChild(IRenderable iVar) {
-        int iNumChildren = this.c.numChildren();
-        this.c.addChild(iVar);
+        int iNumChildren = this.SpringEasing.numChildren();
+        this.SpringEasing.addChild(iVar);
         c(iNumChildren);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public boolean removeChild(IRenderable iVar) {
-        int childIndexOf = this.c.getChildIndexOf(iVar);
+        int childIndexOf = this.SpringEasing.getChildIndexOf(iVar);
         if (childIndexOf == -1) {
             return false;
         }
-        this.c.removeChildAt(childIndexOf);
+        this.SpringEasing.removeChildAt(childIndexOf);
         c(childIndexOf);
         return true;
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
     public int numChildren() {
-        return this.c.numChildren();
+        return this.SpringEasing.numChildren();
     }
 
     private void c(int i) {
-        this.q = this.c.numChildren() % this.l == 0 ? this.c.numChildren() / this.l : (this.c.numChildren() / this.l) + 1;
+        this.q = this.SpringEasing.numChildren() % this.l == 0 ? this.SpringEasing.numChildren() / this.l : (this.SpringEasing.numChildren() / this.l) + 1;
         int i2 = i / this.l;
         this.n = 0.0f;
         this.m = ((-this.q) * this.f) + this.f;
@@ -468,12 +469,12 @@ public class DockRenderer extends BaseRenderable {
     }
 
     private void e(int i) {
-        int iNumChildren = this.c.numChildren();
+        int iNumChildren = this.SpringEasing.numChildren();
         int i2 = i * this.l;
         int i3 = this.l + i2 > iNumChildren + (-1) ? iNumChildren - 1 : this.l + i2;
         float f = this.w ? ((this.f - (((r1 - 1) * this.k) + (((i3 - i2) + 1) * this.j))) / 2.0f) + ((-this.f) / 2.0f) + (i * this.f) + (this.j / 2.0f) : ((-this.f) / 2.0f) + (i * this.f) + this.h + (this.j / 2.0f);
         for (int i4 = i2; i4 < i3 + 1; i4++) {
-            i childAt = this.c.getChildAt(i4);
+            i childAt = this.SpringEasing.getChildAt(i4);
             childAt.position().x = f;
             f += this.k + this.j;
             a(childAt);

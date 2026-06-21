@@ -19,7 +19,7 @@ public class PageEventDispatcher {
         }
     }
 
-    public void a(A aVar) {
+    public void a(PageShaderNode aVar) {
         if (!this.PageShaderNode.contains(aVar)) {
             this.PageShaderNode.add(aVar);
         }

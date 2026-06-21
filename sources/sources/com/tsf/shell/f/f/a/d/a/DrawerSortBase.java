@@ -12,15 +12,15 @@ public class DrawerSortBase extends com.tsf.shell.f.f.TransitionRenderer {
     protected String d;
 
     public DrawerSortBase(int i, int i2) {
-        super(i2, i, false);
-        this.d = x.c(i2);
+        super(i2, IRenderable, false);
+        this.d = GraphicsEngineBridge.c(i2);
     }
 
     public Comparator<? super com.tsf.shell.f.i.PageItem> a() {
         return this.b;
     }
 
-    public Comparator<? super i> b() {
+    public Comparator<? super IRenderable> b() {
         return this.c;
     }
 

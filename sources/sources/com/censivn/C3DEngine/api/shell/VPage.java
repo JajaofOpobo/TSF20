@@ -2,11 +2,12 @@ package com.censivn.C3DEngine.api.shell;
 
 import com.censivn.C3DEngine.api.core.VObject3d;
 import com.censivn.C3DEngine.b.f.IRenderable;
-import com.tsf.shell.f.f.g;
+import com.tsf.shell.f.f.WorkspacePage;
+
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VPage {
-    public g vTarget;
+    public WorkspacePage vTarget;
 
     public void addWidget(VObject3d vObject3d) {
         this.vTarget.a((IRenderable) vObject3d.getVirtualTarget());
