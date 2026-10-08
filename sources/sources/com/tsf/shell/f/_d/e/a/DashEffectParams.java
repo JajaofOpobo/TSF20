@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DashEffectParams extends DashEffectData {
-    private g a;
+    private WorkspacePage a;
 
     public DashEffectParams(int i) {
         super(i);
@@ -60,13 +60,13 @@ public class DashEffectParams extends DashEffectData {
     }
 
     @Override // com.tsf.shell.f._d.e.a.DashEffectData
-    public void a(g gVar, float f, ArrayList<i> arrayList, Runnable runnable) {
+    public void a(WorkspacePage gVar, float f, ArrayList<IRenderable> arrayList, Runnable runnable) {
         this.a = gVar;
         com.tsf.shell.manager.app.DataCoordinator.a(gVar.a((DashEffectData) this, (i) com.tsf.shell.manager.app.DataCoordinator.a(), true).b, f, runnable);
     }
 
     @Override // com.tsf.shell.f._d.e.a.DashEffectData
-    public void a(g gVar) {
+    public void a(WorkspacePage gVar) {
         DashEffectParams();
     }
 
@@ -76,7 +76,7 @@ public class DashEffectParams extends DashEffectData {
     }
 
     @Override // com.tsf.shell.f._d.e.a.DashEffectData
-    public void a(final g gVar, ArrayList<i> arrayList, final Runnable runnable, boolean z) {
+    public void a(final WorkspacePage gVar, ArrayList<IRenderable> arrayList, final Runnable runnable, boolean z) {
         if (z) {
             com.tsf.shell.manager.app.DataCoordinator.a(500, new Runnable() { // from class: com.tsf.shell.f._d.e.a.DashEffectParams.3
                 @Override // java.lang.Runnable

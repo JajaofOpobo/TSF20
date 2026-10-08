@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerAppLayoutStrategy {
-    private g.b a;
+    private com.tsf.shell.manager.app.WidgetPanelController.b a;
     private com.tsf.shell.f.e.ObjectPool<com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect> b;
     private ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> c;
     private TextureElement d;
@@ -29,7 +29,7 @@ public class DrawerDragEffectController extends com.tsf.shell.f.f.a._a.a.DrawerA
                 return new com.tsf.shell.f.i._b.e.WidgetDrawerItemEffect();
             }
         };
-        this.a = new g.b() { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.2
+        this.a = new com.tsf.shell.manager.app.WidgetPanelController.b() { // from class: com.tsf.shell.f.f.a._a.DrawerDragEffectController.2
             @Override // com.tsf.shell.manager.app.WidgetPanelController.b
             public void a(ArrayList<com.tsf.shell.f.i._b.e.WidgetDrawerItemVisual> arrayList) {
                 d.this.g();

@@ -16,7 +16,7 @@ public abstract class DashEffectData implements DashRendererBase.InterfaceC0090a
     private boolean b = false;
     private boolean c = false;
 
-    public abstract void a(g gVar, float f, ArrayList<i> arrayList, Runnable runnable);
+    public abstract void a(WorkspacePage gVar, float f, ArrayList<IRenderable> arrayList, Runnable runnable);
 
     public DashEffectData(int i) {
         this.a = i;
@@ -78,7 +78,7 @@ public abstract class DashEffectData implements DashRendererBase.InterfaceC0090a
         }
     }
 
-    public void a(g gVar, ArrayList<i> arrayList, Runnable runnable, boolean z) {
+    public void a(WorkspacePage gVar, ArrayList<IRenderable> arrayList, Runnable runnable, boolean z) {
         if (!z) {
             a(arrayList, runnable);
             return;
@@ -148,7 +148,7 @@ public abstract class DashEffectData implements DashRendererBase.InterfaceC0090a
         }
     }
 
-    public void a(ArrayList<i> arrayList, Runnable runnable) {
+    public void a(ArrayList<IRenderable> arrayList, Runnable runnable) {
         int i = 0;
         while (true) {
             int i2 = i;
@@ -203,6 +203,6 @@ public abstract class DashEffectData implements DashRendererBase.InterfaceC0090a
         return 500;
     }
 
-    public void a(g gVar) {
+    public void a(WorkspacePage gVar) {
     }
 }

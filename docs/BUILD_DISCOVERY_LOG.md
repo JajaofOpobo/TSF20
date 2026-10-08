@@ -248,6 +248,73 @@ contamination; zero-referrer grep before any archive/delete.
   literal string, one verified target, machine-checkable residual. The
   prohibition stands for regex/guess batches, not this.
 
+## Iteration 11 — phantom `g.b` → `WidgetPanelController.b` [S]
+
+- Node: `DrawerDragEffectController` field/instantiation `g.b` (top-level `g/`
+  has 0 DEX types). Evidence: anonymous subclass carries
+  `@Override // WidgetPanelController.b` + method shape
+  `a(ArrayList<DrawerItemVisual>)` matching `WidgetPanelController.b`'s own
+  member; callback-holder role confirmed by
+  `ServiceProvider.a().a().a(this.a)` wiring.
+- Correction to my own earlier worry: the anon override
+  (`ArrayList<WidgetDrawerItemVisual>` vs base `ArrayList<DrawerItemVisual>`)
+  compiles — override-equivalence uses erasure, and no "does not override"
+  error appeared. Invariance intuition was wrong; javac adjudicated.
+- Output: `docs/build-output-iter11.txt`. `package g does not exist` GONE.
+- Newly exposed (same file :20 `class c` ctor param; `ServiceProvider.a()`
+  chain whose static `a()` doesn't exist in-tree) — next layers, logged.
+- Deferred with a NEW lead: `WorkspaceEditor`'s `e.a` (no same-package `e`,
+  no import). Ledger: `f/e/f/a.java` → `f/e/_f/WorkspaceEditor.java`
+  (direct_diff 72) — the file's ORIGINAL package context differs from its
+  current one, which is likely where `e.a` resolved. Next: reconstruct from
+  the original context + unmatched interface methods.
+- Regressions: none. Confidence: HIGH (fix), MEDIUM (e.a lead — unproven).
+
+## Iteration 13 — parallel-agent round: dash, drop-indicator, object-pool [S]
+
+- Method: three read-only investigators (single-writer discipline: I applied
+  everything after spot-verifying each load-bearing claim). All agent
+  findings verified before use; one agent miscount corrected (DropIndicator
+  8 unique, not 5+3 split as briefed).
+- (a) `DashEffectData` + `DashEffectParams`: bare `g`→`WorkspacePage` (ledger
+  `f/f/g.java→WorkspacePage` + twin `PageTransitionEffect` signatures + reverse
+  call-site `WorkspacePage:120`), bare `<i>`→`<IRenderable>` (twin body
+  identical + callee cast demand). Both files already imported the targets.
+  CLEAN.
+- (b) `DropIndicatorState` + `DropIndicatorConfig`: the old filenames THEMSELVES
+  (`c`=State, `d`=Config, `a`=Container, `j`=BaseRenderable) survived inside
+  the renamed files — proven four ways (DEX field descriptors, twin,
+  ledger, call-site behavior), including two cases where the twin was WRONG
+  and DEX overruled it (`C0092c` refs → State). Qualifier rewrites
+  (`c.this`/`d.this`) verified lexically scoped. CLEAN.
+- (c) `ObjectPoolRenderable`: `f.e.D`→`ObjectPool` (smali superclass + DEX
+  existence + method parity; JADX case artifact), 4× `i`→`IRenderable`
+  (override signatures + smali params) plus 2 latent same-pattern sites.
+  CLEAN.
+- Output: `docs/build-output-iter13.txt`. `cannot find symbol` 194 → 188
+  lines. Failure set: stale-symbol + duplicate-member artifacts
+  (`DrawerItemAnimationManager.a`, trio, `DrawerItemLayoutData.a`) +
+  `package e` (WorkspaceEditor, deferred with ledger lead).
+- Agent-discipline note: reports carried per-row confidence + explicit
+  DO-NOT-TOUCH/DEFER lists (State:69 `new DropIndicatorRenderer()`,
+  State:95 container-vs-inner-a ctor, State:338 `x.a`, bare-statement calls);
+  those are queued verbatim as the next micro-nodes. Parallel investigation
+  with single-writer application works — no collisions, no attribution loss.
+- Regressions: none. Confidence: HIGH (every applied fix re-verified here).
+
+## Iteration 12 — top-level `g/` archived (22 files) [M]
+
+- Evidence (all re-verified pre-move): 0 DEX types under `C3DEngine/g/`,
+  v1 byte-match (`g/s.java`), zero referrers from outside `g/` (re-grepped
+  post-changes). The `b/g/` engine package (TweenManager et al.) is real and
+  untouched — only the top-level phantom went to `archive/dex-phantom/top-g/`.
+- Output: `docs/build-output-iter12.txt`. No errors attributable to the move;
+  `package g` category extinct. Failure set: 194 stale-symbol + trio (4) +
+  `package e` (2, = `WorkspaceEditor` only).
+- Newly surfaced leaders: `DashEffectData` (12), `DropIndicatorState` (10),
+  `ObjectPoolRenderable` (10) — all previously cap-hidden.
+- Regressions: none. Confidence: HIGH.
+
 ## Iteration 7 — WidgetItemPositioner twin-file reconstruction [S]
 
 - Node: `f/i/_b/d/WidgetItemPositioner.java` (24 lines: dup field + 7 stale

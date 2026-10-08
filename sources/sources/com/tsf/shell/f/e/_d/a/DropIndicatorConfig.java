@@ -8,19 +8,19 @@ import java.util.ArrayList;
 public class DropIndicatorConfig {
     private BaseRenderable d;
     private boolean b = false;
-    private c c = new DropIndicatorState(this);
-    private a a = new DropIndicatorContainer() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorConfig.1
+    private DropIndicatorState c = new DropIndicatorState(this);
+    private DropIndicatorContainer a = new DropIndicatorContainer() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorConfig.1
         @Override // com.tsf.shell.f.e._d.a.DropIndicatorContainer
         public void a() {
-            if (d.this.b) {
-                d.this.e();
+            if (DropIndicatorConfig.this.b) {
+                DropIndicatorConfig.this.e();
             } else {
-                d.this.j();
+                DropIndicatorConfig.this.j();
             }
         }
     };
 
-    public void a(j jVar) {
+    public void a(BaseRenderable jVar) {
         this.d = jVar;
     }
 
@@ -62,7 +62,7 @@ public class DropIndicatorConfig {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorConfig.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    d.this.i();
+                    DropIndicatorConfig.this.i();
                 }
             };
             dVar.f(0.0f);
@@ -98,7 +98,7 @@ public class DropIndicatorConfig {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.f.e._d.a.DropIndicatorConfig.3
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    d.this.g();
+                    DropIndicatorConfig.this.g();
                 }
             };
             dVar.f(this.c.c() + com.censivn.C3DEngine.b.b.ScreenConstants.a(100.0f));

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ObjectPoolRenderable extends BaseRenderable {
-    private static com.tsf.shell.f.e.D<Number3d> a;
+    private static com.tsf.shell.f.e.ObjectPool<Number3d> a;
     private ArrayList<Number3d> b = new ArrayList<>();
     private Number3d c = new Number3d();
     private Number3d d = new Number3d();
@@ -14,7 +14,7 @@ public class ObjectPoolRenderable extends BaseRenderable {
 
     public ObjectPoolRenderable() {
         if (a == null) {
-            a = new com.tsf.shell.f.e.D<Number3d>() { // from class: com.censivn.C3DEngine.b.f.ninepatch.1
+            a = new com.tsf.shell.f.e.ObjectPool<Number3d>() { // from class: com.censivn.C3DEngine.b.f.ninepatch.1
                 @Override // com.tsf.shell.f.e.D
                 /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
                 public Number3d b() {
@@ -41,7 +41,7 @@ public class ObjectPoolRenderable extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         children().add(iVar);
         invalidate();
         Number3d number3dC = a.c();
@@ -50,7 +50,7 @@ public class ObjectPoolRenderable extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public void addChildAt(i iVar, int i) {
+    public void addChildAt(IRenderable iVar, int i) {
         children().add(i, iVar);
         invalidate();
         this.b.add(i, a.c());
@@ -58,7 +58,7 @@ public class ObjectPoolRenderable extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public boolean removeChild(i iVar) {
+    public boolean removeChild(IRenderable iVar) {
         int iIndexOf = children().indexOf(iVar);
         if (iIndexOf == -1) {
             return false;
@@ -71,8 +71,8 @@ public class ObjectPoolRenderable extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public i removeChildAt(int i) {
-        i iVarRemove = children().remove(i);
+    public IRenderable removeChildAt(int i) {
+        IRenderable iVarRemove = children().remove(i);
         a.a(this.b.remove(i));
         a(i);
         invalidate();
@@ -90,7 +90,7 @@ public class ObjectPoolRenderable extends BaseRenderable {
             if (renderChildren()) {
                 int size = children().size();
                 for (int i = 0; i < size; i++) {
-                    i iVar = children().get(i);
+                    IRenderable iVar = children().get(i);
                     onDrawChildStart(iVar);
                     this.c.setAllFrom(iVar.position());
                     this.d.setAllFrom(iVar.rotation());
