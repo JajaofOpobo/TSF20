@@ -248,6 +248,25 @@ contamination; zero-referrer grep before any archive/delete.
   literal string, one verified target, machine-checkable residual. The
   prohibition stands for regex/guess batches, not this.
 
+## Iteration 14 — DEX-vs-tree census: completeness is now finite [M+S]
+
+- Built `scripts/dex_tree_census.py` (ledger-bridged alignment of 3,759 app
+  DEX classes vs 1,770 tree files; fixed own aliasing bug on first run).
+- Result (`docs/DEX_TREE_CENSUS.md`): EXACT 339 / LEDGER 2,527 / OUTER 702 /
+  **MISSING 191** / ORPHANS 477 (incl. support-libs noise + R classes).
+- Triaged reading (minus generated R$, kinfoc/cm stubs, support noise):
+  real clusters are `extend/theme` ledger gaps, `b/g/a/a–d` + `b/g/b/*`
+  (tween core — absent from HEAD *and* `181df6a5`, i.e. lost before the
+  deletion saga), shell top-level strays, and the `_b` orphan set (34,
+  still UNDECIDED pending Prime-dex/runtime proof).
+- Recovery path found without new downloads: v382 (3.8.2) HAS
+  `b/g/a/{a,b,c,d}` + `b/g/b/{a,b}` — port-forward with dexscan method-shape
+  comparison as the drift check (queued as iteration 15). No jadx/baksmali
+  on this machine; v1/v382 twins + DEX shapes are the in-house instruments.
+- "Complete source" is now a numbered list, not an aspiration. Census +
+  script committed as process infrastructure.
+- Regressions: none (read-only + new files only). Confidence: HIGH.
+
 ## Iteration 11 — phantom `g.b` → `WidgetPanelController.b` [S]
 
 - Node: `DrawerDragEffectController` field/instantiation `g.b` (top-level `g/`
