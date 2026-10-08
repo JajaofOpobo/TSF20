@@ -33,7 +33,7 @@ def uleb(p):
             return r, p
 
 def methods_of(ci):
-    """Return [(name, return_type, params_off_or_None)] for virtual+direct."""
+    """Return [(name, return_type, [param_types])] for virtual+direct methods."""
     base = co + 32 * ci
     p = u32(base + 24)
     out = []
@@ -60,7 +60,13 @@ def methods_of(ci):
             code, p = uleb(p)
             mproto = u16(mo + 8 * midx + 2)
             mname = u32(mo + 8 * midx + 4)
-            out.append((gs(mname), tname(u32(po + 12 * mproto + 4))))
+            params = []
+            plist = u32(po + 12 * mproto + 8)
+            if plist:
+                psz = u32(plist)
+                for k in range(psz):
+                    params.append(tname(u16(plist + 4 + 2 * k)))
+            out.append((gs(mname), tname(u32(po + 12 * mproto + 4)), params))
     return out
 
 def class_index():
@@ -74,7 +80,7 @@ if __name__ == '__main__':
         target = sys.argv[sys.argv.index('--multic') + 1]
         for ci in range(nc):
             ms = methods_of(ci)
-            rets = sorted({r for (n, r) in ms if n == target})
+            rets = sorted({r for (n, r, _) in ms if n == target})
             if len(rets) > 1:
                 print(tname(u32(co + 32 * ci)), '->', rets)
     elif '--methods' in sys.argv:
@@ -85,6 +91,6 @@ if __name__ == '__main__':
             if fq not in idx:
                 print(fq, 'ABSENT'); continue
             print('CLASS', fq)
-            for n, r in methods_of(idx[fq]):
+            for n, r, ps in methods_of(idx[fq]):
                 if len(n) <= 3:
-                    print('  ', n, '->', r.split('/')[-1].rstrip(';'))
+                    print('  ', n, '(' + ','.join(p.split('/')[-1].rstrip(';') for p in ps) + ')->', r.split('/')[-1].rstrip(';'))

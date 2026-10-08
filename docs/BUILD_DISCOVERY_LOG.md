@@ -531,3 +531,39 @@ contamination; zero-referrer grep before any archive/delete.
   3. Triple-`c()` structural match is blocked on the method parser; next
      turn finishes it (bounded: validate against smali-known `b/f/i` first —
      smali lists ~60 methods as ground truth for the walk).
+
+## Iterations 21–22 — panel pair `h/A/i` + returns [S]
+
+- `ShortcutsPanel` (19 unique): `h`→`DrawerItemButton` (DEX field type
+  `b/e/h`; second `new h()` site proven assignment-compatible via
+  `DrawerItemButton extends DrawerShortcutItemBase`), `A`→inner-`a`
+  (DEX signatures `d$a`), `i`→`IRenderable` (params + 3 inner returns via
+  `m`-field/`ShortcutManager`/null bodies). Parent `ScrollableItemListPanel`
+  fixed in lockstep (params, `getChildAt` locals, returns; pre-existing
+  imports covered all). ShortcutsPanel CLEAN.
+- Deferred with full evidence state: parent `private h b` (6-arg
+  int/int/float×4 ctor + `a(SparkleEffect)`/`a(f)`/`b(f,f)`/`d()`/`e()` set;
+  PageThumbnailRenderer ruled OUT — no such ctor/methods). Only 2 lines left
+  in parent. Next: identify the container-renderable with that ctor shape.
+- Outputs: `docs/build-output-iter21.txt`, `iter22.txt`. Regressions: none.
+  Confidence: HIGH (fixes), MEDIUM (deferral is evidence-complete).
+
+## Iteration 23 — parent-`h` hunt: tool upgraded, node deferred [S]
+
+- Searched by constructor shape instead of name: NO `(I,I,F,F,F,F)` 6-arg
+  ctor exists anywhere in C3DEngine (nearest: `F×6` in `b/h/b/h`,
+  `b/h/e/{a,b}`, `VNinePathParam`, `b/f/b/b` — ints widen, so still live
+  candidates). `PageThumbnailRenderer`, `DesktopTouchHandler{H,base}`
+  ruled OUT (no such ctor/method set).
+- To run the search, extended `scripts/dex_method_scan.py` to full
+  name(params):return output (validated against smali-known classes;
+  docstring corrected; `/tmp` copy resynced). The instrument now answers
+  "who takes X" and "who has ctor shape Y" structurally across all 4,960
+  classes — permanent capability, built for this node.
+- Deferred: `ScrollableItemListPanel:16 private h b` (+ twins in
+  `TogglePanel:14`, `AppListPanel:26 c`). Evidence state logged above;
+  next attempt starts from the F×6 candidate method lists (already dumped
+  for 3 of 5) instead of from zero.
+- Proportionality note: 12 tool calls without closure is the signal to
+  stop per GOAL increments — the turn banked a reusable instrument rather
+  than a guess. Confidence: HIGH (tool), MEDIUM (deferral completeness).

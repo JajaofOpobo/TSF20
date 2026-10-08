@@ -34,12 +34,12 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
     private ArrayList<com.tsf.shell.f.e._g.a.MenuActionHandler> j;
     private com.tsf.shell.manager.r.b.ScrollableItemListPanel.a k;
     private com.tsf.shell.manager.r.b.ScrollableItemListPanel.a l;
-    private h m;
+    private DrawerItemButton m;
 
     public ShortcutsPanel(com.tsf.shell.manager.r.b.WidgetMenuPanel aVar, String str) {
         super(str);
         this.b = aVar;
-        this.m = new h();
+        this.m = new DrawerItemButton();
         this.c = com.censivn.C3DEngine.C3DEngine.d().getPackageManager();
         this.f = new ArrayList<>();
         this.g = new ArrayList<>();
@@ -152,32 +152,32 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
     }
 
     @Override // com.tsf.shell.manager.r.b.ScrollableItemListPanel
-    public i a(A aVar, int i, i iVar) {
+    public IRenderable a(a aVar, int i, IRenderable iVar) {
         return aVar.a(iVar);
     }
 
     @Override // com.tsf.shell.manager.r.b.ScrollableItemListPanel
-    public i a(A aVar) {
+    public IRenderable a(a aVar) {
         return aVar.a();
     }
 
     @Override // com.tsf.shell.manager.r.b.ScrollableItemListPanel
-    public void b(A aVar) {
+    public void b(a aVar) {
         aVar.b();
     }
 
     @Override // com.tsf.shell.manager.r.b.ScrollableItemListPanel
-    public void c(A aVar) {
+    public void c(a aVar) {
         aVar.a(aVar);
     }
 
     @Override // com.tsf.shell.manager.r.b.ScrollableItemListPanel
-    public void a(MotionEvent motionEvent, A aVar, i iVar) {
+    public void a(MotionEvent motionEvent, a aVar, IRenderable iVar) {
         aVar.a(motionEvent, aVar, iVar);
     }
 
     @Override // com.tsf.shell.manager.r.b.ScrollableItemListPanel
-    public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
+    public boolean b(MotionEvent motionEvent, a aVar, IRenderable iVar) {
         aVar.b(motionEvent, aVar, iVar);
         return true;
     }
@@ -193,7 +193,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         while (it.hasNext()) {
             it.next().c();
         }
-        for (A aVar : this.g) {
+        for (a aVar : this.g) {
             aVar.c();
             this.j.add(aVar);
         }
@@ -214,9 +214,9 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(i iVar) {
+        public com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(IRenderable iVar) {
             if (this.b == null) {
-                this.b = new h();
+                this.b = new DrawerItemButton();
                 this.b.k.textures().addElement(this.f);
             }
             if (this.f.id == 0) {
@@ -253,14 +253,14 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public i a() {
+        public IRenderable a() {
             ShortcutsPanel.this.m.k.textures().clear();
             ShortcutsPanel.this.m.k.textures().addElement(this.f);
             return ShortcutsPanel.this.m;
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public boolean b(MotionEvent motionEvent, A aVar, final i iVar) {
+        public boolean b(MotionEvent motionEvent, a aVar, final IRenderable iVar) {
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.tsf.shell.manager.r.b.ShortcutsPanel.b.2
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
@@ -276,7 +276,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public void a(A aVar) {
+        public void a(a aVar) {
             com.tsf.shell.manager.app.PositionAnimator.a.a(this.d, 0.0f, ShortcutsPanel.this.b.getScreenFreeSpaceCenter());
         }
 
@@ -296,7 +296,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(i iVar) {
+        public com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(IRenderable iVar) {
             if (this.b == null) {
                 this.b = com.tsf.shell.manager.l.ShortcutManager.a(this.c, com.tsf.shell.manager.o.ButtonPresetManager.c);
             }
@@ -307,12 +307,12 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public void a(MotionEvent motionEvent, A aVar, i iVar) {
+        public void a(MotionEvent motionEvent, a aVar, IRenderable iVar) {
             iVar.getMouseEventListener().c(motionEvent);
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public void a(A aVar) {
+        public void a(a aVar) {
             com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVarA = com.tsf.shell.manager.l.ShortcutManager.a(this.c, com.tsf.shell.manager.o.ButtonPresetManager.a);
             bVarA.position().y = ShortcutsPanel.this.b.getScreenFreeSpaceCenter();
             com.tsf.shell.manager.app.StateHub.n().a(bVarA);
@@ -322,7 +322,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
+        public boolean b(MotionEvent motionEvent, a aVar, IRenderable iVar) {
             ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).ah();
             ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).K().onUpdatePhoto(null, null);
             ((com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) iVar).getMouseEventListener().d(motionEvent);
@@ -330,7 +330,7 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         }
 
         @Override // com.tsf.shell.manager.r.b.ShortcutsPanel.a
-        public i a() {
+        public IRenderable a() {
             return com.tsf.shell.manager.l.ShortcutManager.a(this.c, com.tsf.shell.manager.o.ButtonPresetManager.a);
         }
 
@@ -354,21 +354,21 @@ public class ShortcutsPanel extends com.tsf.shell.manager.r.b.ScrollableItemList
         a() {
         }
 
-        public com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(i iVar) {
+        public com.tsf.shell.f.i.b.e.DrawerShortcutItemBase a(IRenderable iVar) {
             return null;
         }
 
-        public i a() {
+        public IRenderable a() {
             return null;
         }
 
-        public void a(A aVar) {
+        public void a(a aVar) {
         }
 
-        public void a(MotionEvent motionEvent, A aVar, i iVar) {
+        public void a(MotionEvent motionEvent, a aVar, IRenderable iVar) {
         }
 
-        public boolean b(MotionEvent motionEvent, A aVar, i iVar) {
+        public boolean b(MotionEvent motionEvent, a aVar, IRenderable iVar) {
             return true;
         }
 
