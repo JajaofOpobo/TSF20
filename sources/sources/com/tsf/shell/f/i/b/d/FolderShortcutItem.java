@@ -895,7 +895,7 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
         return aH().alpha();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
     public int m() {
         return 1;
     }
@@ -1768,8 +1768,8 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
         super.a(fVar);
         if (fVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
             this.J.a((com.censivn.C3DEngine.b.f.IRenderable) fVar);
@@ -1789,32 +1789,32 @@ public class FolderShortcutItem extends com.tsf.shell.f.i.ShortcutItem implement
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
         super.d(fVar);
         if (fVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) {
             this.J.b((com.censivn.C3DEngine.b.f.IRenderable) fVar);
         }
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void c(com.tsf.shell.f.e.ILayoutItem fVar) {
         super.c(fVar);
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public boolean a(com.tsf.shell.f.e.ILayoutItem fVar, float f, float f2) {
         return (fVar instanceof com.tsf.shell.f.i.ShortcutItem) && ((com.tsf.shell.f.i.ShortcutItem) fVar).au();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
         return fVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.i.PageItem, com.tsf.shell.f.e.ILayoutItem
+    public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
         super.c(fVar);
         this.J.b((com.censivn.C3DEngine.b.f.IRenderable) fVar);
         com.tsf.shell.f.i.b.e.DrawerShortcutItemBase bVar = (com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) fVar;

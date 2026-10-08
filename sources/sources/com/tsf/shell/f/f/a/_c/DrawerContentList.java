@@ -359,7 +359,7 @@ public class DrawerContentList extends DrawerPageItemBase {
         boolean z = jVar == null;
         if (cVar.n() != null && cVar.o()) {
             float[] fArrA = x.a(motionEvent);
-            com.tsf.shell.f.e.SelectionFrameLayoutItem fVarA = cVar.a((int) fArrA[0], (int) fArrA[1], false);
+            com.tsf.shell.f.e.ILayoutItem fVarA = cVar.a((int) fArrA[0], (int) fArrA[1], false);
             if (fVarA != null && (fVarA instanceof c.b)) {
                 if (cVar.h(fVarA)) {
                     cVar.g(fVarA);
@@ -561,7 +561,7 @@ public class DrawerContentList extends DrawerPageItemBase {
                                 return;
                             }
                             float[] fArrB = x.b(motionEvent2.getX(), motionEvent2.getY());
-                            com.tsf.shell.f.e.SelectionFrameLayoutItem fVarA = cVar.a((int) c.this.t[0], (int) c.this.t[1], false);
+                            com.tsf.shell.f.e.ILayoutItem fVarA = cVar.a((int) c.this.t[0], (int) c.this.t[1], false);
                             if (fVarA != null) {
                                 cVar.f(fVarA);
                                 c.this.a((com.tsf.shell.f.i.PageItem) cVar);

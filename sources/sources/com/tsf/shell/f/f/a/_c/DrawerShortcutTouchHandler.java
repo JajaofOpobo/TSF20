@@ -42,22 +42,22 @@ public class DrawerShortcutTouchHandler extends DrawerContentList.a {
                 }
             }
 
-            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.ILayoutItem
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 a.this.a((com.tsf.shell.f.i.ShortcutItem) fVar);
             }
 
-            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.ILayoutItem
+            public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.ILayoutItem
+            public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
             }
 
-            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.f.a._c.DrawerSelectionFrame, com.tsf.shell.f.e.ILayoutItem
+            public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
             }
         };
         this.d.position().y = (com.tsf.shell.f.f.a.FolderPage.F - com.tsf.shell.f.f.a.PageGridRenderer.a) / 2.0f;

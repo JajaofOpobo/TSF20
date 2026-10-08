@@ -1,0 +1,865 @@
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.8.2) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:29: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+import com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable;
+                                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:32: error: package com.censivn.C3DEngine.b.g._b does not exist
+public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
+                                                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:41: error: cannot find symbol
+    public TextureSpriteRenderable AABB_P1;
+           ^
+  symbol:   class TextureSpriteRenderable
+  location: class IRenderable
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:42: error: cannot find symbol
+    public TextureSpriteRenderable AABB_P2;
+           ^
+  symbol:   class TextureSpriteRenderable
+  location: class IRenderable
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:43: error: cannot find symbol
+    public TextureSpriteRenderable AABB_P3;
+           ^
+  symbol:   class TextureSpriteRenderable
+  location: class IRenderable
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:44: error: cannot find symbol
+    public TextureSpriteRenderable AABB_P4;
+           ^
+  symbol:   class TextureSpriteRenderable
+  location: class IRenderable
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:51: error: package com.censivn.C3DEngine.b.d does not exist
+    private com.censivn.C3DEngine.b.d.MouseEventListener _mouseEventListener;
+                                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:3: error: package com.censivn.C3DEngine.f does not exist
+import com.censivn.C3DEngine.f.Vertex3s;
+                              ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:82: error: cannot find symbol
+    private com.censivn.C3DEngine.b.b.TouchState mLayoutParam;
+                                     ^
+  symbol:   class TouchState
+  location: package com.censivn.C3DEngine.b.b
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:95: error: package com.censivn.C3DEngine.f does not exist
+    private com.censivn.C3DEngine.f.DrawMode mRenderType;
+                                   ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:99: error: package com.censivn.C3DEngine.f does not exist
+    private com.censivn.C3DEngine.f.ShadingModel mShadeModel;
+                                   ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/TextureList.java:3: error: cannot find symbol
+import com.censivn.C3DEngine.C3DEngine;
+                            ^
+  symbol:   class C3DEngine
+  location: package com.censivn.C3DEngine
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:105: error: package com.censivn.C3DEngine.b.g.a does not exist
+    public com.censivn.C3DEngine.b.g.a.AbstractTween mTweenChild;
+                                      ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:435: error: package com.censivn.C3DEngine.f does not exist
+    public com.censivn.C3DEngine.f.DrawMode renderType() {
+                                  ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:439: error: package com.censivn.C3DEngine.f does not exist
+    public void renderType(com.censivn.C3DEngine.f.DrawMode eVar) {
+                                                  ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:444: error: package com.censivn.C3DEngine.f does not exist
+    public com.censivn.C3DEngine.f.ShadingModel shadeModel() {
+                                  ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:448: error: package com.censivn.C3DEngine.f does not exist
+    public void shadeModel(com.censivn.C3DEngine.f.ShadingModel fVar) {
+                                                  ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1336: error: package com.censivn.C3DEngine.b.d does not exist
+    public void setMouseEventListener(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
+                                                               ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1340: error: package com.censivn.C3DEngine.b.d does not exist
+    public com.censivn.C3DEngine.b.d.MouseEventListener getMouseEventListener() {
+                                    ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1429: error: package com.censivn.C3DEngine.b.g.a does not exist
+    public com.censivn.C3DEngine.b.g.a.AbstractTween getTweenChild() {
+                                      ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1434: error: package com.censivn.C3DEngine.b.g.a does not exist
+    public void setTweenChild(com.censivn.C3DEngine.b.g.a.AbstractTween cVar) {
+                                                         ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1481: error: cannot find symbol
+    public void setLayoutParams(com.censivn.C3DEngine.b.b.TouchState bVar) {
+                                                         ^
+  symbol:   class TouchState
+  location: package com.censivn.C3DEngine.b.b
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1485: error: cannot find symbol
+    public com.censivn.C3DEngine.b.b.TouchState getLayoutParams() {
+                                    ^
+  symbol:   class TouchState
+  location: package com.censivn.C3DEngine.b.b
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/event/VMouseEventListener.java:5: error: package com.censivn.C3DEngine.b.d does not exist
+import com.censivn.C3DEngine.b.d.MouseEventListener;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/event/VMouseEventListener.java:11: error: cannot find symbol
+    public MouseEventListener vTarget;
+           ^
+  symbol:   class MouseEventListener
+  location: class VMouseEventListener
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:43: error: cannot find symbol
+    public Vertex3s get(int i) {
+           ^
+  symbol:   class Vertex3s
+  location: class FacesBufferedList
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:48: error: cannot find symbol
+    public void putInFace(int i, Vertex3s vertex3s) {
+                                 ^
+  symbol:   class Vertex3s
+  location: class FacesBufferedList
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:86: error: cannot find symbol
+    public void add(Vertex3s vertex3s) {
+                    ^
+  symbol:   class Vertex3s
+  location: class FacesBufferedList
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:100: error: cannot find symbol
+    public void set(int i, Vertex3s vertex3s) {
+                           ^
+  symbol:   class Vertex3s
+  location: class FacesBufferedList
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1476: error: cannot find symbol
+        public static float a(TextureSpriteRenderable aVar, a aVar2) {
+                              ^
+  symbol:   class TextureSpriteRenderable
+  location: class a
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/BaseRenderable.java:56: error: cannot find symbol
+    public void replaceChild(IRenderable iVar, i iVar2) {
+                                               ^
+  symbol:   class i
+  location: class BaseRenderable
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/b/ScreenConstants.java:8: error: cannot find symbol
+import com.censivn.C3DEngine.a.RendererImpl;
+                              ^
+  symbol:   class RendererImpl
+  location: package com.censivn.C3DEngine.a
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/b/ScreenConstants.java:10: error: cannot find symbol
+import com.censivn.C3DEngine.b.f.GridRenderable;
+                                ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/b/ScreenConstants.java:81: error: cannot find symbol
+    public static GridRenderable a(float f2, float f3) {
+                  ^
+  symbol:   class GridRenderable
+  location: class ScreenConstants
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/a/b.java:3: error: cannot find symbol
+import com.censivn.C3DEngine.c.a.ParticleData;
+                                ^
+  symbol:   class ParticleData
+  location: package com.censivn.C3DEngine.c.a
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/a/b.java:13: error: cannot find symbol
+    private e g;
+            ^
+  symbol:   class e
+  location: class b
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/a/b.java:18: error: cannot find symbol
+    public b(e eVar) {
+             ^
+  symbol:   class e
+  location: class b
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/VVirtualObject.java:4: error: cannot find symbol
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
+                                ^
+  symbol:   class EmptyRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButton.java:5: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+import com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable;
+                                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButtonItem.java:8: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+import com.censivn.C3DEngine.b.f.sprite.SpriteItemData;
+                                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButtonItem.java:12: error: cannot find symbol
+    public b vTarget;
+           ^
+  symbol:   class b
+  location: class VButtonItem
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButtonItem.java:14: error: cannot find symbol
+    public VButtonItem(b bVar) {
+                       ^
+  symbol:   class b
+  location: class VButtonItem
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/VRectangle.java:5: error: cannot find symbol
+import com.censivn.C3DEngine.b.f.GridRenderable;
+                                ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/VBox.java:4: error: cannot find symbol
+import com.censivn.C3DEngine.b.f.Box3DRenderable;
+                                ^
+  symbol:   class Box3DRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePatchRectangle.java:3: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+import com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable;
+                                          ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePatchRectangle.java:4: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+import com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds;
+                                          ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePatchRectangle.java:8: error: cannot find symbol
+    private a vTarget;
+            ^
+  symbol:   class a
+  location: class VNinePatchRectangle
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePathParam.java:3: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+import com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds;
+                                          ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePathParam.java:7: error: cannot find symbol
+    private b vTarget;
+            ^
+  symbol:   class b
+  location: class VNinePathParam
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:5: error: cannot find symbol
+import com.censivn.C3DEngine.c.PhysicsSystem;
+                              ^
+  symbol:   class PhysicsSystem
+  location: package com.censivn.C3DEngine.c
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:6: error: cannot find symbol
+import com.censivn.C3DEngine.c.IPhysicsSystem;
+                              ^
+  symbol:   class IPhysicsSystem
+  location: package com.censivn.C3DEngine.c
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:10: error: cannot find symbol
+    private a vTarget;
+            ^
+  symbol:   class a
+  location: class VEffectsStack
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:5: error: package com.censivn.C3DEngine.c.b does not exist
+import com.censivn.C3DEngine.c.b.ConstraintPhysicsSystem;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:9: error: cannot find symbol
+    private c vTarget;
+            ^
+  symbol:   class c
+  location: class VTwist
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:25: error: package com.censivn.C3DEngine.b.c.ActivityResultBridge does not exist
+public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
+                                                                                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:7: error: package com.censivn.C3DEngine.b.c does not exist
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:8: error: package com.censivn.C3DEngine.b.c does not exist
+import com.censivn.C3DEngine.b.c.WindowManager;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:9: error: package com.censivn.C3DEngine.b.g does not exist
+import com.censivn.C3DEngine.b.g.EasingFunctions;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:17: error: package com.censivn.C3DEngine.b.c.KeyboardHandler does not exist
+public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRenderable implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
+                                                                                                                                             ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/PageItem.java:8: error: package com.censivn.C3DEngine.b.g does not exist
+import com.censivn.C3DEngine.b.g.TweenParams;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:108: error: cannot find symbol
+    public void a(final AppWidgetManager appWidgetManager, final f fVar, final int i, final int i2) {
+                                                                 ^
+  symbol:   class f
+  location: class AppWidgetHostManager
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/PageItem.java:21: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+    protected com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable _e;
+                                                 ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/MultiSelectController.java:4: error: package com.censivn.C3DEngine.b.c does not exist
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/MultiSelectController.java:12: error: package com.censivn.C3DEngine.b.c.KeyboardHandler does not exist
+public class MultiSelectController implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
+                                                                                       ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/PageItem.java:132: error: cannot find symbol
+    public com.censivn.C3DEngine.b.f.ResourceGridRenderable z() {
+                                    ^
+  symbol:   class ResourceGridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:8: error: cannot find symbol
+import com.censivn.C3DEngine.b.f.GridRenderable;
+                                ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:18: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable k;
+                                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:19: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+    public com.censivn.C3DEngine.b.f.sprite.SpriteItemData l;
+                                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:20: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+    public com.censivn.C3DEngine.b.f.sprite.SpriteItemData ILassoSelectable;
+                                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/a/DashElementBase.java:5: error: cannot find symbol
+import com.censivn.C3DEngine.b.f.GridRenderable;
+                                ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:153: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+    public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aF() {
+                                           ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/PageItemTouchHandler.java:17: error: package com.censivn.C3DEngine.b.d does not exist
+public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
+                                                                   ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:17: error: package com.censivn.C3DEngine.b.c does not exist
+import com.censivn.C3DEngine.b.c.WindowManager;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:18: error: cannot find symbol
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
+                                ^
+  symbol:   class EmptyRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:29: error: package WindowManager does not exist
+public class FolderItemPositioner implements WindowManager.a {
+                                                          ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:8: error: package com.censivn.C3DEngine.b.c does not exist
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:9: error: package com.censivn.C3DEngine.b.g does not exist
+import com.censivn.C3DEngine.b.g.EasingFunctions;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:20: error: package KeyboardHandler does not exist
+public class LassoContextMenu implements KeyboardHandler.a {
+                                                        ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:50: error: package com.censivn.C3DEngine.b.d does not exist
+    private com.censivn.C3DEngine.b.d.MouseEventListener O;
+                                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:51: error: package com.censivn.C3DEngine.b.d does not exist
+    private com.censivn.C3DEngine.b.d.MouseEventListener P;
+                                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:52: error: package com.censivn.C3DEngine.b.d does not exist
+    private com.censivn.C3DEngine.b.d.MouseEventListener Q;
+                                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/b/ShellKeyEventHandler.java:4: error: package com.censivn.C3DEngine.b.c does not exist
+import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/b/ShellKeyEventHandler.java:7: error: package KeyboardHandler does not exist
+public class ShellKeyEventHandler implements KeyboardHandler.a {
+                                                            ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:57: error: package com.censivn.C3DEngine.b.g does not exist
+    private com.censivn.C3DEngine.b.g.TweenParams V;
+                                     ^
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:70: error: cannot find symbol
+    protected com.censivn.C3DEngine.b.f.GridRenderable p;
+                                       ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:71: error: cannot find symbol
+    protected com.censivn.C3DEngine.b.f.GridRenderable q;
+                                       ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:72: error: cannot find symbol
+    protected com.censivn.C3DEngine.b.f.GridRenderable r;
+                                       ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:73: error: cannot find symbol
+    protected com.censivn.C3DEngine.b.f.GridRenderable s;
+                                       ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:74: error: cannot find symbol
+    protected com.censivn.C3DEngine.b.f.GridRenderable t;
+                                       ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:103: error: cannot find symbol
+    public static com.censivn.C3DEngine.b.f.GridRenderable l() {
+                                           ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherFolder3DInfo.java:3: error: cannot find symbol
+import com.censivn.C3DEngine.C3DEngine;
+                            ^
+  symbol:   class C3DEngine
+  location: package com.censivn.C3DEngine
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:577: error: cannot find symbol
+    public com.censivn.C3DEngine.b.f.GridRenderable aH() {
+                                    ^
+  symbol:   class GridRenderable
+  location: package com.censivn.C3DEngine.b.f
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1772: error: cannot find symbol
+    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1793: error: cannot find symbol
+    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1801: error: cannot find symbol
+    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1806: error: cannot find symbol
+    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+                                      ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1811: error: cannot find symbol
+    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                      ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1817: error: cannot find symbol
+    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                   ^
+  symbol:   class SelectionFrameLayoutItem
+  location: package com.tsf.shell.f.e
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeDescription.java:6: error: cannot find symbol
+import com.censivn.C3DEngine.C3DEngine;
+                            ^
+  symbol:   class C3DEngine
+  location: package com.censivn.C3DEngine
+/home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:24: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+    private static com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable d;
+                                                   ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///home/jaja/Documents/TSF20/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputNote: Recompile with -Xlint:deprecation for details./home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:29: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+  import com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable;
+                                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:32: error: package com.censivn.C3DEngine.b.g._b does not exist
+  public class IRenderable implements com.censivn.C3DEngine.b.g._b.ITweenTarget {
+                                                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:51: error: package com.censivn.C3DEngine.b.d does not exist
+      private com.censivn.C3DEngine.b.d.MouseEventListener _mouseEventListener;
+                                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:3: error: package com.censivn.C3DEngine.f does not exist
+  import com.censivn.C3DEngine.f.Vertex3s;
+                                ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:95: error: package com.censivn.C3DEngine.f does not exist
+      private com.censivn.C3DEngine.f.DrawMode mRenderType;
+                                     ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:99: error: package com.censivn.C3DEngine.f does not exist
+      private com.censivn.C3DEngine.f.ShadingModel mShadeModel;
+                                     ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:105: error: package com.censivn.C3DEngine.b.g.a does not exist
+      public com.censivn.C3DEngine.b.g.a.AbstractTween mTweenChild;
+                                        ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:435: error: package com.censivn.C3DEngine.f does not exist
+      public com.censivn.C3DEngine.f.DrawMode renderType() {
+                                    ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:439: error: package com.censivn.C3DEngine.f does not exist
+      public void renderType(com.censivn.C3DEngine.f.DrawMode eVar) {
+                                                    ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:444: error: package com.censivn.C3DEngine.f does not exist
+      public com.censivn.C3DEngine.f.ShadingModel shadeModel() {
+                                    ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:448: error: package com.censivn.C3DEngine.f does not exist
+      public void shadeModel(com.censivn.C3DEngine.f.ShadingModel fVar) {
+                                                    ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1336: error: package com.censivn.C3DEngine.b.d does not exist
+      public void setMouseEventListener(com.censivn.C3DEngine.b.d.MouseEventListener aVar) {
+                                                                 ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1340: error: package com.censivn.C3DEngine.b.d does not exist
+      public com.censivn.C3DEngine.b.d.MouseEventListener getMouseEventListener() {
+                                      ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1429: error: package com.censivn.C3DEngine.b.g.a does not exist
+      public com.censivn.C3DEngine.b.g.a.AbstractTween getTweenChild() {
+                                        ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1434: error: package com.censivn.C3DEngine.b.g.a does not exist
+      public void setTweenChild(com.censivn.C3DEngine.b.g.a.AbstractTween cVar) {
+                                                           ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/event/VMouseEventListener.java:5: error: package com.censivn.C3DEngine.b.d does not exist
+  import com.censivn.C3DEngine.b.d.MouseEventListener;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButton.java:5: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+  import com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable;
+                                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButtonItem.java:8: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+  import com.censivn.C3DEngine.b.f.sprite.SpriteItemData;
+                                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePatchRectangle.java:3: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+  import com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable;
+                                            ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePatchRectangle.java:4: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+  import com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds;
+                                            ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePathParam.java:3: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+  import com.censivn.C3DEngine.b.f.ninepatch.NinePatchBounds;
+                                            ^
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:5: error: package com.censivn.C3DEngine.c.b does not exist
+  import com.censivn.C3DEngine.c.b.ConstraintPhysicsSystem;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:25: error: package com.censivn.C3DEngine.b.c.ActivityResultBridge does not exist
+  public class AppWidgetHostManager implements com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a {
+                                                                                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:7: error: package com.censivn.C3DEngine.b.c does not exist
+  import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:8: error: package com.censivn.C3DEngine.b.c does not exist
+  import com.censivn.C3DEngine.b.c.WindowManager;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:9: error: package com.censivn.C3DEngine.b.g does not exist
+  import com.censivn.C3DEngine.b.g.EasingFunctions;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/WidgetFreeResizeController.java:17: error: package com.censivn.C3DEngine.b.c.KeyboardHandler does not exist
+  public class WidgetFreeResizeController extends com.censivn.C3DEngine.b.f.BaseRenderable implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
+                                                                                                                                               ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/PageItem.java:8: error: package com.censivn.C3DEngine.b.g does not exist
+  import com.censivn.C3DEngine.b.g.TweenParams;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/PageItem.java:21: error: package com.censivn.C3DEngine.b.f.ninepatch does not exist
+      protected com.censivn.C3DEngine.b.f.ninepatch.NinePatchRenderable _e;
+                                                   ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/MultiSelectController.java:4: error: package com.censivn.C3DEngine.b.c does not exist
+  import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/MultiSelectController.java:12: error: package com.censivn.C3DEngine.b.c.KeyboardHandler does not exist
+  public class MultiSelectController implements com.censivn.C3DEngine.b.c.KeyboardHandler.a {
+                                                                                         ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:18: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+      public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable k;
+                                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:19: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+      public com.censivn.C3DEngine.b.f.sprite.SpriteItemData l;
+                                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:20: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+      public com.censivn.C3DEngine.b.f.sprite.SpriteItemData ILassoSelectable;
+                                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/e/DrawerShortcutItemBase.java:153: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+      public com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable aF() {
+                                             ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/a/PageItemTouchHandler.java:17: error: package com.censivn.C3DEngine.b.d does not exist
+  public class PageItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
+                                                                     ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:17: error: package com.censivn.C3DEngine.b.c does not exist
+  import com.censivn.C3DEngine.b.c.WindowManager;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:29: error: package WindowManager does not exist
+  public class FolderItemPositioner implements WindowManager.a {
+                                                            ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:8: error: package com.censivn.C3DEngine.b.c does not exist
+  import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:9: error: package com.censivn.C3DEngine.b.g does not exist
+  import com.censivn.C3DEngine.b.g.EasingFunctions;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:20: error: package KeyboardHandler does not exist
+  public class LassoContextMenu implements KeyboardHandler.a {
+                                                          ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:50: error: package com.censivn.C3DEngine.b.d does not exist
+      private com.censivn.C3DEngine.b.d.MouseEventListener O;
+                                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:51: error: package com.censivn.C3DEngine.b.d does not exist
+      private com.censivn.C3DEngine.b.d.MouseEventListener P;
+                                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:52: error: package com.censivn.C3DEngine.b.d does not exist
+      private com.censivn.C3DEngine.b.d.MouseEventListener Q;
+                                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/b/ShellKeyEventHandler.java:4: error: package com.censivn.C3DEngine.b.c does not exist
+  import com.censivn.C3DEngine.b.c.KeyboardHandler;
+                                  ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/b/ShellKeyEventHandler.java:7: error: package KeyboardHandler does not exist
+  public class ShellKeyEventHandler implements KeyboardHandler.a {
+                                                              ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:57: error: package com.censivn.C3DEngine.b.g does not exist
+      private com.censivn.C3DEngine.b.g.TweenParams V;
+                                       ^
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/e/LassoContextMenu.java:24: error: package com.censivn.C3DEngine.b.f.sprite does not exist
+      private static com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable d;
+                                                     ^Note: Recompile with -Xlint:unchecked for details./home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:41: error: cannot find symbol
+      public TextureSpriteRenderable AABB_P1;
+             ^
+    symbol:   class TextureSpriteRenderable
+    location: class IRenderable
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:42: error: cannot find symbol
+      public TextureSpriteRenderable AABB_P2;
+             ^
+    symbol:   class TextureSpriteRenderable
+    location: class IRenderable
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:43: error: cannot find symbol
+      public TextureSpriteRenderable AABB_P3;
+             ^
+    symbol:   class TextureSpriteRenderable
+    location: class IRenderable
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:44: error: cannot find symbol
+      public TextureSpriteRenderable AABB_P4;
+             ^
+    symbol:   class TextureSpriteRenderable
+    location: class IRenderable
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:82: error: cannot find symbol
+      private com.censivn.C3DEngine.b.b.TouchState mLayoutParam;
+                                       ^
+    symbol:   class TouchState
+    location: package com.censivn.C3DEngine.b.b
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/TextureList.java:3: error: cannot find symbol
+  import com.censivn.C3DEngine.C3DEngine;
+                              ^
+    symbol:   class C3DEngine
+    location: package com.censivn.C3DEngine
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1481: error: cannot find symbol
+      public void setLayoutParams(com.censivn.C3DEngine.b.b.TouchState bVar) {
+                                                           ^
+    symbol:   class TouchState
+    location: package com.censivn.C3DEngine.b.b
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1485: error: cannot find symbol
+      public com.censivn.C3DEngine.b.b.TouchState getLayoutParams() {
+                                      ^
+    symbol:   class TouchState
+    location: package com.censivn.C3DEngine.b.b
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/event/VMouseEventListener.java:11: error: cannot find symbol
+      public MouseEventListener vTarget;
+             ^
+    symbol:   class MouseEventListener
+    location: class VMouseEventListener
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:43: error: cannot find symbol
+      public Vertex3s get(int i) {
+             ^
+    symbol:   class Vertex3s
+    location: class FacesBufferedList
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:48: error: cannot find symbol
+      public void putInFace(int i, Vertex3s vertex3s) {
+                                   ^
+    symbol:   class Vertex3s
+    location: class FacesBufferedList
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:86: error: cannot find symbol
+      public void add(Vertex3s vertex3s) {
+                      ^
+    symbol:   class Vertex3s
+    location: class FacesBufferedList
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/FacesBufferedList.java:100: error: cannot find symbol
+      public void set(int i, Vertex3s vertex3s) {
+                             ^
+    symbol:   class Vertex3s
+    location: class FacesBufferedList
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/IRenderable.java:1476: error: cannot find symbol
+          public static float a(TextureSpriteRenderable aVar, a aVar2) {
+                                ^
+    symbol:   class TextureSpriteRenderable
+    location: class a
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/f/BaseRenderable.java:56: error: cannot find symbol
+      public void replaceChild(IRenderable iVar, i iVar2) {
+                                                 ^
+    symbol:   class i
+    location: class BaseRenderable
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/b/ScreenConstants.java:8: error: cannot find symbol
+  import com.censivn.C3DEngine.a.RendererImpl;
+                                ^
+    symbol:   class RendererImpl
+    location: package com.censivn.C3DEngine.a
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/b/ScreenConstants.java:10: error: cannot find symbol
+  import com.censivn.C3DEngine.b.f.GridRenderable;
+                                  ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/b/b/ScreenConstants.java:81: error: cannot find symbol
+      public static GridRenderable a(float f2, float f3) {
+                    ^
+    symbol:   class GridRenderable
+    location: class ScreenConstants
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/a/b.java:3: error: cannot find symbol
+  import com.censivn.C3DEngine.c.a.ParticleData;
+                                  ^
+    symbol:   class ParticleData
+    location: package com.censivn.C3DEngine.c.a
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/a/b.java:13: error: cannot find symbol
+      private e g;
+              ^
+    symbol:   class e
+    location: class b
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/c/a/a/b.java:18: error: cannot find symbol
+      public b(e eVar) {
+               ^
+    symbol:   class e
+    location: class b
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/VVirtualObject.java:4: error: cannot find symbol
+  import com.censivn.C3DEngine.b.f.EmptyRenderable;
+                                  ^
+    symbol:   class EmptyRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButtonItem.java:12: error: cannot find symbol
+      public b vTarget;
+             ^
+    symbol:   class b
+    location: class VButtonItem
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/button/VButtonItem.java:14: error: cannot find symbol
+      public VButtonItem(b bVar) {
+                         ^
+    symbol:   class b
+    location: class VButtonItem
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/VRectangle.java:5: error: cannot find symbol
+  import com.censivn.C3DEngine.b.f.GridRenderable;
+                                  ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/VBox.java:4: error: cannot find symbol
+  import com.censivn.C3DEngine.b.f.Box3DRenderable;
+                                  ^
+    symbol:   class Box3DRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePatchRectangle.java:8: error: cannot find symbol
+      private a vTarget;
+              ^
+    symbol:   class a
+    location: class VNinePatchRectangle
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/primitives/ninepath/VNinePathParam.java:7: error: cannot find symbol
+      private b vTarget;
+              ^
+    symbol:   class b
+    location: class VNinePathParam
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:5: error: cannot find symbol
+  import com.censivn.C3DEngine.c.PhysicsSystem;
+                                ^
+    symbol:   class PhysicsSystem
+    location: package com.censivn.C3DEngine.c
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:6: error: cannot find symbol
+  import com.censivn.C3DEngine.c.IPhysicsSystem;
+                                ^
+    symbol:   class IPhysicsSystem
+    location: package com.censivn.C3DEngine.c
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/VEffectsStack.java:10: error: cannot find symbol
+      private a vTarget;
+              ^
+    symbol:   class a
+    location: class VEffectsStack
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/effects/modifiers/VTwist.java:9: error: cannot find symbol
+      private c vTarget;
+              ^
+    symbol:   class c
+    location: class VTwist
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/manager/r/a/AppWidgetHostManager.java:108: error: cannot find symbol
+      public void a(final AppWidgetManager appWidgetManager, final f fVar, final int i, final int i2) {
+                                                                   ^
+    symbol:   class f
+    location: class AppWidgetHostManager
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/PageItem.java:132: error: cannot find symbol
+      public com.censivn.C3DEngine.b.f.ResourceGridRenderable z() {
+                                      ^
+    symbol:   class ResourceGridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/ShortcutItem.java:8: error: cannot find symbol
+  import com.censivn.C3DEngine.b.f.GridRenderable;
+                                  ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/_d/a/DashElementBase.java:5: error: cannot find symbol
+  import com.censivn.C3DEngine.b.f.GridRenderable;
+                                  ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderItemPositioner.java:18: error: cannot find symbol
+  import com.censivn.C3DEngine.b.f.EmptyRenderable;
+                                  ^
+    symbol:   class EmptyRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:70: error: cannot find symbol
+      protected com.censivn.C3DEngine.b.f.GridRenderable p;
+                                         ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:71: error: cannot find symbol
+      protected com.censivn.C3DEngine.b.f.GridRenderable q;
+                                         ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:72: error: cannot find symbol
+      protected com.censivn.C3DEngine.b.f.GridRenderable r;
+                                         ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:73: error: cannot find symbol
+      protected com.censivn.C3DEngine.b.f.GridRenderable s;
+                                         ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:74: error: cannot find symbol
+      protected com.censivn.C3DEngine.b.f.GridRenderable t;
+                                         ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:103: error: cannot find symbol
+      public static com.censivn.C3DEngine.b.f.GridRenderable l() {
+                                             ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/censivn/C3DEngine/api/element/info/LauncherFolder3DInfo.java:3: error: cannot find symbol
+  import com.censivn.C3DEngine.C3DEngine;
+                              ^
+    symbol:   class C3DEngine
+    location: package com.censivn.C3DEngine
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:577: error: cannot find symbol
+      public com.censivn.C3DEngine.b.f.GridRenderable aH() {
+                                      ^
+    symbol:   class GridRenderable
+    location: package com.censivn.C3DEngine.b.f
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1772: error: cannot find symbol
+      public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1793: error: cannot find symbol
+      public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1801: error: cannot find symbol
+      public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1806: error: cannot find symbol
+      public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+                                        ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1811: error: cannot find symbol
+      public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                        ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/f/i/b/d/FolderShortcutItem.java:1817: error: cannot find symbol
+      public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+                                     ^
+    symbol:   class SelectionFrameLayoutItem
+    location: package com.tsf.shell.f.e
+  /home/jaja/Documents/TSF20/sources/sources/com/tsf/shell/theme/inside/description/ThemeDescription.java:6: error: cannot find symbol
+  import com.censivn.C3DEngine.C3DEngine;
+                              ^
+    symbol:   class C3DEngine
+    location: package com.censivn.C3DEngineNote: Some input files use unchecked or unsafe operations.Note: Some input files use or override a deprecated API.
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 4s
+15 actionable tasks: 1 executed, 14 up-to-date

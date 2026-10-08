@@ -30,24 +30,24 @@ public class SliderRenderer extends com.tsf.shell.f.e.f.EditModeNode {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         super.addChild(iVar);
         onChildMeasure(iVar);
     }
 
-    public void a(i iVar, boolean z) {
+    public void a(IRenderable iVar, boolean z) {
         super.addChild(iVar);
         onChildMeasure(iVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public void addChildAt(i iVar, int i) {
+    public void addChildAt(IRenderable iVar, int i) {
         super.addChildAt(iVar, i);
         onChildMeasure(iVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public boolean removeChild(i iVar) {
+    public boolean removeChild(IRenderable iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
             onChildMeasure(iVar);
@@ -55,24 +55,24 @@ public class SliderRenderer extends com.tsf.shell.f.e.f.EditModeNode {
         return zRemoveChild;
     }
 
-    public boolean a(i iVar) {
+    public boolean a(IRenderable iVar) {
         return super.removeChild(iVar);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public IRenderable removeChildAt(int i) {
-        i iVarRemoveChildAt = super.removeChildAt(i);
+        IRenderable iVarRemoveChildAt = super.removeChildAt(i);
         onChildMeasure(iVarRemoveChildAt);
         return iVarRemoveChildAt;
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
-    public void onChildMeasure(i iVar) {
+    public void onChildMeasure(IRenderable iVar) {
         this.a = true;
         e();
     }
 
-    public void b(i iVar) {
+    public void b(IRenderable iVar) {
         this.a = true;
     }
 
@@ -81,7 +81,7 @@ public class SliderRenderer extends com.tsf.shell.f.e.f.EditModeNode {
         int iNumChildren = numChildren();
         float fMaxY2 = this.b;
         for (int i = 0; i < iNumChildren; i++) {
-            i childAt = getChildAt(i);
+            IRenderable childAt = getChildAt(i);
             if (childAt.visible()) {
                 fMaxY2 += (childAt.maxY() - childAt.minY()) + this.c;
             }
@@ -106,14 +106,14 @@ public class SliderRenderer extends com.tsf.shell.f.e.f.EditModeNode {
         if (i == 0) {
             fMaxY = -this.b;
         } else {
-            i childAt = getChildAt(i - 1);
+            IRenderable childAt = getChildAt(i - 1);
             fMaxY = childAt.position().y - childAt.maxY();
         }
         float f = fMaxY;
         boolean z2 = true;
         float f2 = f;
         while (i < iNumChildren) {
-            i childAt2 = getChildAt(i);
+            IRenderable childAt2 = getChildAt(i);
             if (childAt2.visible()) {
                 float fMaxY2 = f2 - childAt2.maxY();
                 float fMinY = fMaxY2 + childAt2.minY();
@@ -163,7 +163,7 @@ public class SliderRenderer extends com.tsf.shell.f.e.f.EditModeNode {
             if (renderChildren()) {
                 int size = children().size();
                 for (int i = 0; i < size; i++) {
-                    i iVar = children().get(i);
+                    IRenderable iVar = children().get(i);
                     onDrawChildStart(iVar);
                     if (iVar.getRendererVisibility()) {
                         iVar.dispatchDraw();

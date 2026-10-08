@@ -114,8 +114,8 @@ public class SelectionIndicator extends BaseRenderable {
             this.a = i;
         }
 
-        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-        public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+        public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
             w.a();
             a.this.c.b = fVar;
             a.this.c.c = this.a;
@@ -123,20 +123,20 @@ public class SelectionIndicator extends BaseRenderable {
             a.this.d();
         }
 
-        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-        public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+        public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
             return false;
         }
 
-        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-        public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+        public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
             com.censivn.C3DEngine.C3DEngine.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();
         }
 
-        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-        public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+        public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
             com.censivn.C3DEngine.C3DEngine.a().g(a.this.c);
             a.this.c.b = null;
             a.this.e();

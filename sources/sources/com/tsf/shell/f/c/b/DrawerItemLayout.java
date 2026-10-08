@@ -4,7 +4,7 @@ import com.tsf.shell.manager.r.c.WidgetDeleteAnimationUtil;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DrawerItemLayout extends com.tsf.shell.f.e.f.EditModeNode implements com.tsf.shell.f.e.SelectionFrameLayoutItem {
+public class DrawerItemLayout extends com.tsf.shell.f.e.f.EditModeNode implements com.tsf.shell.f.e.ILayoutItem {
     public DrawerItemLayout() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(7);
@@ -14,17 +14,17 @@ public class DrawerItemLayout extends com.tsf.shell.f.e.f.EditModeNode implement
         a(arrayList, arrayList2);
     }
 
-    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+    public boolean a(com.tsf.shell.f.e.ILayoutItem fVar, float f, float f2) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public int m() {
         return 1;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public com.tsf.shell.f.e.SelectionFrameLayoutItem n() {
+    @Override // com.tsf.shell.f.e.ILayoutItem
+    public com.tsf.shell.f.e.ILayoutItem n() {
         return null;
     }
 
@@ -47,46 +47,46 @@ public class DrawerItemLayout extends com.tsf.shell.f.e.f.EditModeNode implement
         return true;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public boolean o() {
         return false;
     }
 
-    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 
-    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 
-    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    public void c(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 
-    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
         return true;
     }
 
-    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void f(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.e.ILayoutItem
+    public void f(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean h(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.e.ILayoutItem
+    public boolean h(com.tsf.shell.f.e.ILayoutItem fVar) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void g(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.e.ILayoutItem
+    public void g(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void p() {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public com.tsf.shell.f.e.SelectionFrameLayoutItem a(int i, int i2) {
+    @Override // com.tsf.shell.f.e.ILayoutItem
+    public com.tsf.shell.f.e.ILayoutItem a(int i, int i2) {
         return null;
     }
 }

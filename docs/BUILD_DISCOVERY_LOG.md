@@ -1,0 +1,353 @@
+# BUILD_DISCOVERY_LOG
+
+Per GOAL.md BUILD-DRIVEN DISCOVERY RULE: every significant change gets an entry
+recording resolved vs newly-exposed errors, newly discovered files/classes,
+root cause, changes, regressions, confidence. Error counts are javac output
+lines (cap: 100 unique + simplified duplicates); compare by *failure set*,
+not by count alone.
+
+Convention (GOAL.md TRACK M/S, 2026-10-07): each iteration below is tagged
+`[M]` (mechanical restore/log-only), `[S]` (semantic, full §10 in session
+notes), or `[M+S]` (both). Iteration 1 = `[M+S]`, iteration 2 = `[M]`,
+iteration 3 = `[M+S]` (override triage), iteration 4 = `[S]`.
+
+## Progress snapshot (after iteration 4)
+
+Error-category trajectory (unique javac errors, cap 100):
+
+| Category | Baseline | Iter1 | Iter2 | Iter3/4 |
+|---|---|---|---|---|
+| `b.f does not exist` | 86 | 0 | 0 | 0 |
+| other missing packages (`b.c/d/g`, `sprite`, `f`, …) | ~40 lines | shifted | shifting | 0 |
+| class/package clashes | 0 | 0 | 0 | 0 |
+| duplicate class | 0 | 0 | 0 | 0 |
+| `cannot find symbol` (stale refs) | 40 lines | 104 lines | 110 lines | 200 lines (=100 unique) |
+
+Read down columns, not across: the cap hides totals; movement between rows is
+the signal. All package-level absence is resolved or archived; what remains is
+the stale single-letter reference layer inside real files.
+
+Snapshot after iteration 6: `cannot find symbol` 200 → 176 lines; only remaining
+package errors are 2+2 newly surfaced (`ItemStubHelper`, `e`); artifact
+categories now visible: duplicate `variable a` (12, `WidgetItemPositioner`),
+duplicate `c()` (`WorkspaceShortcutItem`, `WidgetDrawerItemVisual`). Resolved
+families: `VObject3d`+`VObject3dContainer` (10+), `b.d` listener set,
+`SliderRenderer` pair (22 lines), `SelectionFrameLayoutItem` 33-file family
+(459 refs). Archived as phantom: 4 `_inner` dirs + nested-dup dir. Deferred:
+top-level `g/` archival, real `e/a`+`e/b` decompile gap, `f.Vertex3s`,
+singleton naming.
+
+Cumulative changes: 6 files restored from `181df6a5` (5 iter1 + 1 iter2, all
+absorbed by Opus revert commit `0b12a217` — index cleaned); 5 stale refs fixed
+in `VObject3d.java`; Opus's `EasingFunctions` rename + `*_inner` moves triaged
+and kept; 2 missed `e.a_inner` follow-throughs completed; nested-duplicate dir
+deleted; 4 phantom `_inner` dirs (11 files) archived to `archive/dex-phantom/`.
+Deferred (not guessed): `e/b_inner/a.java` superclass (moot post-archive),
+full top-level `g/` archival, real `e/a`+`e/b` decompile gap, `f.Vertex3s`,
+singleton naming, duplicate-`c()` renames + mystery-`j` (both blocked on DEX
+method-table parsing; iter9 built `/tmp/dexscan.py`, type census works,
+method walk still misaligned — bounded next task with smali `b/f/i` as
+validator). `_b`-in-DEX downgraded to UNDECIDED (27 referrers vs 0 DEX types +
+0 Frida loads; needs Prime-dex re-census or feature-process Frida). Methods established: DEX type-table census (offsets
+0x38–0x44 on the v3.9.4 APK) as ground-truth arbiter; v1 byte-match test for
+contamination; zero-referrer grep before any archive/delete.
+
+## Iteration 0 — Fresh baseline (clean HEAD)
+
+- Command: `./gradlew compileDebugJavaWithJavac -Dorg.gradle.java.home=/usr/lib/jvm/java-25-openjdk-amd64`
+- Output: `docs/build-output-baseline.txt` (733 lines), FAILED in 22s.
+- Failure set (unique ~100): `package com.censivn.C3DEngine.b.f does not exist` (86),
+  `b.f.sprite` (12), `b.c` (12), `b.d` (10), `b.g` (8), `b.f.ninepatch` (8),
+  `b.b` (6), `a` (4), `cannot find symbol` (40, downstream of the above).
+- Hotspot files: `FolderShortcutItem.java` (42), `PageItem.java` (14),
+  `DrawerShortcutItemBase.java` (12), `WidgetFreeResizeController.java` (10),
+  `VObject3d.java` (10).
+- Root cause: HEAD commit `a198fa79` deleted the deobfuscated C3DEngine internals
+  (`b/f/*`, `a/*`, `b/b/*`, … — 159 files) that `api/*`, `Home.java`,
+  `manager/*`, `f/i/*`, `f/e/*` still import. No other error category is
+  observable until this hole is addressed.
+- Confidence: HIGH (git stat + import graph + build output agree).
+
+## Iteration 1 — VObject3d.vTarget / IRenderable surface
+
+- Investigation: §10 block in session notes 2026-10-07 (VObject3d delegation
+  wrapper; v382 `b/f/j` + `b/f/l` lineage; smali `b/f/i` + `i$a` ground truth;
+  rename commits `c479ffa6`, `b4a71c11`).
+- Changes made:
+  1. Restored 5 files from `181df6a5` (revert of deletion, no renames):
+     `b/f/IRenderable.java`, `b/f/BaseRenderable.java`,
+     `b/f/IRenderableContainer.java`, `a/MatrixUtils.java`,
+     `b/b/ScreenConstants.java`.
+  2. `VObject3d.java` stale-ref fixes (all HIGH, v382 side-by-side proven):
+     `instanceof j` → `instanceof BaseRenderable`;
+     `i hittingTarget` → `IRenderable hittingTarget`;
+     `c.b(` ×4 → `MatrixUtils.b(`; `A.H/A.I` ×8 → `ScreenConstants.H/I`;
+     `i.a.a(` ×6 → `IRenderable.a.a(` (inner point-class cross product;
+     residual arg-type question logged as newly-exposed, not papered over).
+- Output: `docs/build-output-iter1.txt`, FAILED in 4s (incremental).
+- Resolved: `package b.f does not exist` 86 → 0; `VObject3d.java` 10 → 0;
+  `VObject3dContainer.java` errors → 0.
+- Newly exposed (next frontier, each a future §10 increment):
+  - `IRenderable.java` own deps: `b.f.sprite` (TextureSpriteRenderable),
+    `b.g._b` (ITweenTarget), `b.d` (MouseEventListener), `f` (Vertex3s et al.),
+    `b.g.a` (tween), plus `cannot find symbol` :41–44 (C3DEngine singleton?),
+    :82, :1481.
+  - `ScreenConstants.java`: :8/:10 (RendererImpl, GridRenderable), :81.
+  - `BaseRenderable.java`: :56.
+  - Unchanged carry-over: `b.c`/`b.d`/`b.g`/ninepatch/`f` packages still absent;
+    `FolderShortcutItem`/`PageItem`/drawer hotspots persist downstream.
+- Regressions: none observed (no previously-clean file newly fails; total lines
+  still 200 = cap, composition shifted as predicted).
+- Confidence: HIGH for restores + 5 ref fixes; MEDIUM for `IRenderable.a.a`
+  spelling (symbol resolves per smali `i$a.a(i$a,i$a)`; arg-type symmetry vs
+  parent-tree field types is the known open question for iteration 2+).
+- Rule check: no batch renames performed; no error-count claim made; restored
+  files' own errors treated as newly discovered work.
+
+## Iteration 2 — b.d.MouseEventListener (gesture listener base)
+
+- Investigation: §10 block in session notes 2026-10-07 (VMouseEventListener
+  13-gesture vocabulary; DragSortContainer/SideMenuIndicator/AddItemButton/
+  WidgetVisualRenderer/PageItemTouchHandler/FolderShortcutItem callers;
+  v382 `b/d/a` → `MouseEventListener` rename in `1b7f4093`; smali `b/d/a`
+  confirms single-class package).
+- Changes made:
+  1. Restored 1 file from `181df6a5`:
+     `b/d/MouseEventListener.java` (field `IRenderable c`, ctor, 14 empty
+     gesture callbacks `a–k`). No renames, no source edits — all callers
+     already reference the FQN.
+- Output: `docs/build-output-iter2.txt`, FAILED in 14s.
+- Resolved: `package b.d does not exist` 16 → 0; `MouseEventListener.java`,
+  `VMouseEventListener.java`, `PageItemTouchHandler.java` errors → 0.
+- Newly exposed: cap displacement only — `b.f.sprite` 16 → 24,
+  `cannot find symbol` 104 → 110 lines, `b.g._b` 2 → 4 were already known
+  from iter1's per-file list, now counted at the cap. No new root cause.
+- Regressions: none (no previously-clean file newly fails).
+- Confidence: HIGH (single file, deps `MotionEvent` + restored `IRenderable`
+  both satisfied; compiles clean).
+- Next frontier (unchanged): `b.f.sprite.TextureSpriteRenderable`,
+  `b.g._b.ITweenTarget`, `b.d`-adjacent dispatch (`a.d`), `f.Vertex3s`,
+  `b.g.a` tween types, `C3DEngine` singleton.
+
+## Iteration 3 — Override reconciliation (concurrent-editor triage) [M+S]
+
+- Situation: second agent (Opus) worked the same worktree concurrently —
+  committed `0b12a217` (full revert restoring all 159 files deleted by
+  `a198fa79`; matches iteration-1 root-cause ruling, content byte-identical to
+  my staged restores — verified via empty `git diff HEAD`), set
+  `gradle.properties` java.home to system Java 25, renamed
+  `EasingFunctions` inner `b` → `EasingInterface`, and moved clash-colliding
+  packages `e/a→e/a_inner`, `e/b→e/b_inner`, `g/a→g/a_inner`, `g/b→g/b_inner`
+  (uncommitted) with ref updates in `g/s.java`, `g/t.java`.
+- Triage verdicts (each verified, none taken on trust):
+  1. Full revert commit — KEEP (identical bytes to independent restores).
+  2. `gradle.properties` java.home fix — KEEP (build requires it; documented
+     as environment, not source).
+  3. `EasingFunctions.b` → `EasingInterface` — KEEP (inner `b` interface vs
+     three inner `b` classes genuinely ambiguous; zero external `b` refs;
+     matches `fix_clashes.py` convention).
+  4. `*_inner` moves — KEEP (package/class clashes real per post-revert log;
+     no remaining refs to old `g.a/g.b/e.b` packages; completed the missed
+     follow-through `e.a.c` → `e.a_inner.c` in `g/s.java` ×2 and
+     `g/c/a/a.java` import ×1, verified target `class c` + field `m`).
+  5. Nested `e/b_inner/b_inner/` (pure-duplicate `b.java` + corrupted `a.java`
+     extending a package) — DELETED, no referrers. [M]
+- Output: `docs/build-output-iter3.txt`, FAILED (cap 100 as 200 lines).
+- Resolved this round: clash errors → 0; duplicate-class → 0.
+- Failure set now: 198 `cannot find symbol` + 2 other. Top symbols: `i` (32),
+  `l` (11), `c` (7), `SelectionFrameLayoutItem` (6), `b` (6). Top files:
+  `e/a_inner/a.java` + `SliderRenderer.java` (14 each), `FolderShortcutItem`
+  + `DashEffectData` (12 each). These are the stale single-letter refs inside
+  moved/render files — the audit-predicted layer, now fully exposed.
+- Investigated but DEFERRED (TRACK S, not guessed):
+  `e/b_inner/a.java:4` (`extends IModelParser`, an interface). Rejected the
+  tempting `implements` swap: the class calls `super(f,f2,3,3,false)`, uses
+  undeclared fields `A/B`, and its `@Override IModelParser` methods
+  (`a_`,`h`,`n_`,`o_`) match neither `IModelParser.b()/c()` — superclass +
+  fields need smali/DEX reconstruction first. No smali counterpart under `e/b/`
+  (only interface `e/b.smali`); provenance open.
+- Regressions: none. Rule check: Opus's unattributed changes were triaged
+  per GOAL Step 0/§8 before building on them; going forward single-agent
+  ownership of the tree holds per user override.
+
+## Iteration 4 — DEX-census exposes version contamination [S]
+
+- Question: iteration-3 hotspot `e/a_inner/a.java` imports `b.l/b.r/b.v`,
+  which exist in no tree, no smali, and no v382 — where did these files come
+  from?
+- Evidence (all checked, strongest last):
+  1. v1 tree contains the same files with identical content
+     (`v1/.../e/a/a.java` ≡ tree file; tree `g/s.java` ≡ v1 `g/s.java`
+     byte-for-byte modulo later edits).
+  2. Rigorous v3.9.4 DEX type-table parse (5923 types, via struct offsets
+     0x38/0x3C/0x40/0x44 — reusable method): ZERO top-level `g/` types; ZERO
+     `e/a/*`, `e/b/*`, `g/a/*`, `g/b/*` subpackage types. Real `e/a`, `e/b`
+     are CLASSES (with inners); real tween scheduler is `b/g/*` (matches
+     Frida). Controls (`api VObject3d`, `b/f/i`, `b/d/a`) PRESENT.
+  3. Zero referrers outside the phantom cluster (grep over full tree).
+- Verdict: the 4 `_inner` dirs (11 files) plus the top-level `g/` single-letter
+  cluster are v1-era contamination, not application code. Renaming or refixing
+  them would be inventing functionality — archived instead of fixed.
+- Changes made: moved `e/a_inner`, `e/b_inner`, `g/a_inner`, `g/b_inner` →
+  `archive/dex-phantom/` (as `e-a_inner` etc.; provenance kept, outside
+  sourceSets). Also deleted stray nested `e/b_inner/b_inner/` first (pure dup
+  + package-extending corrupted variant, zero referrers).
+- Output: `docs/build-output-iter4.txt`, FAILED (cap 100 as 200 lines, now
+  100% `cannot find symbol` — package/clash/duplicate categories all at zero).
+- Resolved: phantom-file errors (`e/a_inner/a` 14 etc.) gone with the files.
+- Newly exposed (cap displacement, all real): `ItemRowItem` (12), `ItemNode`
+  (8), `MultiSelectLinePicker` (6); `SliderRenderer` still leads (14).
+- Deferred with reasons: full top-level `g/` archival (tracked files, separate
+  sized increment); real `e/a`, `e/b` classes missing from tree (decompile-from-
+  DEX gap — we hold the APK); `e/b_inner/a.java` superclass mystery now moot
+  (file archived with its cluster); `f.Vertex3s` stale import; `C3DEngine`
+  singleton naming (variant-skew caution between apksum DEX and
+  resources-Prime decompile source).
+- Regressions: none. Confidence: HIGH (DEX table + v1 byte-match + zero-referrer
+  grep triangulate; no naming inferred from identifiers alone).
+
+## Iteration 5 — SliderRenderer/BaseSliderRenderer `i` → `IRenderable` [S]
+
+- Node: `b/b/a/SliderRenderer.java` (14 lines) + `BaseSliderRenderer.java`
+  (8 lines), both real (DEX `b/b/a/*` present, 21 types).
+- Evidence: bare `i` in `@Override` positions of `IRenderableContainer`
+  (`addChild(IRenderable)`, `removeChild(IRenderable)`) and assignments from
+  `getChildAt(int)→IRenderable`, `removeChildAt(int)→IRenderable`,
+  `children()→ArrayList<IRenderable>` — same pattern as iteration 1's
+  `i hittingTarget`, now with interface-signature proof on both sides.
+- Changes: regex `\bi (?=(iVar|childAt))` → `IRenderable ` (12 + 9 replacements,
+  diff-verified type-positions only; `int i`, loop vars untouched). Both files
+  already imported `IRenderable`.
+- Output: `docs/build-output-iter5.txt`, FAILED (cap).
+- Resolved: both files CLEAN (22 lines).
+- Newly exposed: `ItemRowItem` 12 → 24 lines (cap displacement); first
+  duplicate-method artifact `c() already defined in WidgetDrawerItemVisual`
+  (audit-predicted category, new to the failure set).
+- Regressions: none. Confidence: HIGH.
+
+## Iteration 6 — `SelectionFrameLayoutItem` → `ILayoutItem` (33 files) [S]
+
+- Node: FQN `com.tsf.shell.f.e.SelectionFrameLayoutItem` referenced 459× in
+  33 files; no such file exists anywhere in tree or DEX.
+- Evidence: (1) `f/e/ILayoutItem.java` declares exactly the 15-method set used
+  at every reference site (`a(fVar,f,f)`, `m/n/o/p`, `b–h`, `a(fVar)`,
+  `a(int,int)`), zero competitors; (2) rename ledger:
+  `f/e/F.java` → `ILayoutItem.java` (conf 93, commit `7e0852cf`); (3) DEX has
+  no `SelectionFrame*` type — the old FQN is a stale pre-rename spelling.
+- Changes: literal single-string FQN replacement (no regex, no ambiguity
+  surface), 459 occurrences, residual grep confirms zero remaining.
+- Output: `docs/build-output-iter6.txt`, FAILED (cap).
+- Resolved: `ItemRowItem`/`ItemLayoutItem`/`ItemNode` and the whole 33-file
+  family CLEAN; `cannot find symbol` 200 → 176 lines.
+- Newly exposed (decompiler-artifact layer, audit-predicted): `variable a
+  already defined in WidgetItemPositioner` (12, new leader file at 24 lines),
+  duplicate `c()` in `WorkspaceShortcutItem` + `WidgetDrawerItemVisual`,
+  `package ItemStubHelper/e does not exist`.
+- Regressions: none. Confidence: HIGH.
+- Standing note for Opus's critique: this IS the legitimate batch case — one
+  literal string, one verified target, machine-checkable residual. The
+  prohibition stands for regex/guess batches, not this.
+
+## Iteration 7 — WidgetItemPositioner twin-file reconstruction [S]
+
+- Node: `f/i/_b/d/WidgetItemPositioner.java` (24 lines: dup field + 7 stale
+  symbols). Method: parallel-twin comparison with `f/i/b/d/FolderItemPositioner`
+  (identical imports, field block, usage line numbers within ±2).
+- Fixes (all HIGH, twin-verified):
+  1. Deleted 6× duplicated `public TextureElement a;` (lines 74–79; single
+     ctor, all usages int-arithmetic served by `int a` line 50). Left the 7×
+     duplicated `WidgetItemPositioner();` statements alone (legal Java, and
+     removing them changes runtime recursion behaviour — flagged, not touched).
+  2. `implements ItemStubHelper.a` → `implements WindowManager.a`
+     (`ItemStubHelper` has no inner `a`; file already imports `WindowManager`;
+     line 572 `@Override WindowManager.a` with exact-signature method proves).
+  3. `static i N/O` → `ScrollingIndicator` (same-package ctor call line 188).
+  4. `h I` → `WidgetItemIndicator` (parallel + usage set).
+  5. `n J` → `EmptyRenderable` (ctor `new EmptyRenderable()` line 250; import
+     added — file lacked it).
+  6. `f W` + `f e()` → `WidgetItemBackground` (ctor line 229; `e()` returns W;
+     parallel-twin line-number match across 7 usage sites).
+- Output: `docs/build-output-iter7.txt`, FAILED (cap).
+- Resolved: file CLEAN (24 lines). `cannot find symbol` 176 → 190 lines is
+  cap displacement (previously hidden errors now counted), not regression.
+- Failure set now: 190 stale-symbol + 8 duplicate-`c()` lines + 2 `package e`.
+  Next nodes: duplicate-`c()` pair (new artifact category),
+  `DashEffectData` (12), `Home` (8).
+- Regressions: none. Confidence: HIGH (twin-file triangulation on every fix).
+
+## Iteration 8 — duplicate-`c()` collisions: investigated, fix DEFERRED [S]
+
+- Node: `WidgetDrawerItemVisual` (`String c()` ×2 + `void c()`) and
+  `WorkspaceShortcutItem` (`TextureElement`/`CharSequence`/`void c()`).
+- Evidence gathered:
+  1. Supertype contracts: `PageItem`/`ShortcutItem` declare only `void c()`;
+     `DrawerButtonElement` declares NO `c()` — both `String c()` @Override
+     claims are bogus; only `void c()` (with `super.c()` chain) is the true
+     override. Bodies: title-getter (`this.a.e`), `r()`-delegate,
+     texture-getter (`this.u`), `K().title`-getter.
+  2. Caller search: ZERO in-tree value-callers of any colliding getter
+     (all `.c()` hits resolve to other receivers: `ShellBindContext`,
+     the `FolderShortcutItem.l` static field, `WidgetItemAnimation`'s
+     mystery-`j jVar`, `ToggleAction.a`).
+  3. DEX method-table parsing built (class_defs walk works, 4960 classes) but
+     unusable by session-given names. Structural matching (find triple-`c()`
+     classes, match by sibling methods) is the remaining path; queued.
+  4. Incidental (queued for the `j` node): `WidgetItemAnimation:36`
+     `j jVar = WorkspaceShortcutItem.l` (typed `j`, assigned
+     `WidgetItemPositioner`, `.c()` returns folder-data) — `j` is a
+     load-bearing unknown touching many files; NOT renamed on this evidence.
+  5. `_b`-in-DEX question partially answered: `f/i/_b/` has 0 DEX types AND 0
+     Frida-loaded classes, but 27 in-tree referrers — real-but-unloaded
+     (feature-process?) vs session-fabricated is UNDECIDED; no archive action
+     taken on `_b` (contrast iteration-4 phantoms, which had zero referrers).
+- Decision: NO code change. Any rename now would be a LOW-confidence mapping
+  promoted without callers or DEX truth to check it against — exactly what
+  GOAL forbids. Compilation of these two files stays red pending the
+  structural DEX match.
+- Confidence in the deferral: HIGH (evidence complete, conclusion explicit).
+
+## Iteration 10 — dexscan fixed; `getText` twin-precedent; trio stays deferred [M+S]
+
+- Tool: `scripts/dex_method_scan.py` promoted from `/tmp/dexscan.py`. Three
+  parser bugs fixed against smali ground truth: field/method uleb arity,
+  method_idx delta accumulation, class_data counts-first ordering, correct
+  header offsets (`mo`=0x5C, `po`=0x4C), null-`class_data_off` guard.
+  Validated: `b/f/i` method list, `b/d/a` 1+1+14 shape, `--multic` full sweep.
+- Twin-precedent resolution (HIGH): `WidgetDrawerItemVisual` line-110
+  `String c()` (title body, bogus `@Override PageItem`) → `getText()`,
+  byte-identical to real twin `DrawerItemVisual.getText()` (which carries NO
+  annotation — mirrored exactly). Line-115 `String c()` DELETED on two
+  independent grounds: duplicate erasure AND dangling callee (`r()`
+  undeclared in file). Zero in-tree value-callers either way. File CLEAN.
+- Trio (`WorkspaceShortcutItem` TextureElement/CharSequence/void `c()`)
+  stays deferred: `void c()` proven true override; folder twin
+  (`FolderShortcutItem`, DEX `f/i/b/d/b` with `c→{I,b,V}` triple) carries NO
+  value-getters at all, so no twin name exists to mirror; zero callers to
+  satisfy; DEX identity of the widget twin unknown (structural hunt queued).
+  Renaming now would mint API names from nothing — declined per GOAL.
+- Output: `docs/build-output-iter10.txt`. Regressions: none.
+
+## Iteration 9 — DEX structural scanner: tool partial, verdicts refined [S]
+
+- Built `/tmp/dexscan.py` (type-table census WORKS — reused for `b/b/a`,
+  `g/`, `e/*`, `f/i/*` verdicts; method-table walk NOT working yet:
+  found and fixed field/method uleb-arity split and method_idx delta
+  accumulation, still misaligned on real classes — root cause open).
+- Findings that stand without method parsing:
+  1. Underscore packages (`_a`, `_b`, `_c`, `_d`, `_inner`) are session
+     clash-rename artifacts — invisible to DEX-name checks by construction.
+     The iteration-4 phantom verdict is unaffected (those files had zero
+     referrers AND zero plausibility); but `f/i/_b/` (27 in-tree referrers,
+     0 DEX types, 0 Frida loads) is now explicitly UNDECIDED rather than
+     phantom-suspect: real-but-unloaded (feature process), Prime-vs-Free
+     edition skew (tree cites resources-Prime dex; census used apksum Free
+     dex), or session-fabricated split of `f/i/b/` (114 real types) are all
+     live hypotheses. NO archive action on `_b`; recorded test: recover
+     resources-Prime classes.dex and re-run census, or capture Frida in
+     widget-picker flow.
+  2. `f/f/` (316 dex types), `f/i/b/` (114), `f/e/` (227), `Home`,
+     `ShellApplication` all present — the drawer/page core is real; only the
+     underscore splits and top-level `g/` fail the census.
+  3. Triple-`c()` structural match is blocked on the method parser; next
+     turn finishes it (bounded: validate against smali-known `b/f/i` first —
+     smali lists ~60 methods as ground truth for the walk).

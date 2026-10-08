@@ -1,4 +1,4 @@
-package com.censivn.C3DEngine.e.AbstractModelParser;
+package com.censivn.C3DEngine.e.a_inner;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.api.element.PositionNumber3d;
@@ -6,7 +6,7 @@ import com.censivn.C3DEngine.api.primitives.button.VButtonItem;
 import com.censivn.C3DEngine.b.l;
 
 /* loaded from: classes.dex */
-public final class c implements com.censivn.C3DEngine.g.b.a {
+public final class c implements com.censivn.C3DEngine.g.b_inner.a {
     public float A;
     public float B;
     public Number3d D;
@@ -16,7 +16,7 @@ public final class c implements com.censivn.C3DEngine.g.b.a {
     public int H;
     private a I;
     private VButtonItem J;
-    private com.censivn.C3DEngine.g.a.c K;
+    private com.censivn.C3DEngine.g.a_inner.c K;
     private float L;
     private float M;
     public int a;
@@ -245,13 +245,13 @@ public final class c implements com.censivn.C3DEngine.g.b.a {
         return this.O / com.censivn.C3DEngine.a.GLSurfaceViewWrapper;
     }
 
-    @Override // com.censivn.C3DEngine.g.b.a
-    public final com.censivn.C3DEngine.g.a.c ay() {
+    @Override // com.censivn.C3DEngine.g.b_inner.a
+    public final com.censivn.C3DEngine.g.a_inner.c ay() {
         return this.K;
     }
 
-    @Override // com.censivn.C3DEngine.g.b.a
-    public final void a(com.censivn.C3DEngine.g.a.c cVar) {
+    @Override // com.censivn.C3DEngine.g.b_inner.a
+    public final void a(com.censivn.C3DEngine.g.a_inner.c cVar) {
         this.K = cVar;
     }
 }

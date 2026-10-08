@@ -1,4 +1,4 @@
-package com.censivn.C3DEngine.e.AbstractModelParser;
+package com.censivn.C3DEngine.e.a_inner;
 
 import com.censivn.C3DEngine.api.element.Color4;
 import com.censivn.C3DEngine.b.l;

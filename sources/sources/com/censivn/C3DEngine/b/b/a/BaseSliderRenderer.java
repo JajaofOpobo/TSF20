@@ -18,21 +18,21 @@ public class BaseSliderRenderer extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public void addChild(i iVar) {
+    public void addChild(IRenderable iVar) {
         super.addChild(iVar);
         onChildMeasure(iVar);
         updateChildPosition(numChildren() - 1, false);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
-    public void addChildAt(i iVar, int i) {
+    public void addChildAt(IRenderable iVar, int i) {
         super.addChildAt(iVar, i);
         onChildMeasure(iVar);
         updateChildPosition(i, false);
     }
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable, com.censivn.C3DEngine.b.f.IRenderableContainer
-    public boolean removeChild(i iVar) {
+    public boolean removeChild(IRenderable iVar) {
         boolean zRemoveChild = super.removeChild(iVar);
         if (zRemoveChild) {
             onChildMeasure(iVar);
@@ -42,13 +42,13 @@ public class BaseSliderRenderer extends BaseRenderable {
 
     @Override // com.censivn.C3DEngine.b.f.BaseRenderable
     public IRenderable removeChildAt(int i) {
-        i iVarRemoveChildAt = super.removeChildAt(i);
+        IRenderable iVarRemoveChildAt = super.removeChildAt(i);
         onChildMeasure(iVarRemoveChildAt);
         return iVarRemoveChildAt;
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
-    public void onChildMeasure(i iVar) {
+    public void onChildMeasure(IRenderable iVar) {
         this.isAnimationRunning = true;
         updateBorder();
     }
@@ -58,7 +58,7 @@ public class BaseSliderRenderer extends BaseRenderable {
         int iNumChildren = numChildren();
         float fMaxX2 = 0.0f;
         for (int i = 0; i < iNumChildren; i++) {
-            i childAt = getChildAt(i);
+            IRenderable childAt = getChildAt(i);
             if (childAt.visible()) {
                 fMaxX2 += childAt.maxX() - childAt.minX();
             }
@@ -79,12 +79,12 @@ public class BaseSliderRenderer extends BaseRenderable {
         if (i == 0) {
             fMaxX = this.mMarginDistance;
         } else {
-            i childAt = getChildAt(i - 1);
+            IRenderable childAt = getChildAt(i - 1);
             fMaxX = childAt.maxX() + childAt.position().x;
         }
         boolean z2 = true;
         while (i < iNumChildren) {
-            i childAt2 = getChildAt(i);
+            IRenderable childAt2 = getChildAt(i);
             if (childAt2.visible()) {
                 float fMinX = fMaxX - childAt2.minX();
                 fMaxX = childAt2.maxX() + fMinX;
@@ -128,7 +128,7 @@ public class BaseSliderRenderer extends BaseRenderable {
             if (renderChildren()) {
                 int size = children().size();
                 for (int i = 0; i < size; i++) {
-                    i iVar = children().get(i);
+                    IRenderable iVar = children().get(i);
                     onDrawChildStart(iVar);
                     if (iVar.getRendererVisibility()) {
                         iVar.dispatchDraw();

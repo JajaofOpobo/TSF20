@@ -1,4 +1,4 @@
-package com.censivn.C3DEngine.g.a;
+package com.censivn.C3DEngine.g.a_inner;
 
 import android.os.Handler;
 import com.censivn.C3DEngine.g.r;
@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.g.u;
 /* loaded from: classes.dex */
 public final class d implements c {
     private u a;
-    private com.censivn.C3DEngine.g.b.a b;
+    private com.censivn.C3DEngine.g.b_inner.a b;
     private int c;
     private long d;
     private long e;
@@ -20,7 +20,7 @@ public final class d implements c {
     private Runnable k;
     private r l;
 
-    public d(com.censivn.C3DEngine.g.b.a aVar, int i, u uVar) {
+    public d(com.censivn.C3DEngine.g.b_inner.a aVar, int i, u uVar) {
         this.b = aVar;
         uVar.a(aVar);
         aVar.a(this);
@@ -29,12 +29,12 @@ public final class d implements c {
         this.l = uVar.c();
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final u a() {
         return this.a;
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final void c() {
         if (this.i == this.h || this.i == this.g) {
             if (this.i == this.g) {
@@ -66,32 +66,32 @@ public final class d implements c {
         }
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final void d() {
         this.j = null;
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final Handler e() {
         return this.j;
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final void f() {
         this.k = null;
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final Runnable g() {
         return this.k;
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final void h() {
         this.i = this.f;
     }
 
-    @Override // com.censivn.C3DEngine.g.a.c
+    @Override // com.censivn.C3DEngine.g.a_inner.c
     public final void i() {
         this.i = this.g;
     }

@@ -37,7 +37,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventList
         this.b = iVar.getMouseEventListener();
         this.e = new com.tsf.shell.manager.d.HitTargetManager.C0127a() { // from class: com.tsf.shell.f.i.b.d.FolderTouchHandler.1
             @Override // com.tsf.shell.manager.d.com.tsf.shell.manager.d.HitTargetManager.C0127a
-            public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            public boolean a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 return fVar instanceof FolderItemState.b;
             }
         };
@@ -163,7 +163,7 @@ public class FolderTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventList
             }
             final float[] fArrA = x.a(motionEvent2, l);
             if (!this.d) {
-                this.e.a((com.tsf.shell.f.e.SelectionFrameLayoutItem) this.c, motionEvent2);
+                this.e.a((com.tsf.shell.f.e.ILayoutItem) this.c, motionEvent2);
             }
             this.n = motionEvent2.getX();
             this.o = motionEvent2.getY();

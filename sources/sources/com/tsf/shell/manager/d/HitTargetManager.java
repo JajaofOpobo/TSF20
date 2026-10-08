@@ -1,7 +1,7 @@
 package com.tsf.shell.manager.d;
 
 import android.view.MotionEvent;
-import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+import com.tsf.shell.f.e.ILayoutItem;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 

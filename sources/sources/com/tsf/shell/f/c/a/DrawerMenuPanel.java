@@ -68,7 +68,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         A();
     }
 
-    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.ILayoutItem
     public boolean a() {
         return this.r.e() && this.r.r();
     }
@@ -551,8 +551,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     private void d(com.tsf.shell.f.i.PageItem bVar) {
     }
 
-    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.ILayoutItem
+    public boolean a(com.tsf.shell.f.e.ILayoutItem fVar, float f, float f2) {
         int iA;
         if ((fVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase) || (fVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
             if (!this.G && children().size() != 0 && (iA = a(f, f2, this.C)) != -1 && iA != -2 && (getChildAt(iA) instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem)) {
@@ -562,7 +562,7 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         return true;
     }
 
-    private void i(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    private void i(com.tsf.shell.f.e.ILayoutItem fVar) {
         this.H.d(fVar);
         this.H = null;
         c((com.tsf.shell.f.i.PageItem) fVar);
@@ -580,8 +580,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.ILayoutItem
+    public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
         this.G = true;
         com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
         c(bVar);
@@ -596,8 +596,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.ILayoutItem
+    public void c(com.tsf.shell.f.e.ILayoutItem fVar) {
         int size;
         int iA = a((i) fVar, this.C);
         if (iA == -1) {
@@ -626,8 +626,8 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         }
     }
 
-    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.ILayoutItem
+    public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
         this.G = false;
         if (this.H != null) {
             i(fVar);
@@ -636,13 +636,13 @@ public class DrawerMenuPanel extends DrawerItemView implements com.tsf.shell.f.i
         removeChild(this.o);
     }
 
-    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.ILayoutItem
+    public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
         return fVar instanceof com.tsf.shell.f.i.ShortcutItem;
     }
 
-    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.a.DrawerItemView, com.tsf.shell.f.e.ILayoutItem
+    public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
         boolean zB;
         this.G = false;
         com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;

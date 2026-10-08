@@ -486,7 +486,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
         this.h = z;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public boolean a() {
         return this.h;
     }
@@ -495,48 +495,48 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
         this.i = z;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public boolean o() {
         return this.i;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public int m() {
         return 0;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public ILayoutItem n() {
         return this.j;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public boolean a(ILayoutItem fVar, float f, float f2) {
         return false;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void c(ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void e(ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public boolean b(ILayoutItem fVar) {
         return true;
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void d(ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void a(ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void f(ILayoutItem fVar) {
         if (this.j != fVar) {
             ItemInfo();
@@ -546,7 +546,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
         this.j.c(this);
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public boolean h(ILayoutItem fVar) {
         if (fVar == null) {
             return false;
@@ -554,7 +554,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
         return fVar.b(this);
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void g(ILayoutItem fVar) {
         f(fVar);
         fVar.e(this);
@@ -564,7 +564,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
     public void af() {
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public void p() {
         if (this.j != null) {
             this.j.d(this);
@@ -573,7 +573,7 @@ public class PageItem extends BaseRenderable implements ILayoutItem, IItemShell 
         }
     }
 
-    @Override // com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.e.ILayoutItem
     public ILayoutItem a(int i, int i2) {
         return a(i, i2, true);
     }

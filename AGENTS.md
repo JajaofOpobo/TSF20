@@ -1,4 +1,12 @@
-# Deobfuscation Progress — FULLY COMPLETE
+# Deobfuscation Progress — filenames complete (with caveats, see note)
+
+> **Status note 2026-10-07.** "Fully complete" below means **filenames** under
+> `com/tsf/shell` (0 single-letter `.java` at HEAD) — NOT packages, inner
+> classes, methods, or fields. See `docs/DEOBFUSCATION_CLAIM_AUDIT.md`
+> (156 single-letter package segments, 348 single-letter inner types remain).
+> Separately, HEAD `a198fa79` deleted 159 C3DEngine internal files the tree
+> still imports; restoration from `181df6a5` is in progress and logged in
+> `docs/BUILD_DISCOVERY_LOG.md`. Workflow authority: `GOAL.md`.
 
 ## Goal
 **100% of single-letter obfuscated files across the entire project have been renamed to meaningful names.** Zero single-letter Java files remain.

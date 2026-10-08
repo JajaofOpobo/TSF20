@@ -2,9 +2,9 @@ package com.censivn.C3DEngine.b.g;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class EasingFunctions {
-    public static final EasingFunctions.EasingInterface a = new b.C();
-    public static final EasingFunctions.EasingInterface b = new b.C0032a();
-    public static final EasingFunctions.EasingInterface c = new b.C0033b();
+    public static final EasingFunctions.EasingInterface a = new EasingInterface.C();
+    public static final EasingFunctions.EasingInterface b = new EasingInterface.C0032a();
+    public static final EasingFunctions.EasingInterface c = new EasingInterface.C0033b();
     public static final EasingFunctions.EasingInterface d = new C0030a.C0031a();
     public static final EasingFunctions.EasingInterface e = new C0030a.C();
     public static final EasingFunctions.EasingInterface f = new C0030a.b();
@@ -18,7 +18,7 @@ public class EasingFunctions {
     public static final EasingFunctions.EasingInterface n = new d.C();
     public static final EasingFunctions.EasingInterface o = new f();
 
-    public static interface b {
+    public static interface EasingInterface {
         float a(float f);
 
         /* JADX INFO: renamed from: com.censivn.C3DEngine.b.g.EasingFunctions$b$a, reason: collision with other inner class name */

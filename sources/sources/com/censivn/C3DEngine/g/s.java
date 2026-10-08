@@ -12,7 +12,7 @@ public final class s {
     private static ArrayList d = new ArrayList();
     private static ArrayList e = new ArrayList();
 
-    public static void a(com.censivn.C3DEngine.g.a.c cVar) {
+    public static void a(com.censivn.C3DEngine.g.a_inner.c cVar) {
         if (c) {
             d.add(cVar);
         } else {
@@ -21,7 +21,7 @@ public final class s {
         }
     }
 
-    public static void b(com.censivn.C3DEngine.g.a.c cVar) {
+    public static void b(com.censivn.C3DEngine.g.a_inner.c cVar) {
         if (c) {
             e.add(cVar);
         } else {
@@ -34,7 +34,7 @@ public final class s {
         if (b.size() > 0) {
             Enumeration elements = b.elements();
             while (elements.hasMoreElements()) {
-                com.censivn.C3DEngine.g.a.c cVar = (com.censivn.C3DEngine.g.a.c) elements.nextElement();
+                com.censivn.C3DEngine.g.a_inner.c cVar = (com.censivn.C3DEngine.g.a_inner.c) elements.nextElement();
                 if (cVar != null) {
                     cVar.c();
                 }
@@ -43,10 +43,10 @@ public final class s {
         }
         c = false;
         while (!d.isEmpty()) {
-            a((com.censivn.C3DEngine.g.a.c) d.remove(0));
+            a((com.censivn.C3DEngine.g.a_inner.c) d.remove(0));
         }
         while (!e.isEmpty()) {
-            b((com.censivn.C3DEngine.g.a.c) e.remove(0));
+            b((com.censivn.C3DEngine.g.a_inner.c) e.remove(0));
         }
     }
 
@@ -54,7 +54,7 @@ public final class s {
         if (b.size() > 0) {
             Enumeration elements = b.elements();
             while (elements.hasMoreElements()) {
-                com.censivn.C3DEngine.g.a.c cVar = (com.censivn.C3DEngine.g.a.c) elements.nextElement();
+                com.censivn.C3DEngine.g.a_inner.c cVar = (com.censivn.C3DEngine.g.a_inner.c) elements.nextElement();
                 if (cVar != null) {
                     cVar.h();
                 }
@@ -67,7 +67,7 @@ public final class s {
         if (b.size() > 0) {
             Enumeration elements = b.elements();
             while (elements.hasMoreElements()) {
-                com.censivn.C3DEngine.g.a.c cVar = (com.censivn.C3DEngine.g.a.c) elements.nextElement();
+                com.censivn.C3DEngine.g.a_inner.c cVar = (com.censivn.C3DEngine.g.a_inner.c) elements.nextElement();
                 if (cVar != null) {
                     cVar.i();
                 }
@@ -76,18 +76,18 @@ public final class s {
         }
     }
 
-    public static void a(com.censivn.C3DEngine.g.b.a aVar, int i, u uVar) {
-        com.censivn.C3DEngine.g.a.c cVar;
+    public static void a(com.censivn.C3DEngine.g.b_inner.a aVar, int i, u uVar) {
+        com.censivn.C3DEngine.g.a_inner.c cVar;
         if (aVar != null) {
             if (uVar.c() == null) {
                 uVar.a(a.l);
             }
             if (aVar instanceof com.censivn.C3DEngine.b.r) {
-                cVar = new com.censivn.C3DEngine.g.a.b((com.censivn.C3DEngine.b.r) aVar, i, uVar);
-            } else if (aVar instanceof com.censivn.C3DEngine.g.b.b) {
-                cVar = new com.censivn.C3DEngine.g.a.d((com.censivn.C3DEngine.g.b.b) aVar, i, uVar);
-            } else if (aVar instanceof com.censivn.C3DEngine.e.a.c) {
-                cVar = new com.censivn.C3DEngine.g.a.a((com.censivn.C3DEngine.e.a.c) aVar, i, uVar);
+                cVar = new com.censivn.C3DEngine.g.a_inner.b((com.censivn.C3DEngine.b.r) aVar, i, uVar);
+            } else if (aVar instanceof com.censivn.C3DEngine.g.b_inner.b) {
+                cVar = new com.censivn.C3DEngine.g.a_inner.d((com.censivn.C3DEngine.g.b_inner.b) aVar, i, uVar);
+            } else if (aVar instanceof com.censivn.C3DEngine.e.a_inner.c) {
+                cVar = new com.censivn.C3DEngine.g.a_inner.a((com.censivn.C3DEngine.e.a_inner.c) aVar, i, uVar);
             } else {
                 cVar = null;
             }
@@ -101,8 +101,8 @@ public final class s {
         }
     }
 
-    public static void a(com.censivn.C3DEngine.g.b.a aVar) {
-        com.censivn.C3DEngine.g.a.c ay;
+    public static void a(com.censivn.C3DEngine.g.b_inner.a aVar) {
+        com.censivn.C3DEngine.g.a_inner.c ay;
         if (aVar != null && (ay = aVar.ay()) != null) {
             b(ay);
             if (ay.e() != null) {
@@ -114,16 +114,16 @@ public final class s {
         }
     }
 
-    public static void b(com.censivn.C3DEngine.g.b.a aVar) {
-        com.censivn.C3DEngine.g.a.c ay;
+    public static void b(com.censivn.C3DEngine.g.b_inner.a aVar) {
+        com.censivn.C3DEngine.g.a_inner.c ay;
         if (aVar != null && (ay = aVar.ay()) != null) {
             ay.h();
             b(ay);
         }
     }
 
-    public static void c(com.censivn.C3DEngine.g.b.a aVar) {
-        com.censivn.C3DEngine.g.a.c ay;
+    public static void c(com.censivn.C3DEngine.g.b_inner.a aVar) {
+        com.censivn.C3DEngine.g.a_inner.c ay;
         if (aVar != null && (ay = aVar.ay()) != null) {
             ay.i();
             a(ay);

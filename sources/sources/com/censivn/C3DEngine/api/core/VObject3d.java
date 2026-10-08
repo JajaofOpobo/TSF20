@@ -154,7 +154,7 @@ public class VObject3d implements VTweenTarget {
     }
 
     public VObject3dContainer parent() {
-        if (this.vTarget.parent() instanceof j) {
+        if (this.vTarget.parent() instanceof BaseRenderable) {
             return (VObject3dContainer) ((IRenderable) this.vTarget.parent()).getVirtualObject();
         }
         return null;
@@ -244,34 +244,34 @@ public class VObject3d implements VTweenTarget {
         if (this.vTarget.mouseAreaDynamic()) {
             this.vTarget.calAABB();
         }
-        c.b(this.vTarget.TEMP_AABB_TL, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_TL, 0);
-        c.b(this.vTarget.TEMP_AABB_TR, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_TR, 0);
-        c.b(this.vTarget.TEMP_AABB_BL, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_BL, 0);
-        c.b(this.vTarget.TEMP_AABB_BR, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_BR, 0);
-        float f3 = (this.vTarget.TEMP_AABB_TL[0] / this.vTarget.TEMP_AABB_TL[3]) * A.H;
-        float f4 = (this.vTarget.TEMP_AABB_TL[1] / this.vTarget.TEMP_AABB_TL[3]) * A.I;
-        float f5 = (this.vTarget.TEMP_AABB_TR[0] / this.vTarget.TEMP_AABB_TR[3]) * A.H;
-        float f6 = (this.vTarget.TEMP_AABB_TR[1] / this.vTarget.TEMP_AABB_TR[3]) * A.I;
-        float f7 = (this.vTarget.TEMP_AABB_BL[0] / this.vTarget.TEMP_AABB_BL[3]) * A.H;
-        float f8 = (this.vTarget.TEMP_AABB_BL[1] / this.vTarget.TEMP_AABB_BL[3]) * A.I;
-        float f9 = (this.vTarget.TEMP_AABB_BR[0] / this.vTarget.TEMP_AABB_BR[3]) * A.H;
-        float f10 = (this.vTarget.TEMP_AABB_BR[1] / this.vTarget.TEMP_AABB_BR[3]) * A.I;
+        MatrixUtils.b(this.vTarget.TEMP_AABB_TL, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_TL, 0);
+        MatrixUtils.b(this.vTarget.TEMP_AABB_TR, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_TR, 0);
+        MatrixUtils.b(this.vTarget.TEMP_AABB_BL, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_BL, 0);
+        MatrixUtils.b(this.vTarget.TEMP_AABB_BR, 0, this.vTarget.AABB_MATRIX, 0, this.vTarget.AABB_BR, 0);
+        float f3 = (this.vTarget.TEMP_AABB_TL[0] / this.vTarget.TEMP_AABB_TL[3]) * ScreenConstants.H;
+        float f4 = (this.vTarget.TEMP_AABB_TL[1] / this.vTarget.TEMP_AABB_TL[3]) * ScreenConstants.I;
+        float f5 = (this.vTarget.TEMP_AABB_TR[0] / this.vTarget.TEMP_AABB_TR[3]) * ScreenConstants.H;
+        float f6 = (this.vTarget.TEMP_AABB_TR[1] / this.vTarget.TEMP_AABB_TR[3]) * ScreenConstants.I;
+        float f7 = (this.vTarget.TEMP_AABB_BL[0] / this.vTarget.TEMP_AABB_BL[3]) * ScreenConstants.H;
+        float f8 = (this.vTarget.TEMP_AABB_BL[1] / this.vTarget.TEMP_AABB_BL[3]) * ScreenConstants.I;
+        float f9 = (this.vTarget.TEMP_AABB_BR[0] / this.vTarget.TEMP_AABB_BR[3]) * ScreenConstants.H;
+        float f10 = (this.vTarget.TEMP_AABB_BR[1] / this.vTarget.TEMP_AABB_BR[3]) * ScreenConstants.I;
         this.vTarget.AABB_P1.a(f - f3, f2 - f4);
         this.vTarget.AABB_P2.a(f - f5, f2 - f6);
         this.vTarget.AABB_P3.a(f - f7, f2 - f8);
         this.vTarget.AABB_P4.a(f - f9, f2 - f10);
-        float fA = i.a.a(this.vTarget.AABB_P1, this.vTarget.AABB_P2);
-        float fA2 = i.a.a(this.vTarget.AABB_P2, this.vTarget.AABB_P3);
-        float fA3 = i.a.a(this.vTarget.AABB_P3, this.vTarget.AABB_P1);
+        float fA = IRenderable.a.a(this.vTarget.AABB_P1, this.vTarget.AABB_P2);
+        float fA2 = IRenderable.a.a(this.vTarget.AABB_P2, this.vTarget.AABB_P3);
+        float fA3 = IRenderable.a.a(this.vTarget.AABB_P3, this.vTarget.AABB_P1);
         if (fA < 0.0f && fA2 < 0.0f && fA3 < 0.0f) {
             return true;
         }
         if (this.vTarget.doubleSidedClickEnabled() && fA > 0.0f && fA2 > 0.0f && fA3 > 0.0f) {
             return true;
         }
-        float fA4 = i.a.a(this.vTarget.AABB_P2, this.vTarget.AABB_P3);
-        float fA5 = i.a.a(this.vTarget.AABB_P3, this.vTarget.AABB_P4);
-        float fA6 = i.a.a(this.vTarget.AABB_P4, this.vTarget.AABB_P2);
+        float fA4 = IRenderable.a.a(this.vTarget.AABB_P2, this.vTarget.AABB_P3);
+        float fA5 = IRenderable.a.a(this.vTarget.AABB_P3, this.vTarget.AABB_P4);
+        float fA6 = IRenderable.a.a(this.vTarget.AABB_P4, this.vTarget.AABB_P2);
         if (fA4 <= 0.0f || fA5 <= 0.0f || fA6 <= 0.0f) {
             return this.vTarget.doubleSidedClickEnabled() && fA4 < 0.0f && fA5 < 0.0f && fA6 < 0.0f;
         }
@@ -311,7 +311,7 @@ public class VObject3d implements VTweenTarget {
     }
 
     public VObject3d getHittingTarget(float f, float f2, boolean z) {
-        i hittingTarget = this.vTarget.getHittingTarget(f, f2, z);
+        IRenderable hittingTarget = this.vTarget.getHittingTarget(f, f2, z);
         if (hittingTarget != null) {
             return hittingTarget.getVirtualObject();
         }

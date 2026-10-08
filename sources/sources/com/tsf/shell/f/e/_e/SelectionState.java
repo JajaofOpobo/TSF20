@@ -71,20 +71,20 @@ public class SelectionState {
             }
         };
         a aVar = new SelectionIndicator(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.2
-            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 super.a(fVar);
                 w.a(3);
                 com.tsf.shell.manager.app.Notifier.a(-52736);
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
                 return true;
             }
 
-            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
                 super.e(fVar);
                 final com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
                 ArrayList<com.tsf.shell.f.i.PageItem> arrayList = new ArrayList();
@@ -121,8 +121,8 @@ public class SelectionState {
                 }
             }
 
-            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
                 super.d(fVar);
                 ((com.tsf.shell.f.i.PageItem) fVar).clearDefaultColor();
                 com.tsf.shell.manager.app.Notifier.a();
@@ -136,27 +136,27 @@ public class SelectionState {
         this.g.addChild(aVar);
         this.g.setAABBPX(aVar.minX(), aVar.minY(), aVar.minZ(), aVar.maxX(), aVar.maxY(), aVar.maxZ());
         b bVar = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.3
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 w.a(3);
                 c.this.m.b = fVar;
                 com.censivn.C3DEngine.C3DEngine.a().b(c.this.m, 400L);
                 com.tsf.shell.manager.app.Notifier.a(-16728065);
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
                 com.censivn.C3DEngine.C3DEngine.a().g(c.this.m);
                 c.this.m.b = null;
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
                 com.censivn.C3DEngine.C3DEngine.a().g(c.this.m);
                 c.this.m.b = null;
                 com.tsf.shell.manager.app.Notifier.a();
@@ -170,8 +170,8 @@ public class SelectionState {
         this.h.addChild(bVar);
         this.h.setAABBPX(bVar.minX(), bVar.minY(), bVar.minZ(), bVar.maxX(), bVar.maxY(), bVar.maxZ());
         b bVar2 = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.4
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 if (!com.tsf.shell.manager.app.StateHub.n().c()) {
                     com.tsf.shell.manager.app.StateHub.n().d();
                     c.this.c();
@@ -180,17 +180,17 @@ public class SelectionState {
                 }
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
                 com.tsf.shell.manager.app.Notifier.a();
             }
         };
@@ -202,21 +202,21 @@ public class SelectionState {
         this.i.addChild(bVar2);
         this.i.setAABBPX(bVar2.minX(), bVar2.minY(), bVar2.minZ(), bVar2.maxX(), bVar2.maxY(), bVar2.maxZ());
         a aVar2 = new SelectionIndicator(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.5
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
             public boolean a() {
                 return super.a();
             }
 
-            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 super.a(fVar);
                 w.a(3);
                 ((com.tsf.shell.f.i.PageItem) fVar).setDefaultColor(com.tsf.shell.manager.o.ThemeColorConstants.c);
                 com.tsf.shell.manager.app.Notifier.a(-52736);
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
                 super.b(fVar);
                 com.tsf.shell.f.i.PageItem bVar3 = (com.tsf.shell.f.i.PageItem) fVar;
                 bVar3.clearDefaultColor();
@@ -224,13 +224,13 @@ public class SelectionState {
                 return com.tsf.shell.manager.app.StateHub.t().d(bVar3);
             }
 
-            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
                 super.e(fVar);
             }
 
-            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.SelectionState.a, com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
                 super.d(fVar);
                 ((com.tsf.shell.f.i.PageItem) fVar).clearDefaultColor();
                 com.tsf.shell.manager.app.Notifier.a();
@@ -244,19 +244,19 @@ public class SelectionState {
         this.j.addChild(aVar2);
         this.j.setAABBPX(aVar2.minX(), aVar2.minY(), aVar2.minZ(), aVar2.maxX(), aVar2.maxY(), aVar2.maxZ());
         b bVar3 = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.6
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
             public boolean a() {
                 return super.a();
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 w.a(3);
                 com.tsf.shell.manager.app.Notifier.a(-16728065);
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public boolean b(final com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public boolean b(final com.tsf.shell.f.e.ILayoutItem fVar) {
                 com.censivn.C3DEngine.C3DEngine.a().a(new Runnable() { // from class: com.tsf.shell.f.e._e.SelectionState.6.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -268,12 +268,12 @@ public class SelectionState {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
                 com.tsf.shell.manager.app.Notifier.a();
             }
         };
@@ -285,21 +285,21 @@ public class SelectionState {
         this.k.addChild(bVar3);
         this.k.setAABBPX(bVar3.minX(), bVar3.minY(), bVar3.minZ(), bVar3.maxX(), bVar3.maxY(), bVar3.maxZ());
         b bVar4 = new SelectionCallback(com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, com.censivn.C3DEngine.b.b.ScreenConstants.c * 120.0f, z) { // from class: com.tsf.shell.f.e._e.SelectionState.7
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
                 return false;
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
             }
 
-            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-            public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+            public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
             }
         };
         bVar4.alpha(0.0f);
@@ -311,7 +311,7 @@ public class SelectionState {
         this.l.setAABBPX(bVar4.minX(), bVar4.minY(), bVar4.minZ(), bVar4.maxX(), bVar4.maxY(), bVar4.maxZ());
         this.m = new WorkspaceTask() { // from class: com.tsf.shell.f.e._e.SelectionState.8
             @Override // com.tsf.shell.f.e._e.WorkspaceTask
-            public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+            public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
                 com.tsf.shell.manager.app.StateHub.b((com.tsf.shell.f.i.PageItem) fVar);
             }
         };
@@ -449,18 +449,18 @@ public class SelectionState {
             addChild(this.a);
         }
 
-        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-        public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+        public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
             a();
         }
 
-        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-        public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+        public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
             a();
         }
 
-        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
-        public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+        @Override // com.tsf.shell.f.e._e.WorkspaceRowItem, com.tsf.shell.f.e.ILayoutItem
+        public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
             a();
         }
 

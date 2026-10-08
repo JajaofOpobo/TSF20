@@ -1,4 +1,4 @@
-package com.censivn.C3DEngine.e.IModelParser;
+package com.censivn.C3DEngine.e.b_inner;
 
 /* loaded from: classes.dex */
 public final class b {

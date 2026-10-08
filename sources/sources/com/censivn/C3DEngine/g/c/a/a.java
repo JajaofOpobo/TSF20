@@ -2,7 +2,7 @@ package com.censivn.C3DEngine.g.c.a;
 
 import com.censivn.C3DEngine.api.element.Number3d;
 import com.censivn.C3DEngine.b.r;
-import com.censivn.C3DEngine.e.a.c;
+import com.censivn.C3DEngine.e.a_inner.c;
 import com.censivn.C3DEngine.g.u;
 
 /* loaded from: classes.dex */

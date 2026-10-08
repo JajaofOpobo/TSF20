@@ -16,6 +16,7 @@ import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.EmptyRenderable;
+import com.censivn.C3DEngine.b.f.EmptyRenderable;
 import com.tsf.b;
 import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeDescription;
@@ -26,9 +27,9 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WidgetItemPositioner implements ItemStubHelper.a {
-    public static i N;
-    public static i O;
+public class WidgetItemPositioner implements WindowManager.a {
+    public static ScrollingIndicator N;
+    public static ScrollingIndicator O;
     public static float P;
     public static float Q;
     public static float R;
@@ -38,14 +39,14 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
     public com.censivn.C3DEngine.b.f.BaseRenderable F;
     public com.censivn.C3DEngine.b.f.BaseRenderable G;
     public com.censivn.C3DEngine.b.f.GridRenderable H;
-    public h I;
-    public n J;
+    public WidgetItemIndicator I;
+    public EmptyRenderable J;
     public int K;
     public ArrayList<ThemeFolderDescription.SystemFolderChild> L;
     public com.censivn.C3DEngine.b.d.MouseEventListener M;
     private com.censivn.C3DEngine.b.g.TweenParams T;
     private com.censivn.C3DEngine.b.g.TweenParams U;
-    private f W;
+    private WidgetItemBackground W;
     private com.tsf.shell.preference.a.a.PreferenceItemF X;
     public int a;
     public int b;
@@ -71,12 +72,6 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
     public float v;
     public float w;
     public float x;
-    public TextureElement a;
-    public TextureElement a;
-    public TextureElement a;
-    public TextureElement a;
-    public TextureElement a;
-    public TextureElement a;
     private boolean V = false;
     private ThemeFolderManager Y = ThemeManager.mix.folder;
 
@@ -133,7 +128,7 @@ public class WidgetItemPositioner implements ItemStubHelper.a {
         return true;
     }
 
-    public f e() {
+    public WidgetItemBackground e() {
         return this.W;
     }
 

@@ -1,4 +1,4 @@
-package com.censivn.C3DEngine.e.AbstractModelParser;
+package com.censivn.C3DEngine.e.a_inner;
 
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.b.l;

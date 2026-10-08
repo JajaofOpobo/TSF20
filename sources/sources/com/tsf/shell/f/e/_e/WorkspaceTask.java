@@ -2,7 +2,7 @@ package com.tsf.shell.f.e._e;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WorkspaceTask implements Runnable {
-    com.tsf.shell.f.e.SelectionFrameLayoutItem b;
+    com.tsf.shell.f.e.ILayoutItem b;
 
     @Override // java.lang.Runnable
     public void run() {
@@ -12,6 +12,6 @@ public class WorkspaceTask implements Runnable {
         }
     }
 
-    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 }

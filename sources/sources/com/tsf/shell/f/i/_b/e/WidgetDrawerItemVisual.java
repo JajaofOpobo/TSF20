@@ -106,14 +106,8 @@ public class WidgetDrawerItemVisual extends WidgetDrawerItemBase {
         return this.WidgetDrawerItemBase.b();
     }
 
-    @Override // com.tsf.shell.f.i.PageItem
-    public String c() {
+    public String getText() {
         return this.a != null ? this.a.e : "";
-    }
-
-    @Override // com.tsf.shell.f.f.a._a.b.DrawerButtonElement
-    public String c() {
-        return r();
     }
 
     @Override // com.tsf.shell.f.i.PageItem

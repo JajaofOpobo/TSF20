@@ -1,5 +1,18 @@
 # TSF20 — Revised Execution Plan (2026-06-19)
 
+> **Addendum 2026-10-07 — read first.** (a) Fresh clean-HEAD baseline:
+> `docs/build-output-baseline.txt` (100 unique javac errors). Root cause is NOT
+> naming but a workspace hole — HEAD `a198fa79` deleted 159 C3DEngine internal
+> files still imported by the tree; restores from `181df6a5` in progress
+> (iterations logged in `docs/BUILD_DISCOVERY_LOG.md`, outputs
+> `build-output-iter1.txt`, `build-output-iter2.txt`). (b) Deobfuscation workflow
+> authority is now `GOAL.md` (amended 2026-10-07: Step 0 workspace-completeness
+> check, TRACK M/S investigation weight, §12 steps 1–4 marked done). The Phase 4
+> pipeline below still applies for mechanical ref propagation AFTER missing files
+> are restored — do not run batch rename/fix scripts over an incomplete tree.
+> (c) `AGENTS.md` "fully complete" means filenames under `com/tsf/shell` only;
+> see `docs/DEOBFUSCATION_CLAIM_AUDIT.md` for package/inner/member caveats.
+
 > **Updates**: 2026-06-19 — Full deobfuscation complete, Phase 10 eliminated, Phase 4 simplified  
 > **Supersedes**: previous `implementation_plan.md` (2026-06-02)  
 > **Authoritative sources**: actual codebase audit (opencode 2026-06-02) + Frida runtime analysis  

@@ -121,10 +121,10 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEvent
                     f = bVar.position().x;
                     f2 = bVar.position().y;
                 }
-                if (motionEvent != null && (this.c instanceof com.tsf.shell.f.e.SelectionFrameLayoutItem) && !this.g.D()) {
-                    com.tsf.shell.f.e.SelectionFrameLayoutItem fVar = (com.tsf.shell.f.e.SelectionFrameLayoutItem) this.c;
+                if (motionEvent != null && (this.c instanceof com.tsf.shell.f.e.ILayoutItem) && !this.g.D()) {
+                    com.tsf.shell.f.e.ILayoutItem fVar = (com.tsf.shell.f.e.ILayoutItem) this.c;
                     if (fVar.o()) {
-                        com.tsf.shell.f.e.SelectionFrameLayoutItem fVarA = fVar.a((int) f, (int) f2);
+                        com.tsf.shell.f.e.ILayoutItem fVarA = fVar.a((int) f, (int) f2);
                         if (fVarA != null) {
                             fVar.f(fVarA);
                         } else {
@@ -216,16 +216,16 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEvent
             com.tsf.shell.f.f.PageTouchHandler r1 = com.tsf.shell.manager.app.StateHub
             r1.d()
             com.censivn.C3DEngine.b.f.IRenderable r1 = r6.c
-            boolean r1 = r1 instanceof com.tsf.shell.f.e.SelectionFrameLayoutItem
+            boolean r1 = r1 instanceof com.tsf.shell.f.e.ILayoutItem
             if (r1 == 0) goto Lc6
             com.tsf.shell.f.i.PageItem r1 = r6.g
             boolean r1 = r1.D()
             if (r1 != 0) goto Lc6
             com.censivn.C3DEngine.b.f.IRenderable r1 = r6.c
-            com.tsf.shell.f.e.SelectionFrameLayoutItem r1 = (com.tsf.shell.f.e.SelectionFrameLayoutItem) r1
+            com.tsf.shell.f.e.ILayoutItem r1 = (com.tsf.shell.f.e.ILayoutItem) r1
             boolean r4 = r6.n
             if (r4 != 0) goto L76
-            com.tsf.shell.f.e.SelectionFrameLayoutItem r4 = r1.n()
+            com.tsf.shell.f.e.ILayoutItem r4 = r1.n()
             if (r4 == 0) goto Lc6
         L76:
             boolean r4 = r1.o()
@@ -235,7 +235,7 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEvent
             int r5 = (int) r5
             r4 = r4[r2]
             int r4 = (int) r4
-            com.tsf.shell.f.e.SelectionFrameLayoutItem r4 = r1.a(r5, r4)
+            com.tsf.shell.f.e.ILayoutItem r4 = r1.a(r5, r4)
             boolean r5 = r1.h(r4)
             if (r5 == 0) goto Lbc
             com.tsf.shell.manager.f.ViewportController r2 = com.tsf.shell.manager.app.TaskScheduler
@@ -342,8 +342,8 @@ public class WidgetItemTouchHandler extends com.censivn.C3DEngine.b.d.MouseEvent
                 WidgetWallpaperHandler.a(motionEvent2.getX(), motionEvent2.getY(), this.h, this.i);
                 return;
             } else {
-                if (this.n && (this.c instanceof com.tsf.shell.f.e.SelectionFrameLayoutItem)) {
-                    this.q.a((com.tsf.shell.f.e.SelectionFrameLayoutItem) this.c, motionEvent2);
+                if (this.n && (this.c instanceof com.tsf.shell.f.e.ILayoutItem)) {
+                    this.q.a((com.tsf.shell.f.e.ILayoutItem) this.c, motionEvent2);
                     return;
                 }
                 return;

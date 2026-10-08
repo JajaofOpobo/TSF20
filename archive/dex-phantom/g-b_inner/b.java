@@ -1,7 +1,7 @@
-package com.censivn.C3DEngine.g.b;
+package com.censivn.C3DEngine.g.b_inner;
 
 import com.censivn.C3DEngine.api.tween.TweenTarget.VValueTweenTarget;
-import com.censivn.C3DEngine.g.a.c;
+import com.censivn.C3DEngine.g.a_inner.c;
 
 /* loaded from: classes.dex */
 public final class b implements a {
@@ -16,12 +16,12 @@ public final class b implements a {
         this.b = vValueTweenTarget;
     }
 
-    @Override // com.censivn.C3DEngine.g.b.a
+    @Override // com.censivn.C3DEngine.g.b_inner.a
     public final c ay() {
         return this.a;
     }
 
-    @Override // com.censivn.C3DEngine.g.b.a
+    @Override // com.censivn.C3DEngine.g.b_inner.a
     public final void a(c cVar) {
         this.a = cVar;
     }

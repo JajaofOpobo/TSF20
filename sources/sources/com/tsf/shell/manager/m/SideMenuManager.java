@@ -8,7 +8,7 @@ import com.censivn.C3DEngine.api.element.info.ItemInfo;
 import com.censivn.C3DEngine.b.c.WindowManager;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.BaseRenderable;
-import com.tsf.shell.f.e.SelectionFrameLayoutItem;
+import com.tsf.shell.f.e.ILayoutItem;
 import com.tsf.shell.f.i.MultiSelectController;
 import com.tsf.shell.f.i.b.e.DrawerItemButton;
 import com.tsf.shell.ShellGraphicsContext;
@@ -156,12 +156,12 @@ public class SideMenuManager implements e.a, DragSortContainer.InterfaceC0113a {
         jVar.addChild(this.c);
         this.f = new SideMenuIndicator(this) { // from class: com.tsf.shell.manager.m.SideMenuManager.5
             /* JADX WARN: Multi-variable type inference failed */
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.ILayoutItem
             public boolean a(f fVar, float f, float f2) {
                 return SideMenuManager.this.b((i) fVar);
             }
 
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.ILayoutItem
             public void a(f fVar) {
                 if (!SideMenuManager.this.g) {
                     com.tsf.shell.manager.app.StateHub.b().c();
@@ -172,7 +172,7 @@ public class SideMenuManager implements e.a, DragSortContainer.InterfaceC0113a {
                 }
             }
 
-            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.SelectionFrameLayoutItem
+            @Override // com.tsf.shell.manager.m.SideMenuIndicator, com.tsf.shell.f.e.e.ItemLayoutItem, com.tsf.shell.f.e.ILayoutItem
             public boolean b(f fVar) {
                 return fVar instanceof com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
             }

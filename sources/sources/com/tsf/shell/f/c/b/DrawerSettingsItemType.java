@@ -61,7 +61,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
     public void e() {
     }
 
-    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.ILayoutItem
     public boolean a() {
         return this.a.j();
     }
@@ -162,8 +162,8 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         }
     }
 
-    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void a(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.ILayoutItem
+    public void a(com.tsf.shell.f.e.ILayoutItem fVar) {
         com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
         a(bVar);
         this.d.setAABBPX(bVar.minX(), bVar.minY(), bVar.minZ(), bVar.maxX(), bVar.maxY(), bVar.maxZ());
@@ -180,12 +180,12 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:29:0x006c  */
-    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.SelectionFrameLayoutItem
+    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.ILayoutItem
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public boolean a(com.tsf.shell.f.e.SelectionFrameLayoutItem r7, float r8, float r9) {
+    public boolean a(com.tsf.shell.f.e.ILayoutItem r7, float r8, float r9) {
         /*
             r6 = this;
             r1 = 1
@@ -251,15 +251,15 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
             r0 = r1
             goto L3c
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.c.b.a.IDrawerSettingsCallback(com.tsf.shell.f.e.SelectionFrameLayoutItem, float, float):boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.tsf.shell.f.c.b.a.IDrawerSettingsCallback(com.tsf.shell.f.e.ILayoutItem, float, float):boolean");
     }
 
-    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void c(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.ILayoutItem
+    public void c(com.tsf.shell.f.e.ILayoutItem fVar) {
     }
 
-    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void d(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.ILayoutItem
+    public void d(com.tsf.shell.f.e.ILayoutItem fVar) {
         if (this.j != null) {
             i(fVar);
         }
@@ -270,13 +270,13 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         this.m = -1;
     }
 
-    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public boolean b(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.ILayoutItem
+    public boolean b(com.tsf.shell.f.e.ILayoutItem fVar) {
         return fVar instanceof com.tsf.shell.f.i.ShortcutItem;
     }
 
-    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.SelectionFrameLayoutItem
-    public void e(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    @Override // com.tsf.shell.f.c.b.DrawerItemLayout, com.tsf.shell.f.e.ILayoutItem
+    public void e(com.tsf.shell.f.e.ILayoutItem fVar) {
         boolean zB;
         com.tsf.shell.f.i.PageItem bVar = (com.tsf.shell.f.i.PageItem) fVar;
         if (this.j != null) {
@@ -350,11 +350,11 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         this.a.h().a(this.e, children().size());
     }
 
-    private boolean a(int i, com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, Number3d number3d) {
+    private boolean a(int i, com.tsf.shell.f.e.ILayoutItem fVar, Number3d number3d) {
         return i >= 0 && numChildren() != 0 && i <= numChildren() + (-1) && a(getChildAt(i), fVar, number3d.x, number3d.y);
     }
 
-    private boolean a(i iVar, com.tsf.shell.f.e.SelectionFrameLayoutItem fVar, float f, float f2) {
+    private boolean a(i iVar, com.tsf.shell.f.e.ILayoutItem fVar, float f, float f2) {
         if ((fVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) || !(iVar instanceof com.tsf.shell.f.i.b.d.FolderShortcutItem) || !iVar.calTouchCollision(f, f2)) {
             return false;
         }
@@ -368,7 +368,7 @@ public class DrawerSettingsItemType extends DrawerItemLayout implements com.tsf.
         return true;
     }
 
-    private void i(com.tsf.shell.f.e.SelectionFrameLayoutItem fVar) {
+    private void i(com.tsf.shell.f.e.ILayoutItem fVar) {
         this.j.d(fVar);
         this.j = null;
         a((com.tsf.shell.f.i.PageItem) fVar);
