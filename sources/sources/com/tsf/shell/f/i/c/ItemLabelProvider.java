@@ -3,12 +3,13 @@ package com.tsf.shell.f.i.c;
 import com.censivn.C3DEngine.b.f.IRenderable;
 import com.censivn.C3DEngine.b.f.LabelRenderable;
 import com.tsf.shell.utils.GraphicsEngineBridge;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class ItemLabelProvider {
     private LabelRenderable a = new LabelRenderable();
 
-    public abstract i a(int i, int i2, boolean z);
+    public abstract BaseRenderable a(int i, int i2, boolean z);
 
     public abstract void b();
 
@@ -40,7 +41,7 @@ public abstract class ItemLabelProvider {
         this.a.d(i);
     }
 
-    public i b(int i) {
+    public LabelRenderable b(int i) {
         this.a.f(i);
         return this.a;
     }

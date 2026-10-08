@@ -18,23 +18,23 @@ public interface ScrollBounceHandler {
 
     void a(int i, int i2);
 
-    void a(int i, ArrayList<g> arrayList, g gVar, boolean z);
+    void a(int i, ArrayList<WorkspacePage> arrayList, WorkspacePage gVar, boolean z);
 
-    void a(j jVar);
+    void a(BaseRenderable jVar);
 
-    void a(d dVar, g gVar);
+    void a(TweenParams dVar, WorkspacePage gVar);
 
     void a(com.tsf.shell.f.f.d.ScrollStateAggregator aVar);
 
-    void a(g gVar);
+    void a(WorkspacePage gVar);
 
-    void a(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar);
+    void a(WorkspacePage gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar);
 
-    void a(n nVar);
+    void a(PageTouchHandler nVar);
 
-    void a(ArrayList<g> arrayList, g gVar, boolean z);
+    void a(ArrayList<WorkspacePage> arrayList, WorkspacePage gVar, boolean z);
 
     float b(int i);
 
-    void b(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar);
+    void b(WorkspacePage gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar);
 }

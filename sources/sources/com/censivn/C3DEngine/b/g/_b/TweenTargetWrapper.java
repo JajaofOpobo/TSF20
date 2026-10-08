@@ -5,7 +5,7 @@ import com.censivn.C3DEngine.b.g.a.AbstractTween;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TweenTargetWrapper implements ITweenTarget {
-    private c a;
+    private AbstractTween a;
     private VValueTweenTarget b;
 
     public VValueTweenTarget a() {
@@ -17,12 +17,12 @@ public class TweenTargetWrapper implements ITweenTarget {
     }
 
     @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
-    public c getTweenChild() {
+    public AbstractTween getTweenChild() {
         return this.a;
     }
 
     @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
-    public void setTweenChild(c cVar) {
+    public void setTweenChild(AbstractTween cVar) {
         this.a = cVar;
     }
 }

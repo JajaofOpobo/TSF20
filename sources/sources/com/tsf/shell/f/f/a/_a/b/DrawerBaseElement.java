@@ -11,8 +11,8 @@ import com.tsf.shell.utils.ColorMatrixImageFilter;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerBaseElement extends BaseRenderable {
-    private static k d;
-    private i e;
+    private static GridRenderable d;
+    private IRenderable e;
     private GridRenderable f;
     private com.tsf.shell.f.f.a._a.a.DrawerItemLayoutData g;
     private float h;
@@ -33,13 +33,13 @@ public class DrawerBaseElement extends BaseRenderable {
         addChild(this.f);
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         this.e = iVar;
         this.e.setTag(this.g);
         addChild(this.e);
     }
 
-    public i b() {
+    public IRenderable b() {
         return this.e;
     }
 
@@ -53,7 +53,7 @@ public class DrawerBaseElement extends BaseRenderable {
         this.f.points().setYPX(1, -f);
     }
 
-    public static void a(i iVar, float f, float f2) {
+    public static void a(IRenderable iVar, float f, float f2) {
         iVar.position().y = f;
         iVar.alpha(0.0f);
         d dVar = new d();

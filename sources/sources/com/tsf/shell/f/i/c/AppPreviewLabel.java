@@ -13,6 +13,7 @@ import com.censivn.C3DEngine.b.f.GridRenderable;
 import com.tsf.b;
 import com.tsf.shell.utils.BitmapTransformationHelper;
 import com.tsf.shell.utils.GraphicsEngineBridge;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class AppPreviewLabel extends ItemLabelProvider {
@@ -70,7 +71,7 @@ public class AppPreviewLabel extends ItemLabelProvider {
     }
 
     @Override // com.tsf.shell.f.i.c.ItemLabelProvider
-    public i a(int i, int i2, boolean z) {
+    public BaseRenderable a(int i, int i2, boolean z) {
         if (this.h.id == 0) {
             Bitmap bitmapA = a(i, i2);
             com.censivn.C3DEngine.C3DEngine.g().a(this.h, bitmapA);

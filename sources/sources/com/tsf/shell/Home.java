@@ -58,7 +58,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     private boolean j = true;
     private boolean l = false;
     private boolean m = false;
-    private HashMap<Integer, ShellCoreInterface.InterfaceC0025a> q = new HashMap<>();
+    private HashMap<Integer, com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a> q = new HashMap<>();
     private boolean s = false;
     private boolean t = false;
     private int u = ACRAConstants.DEFAULT_SOCKET_TIMEOUT;
@@ -449,7 +449,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
     }
 
     @Override // com.tsf.shell.ShellCoreInterface
-    public int a(Intent intent, ShellCoreInterface.InterfaceC0025a interfaceC0025a) {
+    public int a(Intent intent, com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a interfaceC0025a) {
         int i = this.u;
         this.k = true;
         this.q.put(Integer.valueOf(this.u), interfaceC0025a);
@@ -458,7 +458,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         return i;
     }
 
-    public int b(Intent intent, ShellCoreInterface.InterfaceC0025a interfaceC0025a) {
+    public int b(Intent intent, com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a interfaceC0025a) {
         int i = this.u;
         this.k = true;
         this.q.put(Integer.valueOf(this.u), interfaceC0025a);
@@ -467,7 +467,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
         return i;
     }
 
-    public int a(Intent intent, ShellCoreInterface.InterfaceC0025a interfaceC0025a, int i, int i2) {
+    public int a(Intent intent, com.censivn.C3DEngine.b.c.ActivityResultBridge.InterfaceC0025a interfaceC0025a, int i, int i2) {
         int i3 = this.u;
         this.k = true;
         this.q.put(Integer.valueOf(this.u), interfaceC0025a);

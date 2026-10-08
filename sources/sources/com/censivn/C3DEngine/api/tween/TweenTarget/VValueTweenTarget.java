@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.b.g._b.TweenTargetWrapper;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class VValueTweenTarget implements VTweenTarget {
-    private b vTarget = new b();
+    private TweenTargetWrapper vTarget = new TweenTargetWrapper();
 
     public VValueTweenTarget() {
         this.vTarget.a(this);

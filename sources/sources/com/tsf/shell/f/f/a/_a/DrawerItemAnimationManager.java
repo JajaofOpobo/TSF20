@@ -10,7 +10,7 @@ import java.util.Iterator;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerItemAnimationManager {
     public static final float a = com.censivn.C3DEngine.b.b.ScreenConstants.a(150.0f);
-    private c b;
+    private DrawerItemContainer b;
     private BaseRenderable d;
     private ArrayList<a> e;
     private com.tsf.shell.f.e.ObjectPool<a> f;
@@ -27,15 +27,15 @@ public class DrawerItemAnimationManager {
 
     class a {
         public Number3d a;
-        public Number3d a;
-        public Number3d a;
+        public Number3d b;
+        public Number3d c;
         public float d = 1.0f;
 
         a() {
         }
     }
 
-    public DrawerItemAnimationManager(c cVar) {
+    public DrawerItemAnimationManager(DrawerItemContainer cVar) {
         this.b = cVar;
         this.h.alpha(0.0f);
         this.d = new BaseRenderable() { // from class: com.tsf.shell.f.f.a._a.DrawerItemAnimationManager.2

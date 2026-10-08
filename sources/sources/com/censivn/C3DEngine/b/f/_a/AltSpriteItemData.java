@@ -17,7 +17,7 @@ public class AltSpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTar
     public int J;
     private AltTextureSpriteRenderable K;
     private VButtonItem L;
-    private c M;
+    private AbstractTween M;
     private float N;
     private float O;
     private Object R;
@@ -313,12 +313,12 @@ public class AltSpriteItemData implements com.censivn.C3DEngine.b.g._b.ITweenTar
     }
 
     @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
-    public c getTweenChild() {
+    public AbstractTween getTweenChild() {
         return this.M;
     }
 
     @Override // com.censivn.C3DEngine.b.g._b.ITweenTarget
-    public void setTweenChild(c cVar) {
+    public void setTweenChild(AbstractTween cVar) {
         this.M = cVar;
     }
 }

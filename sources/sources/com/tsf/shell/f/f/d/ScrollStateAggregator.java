@@ -9,34 +9,34 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ScrollStateAggregator {
-    private n a;
-    private b b;
+    private PageTouchHandler a;
+    private ScrollBounceHandler b;
 
-    public ScrollStateAggregator(n nVar) {
+    public ScrollStateAggregator(PageTouchHandler nVar) {
         this.a = nVar;
         a(new com.tsf.shell.f.f.d.a.ScrollBounceAnimation());
     }
 
-    public void a(b bVar) {
+    public void a(ScrollBounceHandler bVar) {
         bVar.a(this.a);
         bVar.a(this);
         bVar.a(this.a.u());
         this.b = bVar;
     }
 
-    public void a(g gVar) {
+    public void a(WorkspacePage gVar) {
         this.b.a(gVar);
     }
 
-    public void a(d dVar, g gVar) {
+    public void a(TweenParams dVar, WorkspacePage gVar) {
         this.b.a(dVar, gVar);
     }
 
-    public void a(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
+    public void a(WorkspacePage gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
         this.b.a(gVar, aVar);
     }
 
-    public void b(g gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
+    public void b(WorkspacePage gVar, com.censivn.C3DEngine.b.g._b.ITweenTarget aVar) {
         this.b.b(gVar, aVar);
     }
 
@@ -49,12 +49,12 @@ public class ScrollStateAggregator {
     public void c() {
     }
 
-    public void a(n nVar, int i, ArrayList<g> arrayList, g gVar, boolean z) {
+    public void a(PageTouchHandler nVar, int i, ArrayList<WorkspacePage> arrayList, WorkspacePage gVar, boolean z) {
         ScrollStateAggregator();
         this.b.a(i, arrayList, gVar, z);
     }
 
-    public void a(n nVar, ArrayList<g> arrayList, g gVar, boolean z) {
+    public void a(PageTouchHandler nVar, ArrayList<WorkspacePage> arrayList, WorkspacePage gVar, boolean z) {
         this.b.a(arrayList, gVar, z);
     }
 

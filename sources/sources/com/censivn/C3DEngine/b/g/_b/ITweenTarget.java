@@ -4,7 +4,7 @@ import com.censivn.C3DEngine.b.g.a.AbstractTween;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public interface ITweenTarget {
-    c getTweenChild();
+    AbstractTween getTweenChild();
 
     void setTweenChild(AbstractTween cVar);
 }

@@ -248,6 +248,46 @@ contamination; zero-referrer grep before any archive/delete.
   literal string, one verified target, machine-checkable residual. The
   prohibition stands for regex/guess batches, not this.
 
+## Iteration 15 — tween port triage: 7 MATCH, 3 DRIFT, 0 ported (deliberately) [S]
+
+- Two parallel investigators: (A) v382-vs-DEX method-shape drift check per
+  file, smali-cross-validated (incl. proving resources/apk == apksum 3.9.4
+  for `b/g` paths); (B) reference-adaptation patch table for all 8 v382
+  files (existence-checked per ref, HIGH throughout, version-skew traps
+  explicitly marked).
+- Results: MATCH modulo renames — `b/g/a` registry, `a/a`, `a/b`, `a/c`,
+  `a/d`, `b/a`, `b/b` (7/10). DRIFT — v382 `b/c/d` share FQNs with DIFFERENT
+  v3.9.4 classes (manager/config/interface: `w->c`, `x->d`, `v->b` letter
+  reassignment); porting by FQN would clobber — FORBIDDEN, recorded.
+- Decision: port NOTHING this round. Findings: (1) `a/c`, `b/a`, `b/b`
+  already have tree equivalents (`AbstractTween`, `ITweenTarget`,
+  `TweenTargetWrapper` — fix their `c`→`AbstractTween` leftovers instead);
+  (2) `a/a`, `a/b`, `a/d` duplicate existing `RenderableTween`/
+  `PropertyTween`/`TimedTween` roles; (3) the genuinely absent `b/g/a`
+  registry unblocks ZERO current errors (nothing references it) while its
+  15 impl mappings are pure semantic work — queued behind compilability.
+- Caution recorded: agent B's "ledger analog" rows for `EasingInterpolator`
+  etc. have NO actual ledger rows (verified by grep) — treat as twin-based
+  MEDIUM, not ledger-backed, until confirmed.
+- Value banked regardless: the MATCH/DRIFT table is now the permanent guard
+  against double-restores in `b/g/`; `TweenUtils.b(this)`→`TweenManager.b`
+  target-errors identified in 3 tree tween files for a future pass.
+- Regressions: none (read-only). Confidence: HIGH.
+
+## Iteration 16 — `InterfaceC0025a` inner-interface relocation [S]
+
+- Node: `Home.java` (4) + `ShellCoreInterface.java` (1):
+  `ShellCoreInterface.InterfaceC0025a` undeclared.
+- Evidence: sole declaration in tree is
+  `ActivityResultBridge.InterfaceC0025a`
+  (`onActivityResult(int,int,Intent)`); every caller casts to it when calling
+  `Home.a()` (e.g. `PhotoPicker:34`); `Home`/`ShellCoreInterface` already
+  import `ActivityResultBridge`. Classic ERROR_TRIAGE Bucket-3
+  (JADX-renamed inner interface referenced from old owner).
+- Changes: FQN swap at 5 sites (both files already import the owner).
+  Output: `docs/build-output-iter16.txt`. Both files CLEAN.
+- Regressions: none. Confidence: HIGH.
+
 ## Iteration 14 — DEX-vs-tree census: completeness is now finite [M+S]
 
 - Built `scripts/dex_tree_census.py` (ledger-bridged alignment of 3,759 app
@@ -288,6 +328,50 @@ contamination; zero-referrer grep before any archive/delete.
   current one, which is likely where `e.a` resolved. Next: reconstruct from
   the original context + unmatched interface methods.
 - Regressions: none. Confidence: HIGH (fix), MEDIUM (e.a lead — unproven).
+
+## Iteration 19 — parallel round #3: scroller, drawer-base, anim-dup [S]
+
+- `ScrollStateAggregator` (11): `n/b/g/d` resolved (construction sites,
+  delegation interfaces, DEX sigs, ledger). CLEAN.
+- `DrawerBaseElement` (5): `k`→`GridRenderable`, `i`→`IRenderable` (DEX field
+  + method signatures exact). CLEAN.
+- `DrawerItemAnimationManager.a` dup: verdict (b), three roles proven by
+  member-access census; follow-up `c` closed by its own construction site
+  (`new …(this)` in `DrawerItemContainer`) + member shape. Whole file CLEAN.
+- Output: `docs/build-output-iter19.txt`. Regressions: none. HIGH throughout.
+
+## Iteration 20 — label-provider family `i` returns (7 files) [S]
+
+- `ItemGroupBase`/`ItemLabelProvider` + 5 subclass overrides: bare `i`
+  returns resolved by override-body convergence (all return
+  `BaseRenderable`-typed fields) → `BaseRenderable` (imports added where
+  absent). Follow-up `ItemLabelProvider.b(int)` → `LabelRenderable`
+  (returns `this.a`, a `LabelRenderable` field — tightest proof of the day).
+  `_c/` widget twins + anon classes left untouched (separate hierarchies).
+- Output: `docs/build-output-iter20.txt` (note: first run raced the final
+  edit; reran clean). Entire 7-file family CLEAN.
+- Regressions: none. Confidence: HIGH.
+
+## Iteration 18 — parallel round #2: scroller, drawer-base, anim-manager [S]
+
+- Three read-only investigators, all verified before apply; single-writer.
+- `ScrollStateAggregator` (11 unique + 2 latent): `n`→`PageTouchHandler`
+  (construction site), `b`→`ScrollBounceHandler` (ctor arg + 12/12 delegation
+  match), `g`→`WorkspacePage` (DEX sig + ledger + twin), `d`→`TweenParams`
+  (DEX + ledger + override match). Deferred per report: no-arg ctor-statement
+  (needs DEX bytecode check). CLEAN.
+- `DrawerBaseElement` (5): `k`→`GridRenderable`, 4× `i`→`IRenderable` —
+  DEX field/method signatures exact, twin callers converge. Noted
+  `TweenUtils.a` own-`d`-param issue as separate file's error. CLEAN.
+- `DrawerItemAnimationManager.a` dup: verdict (b) — usages prove three roles
+  (`a` target, `b` base, `c` exit); renamed lines 2–3. Follow-up `c` (field +
+  ctor) resolved via construction site (`new …(this)` in
+  `DrawerItemContainer`) + member/static shape. CLEAN (whole file).
+- Output: `docs/build-output-iter18.txt` (distinct from `iter13.txt`, which
+  holds parallel round #1's final state).
+  Failure set: 186 stale-symbol + `ItemGroupBase.a`/`DrawerItemLayoutData.a`
+  dups + trio + `package e/c`.
+- Regressions: none. Confidence: HIGH throughout.
 
 ## Iteration 13 — parallel-agent round: dash, drop-indicator, object-pool [S]
 
@@ -391,6 +475,16 @@ contamination; zero-referrer grep before any archive/delete.
   GOAL forbids. Compilation of these two files stays red pending the
   structural DEX match.
 - Confidence in the deferral: HIGH (evidence complete, conclusion explicit).
+
+## Iteration 17 — `VerticalPageRenderer` `i` → `IRenderable` (6 sites) [S]
+
+- Same proven pattern as iterations 1/5 (override + assigned-from proof),
+  extended to inner-class occurrences (`getChildAt` locals). Import present.
+  File CLEAN. Output: `docs/build-output-iter17.txt`.
+- Newly surfaced leader: `ScrollStateAggregator` (22 lines, previously
+  cap-hidden). Next nodes: it, `DrawerBaseElement` (10), `WorkspaceEditor`
+  `e.a` (10, ledger lead held), `DrawerItemAnimationManager.a` dup (8).
+- Regressions: none. Confidence: HIGH.
 
 ## Iteration 10 — dexscan fixed; `getText` twin-precedent; trio stays deferred [M+S]
 

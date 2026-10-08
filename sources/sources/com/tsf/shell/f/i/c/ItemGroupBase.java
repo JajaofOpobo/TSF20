@@ -5,6 +5,7 @@ import com.tsf.shell.Home;
 import com.tsf.shell.utils.MarketLinkHandler;
 import java.util.ArrayList;
 import java.util.Iterator;
+import com.censivn.C3DEngine.b.f.BaseRenderable;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ItemGroupBase extends ItemLabelProvider {
@@ -13,8 +14,8 @@ public class ItemGroupBase extends ItemLabelProvider {
     public boolean e;
     public int g;
     private boolean k = false;
-    public String a;
-    public String a;
+    public String b;
+    public String c;
     public boolean f = false;
     public int h = 6;
     public int i = 0;
@@ -84,7 +85,7 @@ public class ItemGroupBase extends ItemLabelProvider {
     }
 
     @Override // com.tsf.shell.f.i.c.ItemLabelProvider
-    public i a(int i, int i2, boolean z) {
+    public BaseRenderable a(int i, int i2, boolean z) {
         i iVarA = a(z);
         if (iVarA == null) {
             return null;
@@ -96,7 +97,7 @@ public class ItemGroupBase extends ItemLabelProvider {
     public void b() {
     }
 
-    public i a(boolean z) {
+    public BaseRenderable a(boolean z) {
         return null;
     }
 

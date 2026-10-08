@@ -31,7 +31,7 @@ public class VerticalPageRenderer extends BaseRenderable {
     private boolean u = true;
     private BaseRenderable c = new BaseRenderable() { // from class: com.censivn.C3DEngine.b.b.ScreenConstants.d.1
         @Override // com.censivn.C3DEngine.b.f.IRenderable
-        public void onChildMeasure(i iVar) {
+        public void onChildMeasure(IRenderable iVar) {
             a();
         }
 
@@ -40,7 +40,7 @@ public class VerticalPageRenderer extends BaseRenderable {
             int iNumChildren = numChildren();
             float fMaxX2 = 0.0f;
             for (int i = 0; i < iNumChildren; i++) {
-                i childAt = getChildAt(i);
+                IRenderable childAt = getChildAt(i);
                 if (childAt.visible()) {
                     fMaxX2 += childAt.maxX() - childAt.minX();
                 }
@@ -320,7 +320,7 @@ public class VerticalPageRenderer extends BaseRenderable {
     public void e(int i) {
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         a(true);
         if (this.p != null) {
             this.p.removeFromParent();
@@ -350,7 +350,7 @@ public class VerticalPageRenderer extends BaseRenderable {
         }
     }
 
-    public void b(i iVar) {
+    public void b(IRenderable iVar) {
         a(true);
         if (this.q != null) {
             this.q.removeFromParent();
@@ -535,7 +535,7 @@ public class VerticalPageRenderer extends BaseRenderable {
         this.h = f;
     }
 
-    public void c(i iVar) {
+    public void c(IRenderable iVar) {
         if (this.d != null) {
         }
         if (iVar.parent() != null) {
@@ -548,7 +548,7 @@ public class VerticalPageRenderer extends BaseRenderable {
     }
 
     @Override // com.censivn.C3DEngine.b.f.IRenderable
-    public void onChildMeasure(i iVar) {
+    public void onChildMeasure(IRenderable iVar) {
         if (getChildIndexOf(iVar) != -1) {
             k();
         }
