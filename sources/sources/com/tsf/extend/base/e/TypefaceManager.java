@@ -7,7 +7,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class TypefaceManager {
-    private static volatile a a = null;
+    private static volatile TypefaceManager a = null;
     private Typeface b;
     private List<WeakReference<InterfaceC0049a>> c = new ArrayList();
 
@@ -15,11 +15,11 @@ public class TypefaceManager {
     public interface InterfaceC0049a {
     }
 
-    public static a a() {
+    public static TypefaceManager a() {
         if (a == null) {
-            synchronized (a.class) {
+            synchronized (TypefaceManager.class) {
                 if (a == null) {
-                    a = new a();
+                    a = new TypefaceManager();
                 }
             }
         }

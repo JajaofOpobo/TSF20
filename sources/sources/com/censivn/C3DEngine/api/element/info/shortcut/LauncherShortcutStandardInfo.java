@@ -4,10 +4,10 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.PorterDuff;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase;
-import com.tsf.shell.manager.o.A;
-import com.tsf.shell.utils.q;
+import com.tsf.shell.manager.o.ButtonMetrics;
+import com.tsf.shell.utils.BitmapTransformationHelper;
 import com.tsf.shell.utils.GraphicsEngineBridge;
+import com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
@@ -16,7 +16,7 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
     public static class ResourceControler {
         boolean isCustomResource = false;
 
-        public Bitmap getThemeBitmap(A aVar) {
+        public Bitmap getThemeBitmap(ButtonMetrics aVar) {
             return null;
         }
 
@@ -52,27 +52,27 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
 
     @Override // com.censivn.C3DEngine.api.element.info.shortcut.LauncherShortcut3DInfo
     public Bitmap getIconBitmap() {
-        return createTextureBitmap(null, ((b) getWidget()).aE());
+        return createTextureBitmap(null, ((DrawerShortcutItemBase) getWidget()).aE());
     }
 
-    public TextureElement getTexture(A aVar) {
+    public TextureElement getTexture(ButtonMetrics aVar) {
         return getTexture(null, aVar);
     }
 
-    public TextureElement getTexture(ResourceControler resourceControler, A aVar) {
+    public TextureElement getTexture(ResourceControler resourceControler, ButtonMetrics aVar) {
         com.censivn.C3DEngine.C3DEngine.g().a(this.texture, createTextureBitmap(resourceControler, aVar));
         return this.texture;
     }
 
-    private Bitmap createTextureBitmap(ResourceControler resourceControler, A aVar) {
+    private Bitmap createTextureBitmap(ResourceControler resourceControler, ButtonMetrics aVar) {
         return createTextureBitmap(resourceControler, this.title, getIcon(true, aVar.H, aVar.I), aVar, aVar.H, aVar.I, this.notifPointState);
     }
 
-    public static Bitmap createTextureBitmap(String str, Bitmap bitmap, A aVar, boolean z) {
+    public static Bitmap createTextureBitmap(String str, Bitmap bitmap, ButtonMetrics aVar, boolean z) {
         return createTextureBitmap(null, str, bitmap, aVar, aVar.H, aVar.I, z);
     }
 
-    public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, A aVar, int i, int i2, boolean z) {
+    public static Bitmap createTextureBitmap(ResourceControler resourceControler, String str, Bitmap bitmap, ButtonMetrics aVar, int i, int i2, boolean z) {
         Bitmap bitmapA = aVar.a();
         if (str == null) {
             str = "";
@@ -83,22 +83,22 @@ public class LauncherShortcutStandardInfo extends LauncherShortcut3DInfo {
         if (bitmap == null) {
             Bitmap themeBitmap = resourceControler != null ? resourceControler.getThemeBitmap(aVar) : null;
             if (themeBitmap == null) {
-                themeBitmap = x.a(com.tsf.b.d.sym_def_app_icon);
+                themeBitmap = GraphicsEngineBridge.a(com.tsf.b.d.sym_def_app_icon);
                 if (resourceControler != null) {
                     resourceControler.onLoadCustomResource();
                 }
             } else if (resourceControler != null) {
                 resourceControler.onLoadThemeResource();
             }
-            bitmap = q.d(themeBitmap, i, i2);
+            bitmap = BitmapTransformationHelper.d(themeBitmap, i, i2);
         } else if (resourceControler != null) {
             resourceControler.onLoadCustomResource();
         }
         aVar.a(canvas, bitmap, bitmapA2, true);
         if (z) {
-            q.a(canvas, 10.0f, 175.0f, 5.0f, -49152);
+            BitmapTransformationHelper.a(canvas, 10.0f, 175.0f, 5.0f, -49152);
         }
-        com.tsf.shell.f.i.b.e.b.a(bitmapA);
+        DrawerShortcutItemBase.a(bitmapA);
         return bitmapA;
     }
 }

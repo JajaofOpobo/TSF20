@@ -6,5 +6,5 @@ import com.censivn.C3DEngine.c.a.Particle;
 public interface IPhysicsSystem {
     void a();
 
-    void a(c cVar);
+    void a(Particle cVar);
 }

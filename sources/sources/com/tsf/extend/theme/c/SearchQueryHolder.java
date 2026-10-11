@@ -1,7 +1,7 @@
 package com.tsf.extend.theme.c;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-class e {
+public class SearchQueryHolder {
     private String a;
 
     public void a(String str) {

@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.KeyboardHandler.a, e.a, com.tsf.shell.f.e._h.IconEditorHelper.a, com.tsf.shell.f.e._f.EditTarget.a {
+public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.KeyboardHandler.a, WindowManager.a, com.tsf.shell.f.e._h.IconEditorHelper.a, com.tsf.shell.f.e._f.EditTarget.a {
     private static HashMap<Integer, C0094a> a;
     private static ArrayList<Integer> p = new ArrayList<>();
     private ArrayList<c> b;
@@ -39,8 +39,8 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.KeyboardHandle
     private com.tsf.shell.f.i._b.e.WidgetDrawerShortcutItemBase j;
     private c m;
     private boolean n;
-    private i o;
-    private d q;
+    private IRenderable o;
+    private DashLayoutContainer q;
     private boolean h = false;
     private boolean i = false;
     private float[] l = new float[2];
@@ -270,7 +270,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.KeyboardHandle
         return false;
     }
 
-    public void a(com.tsf.shell.f.i.ShortcutItem cVar, i iVar, ArrayList<Integer> arrayList, ArrayList<Integer> arrayList2) {
+    public void a(com.tsf.shell.f.i.ShortcutItem cVar, IRenderable iVar, ArrayList<Integer> arrayList, ArrayList<Integer> arrayList2) {
         if (!this.h) {
             this.e.position().reset();
             p.clear();
@@ -547,7 +547,7 @@ public class WorkspaceEditor implements com.censivn.C3DEngine.b.c.KeyboardHandle
         public int e;
         public boolean a = false;
         public GridRenderable c = new GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h, false);
-        public m d = new LabelRenderable();
+        public LabelRenderable d = new LabelRenderable();
 
         public c(int i) {
             this.e = i;

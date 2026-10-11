@@ -13,13 +13,13 @@ public class DrawerVisualFrame extends com.censivn.C3DEngine.b.b.DesktopRenderer
     private BaseRenderable c;
     private GridRenderable d;
     private GridRenderable e;
-    private c i;
+    private DrawerItemContainer i;
     private TextureElement f = new TextureElement(0, false);
     private TextureElement g = new TextureElement(0, false);
     private BaseRenderable a = new BaseRenderable();
     private GridRenderable b = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.D, 120.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
 
-    public DrawerVisualFrame(c cVar) {
+    public DrawerVisualFrame(DrawerItemContainer cVar) {
         boolean z = false;
         this.i = cVar;
         this.b.setDefaultColor(new Color4(255, 255, 255, 60));

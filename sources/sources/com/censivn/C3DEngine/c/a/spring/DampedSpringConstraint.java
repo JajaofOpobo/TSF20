@@ -10,12 +10,12 @@ public class DampedSpringConstraint {
     public boolean d = true;
     public boolean e = true;
     public boolean f = true;
-    private e g;
+    private ParticleData g;
     private float h;
     private float i;
     private float j;
 
-    public DampedSpringConstraint(e eVar) {
+    public DampedSpringConstraint(ParticleData eVar) {
         this.g = eVar;
         a(this.g.a(), this.g.b(), this.g.c());
     }

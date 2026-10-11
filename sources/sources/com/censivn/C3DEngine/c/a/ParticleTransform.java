@@ -19,21 +19,21 @@ public class ParticleTransform {
     public float o = 0.0f;
     public float p = 1.0f;
 
-    public static b a(float f, float f2, float f3) {
-        b bVar = new b();
+    public static ParticleTransform a(float f, float f2, float f3) {
+        ParticleTransform bVar = new ParticleTransform();
         bVar.d = f;
         bVar.h = f2;
         bVar.l = f3;
         return bVar;
     }
 
-    public static b a(float f, float f2, float f3, float f4) {
+    public static ParticleTransform a(float f, float f2, float f3, float f4) {
         return a(f, f2, f3, f4, null);
     }
 
-    public static b a(float f, float f2, float f3, float f4, b bVar) {
+    public static ParticleTransform a(float f, float f2, float f3, float f4, ParticleTransform bVar) {
         if (bVar == null) {
-            bVar = new b();
+            bVar = new ParticleTransform();
         }
         float fCos = (float) Math.cos(f4);
         float fSin = (float) Math.sin(f4);
@@ -59,7 +59,7 @@ public class ParticleTransform {
         return bVar;
     }
 
-    public void a(b bVar, b bVar2) {
+    public void a(ParticleTransform bVar, ParticleTransform bVar2) {
         float f = bVar.a;
         float f2 = bVar2.a;
         float f3 = bVar.e;
@@ -98,8 +98,8 @@ public class ParticleTransform {
         this.l = (f5 * f20) + (f11 * f22) + (f17 * f24) + f23;
     }
 
-    public static b b(b bVar, b bVar2) {
-        b bVar3 = new b();
+    public static ParticleTransform b(ParticleTransform bVar, ParticleTransform bVar2) {
+        ParticleTransform bVar3 = new ParticleTransform();
         bVar3.a(bVar, bVar2);
         return bVar3;
     }

@@ -37,6 +37,21 @@ families: `VObject3d`+`VObject3dContainer` (10+), `b.d` listener set,
 top-level `g/` archival, real `e/a`+`e/b` decompile gap, `f.Vertex3s`,
 singleton naming.
 
+Snapshot after iteration 27: failure set is pure long-tail stale-symbol
+(188 lines) + trio (4) + member-dups + `package e/c` (4). Resolved since:
+iteration 28 (EditModeController, DashLayoutContainer, physics family),
+iteration 29 (shortcut-info, dash-listener, h/a + comment self-fix).
+`Home`/entry, sliders, scroller, drawer-base, anim-dups, label family (7),
+panels pair, dash/drop/pool (5 files), physics pair, binder, editor
+follow-ups, `g/`+4 `_inner` archived, `getText` twin rule, `InterfaceC0025a`
+relocation, singleton/gesture/touch round, `ConfigConstants` self-type.
+Deferred-but-tracked: trio renames, mystery-`j`, parent-`h`,
+`e/b_inner/a` (moot), full-`g` (done), `EditTarget.*`/`ScreenHelper` restore,
+`ServiceProvider.a()` chain, `C3DEngine` singleton naming. Instruments:
+DEX type census, method walker with params, twin discipline, parallel
+evidence rounds with single-writer apply. Commits: baseline + 6afdb3f4,
+12c3242b, a04a998d, fe6c4d51, 097df9b7 (branch goal-driven-reconstruction).
+
 Cumulative changes: 6 files restored from `181df6a5` (5 iter1 + 1 iter2, all
 absorbed by Opus revert commit `0b12a217` — index cleaned); 5 stale refs fixed
 in `VObject3d.java`; Opus's `EasingFunctions` rename + `*_inner` moves triaged
@@ -548,6 +563,48 @@ contamination; zero-referrer grep before any archive/delete.
 - Outputs: `docs/build-output-iter21.txt`, `iter22.txt`. Regressions: none.
   Confidence: HIGH (fixes), MEDIUM (deferral is evidence-complete).
 
+## Iteration 27 — parallel round #6: physics, binder, editor [S]
+
+- Three read-only investigators (single-writer apply; one agent miscount
+  corrected: DropIndicator was 8 unique, not 5+3).
+- `ConstraintList`/`ParticleTransform`: cross-type (`e`→`ParticleData`,
+  DEX/smali/v382/ledger) vs self-type (`b`→own class, DEX signatures +
+  in-file self-evidence) — with explicit no-batch warning heeded (spring
+  subpackage shares the letters). CLEAN.
+- `ShellBindController`: `d`→`ShellBindStub`, `c`→`ShellBindCallback`
+  (ledger + smali fields + 9/9 call-site match); agent's downstream
+  `b.a(...)` qualifier trap + `WidgetInstantiator` follow-up recorded, not
+  folded in. CLEAN.
+- `WorkspaceEditor` follow-ups: `i`→`IRenderable` (assigned-from ×2 +
+  method-set), `d`→`DashLayoutContainer` (DEX + ledger + imported-but-unused
+  smoking gun), `m`→`LabelRenderable` (initializer subtype + exact method
+  set; supertypes provably lack the methods). CLEAN. Agent's 12-point
+  latent inventory (`ScreenHelper`, `a.this`, `x/w`, `j.a`, `EditTarget.*`)
+  queued verbatim.
+- Output: `docs/build-output-iter27.txt`. New leaders: `EditModeController`
+  + `DashLayoutContainer` + `PhysicsSystem` (10 each). Regressions: none.
+  Confidence: HIGH throughout.
+
+## Iteration 26 — parallel round #5: transitions, touch-G, labels, gesture [S]
+
+- Four read-only investigators, all verified before apply (incl. correcting
+  agent shorthand against log carets, and catching a wrong-guess `new h()`
+  initializer I almost carried over).
+- `TransitionManager` (7 + 2 latent iterators): `LauncherAppInfo`→
+  `TransitionRenderer` — smali field/method signatures + ledger + twin
+  callers; naive `manager.app` import explicitly rejected (would break
+  `a(boolean)/k()/j()` call sites). CLEAN.
+- `DesktopTouchHandlerG` (7 + latent locals + missed initializer): smali +
+  DEX per-site signatures to `b/f/i` + twin convergence. CLEAN.
+- `LabelManager` (5, MEDIUM): V1-vs-V2 judgment for `TextLabelElementV2` —
+  `ButtonMetrics.ab` V1 typing + DEX returns + same-package twin against the
+  V2-import alternative (which would newly mismatch). CLEAN; V2 remnants
+  queued as next layer.
+- `GestureMenuOverlay` (5): constructor-assignment proof per field + ledger
+  rows + smali field descriptors + supertype cross-checks. CLEAN.
+- Output: `docs/build-output-iter26.txt`. Regressions: none. Confidence:
+  HIGH (HIGH×3, MEDIUM×1 as marked).
+
 ## Iteration 23 — parent-`h` hunt: tool upgraded, node deferred [S]
 
 - Searched by constructor shape instead of name: NO `(I,I,F,F,F,F)` 6-arg
@@ -567,3 +624,107 @@ contamination; zero-referrer grep before any archive/delete.
 - Proportionality note: 12 tool calls without closure is the signal to
   stop per GOAL increments — the turn banked a reusable instrument rather
   than a guess. Confidence: HIGH (tool), MEDIUM (deferral completeness).
+
+## Iteration 24 — parallel round #4 + ShellProvider merge [S]
+
+- Four parallel investigators (single-writer apply): DesktopTouchHandlerC
+  (DEX interface/bitmask proof per site), WorkspaceEditor `e.a`
+  (DEX 4-interface partition → `WindowManager.a`, residue exactly one
+  method), MultiSelectLinePicker 4-way swap (positional DEX-interface
+  order vs collision explanation), PageTouchHandler/EditModeNode `l`/`a`
+  (DEX descriptors + IS-A call-site proof). One mid-application snag
+  (assertion caught a 3-site shortfall from wrong param-name guess) resolved
+  by reading actual text — no misapplied edits. New files clean except
+  follow-on layers, all logged as exposed (not regressed).
+- ShellProvider merge: smali+DEX proved tree inner `a` (empty,
+  `extends <interface>`) phantom and tree `A` the real `$a` DB helper
+  (db-name/version/bootstrap match + `ShellProvider.a.*` static callers);
+  deleted phantom, renamed `A`→`a` (decl/ctor/field/`new`/ShellModel param),
+  fixed line-29 `new ShellCoreInterface(getContext())` → `new a(...)`.
+  Both files CLEAN. Output: `docs/build-output-iter25.txt`.
+- New leaders: `TransitionManager` + `DesktopTouchHandlerG` (14 each),
+  `LabelManager` + `GestureMenuOverlay` (10 each).
+- Regressions: none. Confidence: HIGH throughout.
+
+## Iteration 28 — EditModeController, DashLayoutContainer, physics [S]
+
+- Three parallel investigators (single-writer apply).
+- `EditModeController` (5):Twin-parallel `e.a`→`WindowManager.a` (DEX
+  4-interface partition residue proof), `i`→`IRenderable`,
+  `d`→`DashLayoutContainer`, `m`→`LabelRenderable` (initializer subtype +
+  supertype elimination). CLEAN.
+- `DashLayoutContainer` (5): `f`→`TransitionRenderer` (DEX super + twin),
+  `c`→`DashLayoutListener` (DEX descriptors + reciprocal), `DashLayoutA.c`
+  →`WorkspaceEditor.c` (inner never existed per DEX; ledger + shape).
+  CLEAN.
+- `PhysicsSystem` family (5+1+3): `c`→`Particle`, `B`→`IPhysicsSystem`,
+  `i`→`IRenderable` (smali+v382+DEX+ledger); cascade through
+  `IPhysicsSystem.a(c)` fixed at the interface; three implementers needed
+  only the missing cross-package import. Whole family CLEAN.
+- Output: `docs/build-output-iter28.txt`. Regressions: none. Confidence:
+  HIGH throughout.
+
+## Iteration 32 — scattered five: drop-target, workspace, typeface, pager [S]
+
+- `DropTarget.a(i,g)`: implementer `WorkspaceShortcutItem` spells
+  `(IRenderable, WidgetDrawerItemVisual)`; file already imported both.
+  CLEAN.
+- `Workspace3D.n`: `PageTouchHandler.n()`→`WorkspacePage` +
+  `WorkspacePage.s()`→`CellLayout` closes the `i.n().s()` chain; import
+  present. CLEAN.
+- `TypefaceManager.a`: singleton self-type (`synchronized (a.class)` +
+  `new a()` + `return a`). CLEAN.
+- `PagedListModel.b`→`FilterPredicate` (same package; `boolean a(Model)`
+  matches `d()`); `ThemePager.a.InterfaceC0048a`→`BaseDataProvider.
+  InterfaceC0048a` (override comments name the true owner; import present).
+- `theme/c/e` visibility: file/class mismatch found — `SearchQueryHolder.
+  java` contained only `class e`. Renamed class to file (`SearchQueryHolder`,
+  public) and updated 4 same-package/FQN type-position refs (field-name `e`
+  occurrences untouched); `.a()` call shapes confirm identity. All CLEAN.
+- Output: `docs/build-output-iter32.txt`. Regressions: none. Confidence:
+  HIGH throughout.
+
+## Iteration 31 — `ConfigConstants` self-type [S]
+
+- `A` (field type, 3 returns, `new A()`) ≡ own class `ConfigConstants`
+  (renamed from `a.java`; all methods `return this`). Field `int A` and
+  `this.A` uses correctly left alone. CLEAN.
+- Output: `docs/build-output-iter31.txt`. Regressions: none. Confidence:
+  HIGH.
+
+## Iteration 30 — parallel round #8: singleton, gesture, touch [S]
+
+- `C3DEngine.java` (6): `preference.a.a.b`→`PreferenceItemB` (smali field
+  writes + ledger 99), `e`→`RendererImpl`, `f`→`TextureFactory`,
+  `c`→`TaskDispatcher` (smali field types + ledger + full caller-shape
+  coverage incl. direct `ShellModel`/`ShellBindContext` type proofs).
+  Clarifies the earlier census puzzle: singleton is named `a` in DEX/smali,
+  `C3DEngine` only in Prime tree. CLEAN.
+- `GestureMenuRenderer` (2): `k`→`CircleDotNode`, `j`→`BaseRenderable`
+  (smali field/ctor descriptors + ledger + twin). CLEAN.
+- `WidgetTouchHandler` (2): `b`→`WorkspaceShortcutItem` (line-parallel twin
+  + ledger + member-access census). CLEAN.
+- Output: `docs/build-output-iter30.txt`. New leader: `ConfigConstants`
+  (10). Regressions: none. Confidence: HIGH (HIGH×3).
+
+## Iteration 29 — parallel round #7: shortcut-info, dash-listener, h/a [S]
+
+- Three read-only investigators, all verified before apply (incl. correcting
+  agent shorthand against log carets twice).
+- `LauncherShortcutStandardInfo` (8 + 6 latent): `manager.o.A`→`ButtonMetrics`
+  (ledger 99 + DEX + consumer shapes; naive-import trap explicitly rejected),
+  `utils.q`→`BitmapTransformationHelper`, plus latent `b`/`x`/`f.i.b.e.b`
+  fixes (smali-direct each, incl. rejecting a score-64 cross-package ledger
+  row in favor of score-91 + smali). CLEAN.
+- `DashLayoutListener` (3 + 6 latent qualifiers): `h`→`GestureMenuRenderer`
+  (DEX superclass + ledger + sibling precedent), `d`→`DashLayoutContainer`,
+  `c.this`×6→`DashLayoutListener.this`. CLEAN. (L67 R-class + super-call
+  caveats held as deferred.)
+- `h/a` (3): V1-only file (absent from DEX/smali/v382) with a live caller —
+  fix, don't delete. `r`→`IRenderable` (GraphicsEngineBridge twin shape),
+  `ThemeDockDescription`→`512` literal with provenance comment (restore
+  would drag missing chains). Self-inflicted `//`-comment-eats-array bug
+  caught on rebuild, repaired with block comment. CLEAN.
+- Output: `docs/build-output-iter29.txt`. New leader: `C3DEngine.java`
+  (12, the engine singleton itself). Regressions: none. Confidence: HIGH
+  (HIGH×3).

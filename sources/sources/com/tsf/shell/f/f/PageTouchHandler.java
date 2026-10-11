@@ -1076,7 +1076,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         private float K;
         private WorkspacePage L;
         private Runnable M;
-        l c;
+        PageTransitionEffect c;
         private float f;
         private float g;
         private float n;
@@ -1764,7 +1764,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
             a(gVar, runnable, (PageTransitionEffect) null);
         }
 
-        private void a(WorkspacePage gVar, Runnable runnable, l lVar) {
+        private void a(WorkspacePage gVar, Runnable runnable, PageTransitionEffect lVar) {
             PageConfig.a(true);
             com.censivn.C3DEngine.a.ItemTransitionManager.d().c().a(false);
             this.L = gVar;
@@ -1780,7 +1780,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
             this.m = true;
         }
 
-        private void a(final WorkspacePage gVar, int i, Runnable runnable, final boolean z, final l lVar) {
+        private void a(final WorkspacePage gVar, int i, Runnable runnable, final boolean z, final PageTransitionEffect lVar) {
             if (this.d || gVar == null || this.L == gVar || gVar == PageTouchHandler.this.m || !this.k) {
                 if (runnable != null) {
                     runnable.run();

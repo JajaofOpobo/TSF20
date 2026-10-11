@@ -22,7 +22,7 @@ public class Workspace3D extends ViewGroup {
     private boolean f;
     private boolean g;
     private MotionEvent h;
-    private n i;
+    private PageTouchHandler i;
     private VelocityTracker j;
     private int k;
     private int l;
@@ -45,7 +45,7 @@ public class Workspace3D extends ViewGroup {
         this.l = viewConfiguration.getScaledMaximumFlingVelocity();
     }
 
-    public void setPageManager(n nVar) {
+    public void setPageManager(PageTouchHandler nVar) {
         this.i = nVar;
     }
 

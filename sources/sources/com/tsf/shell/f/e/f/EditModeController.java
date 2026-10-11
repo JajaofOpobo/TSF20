@@ -39,8 +39,8 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
     private com.tsf.shell.f.i.b.e.DrawerItemBase j;
     private c m;
     private boolean n;
-    private i o;
-    private d q;
+    private IRenderable o;
+    private DashLayoutContainer q;
     private boolean h = false;
     private boolean i = false;
     private float[] l = new float[2];
@@ -547,7 +547,7 @@ public class EditModeController implements com.censivn.C3DEngine.b.c.KeyboardHan
         public int e;
         public boolean a = false;
         public GridRenderable c = new GridRenderable(com.tsf.shell.manager.g.LayoutDimensionConstants.h, com.tsf.shell.manager.g.LayoutDimensionConstants.h, false);
-        public m d = new LabelRenderable();
+        public LabelRenderable d = new LabelRenderable();
 
         public c(int i) {
             this.e = i;

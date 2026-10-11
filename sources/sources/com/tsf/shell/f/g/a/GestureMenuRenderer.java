@@ -11,7 +11,7 @@ import com.tsf.shell.utils.GraphicsEngineBridge;
 public class GestureMenuRenderer extends BaseRenderable {
     private static TextureElement b;
     private static TextureElement c;
-    private static k d;
+    private static CircleDotNode d;
     private static TextureElement g;
     private com.censivn.C3DEngine.b.f.GridRenderable a;
     public BaseRenderable e;
@@ -53,7 +53,7 @@ public class GestureMenuRenderer extends BaseRenderable {
         this.f = false;
     }
 
-    public GestureMenuRenderer(j jVar) {
+    public GestureMenuRenderer(BaseRenderable jVar) {
         this.f = false;
         this.e = jVar;
         jVar.calAABB();

@@ -6,21 +6,21 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PhysicsSystem {
-    c a = new c();
-    ArrayList<B> b;
+    Particle a = new Particle();
+    ArrayList<IPhysicsSystem> b;
 
-    public PhysicsSystem(i iVar) {
+    public PhysicsSystem(IRenderable iVar) {
         this.a.a(iVar);
         this.a.c();
         this.b = new ArrayList<>();
     }
 
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         this.a.b(iVar);
         this.a.c();
     }
 
-    public void a(B bVar) {
+    public void a(IPhysicsSystem bVar) {
         bVar.a(this.a);
         this.b.add(bVar);
     }

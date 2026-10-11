@@ -40,7 +40,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
     private boolean p;
     private boolean q;
     private TextView r;
-    private List<com.tsf.extend.theme.c.e> s;
+    private List<com.tsf.extend.theme.c.SearchQueryHolder> s;
     private A t;
     private int u;
     private boolean v;
@@ -417,7 +417,7 @@ public class ThemePager extends FrameLayout implements View.OnClickListener, Vie
         }
     }
 
-    class A implements a.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
+    class A implements BaseDataProvider.InterfaceC0048a<com.tsf.extend.base.b.PagedListModel> {
         A() {
         }
 

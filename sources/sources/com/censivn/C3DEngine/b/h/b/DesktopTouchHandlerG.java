@@ -20,7 +20,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
     private float k = 0.0f;
     private boolean l = false;
     private boolean m = false;
-    private ArrayList<i> b = new ArrayList<>();
+    private ArrayList<IRenderable> b = new ArrayList<>();
     private BaseRenderable c = new BaseRenderable();
 
     public DesktopTouchHandlerG(float f, float f2, float f3, float f4, float f5) {
@@ -76,7 +76,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
             public void a(MotionEvent motionEvent) {
                 if (!this.d) {
                     float[] fArrA = x.a(motionEvent);
-                    i hittingTarget = g.this.c.getHittingTarget(fArrA[0], fArrA[1], true);
+                    IRenderable hittingTarget = g.this.c.getHittingTarget(fArrA[0], fArrA[1], true);
                     if (hittingTarget != null) {
                         g.this.a(hittingTarget, hittingTarget.getDisplayTag());
                     }
@@ -87,7 +87,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
             public void c(MotionEvent motionEvent) {
                 if (!this.d) {
                     float[] fArrA = x.a(motionEvent);
-                    i hittingTarget = g.this.c.getHittingTarget(fArrA[0], fArrA[1], true);
+                    IRenderable hittingTarget = g.this.c.getHittingTarget(fArrA[0], fArrA[1], true);
                     if (hittingTarget != null) {
                         this.f = hittingTarget;
                         g.this.a(motionEvent, hittingTarget, hittingTarget.getDisplayTag());
@@ -130,7 +130,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                 i2 = -1;
                 break;
             }
-            i childAt = this.c.getChildAt(i2);
+            IRenderable childAt = this.c.getChildAt(i2);
             if (childAt.getDisplayTag() != i) {
                 i2++;
             } else {
@@ -142,7 +142,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
         if (i2 != -1) {
             int iNumChildren2 = this.c.numChildren();
             while (i2 < iNumChildren2) {
-                i childAt2 = this.c.getChildAt(i2);
+                IRenderable childAt2 = this.c.getChildAt(i2);
                 if (i2 == iNumChildren2 - 1) {
                     a(childAt2, i, new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerG.2
                         @Override // java.lang.Runnable
@@ -184,7 +184,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
             this.c.invalidate();
             int iNumChildren = this.c.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
-                i childAt = this.c.getChildAt(i);
+                IRenderable childAt = this.c.getChildAt(i);
                 if (i > this.a) {
                     childAt.removeFromParent();
                     this.b.add(childAt);
@@ -248,7 +248,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void h() {
-        i iVarA;
+        IRenderable iVarA;
         if (this.a >= 0) {
             int iG = g();
             if (iG < 0) {
@@ -259,7 +259,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
             int iNumChildren = this.c.numChildren();
             int i = iG;
             for (int i2 = 0; i2 < iNumChildren; i2++) {
-                i childAt = this.c.getChildAt(i2);
+                IRenderable childAt = this.c.getChildAt(i2);
                 if (i2 != iNumChildren - 1 || childAt.getDisplayTag() == this.a) {
                     if (i2 == 0 && childAt.position().x + this.c.position().x > this.d && childAt.getDisplayTag() != 0 && (iVarA = a(i, j())) != null) {
                         iVarA.removeFromParent();
@@ -269,7 +269,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                         return;
                     }
                 } else if (childAt.position().x + this.c.position().x < this.e + this.f && i < this.a) {
-                    i iVarA2 = a(i + 1, j());
+                    IRenderable iVarA2 = a(i + 1, j());
                     iVarA2.removeFromParent();
                     this.c.addChild(iVarA2);
                     iVarA2.position().x = childAt.position().x + this.f;
@@ -280,7 +280,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
                 i++;
             }
             if (iNumChildren == 0) {
-                i iVarA3 = a(i, j());
+                IRenderable iVarA3 = a(i, j());
                 iVarA3.removeFromParent();
                 b(iVarA3, i);
                 this.c.addChild(iVarA3);
@@ -292,7 +292,7 @@ public class DesktopTouchHandlerG extends BaseRenderable {
     private void i() {
         int iNumChildren = this.c.numChildren();
         for (int i = 0; i < iNumChildren; i++) {
-            i childAt = this.c.getChildAt(i);
+            IRenderable childAt = this.c.getChildAt(i);
             if (i == iNumChildren - 1) {
                 if (childAt.position().x + this.c.position().x > this.e + (this.f * 2.0f)) {
                     this.c.removeChildAt(i);
@@ -317,8 +317,8 @@ public class DesktopTouchHandlerG extends BaseRenderable {
         return this.b.remove(size - 1);
     }
 
-    private void a(i iVar, int i, Runnable runnable) {
-        i iVarA;
+    private void a(IRenderable iVar, int i, Runnable runnable) {
+        IRenderable iVarA;
         if (iVar.getDisplayTag() != i && (iVarA = a(i, iVar)) != null) {
             iVarA.setDisplayTag(i);
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
@@ -329,31 +329,31 @@ public class DesktopTouchHandlerG extends BaseRenderable {
         }
     }
 
-    private void b(i iVar, int i) {
-        i iVarA;
+    private void b(IRenderable iVar, int i) {
+        IRenderable iVarA;
         if (iVar.getDisplayTag() != i && (iVarA = a(i, iVar)) != null) {
             iVarA.setDisplayTag(i);
             iVarA.position().x = i * this.f;
         }
     }
 
-    public void a(i iVar, int i) {
+    public void a(IRenderable iVar, int i) {
     }
 
-    public void a(MotionEvent motionEvent, i iVar, int i) {
+    public void a(MotionEvent motionEvent, IRenderable iVar, int i) {
     }
 
-    public void b(MotionEvent motionEvent, i iVar, int i) {
+    public void b(MotionEvent motionEvent, IRenderable iVar, int i) {
     }
 
-    public void a(MotionEvent motionEvent, MotionEvent motionEvent2, i iVar, int i) {
+    public void a(MotionEvent motionEvent, MotionEvent motionEvent2, IRenderable iVar, int i) {
     }
 
     public int e() {
         return 0;
     }
 
-    public IRenderable a(int i, i iVar) {
+    public IRenderable a(int i, IRenderable iVar) {
         return null;
     }
 }

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class WidgetTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventListener {
     private static float[] l = {0.0f, 0.0f};
-    private b a;
+    private WorkspaceShortcutItem a;
     private com.censivn.C3DEngine.b.d.MouseEventListener b;
     private boolean d;
     private com.tsf.shell.manager.d.HitTargetManager.C0127a e;
@@ -26,7 +26,7 @@ public class WidgetTouchHandler extends com.censivn.C3DEngine.b.d.MouseEventList
     private boolean p;
     private Runnable q;
 
-    public WidgetTouchHandler(com.censivn.C3DEngine.b.f.IRenderable iVar, b bVar) {
+    public WidgetTouchHandler(com.censivn.C3DEngine.b.f.IRenderable iVar, WorkspaceShortcutItem bVar) {
         super(iVar);
         this.d = false;
         this.k = false;

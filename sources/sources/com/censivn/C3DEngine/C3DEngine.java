@@ -8,19 +8,19 @@ import android.util.DisplayMetrics;
 import com.censivn.C3DEngine.a.RendererImpl;
 import com.censivn.C3DEngine.b.c.TaskDispatcher;
 import com.censivn.C3DEngine.b.c.TextureFactory;
-import com.tsf.shell.preference.a.a.b;
+import com.tsf.shell.preference.a.a.PreferenceItemB;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class C3DEngine {
     private static Context a;
-    private static e b;
-    private static f c;
+    private static RendererImpl b;
+    private static TextureFactory c;
     private static GLSurfaceView d;
-    private static c e;
+    private static TaskDispatcher e;
     private static String f;
     private static int g;
 
-    public static c a() {
+    public static TaskDispatcher a() {
         return e;
     }
 
@@ -30,10 +30,10 @@ public class C3DEngine {
         activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         com.censivn.C3DEngine.b.b.ScreenConstants.e = displayMetrics.density;
         float f2 = com.censivn.C3DEngine.b.b.ScreenConstants.e / 3.0f;
-        b.b = com.censivn.C3DEngine.b.b.ScreenConstants.e - (1.5f * f2);
-        b.a = (f2 * 1.5f) + com.censivn.C3DEngine.b.b.ScreenConstants.e;
-        if (b.b < 0.8f) {
-            b.b = 0.8f;
+        PreferenceItemB.b = com.censivn.C3DEngine.b.b.ScreenConstants.e - (1.5f * f2);
+        PreferenceItemB.a = (f2 * 1.5f) + com.censivn.C3DEngine.b.b.ScreenConstants.e;
+        if (PreferenceItemB.b < 0.8f) {
+            PreferenceItemB.b = 0.8f;
         }
         float fAj = com.tsf.shell.manager.b.e.aj();
         if (fAj == 0.0f) {
@@ -50,7 +50,7 @@ public class C3DEngine {
         com.censivn.C3DEngine.b.b.ScreenConstants.a = com.censivn.C3DEngine.b.b.ScreenConstants.d / 1.5f;
     }
 
-    public static void a(c cVar) {
+    public static void a(TaskDispatcher cVar) {
         e = cVar;
     }
 
@@ -78,11 +78,11 @@ public class C3DEngine {
         return a;
     }
 
-    public static e e() {
+    public static RendererImpl e() {
         return b;
     }
 
-    public static void a(e eVar) {
+    public static void a(RendererImpl eVar) {
         b = eVar;
     }
 
@@ -94,11 +94,11 @@ public class C3DEngine {
         d = gLSurfaceView;
     }
 
-    public static f g() {
+    public static TextureFactory g() {
         return c;
     }
 
-    public static void a(f fVar) {
+    public static void a(TextureFactory fVar) {
         c = fVar;
     }
 }

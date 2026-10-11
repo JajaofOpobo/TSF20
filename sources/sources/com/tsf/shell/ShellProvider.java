@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class ShellProvider extends ContentProvider {
     public static String a;
     private static ShellProvider c;
-    private A b;
+    private a b;
 
     @Override // android.content.ContentProvider
     public boolean onCreate() {
@@ -26,7 +26,7 @@ public class ShellProvider extends ContentProvider {
         if (c == null) {
             c = this;
         }
-        this.b = new ShellCoreInterface(getContext());
+        this.b = new a(getContext());
         return true;
     }
 
@@ -185,19 +185,13 @@ public class ShellProvider extends ContentProvider {
         }
     }
 
-    public static class a extends ShellCoreInterface {
-        a(Context context) {
-            super(context);
-        }
-    }
-
-    public static class A extends SQLiteOpenHelper {
+    public static class a extends SQLiteOpenHelper {
         private int a;
         private int b;
         private Context c;
         private boolean d;
 
-        A(Context context) {
+        a(Context context) {
             super(context, "TSFLauncher-database.db", (SQLiteDatabase.CursorFactory) null, 34);
             this.a = -1;
             this.b = -1;

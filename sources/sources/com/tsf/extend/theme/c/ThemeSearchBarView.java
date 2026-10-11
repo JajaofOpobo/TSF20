@@ -40,7 +40,7 @@ class c extends FrameLayout implements View.OnClickListener, PageActivity.a {
     private String j;
     private boolean k;
     private View l;
-    private List<e> m;
+    private List<SearchQueryHolder> m;
     private View n;
     private a o;
     private boolean p;
@@ -58,7 +58,7 @@ class c extends FrameLayout implements View.OnClickListener, PageActivity.a {
         Go
     }
 
-    public c(Context context, int i, boolean z, List<e> list) {
+    public c(Context context, int i, boolean z, List<SearchQueryHolder> list) {
         super(context);
         this.a = 1000L;
         this.h = 0L;
@@ -89,7 +89,7 @@ class c extends FrameLayout implements View.OnClickListener, PageActivity.a {
         g();
     }
 
-    private String a(int i, List<e> list) {
+    private String a(int i, List<SearchQueryHolder> list) {
         return (list == null || list.size() <= i || i < 0) ? "" : list.get(i).a();
     }
 

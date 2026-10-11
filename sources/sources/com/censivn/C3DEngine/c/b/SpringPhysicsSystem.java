@@ -3,6 +3,7 @@ package com.censivn.C3DEngine.c.b;
 import com.censivn.C3DEngine.c.a.BaseParticle;
 import com.censivn.C3DEngine.c.a.ParticleData;
 import java.util.ArrayList;
+import com.censivn.C3DEngine.c.IPhysicsSystem;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SpringPhysicsSystem extends BaseParticle implements IPhysicsSystem {

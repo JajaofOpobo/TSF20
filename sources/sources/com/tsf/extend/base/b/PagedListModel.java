@@ -6,7 +6,7 @@ import java.util.List;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PagedListModel<T extends Serializable> implements Serializable {
-    private b a;
+    private FilterPredicate a;
     private long c;
     private String e;
     private int g;
@@ -75,7 +75,7 @@ public class PagedListModel<T extends Serializable> implements Serializable {
         this.g = i;
     }
 
-    public void a(b bVar) {
+    public void a(FilterPredicate bVar) {
         this.a = bVar;
     }
 

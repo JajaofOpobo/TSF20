@@ -8,8 +8,8 @@ import android.opengl.GLES20;
 import android.util.Log;
 import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
-import com.censivn.C3DEngine.b.r;
-import com.tsf.shell.theme.inside.ThemeDockDescription;
+import com.censivn.C3DEngine.b.f.IRenderable;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -62,9 +62,9 @@ public final class a {
         return a2;
     }
 
-    public static void a(r rVar, int i, int i2, int i3, int i4) {
-        rVar.y().a((short) i, (short) i3, (short) i2);
-        rVar.y().a((short) i, (short) i4, (short) i3);
+    public static void a(IRenderable rVar, int i, int i2, int i3, int i4) {
+        rVar.faces().add((short) i, (short) i3, (short) i2);
+        rVar.faces().add((short) i, (short) i4, (short) i3);
     }
 
     public static FloatBuffer a(float f, float f2, float f3, float f4) {
@@ -131,7 +131,7 @@ public final class a {
     }
 
     public static int b(int i) {
-        int[] iArr = {2, 4, 8, 16, 32, 64, 128, 256, ThemeDockDescription.DOCK_MENU_ADD_BUTTON_OFF, 1024};
+        int[] iArr = {2, 4, 8, 16, 32, 64, 128, 256, 512 /* V1 ThemeDockDescription.DOCK_MENU_ADD_BUTTON_OFF */, 1024};
         int length = iArr.length;
         for (int i2 = 0; i2 < length; i2++) {
             if (i <= iArr[i2]) {

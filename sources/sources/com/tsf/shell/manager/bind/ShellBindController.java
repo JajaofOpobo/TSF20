@@ -10,9 +10,9 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ShellBindController {
-    public static d a = new ShellBindStub();
-    public static d b = new ShellBindStub();
-    private c c;
+    public static ShellBindStub a = new ShellBindStub();
+    public static ShellBindStub b = new ShellBindStub();
+    private ShellBindCallback c;
 
     public static void a(final ItemInfo itemInfo, final boolean z) {
         com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.tsf.shell.manager.bind.ShellBindController.1
@@ -88,7 +88,7 @@ public class ShellBindController {
         }
     }
 
-    public void a(c cVar) {
+    public void a(ShellBindCallback cVar) {
         this.c = cVar;
     }
 

@@ -385,8 +385,8 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return aVar;
     }
 
-    private static com.tsf.extend.theme.c.e b(JSONObject jSONObject) {
-        com.tsf.extend.theme.c.e eVar = new com.tsf.extend.theme.c.e();
+    private static com.tsf.extend.theme.c.SearchQueryHolder b(JSONObject jSONObject) {
+        com.tsf.extend.theme.c.SearchQueryHolder eVar = new com.tsf.extend.theme.c.SearchQueryHolder();
         eVar.a(jSONObject.optString("search_word"));
         return eVar;
     }

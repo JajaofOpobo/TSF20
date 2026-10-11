@@ -5,16 +5,16 @@ import com.tsf.b;
 import com.tsf.shell.f.g.a.GestureMenuRenderer;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DashLayoutListener extends h {
+public class DashLayoutListener extends GestureMenuRenderer {
     private static TextureElement h = new TextureElement(0, false);
     private boolean a;
     private Runnable b;
     private Runnable c;
     private Runnable d;
     private Runnable f;
-    private d g;
+    private DashLayoutContainer g;
 
-    public DashLayoutListener(d dVar) {
+    public DashLayoutListener(DashLayoutContainer dVar) {
         super(new com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable(5, 60, 120, 60));
         this.a = false;
         this.g = dVar;
@@ -33,25 +33,25 @@ public class DashLayoutListener extends h {
         this.b = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.1
             @Override // java.lang.Runnable
             public void run() {
-                com.censivn.C3DEngine.C3DEngine.a().b(c.this.c, 300L);
+                com.censivn.C3DEngine.C3DEngine.a().b(DashLayoutListener.this.c, 300L);
             }
         };
         this.c = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.2
             @Override // java.lang.Runnable
             public void run() {
-                c.this.g.b((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) c.this.e, c.this.d);
+                DashLayoutListener.this.g.b((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) DashLayoutListener.this.e, DashLayoutListener.this.d);
             }
         };
         this.d = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.3
             @Override // java.lang.Runnable
             public void run() {
-                c.this.a = false;
+                DashLayoutListener.this.a = false;
             }
         };
         this.f = new Runnable() { // from class: com.tsf.shell.f._d.c.a.DashLayoutListener.4
             @Override // java.lang.Runnable
             public void run() {
-                c.this.g.a((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) c.this.e, c.this.b);
+                DashLayoutListener.this.g.a((com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable) DashLayoutListener.this.e, DashLayoutListener.this.b);
             }
         };
         calAABB();

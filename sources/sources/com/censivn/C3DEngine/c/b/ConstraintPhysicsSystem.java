@@ -3,6 +3,7 @@ package com.censivn.C3DEngine.c.b;
 import com.censivn.C3DEngine.api.effects.core.Vector3;
 import com.censivn.C3DEngine.c.a.BaseParticle;
 import com.censivn.C3DEngine.c.a.ParticleData;
+import com.censivn.C3DEngine.c.IPhysicsSystem;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ConstraintPhysicsSystem extends BaseParticle implements IPhysicsSystem {

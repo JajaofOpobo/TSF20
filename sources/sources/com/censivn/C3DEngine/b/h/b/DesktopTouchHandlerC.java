@@ -17,11 +17,13 @@ import com.tsf.shell.theme.inside.ThemeManager;
 import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
+import com.tsf.shell.f.e._d.a.DropIndicatorState;
+import com.tsf.shell.f.f.WorkspacePage;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.InterfaceC0113a {
-    private static j Q;
-    private static c.a R;
+public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHandler.a, WindowManager.a, MultiSelectController.InterfaceC0113a {
+    private static BaseRenderable Q;
+    private static DropIndicatorState.a R;
     private Number3d A;
     private Number3d B;
     private Number3d C;
@@ -36,7 +38,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
     private int L;
     private boolean M;
     private boolean N;
-    private com.tsf.shell.f.f.g O;
+    private com.tsf.shell.f.f.WorkspacePage O;
     private a P;
     private BaseRenderable a;
     private GridRenderable b;
@@ -70,11 +72,11 @@ public class DesktopTouchHandlerC extends BaseRenderable implements b.a, e.a, A.
         }
     }
 
-    public DesktopTouchHandlerC(com.tsf.shell.f.f.g gVar, boolean z) {
+    public DesktopTouchHandlerC(com.tsf.shell.f.f.WorkspacePage gVar, boolean z) {
         this(gVar, z, null);
     }
 
-    public DesktopTouchHandlerC(com.tsf.shell.f.f.g gVar, boolean z, a aVar) {
+    public DesktopTouchHandlerC(com.tsf.shell.f.f.WorkspacePage gVar, boolean z, a aVar) {
         this.k = 0.0f;
         this.l = 0.0f;
         this.m = false;

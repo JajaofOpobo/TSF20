@@ -13,7 +13,7 @@ import java.util.Map;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ConfigConstants {
-    public static final A a = new A();
+    public static final ConfigConstants a = new ConfigConstants();
     public static String b = "CM_TOOL";
     public static String c = "C1";
     public static String d = "C2";
@@ -146,11 +146,11 @@ public class ConfigConstants {
         x.put(q, "127");
     }
 
-    public static A a(String str) {
-        return new A().b(str).c("unknown");
+    public static ConfigConstants a(String str) {
+        return new ConfigConstants().b(str).c("unknown");
     }
 
-    public A b(String str) {
+    public ConfigConstants b(String str) {
         this.z = str;
         return this;
     }
@@ -163,7 +163,7 @@ public class ConfigConstants {
         this.B = i2;
     }
 
-    public A c(String str) {
+    public ConfigConstants c(String str) {
         this.y = str;
         return this;
     }
@@ -227,7 +227,7 @@ public class ConfigConstants {
         }
     }
 
-    public A a(Cursor cursor) {
+    public ConfigConstants a(Cursor cursor) {
         this.z = a(cursor, "pkg_name", "");
         this.y = a(cursor, "category", "unknow");
         this.A = a(cursor, "tc", -1);

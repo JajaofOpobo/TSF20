@@ -4,7 +4,6 @@ import android.view.MotionEvent;
 import com.censivn.C3DEngine.api.element.TextureElement;
 import com.censivn.C3DEngine.api.tween.VEasing;
 import com.tsf.shell.manager.n.ToastOverlayController;
-import com.tsf.shell.f.f.a.PageContainerView0133a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
@@ -13,7 +12,7 @@ public class FolderPageItemBase extends com.censivn.C3DEngine.b.f.BaseRenderable
     protected int c;
     protected String d;
     protected com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable e;
-    protected C0133a f;
+    protected ToastOverlayController.C0133a f;
     private TextureElement g = new TextureElement(0, false);
     private boolean h = false;
     private boolean i = false;

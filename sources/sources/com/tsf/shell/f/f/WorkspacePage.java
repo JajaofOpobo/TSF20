@@ -809,7 +809,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         }
     }
 
-    private void a(float f2, l lVar) {
+    private void a(float f2, PageTransitionEffect lVar) {
         if (this.k != lVar) {
             this.k = lVar;
             ai();
@@ -874,7 +874,7 @@ public class WorkspacePage extends com.censivn.C3DEngine.b.f.BaseRenderable impl
         a(this, 0.0f, true, true, lVar);
     }
 
-    public void a(WorkspacePage gVar, float f2, boolean z, boolean z2, l lVar) {
+    public void a(WorkspacePage gVar, float f2, boolean z, boolean z2, PageTransitionEffect lVar) {
         if (this.g * f2 < 0.0f) {
             if (f2 < 0.0f) {
                 if (this.y != null && this.y != gVar) {

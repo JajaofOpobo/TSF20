@@ -10,11 +10,11 @@ import java.util.ArrayList;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class GestureMenuOverlay extends com.tsf.shell.f.e._g.MenuOverlay {
-    public c a;
-    public e b;
-    public d c;
-    public g d;
-    public f e;
+    public GestureMenuItemAction a;
+    public GestureMenuEffectItem b;
+    public GestureMenuDrawerItem c;
+    public GestureMenuTextItem d;
+    public GestureMenuMarkItem e;
     private EmptyRenderable f;
     private boolean g;
     private BaseRenderable h;

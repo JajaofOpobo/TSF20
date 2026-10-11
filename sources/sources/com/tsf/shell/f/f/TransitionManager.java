@@ -5,10 +5,10 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public abstract class TransitionManager<E> {
-    private ArrayList<LauncherAppInfo> b;
-    private ArrayList<LauncherAppInfo> c;
-    private ArrayList<LauncherAppInfo> d;
-    private f e;
+    private ArrayList<TransitionRenderer> b;
+    private ArrayList<TransitionRenderer> c;
+    private ArrayList<TransitionRenderer> d;
+    private TransitionRenderer e;
     private boolean a = false;
     private boolean f = false;
 
@@ -20,14 +20,14 @@ public abstract class TransitionManager<E> {
 
     public abstract String c();
 
-    public TransitionManager(ArrayList<LauncherAppInfo> arrayList) {
+    public TransitionManager(ArrayList<TransitionRenderer> arrayList) {
         a(arrayList);
     }
 
     public TransitionManager() {
     }
 
-    public void a(ArrayList<LauncherAppInfo> arrayList) {
+    public void a(ArrayList<TransitionRenderer> arrayList) {
         this.b = arrayList;
         TransitionManager();
     }
@@ -70,7 +70,7 @@ public abstract class TransitionManager<E> {
             }
             return;
         }
-        Iterator<LauncherAppInfo> it = this.c.iterator();
+        Iterator<TransitionRenderer> it = this.c.iterator();
         while (it.hasNext()) {
             it.next().a(false);
         }
@@ -87,7 +87,7 @@ public abstract class TransitionManager<E> {
 
     /* JADX WARN: Type inference failed for: r0v4, types: [E, com.tsf.shell.f.f.TransitionRenderer] */
     private E c(int i) {
-        Iterator<LauncherAppInfo> it = this.b.iterator();
+        Iterator<TransitionRenderer> it = this.b.iterator();
         while (it.hasNext()) {
             E r0 = (E) ((TransitionRenderer) it.next());
             if (r0.k() == i) {
@@ -104,7 +104,7 @@ public abstract class TransitionManager<E> {
         return a(this.b.get(ItemPageTransition));
     }
 
-    public boolean a(f fVar) {
+    public boolean a(TransitionRenderer fVar) {
         if (!this.f) {
             if (this.e != null) {
                 this.e.a(false);

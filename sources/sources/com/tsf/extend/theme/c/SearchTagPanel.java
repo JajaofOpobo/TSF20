@@ -48,7 +48,7 @@ class i extends LinearLayout implements View.OnClickListener {
         }
     }
 
-    public void setTagData(List<e> list) {
+    public void setTagData(List<SearchQueryHolder> list) {
         if (list != null && list.size() > 0) {
             this.b.clear();
             this.b.addAll(a(list));
@@ -144,9 +144,9 @@ class i extends LinearLayout implements View.OnClickListener {
         view.setLayoutParams(layoutParams);
     }
 
-    private List<String> a(List<e> list) {
+    private List<String> a(List<SearchQueryHolder> list) {
         ArrayList arrayList = new ArrayList();
-        Iterator<e> it = list.iterator();
+        Iterator<SearchQueryHolder> it = list.iterator();
         while (it.hasNext()) {
             arrayList.add(it.next().a());
         }

@@ -16,9 +16,9 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class LabelManager {
-    public static TextLabelElementV2 a;
+    public static TextLabelElement a;
     public static int b = 0;
-    private static ArrayList<TextLabelElementV2> c;
+    private static ArrayList<TextLabelElement> c;
     private static TextPaint d;
 
     public static class a {
@@ -84,7 +84,7 @@ public class LabelManager {
         com.tsf.shell.manager.o.ButtonPresetManager.c.ab = LabelManagerV2.get(1);
     }
 
-    private static TextLabelElementV2 a(int i, boolean z) {
+    private static TextLabelElement a(int i, boolean z) {
         a aVar = new TextConfigV2();
         b bVar = new TextLabelElementV2(LabelManagerV2.size(), aVar);
         aVar.g = com.tsf.shell.manager.o.a.TextLabelElement.a;
@@ -104,7 +104,7 @@ public class LabelManager {
         }
     }
 
-    public static TextLabelElementV2 b(int i) {
+    public static TextLabelElement b(int i) {
         for (b bVar : c) {
             if (bVar.b == i) {
                 return bVar;
@@ -117,7 +117,7 @@ public class LabelManager {
         return LabelManagerV2.size();
     }
 
-    public static TextLabelElementV2 c(int i) {
+    public static TextLabelElement c(int i) {
         return LabelManagerV2.get(i);
     }
 

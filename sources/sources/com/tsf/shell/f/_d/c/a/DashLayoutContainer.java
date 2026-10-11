@@ -3,11 +3,12 @@ package com.tsf.shell.f._d.c.a;
 import com.tsf.shell.f.e.f.EditModeController;
 import com.tsf.shell.f.f.TransitionRenderer;
 import java.util.ArrayList;
+import com.tsf.shell.f.e._f.WorkspaceEditor;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class DashLayoutContainer extends f {
+public class DashLayoutContainer extends TransitionRenderer {
     public static final float b = com.censivn.C3DEngine.b.b.ScreenConstants.a(65.0f);
-    private c a;
+    private DashLayoutListener a;
 
     public DashLayoutContainer(int i, boolean z) {
         super(i, 0, z);
@@ -20,7 +21,7 @@ public class DashLayoutContainer extends f {
         };
     }
 
-    public c b() {
+    public DashLayoutListener b() {
         return this.a;
     }
 
@@ -30,10 +31,10 @@ public class DashLayoutContainer extends f {
     public void a() {
     }
 
-    public void a(DashLayoutA.c cVar) {
+    public void a(WorkspaceEditor.c cVar) {
     }
 
-    public void b(DashLayoutA.c cVar) {
+    public void b(WorkspaceEditor.c cVar) {
     }
 
     public int a(int i) {
