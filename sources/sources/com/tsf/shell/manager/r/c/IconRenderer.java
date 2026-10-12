@@ -104,7 +104,7 @@ public class IconRenderer {
                 }
                 z2 = z;
             } catch (Exception e) {
-                WidgetRegistryManager.printStackTrace();
+                e.printStackTrace();
                 z2 = z;
             }
         }

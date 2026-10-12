@@ -423,7 +423,7 @@ public class WidgetPanelBase extends com.censivn.C3DEngine.b.f.BaseRenderable {
                                 WidgetPanelBase.this.C.wait(1000L);
                             }
                         } catch (InterruptedException e) {
-                            WidgetContainer.printStackTrace();
+                            e.printStackTrace();
                         }
                     } else {
                         return;

@@ -45,7 +45,7 @@ public class PendingItemGroup extends ItemGroupBase {
     }
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase
-    public BaseRenderable a(boolean z) {
+    public IRenderable a(boolean z) {
         if (this.k == null) {
             this.k = q();
         } else {
@@ -86,7 +86,7 @@ public class PendingItemGroup extends ItemGroupBase {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(i iVar) {
+    public void a(IRenderable iVar) {
         iVar.doubleSidedEnabled(true);
         com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams();
         if (iVar.rotation().y == 0.0f) {

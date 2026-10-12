@@ -664,6 +664,94 @@ contamination; zero-referrer grep before any archive/delete.
 - Output: `docs/build-output-iter28.txt`. Regressions: none. Confidence:
   HIGH throughout.
 
+## Iteration 34 — theme trio: keyboard, detail, xml-parser [S]
+
+- Three investigators (smali descriptors + ledger + twins, all verified).
+- `KeyboardPager` (5): `k`→`ThemeModel` (smali sigs + twin consensus +
+  unused-import signal; boolean field `k` untouched; `KeyboardThemeModel`
+  ruled out by missing `g()`). CLEAN.
+- `ThemeDetail` (4 + 5 latent): `o`→`ThemeLoadingDialog`,
+  `t`→`ThemeBaseAdapter`, `k`→`ThemeModel` (smali field types + member
+  collisions explicitly avoided). CLEAN.
+- `ThemeXmlParser` (3 + generic + 6 self-refs): `f`→`ThemeSystemModel`
+  (`b()` disambiguation decisive); `ae.`→`ThemeXmlParser.` (no `ae` class
+  exists anywhere — stale self-ref, same-class statics confirmed).
+  CLEAN. Two misfired applications caught by atomic asserts (whitespace,
+  access modifier) before any write.
+- Output: `docs/build-output-iter34.txt`. Regressions: none. Confidence:
+  HIGH (HIGH×3).
+
+## Iteration 37 — smali-fidelity audit + fix-scripts-era corruption purge [S]
+
+Answer to the standing question: NO — iter-36 was not the only
+non-smali-faithful flag. Audit found a whole fix-scripts-era corruption
+family (commit 2d27af77 pattern: blind single-letter→named-type substitution).
+Verified each against smali/v382/ledger before touching:
+
+- `IRenderable` AABB cluster: fields+constructions `a`→`TextureSpriteRenderable`,
+  helper sig, 6 call sites, `a.c.a/b`→`a.Box3DRenderable.a/b`,
+  `e.printStackTrace`→`AltColoredRectRenderable`, 5× `j jVar=(BaseRenderable)`
+  mixed decls — all reverted to smali/v382-faithful forms (`a`, `MatrixUtils`,
+  `e`, `BaseRenderable`). VObject3d iter-1 spelling fix stands (now
+  semantically correct too).
+- `<Type>.printStackTrace()` family: 51 sites tree-wide, each catch-var
+  verified (`e`/`e2`/`e3`/`e6`→`e`); 2 legitimate `bVar` sites left alone.
+- Label family (my own iter-20 deviation): DEX full signatures prove all
+  `a(Z)`/`a(I,I,Z)`/`b(I)` return `b/f/i` — reverted 9 sites + 1 latent
+  local to `IRenderable`. Lesson logged: body-expression type ≠ declared
+  return type; declared type comes from the interface/DEX contract.
+- `a.d.d()`→`TouchDispatcher.d()` (smali+ledger), `a.e.l()`→`RendererImpl.l()`
+  (ledger+v382+member, in H).
+- Verified faithful, no action: EasingFunctions (smali `b` interface shape
+  matches), FolderItemPositioner twin (ledger+smali N/O types), label
+  callers (no BaseRenderable-typed receivers).
+- Queued with precise briefs (not guessed): `a.TransitionConfig.l()`,
+  `a.ItemTransitionManager.d()`, `a.AppClassifier`+`e.a(out_of_space)`
+  (neither candidate has the members — needs smali/v382 reconstruction),
+  field-`w`/`x` PageTouchHandler sites (`w.a/l`, `x.c`, `j.a` vs
+  `PageAnimationState.a`, `WidgetPanelController.a.j` vs PageShaderNode).
+- Output: `docs/build-output-iter37.txt`. Regressions: none. Confidence:
+  HIGH (all applied fixes triple-verified; queued items explicitly deferred).
+
+## Iteration 35 — diy trio, TouchHandlerC latents, TweenUtils [S]
+
+- Three investigators (smali descriptors + ledger + twins, all verified).
+- `diy/c,f,e` (11 sites): `aq`→`AbstractThemeProvider` (smali generic
+  signatures + in-file self-confirmation), `k`→`ThemeModel`. Caution heeded:
+  parent-`f` mapping NOT carried into `diy/` (volley request class).
+  CLEAN (all three).
+- `DesktopTouchHandlerC` follow-ups: `e`→`DesktopTouchHandlerE`,
+  `ArrayList<i>`+locals→`IRenderable`, `c.this`×44, `x.`→`GraphicsEngineBridge`
+  (anchored to `x.a(`/`x.b(` — int-var `x` uses untouched), R-class FQN
+  (fields-in-scope force FQN form). File error-free; `c.b`/`c.a` twin-choice
+  (f/e/d/a vs _d) still queued — lines 269/277 produce no errors this round
+  (cap displacement), explicitly NOT taken as resolution.
+- `TweenUtils` (2): `d`→`TweenParams` (ledger + smali + call sites). KEEP
+  verdict (1,200+ callers); bodies/overloads queued as separate work.
+  CLEAN.
+- Output: `docs/build-output-iter35.txt`. Regressions: none. Confidence:
+  HIGH throughout.
+
+## Iteration 36 — twin-choice flag resolved [S]
+
+- `DesktopTouchHandlerC:269/277` `c.b`/`c.a` → `_d` `DropIndicatorState`
+  inners (not smali-faithful `f/e/d/a`): R is already `_d`-typed from the
+  prior verified fix, so only the `_d` inner satisfies the assignment;
+  `_d.b` fields a–g match every assignment shape. Import present.
+  Judgment recorded with its rejected alternative. File CLEAN.
+- Output: `docs/build-output-iter36.txt`. Regressions: none. Confidence:
+  HIGH.
+
+## Iteration 33 — ThemeBaseAdapter trio [S]
+
+- One investigator (smali field/method descriptors per site + ledger +
+  twin). `k`→`ThemeModel` (16 sites incl. 7 latent locals the cap hid),
+  `B`→own inner `b`, `A`→own `enum a`, plus latent `t.this.n`→
+  `ThemeBaseAdapter.this.n`. First pass missed four 8-space field decls
+  (caught on rebuild, fixed, verified). CLEAN.
+- Output: `docs/build-output-iter33.txt`. Regressions: none. Confidence:
+  HIGH.
+
 ## Iteration 32 — scattered five: drop-target, workspace, typeface, pager [S]
 
 - `DropTarget.a(i,g)`: implementer `WorkspaceShortcutItem` spells

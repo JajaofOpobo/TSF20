@@ -50,7 +50,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
         try {
             this.s.setStroke(intent.getExtras().getBoolean("stroke"));
         } catch (Exception e) {
-            CropImageResources.printStackTrace();
+            e.printStackTrace();
         }
         try {
             this.w = intent.getExtras().getInt(m);
@@ -140,7 +140,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
                             inputStreamOpenInputStream2.close();
                         } catch (Exception e) {
                             e = e;
-                            CropImageResources.printStackTrace();
+                            e.printStackTrace();
                         }
                     } catch (Exception e2) {
                         e = e2;
@@ -184,7 +184,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
                 }
                 return bitmap;
             } catch (OutOfMemoryError e) {
-                CropImageResources.printStackTrace();
+                e.printStackTrace();
                 return bitmap;
             }
         }
@@ -212,7 +212,7 @@ public class CropImageActivity extends FragmentActivity implements View.OnClickL
             e = e3;
             i = 0;
         }
-        CropImageResources.printStackTrace();
+        e.printStackTrace();
         return i;
     }
 

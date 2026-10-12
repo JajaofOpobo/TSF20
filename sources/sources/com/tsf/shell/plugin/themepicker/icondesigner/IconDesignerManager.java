@@ -150,7 +150,7 @@ public class IconDesignerManager {
             contentValues.put(IconDesignerColumns.a, packageName);
             context.getContentResolver().insert(uri, contentValues);
         } catch (Exception e) {
-            IconDesignerContract.printStackTrace();
+            e.printStackTrace();
         }
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("insert new package info");
     }
@@ -159,7 +159,7 @@ public class IconDesignerManager {
         try {
             return context.getPackageManager().getPackageInfo(str, 0).versionCode;
         } catch (PackageManager.NameNotFoundException e) {
-            IconDesignerContract.printStackTrace();
+            e.printStackTrace();
             return 0;
         }
     }

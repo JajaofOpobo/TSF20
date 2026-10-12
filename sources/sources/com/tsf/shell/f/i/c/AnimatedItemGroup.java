@@ -20,7 +20,7 @@ public class AnimatedItemGroup extends ItemGroupBase {
     }
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase
-    public BaseRenderable a(boolean z) {
+    public IRenderable a(boolean z) {
         if (this.k == null) {
             this.k = p();
         } else {

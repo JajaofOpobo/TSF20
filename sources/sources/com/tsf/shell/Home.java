@@ -158,7 +158,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                         try {
                             i2 = com.censivn.C3DEngine.C3DEngine.d().getPackageManager().getPackageInfo(com.censivn.C3DEngine.C3DEngine.d().getPackageName(), 0).versionCode;
                         } catch (Exception e) {
-                            ShellThemeProvider.printStackTrace();
+                            e.printStackTrace();
                             i2 = -1;
                         }
                         if (i2 == -1 || i > i2) {
@@ -487,7 +487,7 @@ public final class Home extends ActivityGroup implements View.OnLongClickListene
                     Toast.makeText(Home.c, ShellEventData.i.activity_not_found, 0).show();
                 }
             });
-            ShellThemeProvider.printStackTrace();
+            e.printStackTrace();
         }
     }
 

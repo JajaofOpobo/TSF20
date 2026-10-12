@@ -9,7 +9,7 @@ import com.censivn.C3DEngine.b.f.BaseRenderable;
 public abstract class ItemLabelProvider {
     private LabelRenderable a = new LabelRenderable();
 
-    public abstract BaseRenderable a(int i, int i2, boolean z);
+    public abstract IRenderable a(int i, int i2, boolean z);
 
     public abstract void b();
 
@@ -41,7 +41,7 @@ public abstract class ItemLabelProvider {
         this.a.d(i);
     }
 
-    public LabelRenderable b(int i) {
+    public IRenderable b(int i) {
         this.a.f(i);
         return this.a;
     }

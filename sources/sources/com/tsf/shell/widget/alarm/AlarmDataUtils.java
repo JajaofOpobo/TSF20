@@ -40,7 +40,7 @@ public class AlarmDataUtils {
             a = aVar.a();
             inputStreamOpenRawResource.close();
         } catch (Exception e) {
-            AlarmDataProvider.printStackTrace();
+            e.printStackTrace();
         }
     }
 

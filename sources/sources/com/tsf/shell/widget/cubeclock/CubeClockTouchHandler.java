@@ -77,7 +77,7 @@ public class CubeClockTouchHandler {
                                 CubeClockTouchHandler.this.b.wait(CubeClockTouchHandler.this.d);
                             }
                         } catch (InterruptedException e) {
-                            CubeClockElementBase.printStackTrace();
+                            e.printStackTrace();
                         }
                     } else {
                         return;

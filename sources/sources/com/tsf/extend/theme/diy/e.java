@@ -606,8 +606,8 @@ public class e {
         }
     }
 
-    public static aq a(String str, boolean z) {
-        aq aVar;
+    public static AbstractThemeProvider a(String str, boolean z) {
+        AbstractThemeProvider aVar;
         boolean z2;
         boolean z3;
         if (TextUtils.isEmpty(str)) {
@@ -704,7 +704,7 @@ public class e {
         throw new UnsupportedOperationException("Method not decompiled: com.tsf.extend.theme.diy.e.a(android.content.Context, com.tsf.extend.theme.ThemeModel, com.tsf.extend.theme.diy.e$c):void");
     }
 
-    public static aq a(Context context, ThemeModel kVar) {
+    public static AbstractThemeProvider a(Context context, ThemeModel kVar) {
         return a(new File(b(context), "CMT_" + kVar.h() + "_LP" + (kVar.F() == 3 ? "_3D" : "_2D")).getAbsolutePath(), true);
     }
 
@@ -723,11 +723,11 @@ public class e {
         }
     }
 
-    public static void a(String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> interfaceC0048a, Context context) {
-        j jVarA = com.tsf.extend.base.f.JsonRequestBuilder.a(a(str), null, interfaceC0048a, new b.a<k>() { // from class: com.tsf.extend.theme.diy.e.6
+    public static void a(String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<ThemeModel> interfaceC0048a, Context context) {
+        j jVarA = com.tsf.extend.base.f.JsonRequestBuilder.a(a(str), null, interfaceC0048a, new b.a<ThemeModel>() { // from class: com.tsf.extend.theme.diy.e.6
             @Override // com.tsf.extend.base.f.JsonRequestBuilder.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public k b(JSONObject jSONObject) {
+            public ThemeModel b(JSONObject jSONObject) {
                 JSONObject jSONObjectOptJSONObject;
                 if (jSONObject == null) {
                     return null;

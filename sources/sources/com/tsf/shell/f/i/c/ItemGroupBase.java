@@ -85,8 +85,8 @@ public class ItemGroupBase extends ItemLabelProvider {
     }
 
     @Override // com.tsf.shell.f.i.c.ItemLabelProvider
-    public BaseRenderable a(int i, int i2, boolean z) {
-        i iVarA = a(z);
+    public IRenderable a(int i, int i2, boolean z) {
+        IRenderable iVarA = a(z);
         if (iVarA == null) {
             return null;
         }
@@ -97,7 +97,7 @@ public class ItemGroupBase extends ItemLabelProvider {
     public void b() {
     }
 
-    public BaseRenderable a(boolean z) {
+    public IRenderable a(boolean z) {
         return null;
     }
 

@@ -34,7 +34,7 @@ public class ThemePickerData extends com.tsf.shell.plugin.themepicker.utils.Perc
             this.b = this.a.createPackageContext(str, 2);
             this.e = this.b.getResources();
         } catch (PackageManager.NameNotFoundException e) {
-            ThemePickerEvent.printStackTrace();
+            e.printStackTrace();
         }
     }
 
@@ -124,7 +124,7 @@ public class ThemePickerData extends com.tsf.shell.plugin.themepicker.utils.Perc
                 inputStreamOpen.close();
                 return bitmapDecodeStream;
             } catch (IOException e) {
-                ThemePickerEvent.printStackTrace();
+                e.printStackTrace();
                 return bitmapDecodeStream;
             }
         } catch (InterruptedException e2) {

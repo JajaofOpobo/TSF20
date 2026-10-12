@@ -345,7 +345,7 @@ public class WidgetRegistryManager {
                     gVarA.b(true);
                 }
             } catch (Exception e) {
-                WidgetRegistryManager.printStackTrace();
+                e.printStackTrace();
             }
         }
     }
@@ -371,7 +371,7 @@ public class WidgetRegistryManager {
                                 com.tsf.shell.manager.r.c.a.WidgetInstantiator.a(gVarA, itemInfoK, true, null);
                             }
                         } catch (Exception e) {
-                            WidgetRegistryManager.printStackTrace();
+                            e.printStackTrace();
                         }
                     }
                 }

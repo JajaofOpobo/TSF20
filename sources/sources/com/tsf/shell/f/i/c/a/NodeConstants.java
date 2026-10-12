@@ -28,7 +28,7 @@ public class NodeConstants {
             try {
                 inputStreamOpenRawResource.close();
             } catch (IOException e) {
-                ItemStubHelper.printStackTrace();
+                e.printStackTrace();
             }
         }
     }

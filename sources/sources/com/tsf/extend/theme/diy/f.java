@@ -5,25 +5,25 @@ import com.android.volley.n;
 import com.tsf.extend.theme.AbstractThemeProvider;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class f extends l<aq> {
-    private final n.b<aq> a;
+public class f extends l<AbstractThemeProvider> {
+    private final n.b<AbstractThemeProvider> a;
     private long b;
     private boolean c;
 
-    private f(boolean z, int i, String str, long j, n.b<aq> bVar, n.a aVar) {
+    private f(boolean z, int i, String str, long j, n.b<AbstractThemeProvider> bVar, n.a aVar) {
         super(i, str, aVar);
         this.a = bVar;
         this.b = j;
         this.c = z;
     }
 
-    public f(boolean z, String str, long j, n.b<aq> bVar, n.a aVar) {
+    public f(boolean z, String str, long j, n.b<AbstractThemeProvider> bVar, n.a aVar) {
         this(z, 0, str, j, bVar, aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.android.volley.l
-    public void a(aq aqVar) {
+    public void a(AbstractThemeProvider aqVar) {
         this.a.a(aqVar);
     }
 

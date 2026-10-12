@@ -31,7 +31,7 @@ public class WidgetDefinitionFactory {
             try {
                 gVar.i = context.getPackageManager().getPackageInfo(str2, 0).versionCode;
             } catch (PackageManager.NameNotFoundException e) {
-                WidgetRegistryManager.printStackTrace();
+                e.printStackTrace();
             }
             int identifier = context.getResources().getIdentifier("singleTask", "bool", str2);
             if (identifier > 0) {
@@ -189,7 +189,7 @@ public class WidgetDefinitionFactory {
                                 bitmapA = x.a(contextCreatePackageContext.getResources(), contextCreatePackageContext.getApplicationInfo().icon, (int) this.k.b(), (int) this.k.c());
                             }
                         } catch (PackageManager.NameNotFoundException e) {
-                            WidgetRegistryManager.printStackTrace();
+                            e.printStackTrace();
                         }
                         if (bitmapA == null) {
                             bitmapA = x.a(b.d.sym_def_app_icon, (int) this.k.b(), (int) this.k.c());

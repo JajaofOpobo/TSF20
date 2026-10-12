@@ -29,7 +29,7 @@ public class AlarmSettingFragment {
                 try {
                     return ringtone.getTitle(this.b);
                 } catch (Exception e) {
-                    AlarmSettingTheme.printStackTrace();
+                    e.printStackTrace();
                 }
             }
         }

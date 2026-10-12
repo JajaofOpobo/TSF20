@@ -70,7 +70,7 @@ public class AlarmTouchManager {
             try {
                 inputStreamOpenRawResource.close();
             } catch (IOException e) {
-                AlarmDataProvider.printStackTrace();
+                e.printStackTrace();
             }
         }
     }

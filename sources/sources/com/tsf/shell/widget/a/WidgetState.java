@@ -15,7 +15,7 @@ public class WidgetState {
             this.a = jSONObject.getBoolean(c);
             this.b = jSONObject.getInt(d);
         } catch (Exception e) {
-            WidgetContainer.printStackTrace();
+            e.printStackTrace();
         }
     }
 
@@ -25,7 +25,7 @@ public class WidgetState {
             jSONObject.put(c, this.a);
             jSONObject.put(d, this.b);
         } catch (Exception e) {
-            WidgetContainer.printStackTrace();
+            e.printStackTrace();
         }
         return jSONObject.toString();
     }

@@ -155,7 +155,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
         } else {
             dVar = (d) view.getTag();
         }
-        B item = getItem(i);
+        b item = getItem(i);
         a(dVar, item);
         dVar.a = item.a;
         dVar.b.setImageBitmap(null);
@@ -240,7 +240,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
     protected void a(d dVar, View view) {
     }
 
-    protected void a(d dVar, B bVar) {
+    protected void a(d dVar, b bVar) {
     }
 
     private void g() {
@@ -261,7 +261,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
         return this.b.getResources().getDimensionPixelSize(ResourceIds.c.theme_download_layout_height);
     }
 
-    private void a(View view, A aVar, int i) {
+    private void a(View view, a aVar, int i) {
         View view2;
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(this.e, this.f);
         int i2 = this.i;
@@ -310,15 +310,15 @@ public class ThemeBaseAdapter extends BaseAdapter {
     }
 
     public void a(List<b> list, List<ThemeModel> list2) {
-        B bVar;
-        B bVar2 = list.size() > 0 ? list.get(list.size() - 1) : null;
+        b bVar;
+        b bVar2 = list.size() > 0 ? list.get(list.size() - 1) : null;
         if (bVar2 != null && bVar2.b() == null && 1 < list2.size()) {
-            k kVarRemove = list2.remove(0);
+            ThemeModel kVarRemove = list2.remove(0);
             kVarRemove.f(bVar2.a().z() + 1);
             bVar2.a(kVarRemove);
         }
         if (bVar2 != null && bVar2.c() == null && 1 < list2.size()) {
-            k kVarRemove2 = list2.remove(0);
+            ThemeModel kVarRemove2 = list2.remove(0);
             kVarRemove2.f(bVar2.a().z() + 2);
             bVar2.b(kVarRemove2);
         }
@@ -326,25 +326,25 @@ public class ThemeBaseAdapter extends BaseAdapter {
             int size = (list.size() + 1) * 10;
             ThemeModel kVar = list2.get(i * 3);
             kVar.f(size + 1);
-            k kVar2 = list2.get((i * 3) + 1);
+            ThemeModel kVar2 = list2.get((i * 3) + 1);
             kVar2.f(size + 2);
-            k kVar3 = list2.get((i * 3) + 2);
+            ThemeModel kVar3 = list2.get((i * 3) + 2);
             kVar3.f(size + 3);
-            list.add(new B(kVar, kVar2, kVar3));
+            list.add(new b(kVar, kVar2, kVar3));
         }
         int size2 = list2.size() % 3;
         if (size2 != 0) {
             if (size2 == 1) {
-                k kVar4 = list2.get(list2.size() - 1);
+                ThemeModel kVar4 = list2.get(list2.size() - 1);
                 kVar4.f(((list.size() + 1) * 10) + 1);
-                bVar = new B(kVar4, null, null);
+                bVar = new b(kVar4, null, null);
             } else if (size2 == 2) {
                 int size3 = (list.size() + 1) * 10;
-                k kVar5 = list2.get(list2.size() - 2);
+                ThemeModel kVar5 = list2.get(list2.size() - 2);
                 kVar5.f(size3 + 1);
-                k kVar6 = list2.get(list2.size() - 1);
+                ThemeModel kVar6 = list2.get(list2.size() - 1);
                 kVar6.f(size3 + 2);
-                bVar = new B(kVar5, kVar6, null);
+                bVar = new b(kVar5, kVar6, null);
             } else {
                 bVar = null;
             }
@@ -353,13 +353,13 @@ public class ThemeBaseAdapter extends BaseAdapter {
     }
 
     public static class b {
-        k a;
-        k b;
-        k c;
+        ThemeModel a;
+        ThemeModel b;
+        ThemeModel c;
         List<ThemeModel> d;
-        k e;
+        ThemeModel e;
 
-        public b(ThemeModel kVar, k kVar2, k kVar3) {
+        public b(ThemeModel kVar, ThemeModel kVar2, ThemeModel kVar3) {
             this.d = new ArrayList();
             this.a = kVar;
             this.b = kVar2;
@@ -376,11 +376,11 @@ public class ThemeBaseAdapter extends BaseAdapter {
             this.e = kVar;
         }
 
-        public k a() {
+        public ThemeModel a() {
             return this.a;
         }
 
-        public k b() {
+        public ThemeModel b() {
             return this.b;
         }
 
@@ -388,7 +388,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
             this.b = kVar;
         }
 
-        public k c() {
+        public ThemeModel c() {
             return this.c;
         }
 
@@ -400,27 +400,27 @@ public class ThemeBaseAdapter extends BaseAdapter {
             return this.d;
         }
 
-        public k e() {
+        public ThemeModel e() {
             return this.e;
         }
     }
 
     public class d {
-        public k a;
+        public ThemeModel a;
         public ImageView b;
         public TextView c;
         public ImageView d;
         public View e;
         public View f;
         public TextView g;
-        public k h;
+        public ThemeModel h;
         public ImageView i;
         public TextView j;
         public ImageView k;
         public View l;
         public View m;
         public TextView n;
-        public k o;
+        public ThemeModel o;
         public ImageView p;
         public TextView q;
         public ImageView r;
@@ -446,7 +446,7 @@ public class ThemeBaseAdapter extends BaseAdapter {
                 String str = (String) pair.first;
                 Bitmap bitmap = (Bitmap) pair.second;
                 if (!TextUtils.isEmpty(str) && bitmap != null) {
-                    for (d dVar : t.this.n) {
+                    for (d dVar : ThemeBaseAdapter.this.n) {
                         if (dVar.a != null && str.equals(dVar.a.m())) {
                             dVar.b.setImageBitmap(bitmap);
                         }

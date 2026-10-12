@@ -54,7 +54,7 @@ public class WidgetDrawerItemEditAction extends WidgetDrawerItemBase {
                         launcherShortcut3DInfo.intent.setSourceBounds(new Rect((int) (fArrA[0] + fVar.minX()), (int) (fArrA[1] + fVar.minY()), (int) (fArrA[0] + fVar.maxX()), (int) (fVar.maxY() + fArrA[1])));
                         Home.b().a(launcherShortcut3DInfo.intent, (Object) null);
                     } catch (Exception e) {
-                        ItemStubHelper.printStackTrace();
+                        e.printStackTrace();
                         com.tsf.shell.e.a(com.censivn.C3DEngine.C3DEngine.d().getString(WidgetDrawerShortcutItemBase.i.activity_not_found));
                     }
                 }

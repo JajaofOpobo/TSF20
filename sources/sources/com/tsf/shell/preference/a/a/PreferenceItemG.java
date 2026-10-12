@@ -163,7 +163,7 @@ public class PreferenceItemG extends i {
         try {
             return string + " " + Home.b().getPackageManager().getPackageInfo(Home.b().getPackageName(), 0).versionName;
         } catch (PackageManager.NameNotFoundException e) {
-            PreferenceItemE.printStackTrace();
+            e.printStackTrace();
             return string;
         }
     }

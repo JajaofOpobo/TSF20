@@ -49,8 +49,8 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
     private int s;
     private Runnable u;
     private com.tsf.shell.manager.f.ScreenFadeController v;
-    private PageRenderBuffer w;
-    private TransitionManager x;
+    private b w;
+    private C x;
     private com.censivn.C3DEngine.b.d.MouseEventListener y;
     private com.censivn.C3DEngine.b.d.MouseEventListener z;
     private boolean o = false;
@@ -60,7 +60,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
     boolean e = true;
     private boolean O = false;
     private Object I = this;
-    private com.tsf.shell.f.e.e.ItemNode H = new com.tsf.shell.f.e.TransitionConfig.ItemNode() { // from class: com.tsf.shell.f.f.PageTouchHandler.1
+    private com.tsf.shell.f.e.e.ItemNode H = new com.tsf.shell.f.e.e.ItemNode() { // from class: com.tsf.shell.f.f.PageTouchHandler.1
         @Override // com.tsf.shell.f.e.e.ItemNode
         public void a(int i, Object obj) {
             c();
@@ -78,7 +78,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         this.G.a(new PageEventDispatcher.a() { // from class: com.tsf.shell.f.f.PageTouchHandler.8
             @Override // com.tsf.shell.f.f.PageEventDispatcher.a
             public void a(WorkspacePage gVar) {
-                PageTouchHandler.this.WorkspacePage.b(gVar.r() - 1);
+                PageTouchHandler.this.g.b(gVar.r() - 1);
             }
         });
         com.tsf.shell.f.i.a.WallpaperDragHandler.d = this;
@@ -110,7 +110,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
     }
 
     public void a(int i) {
-        this.WorkspacePage.a(i - 1);
+        this.g.a(i - 1);
     }
 
     public void e() {
@@ -147,26 +147,26 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
             this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         }
         if (this.x != null) {
-            this.GraphicsEngineBridge.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
+            this.x.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
         }
         if (this.w != null) {
-            this.HapticFeedbackManager.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
+            this.w.a(com.censivn.C3DEngine.b.b.ScreenConstants.B, com.censivn.C3DEngine.b.b.ScreenConstants.C, com.censivn.C3DEngine.b.b.ScreenConstants.z, com.censivn.C3DEngine.b.b.ScreenConstants.A);
         }
     }
 
     public com.censivn.C3DEngine.b.f.BaseRenderable f() {
         PageAnimationState.a();
-        this.d = new com.tsf.shell.f.f.TransitionManager.WorkspaceShortcutTouchHandler();
-        this.g = new com.tsf.shell.f.TransitionConfig.PageIndicatorStrip(true) { // from class: com.tsf.shell.f.f.PageTouchHandler.10
+        this.d = new com.tsf.shell.f.f.c.WorkspaceShortcutTouchHandler();
+        this.g = new com.tsf.shell.f.e.PageIndicatorStrip(true) { // from class: com.tsf.shell.f.f.PageTouchHandler.10
             @Override // com.tsf.shell.f.e.PageIndicatorStrip
             public void a() {
                 com.tsf.shell.manager.app.WidgetPanelController.PageShaderNode.k();
             }
         };
-        this.i = new com.censivn.C3DEngine.b.TransitionRenderer.SortedContainerRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.11
+        this.i = new com.censivn.C3DEngine.b.f.SortedContainerRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.11
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onDrawStart() {
-                PageTouchHandler.this.GraphicsEngineBridge.c();
+                PageTouchHandler.this.x.c();
                 PageTouchHandler.this.M();
             }
 
@@ -175,8 +175,8 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
                 PageTouchHandler.this.N();
             }
         };
-        this.D = new com.tsf.shell.f.g.PageShaderNode.GestureMenuOverlay();
-        this.F = new com.tsf.shell.f.f.ItemTransitionManager.ScrollStateAggregator(this) { // from class: com.tsf.shell.f.f.PageTouchHandler.12
+        this.D = new com.tsf.shell.f.g.a.GestureMenuOverlay();
+        this.F = new com.tsf.shell.f.f.d.ScrollStateAggregator(this) { // from class: com.tsf.shell.f.f.PageTouchHandler.12
             @Override // com.tsf.shell.f.f.d.ScrollStateAggregator
             public void a() {
                 com.tsf.shell.manager.app.WidgetAnimator.c();
@@ -199,8 +199,8 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
             }
         };
         S();
-        this.w = new PageRenderBuffer();
-        this.h = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.13
+        this.w = new b();
+        this.h = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.13
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             @SuppressLint({"WrongCall"})
             public void onDrawStart() {
@@ -215,10 +215,10 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
             public void d() {
             }
         };
-        this.x = new TransitionManager();
+        this.x = new C();
         this.ItemPageTransition.setAnimationObjectState(true);
         this.p = Home.b().l();
-        this.B = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable();
+        this.B = new com.censivn.C3DEngine.b.f.BaseRenderable();
         this.v = new com.tsf.shell.manager.TransitionRenderer.ScreenFadeController(this.B);
         this.B.setAABBPX(-2.1474836E9f, -com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f, 2.1474836E9f, com.censivn.C3DEngine.b.b.ScreenConstants.I, 0.0f);
         this.y = new com.tsf.shell.f.i.PageShaderNode.WallpaperDragHandler(this.B);
@@ -253,7 +253,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         }
         this.PageConfig.addChild(this.B);
         this.PageConfig.addChild(this.i);
-        this.x = new TransitionManager();
+        this.x = new C();
         ac();
         this.v.a(this.m);
         if (this.r == null) {
@@ -522,7 +522,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         }
     }
 
-    public PageRenderBuffer i() {
+    public b i() {
         return this.w;
     }
 
@@ -599,7 +599,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
     }
 
     public void w() {
-        if (!this.o && !this.GraphicsEngineBridge.a()) {
+        if (!this.o && !this.x.a()) {
             this.s = 1;
             this.ItemPageTransition.invalidate();
         }
@@ -656,7 +656,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
                         runnable.run();
                     }
                     com.tsf.shell.manager.app.StateHub.af();
-                    this.GraphicsEngineBridge.b(gVar, runnable2);
+                    this.x.b(gVar, runnable2);
                 }
                 return true;
             } catch (Exception e) {
@@ -988,7 +988,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
             w();
             am();
             N();
-            this.HapticFeedbackManager.g();
+            this.w.g();
         }
     }
 
@@ -1029,11 +1029,11 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
     @Override // com.censivn.C3DEngine.b.c.KeyboardHandler.a
     public void a(int i, KeyEvent keyEvent) {
         if (i == 4) {
-            if (!this.HapticFeedbackManager.a()) {
+            if (!this.w.a()) {
                 com.censivn.C3DEngine.b.c.KeyboardHandler.b(this);
                 x();
             } else {
-                this.HapticFeedbackManager.l();
+                this.w.l();
             }
         }
     }
@@ -1157,8 +1157,8 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         private void i() {
             this.o = -this.n;
             this.p = -((int) (this.n * 3.5f));
-            this.B = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable();
-            this.A = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.1
+            this.B = new com.censivn.C3DEngine.b.f.BaseRenderable();
+            this.A = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.c.1
                 @Override // com.censivn.C3DEngine.b.f.BaseRenderable
                 public void onDrawChildStart() {
                     boolean z;
@@ -2034,10 +2034,10 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         private float i = 360.0f / (((float) (((double) (2.0f * this.h)) * 3.141592653589793d)) / (n.a - 40));
         private float k = this.i / (n.a - 40);
         private float j = this.i * this.b;
-        private com.censivn.C3DEngine.b.f.BaseRenderable d = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable();
+        private com.censivn.C3DEngine.b.f.BaseRenderable d = new com.censivn.C3DEngine.b.f.BaseRenderable();
 
         public b() {
-            this.c = new com.censivn.C3DEngine.b.TransitionRenderer.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.1
+            this.c = new com.censivn.C3DEngine.b.f.BaseRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.b.1
                 @Override // com.censivn.C3DEngine.b.f.IRenderable
                 public void onDrawStart() {
                     if (!PageRenderBuffer.this.r) {
@@ -2498,7 +2498,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public void a(float f, float f2, g gVar) {
+        public void a(float f, float f2, WorkspacePage gVar) {
             if (f > (com.censivn.C3DEngine.b.b.ScreenConstants.D / 2) - (com.censivn.C3DEngine.b.b.ScreenConstants.a * 50.0f)) {
                 this.y = this.z;
             } else if (f < (-r0) + (com.censivn.C3DEngine.b.b.ScreenConstants.a * 50.0f)) {
@@ -2508,7 +2508,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
             }
         }
 
-        private void a(float f, float f2, g gVar, boolean z) {
+        private void a(float f, float f2, WorkspacePage gVar, boolean z) {
             g gVarO;
             this.y = this.B;
             com.censivn.C3DEngine.b.f.IRenderable hittingTarget = this.TransitionManager.getHittingTarget(f, f2, true);
@@ -2699,7 +2699,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void c(MotionEvent motionEvent) {
             if (!this.g && this.TransitionConfig.t() != -1) {
-                PageTouchHandler.this.HapticFeedbackManager.a(this.e, motionEvent);
+                PageTouchHandler.this.w.a(this.e, motionEvent);
                 this.g = true;
             }
         }
@@ -2707,23 +2707,23 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
             if (this.g) {
-                PageTouchHandler.this.HapticFeedbackManager.a(this.e, motionEvent, motionEvent2);
+                PageTouchHandler.this.w.a(this.e, motionEvent, motionEvent2);
             }
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void a(MotionEvent motionEvent) {
             HapticFeedbackManager.b();
-            PageTouchHandler.this.HapticFeedbackManager.a(this.e);
+            PageTouchHandler.this.w.a(this.e);
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void f(MotionEvent motionEvent) {
             if (this.g) {
                 this.g = false;
-                PageTouchHandler.this.HapticFeedbackManager.b(this.e, motionEvent);
+                PageTouchHandler.this.w.b(this.e, motionEvent);
             }
-            PageTouchHandler.this.HapticFeedbackManager.f();
+            PageTouchHandler.this.w.f();
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
@@ -2739,7 +2739,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
                 this.f = false;
                 if (Math.abs(TransitionRenderer) > Math.abs(f2)) {
                     this.b = true;
-                    PageTouchHandler.this.HapticFeedbackManager.e();
+                    PageTouchHandler.this.w.e();
                 } else {
                     com.censivn.C3DEngine.C3DEngine.a().b(new Runnable() { // from class: com.tsf.shell.f.f.PageTouchHandler.a.1
                         @Override // java.lang.Runnable
@@ -2750,14 +2750,14 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
                 }
             }
             if (this.b) {
-                PageTouchHandler.this.HapticFeedbackManager.b(motionEvent2.getX() - motionEvent.getX());
+                PageTouchHandler.this.w.b(motionEvent2.getX() - motionEvent.getX());
             }
         }
 
         @Override // com.censivn.C3DEngine.b.d.MouseEventListener
         public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f, float f2) {
             if (this.b && Math.abs(TransitionRenderer) > 250.0f) {
-                PageTouchHandler.this.HapticFeedbackManager.a(f / 2.0f);
+                PageTouchHandler.this.w.a(f / 2.0f);
             }
         }
     }

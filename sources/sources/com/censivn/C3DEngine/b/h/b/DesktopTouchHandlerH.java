@@ -58,7 +58,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     };
 
     public void a(final float f, final float f2, final float f3, final float f4) {
-        if (com.censivn.C3DEngine.a.DesktopTouchHandlerE.l()) {
+        if (com.censivn.C3DEngine.a.RendererImpl.l()) {
             c(f3 - f, f4 - f2);
         } else {
             com.censivn.C3DEngine.C3DEngine.a().c(new Runnable() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerH.1
@@ -243,13 +243,13 @@ public class DesktopTouchHandlerH extends BaseRenderable {
         aVar.a(f, ((this.i / 2.0f) - (this.q < 2 ? this.i / 2.0f : this.m / 2.0f)) - ((this.o + this.m) * i5));
     }
 
-    private void a(int i, i iVar) {
+    private void a(int i, IRenderable iVar) {
         a aVar = this.B.get(i);
         iVar.position().x = aVar.a;
         iVar.position().y = aVar.b;
     }
 
-    private void b(int i, i iVar) {
+    private void b(int i, IRenderable iVar) {
         iVar.setDisplayTag(i);
         this.DesktopTouchHandlerC.addChild(iVar);
         a(i, iVar);
@@ -414,7 +414,7 @@ public class DesktopTouchHandlerH extends BaseRenderable {
     }
 
     private void n() {
-        if (com.censivn.C3DEngine.a.DesktopTouchHandlerE.l()) {
+        if (com.censivn.C3DEngine.a.RendererImpl.l()) {
             this.u = GraphicsEngineBridge.b(b.d.scrollcontainer_arrow);
             this.s = new GridRenderable(com.censivn.C3DEngine.b.b.ScreenConstants.c * 24.0f, 45.0f * com.censivn.C3DEngine.b.b.ScreenConstants.c, false);
             this.s.rotation().z = 180.0f;

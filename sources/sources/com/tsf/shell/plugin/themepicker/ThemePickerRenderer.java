@@ -68,7 +68,7 @@ public class ThemePickerRenderer {
                 try {
                     inputStreamA = k.a(this.a);
                 } catch (IOException e) {
-                    ThemePickerEvent.printStackTrace();
+                    e.printStackTrace();
                     inputStreamA = null;
                 }
             } else {

@@ -30,7 +30,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
-public class KeyboardPager extends FrameLayout implements View.OnClickListener, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<k>> {
+public class KeyboardPager extends FrameLayout implements View.OnClickListener, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<List<ThemeModel>> {
     private int a;
     private int b;
     private PullToRefreshAndLoadMoreListView c;
@@ -46,7 +46,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     private d m;
     private d n;
     private a o;
-    private List<k> p;
+    private List<ThemeModel> p;
 
     public KeyboardPager(Context context) {
         super(context);
@@ -155,7 +155,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
         }
     }
 
-    private boolean a(k kVar, String str) {
+    private boolean a(ThemeModel kVar, String str) {
         return (kVar == null || TextUtils.isEmpty(kVar.g()) || !kVar.g().equals(str)) ? false : true;
     }
 
@@ -259,7 +259,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     }
 
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, List<k> list) {
+    public void a(JSONObject jSONObject, List<ThemeModel> list) {
         if (list != null) {
             this.p.clear();
             this.p.addAll(list);
@@ -270,7 +270,7 @@ public class KeyboardPager extends FrameLayout implements View.OnClickListener, 
     }
 
     @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
-    public void a(JSONObject jSONObject, int i, List<k> list) {
+    public void a(JSONObject jSONObject, int i, List<ThemeModel> list) {
     }
 
     private class a extends BaseAdapter {

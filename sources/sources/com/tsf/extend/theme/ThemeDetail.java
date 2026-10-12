@@ -56,7 +56,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private List<Integer> B;
     private int C;
     private f D;
-    private o E;
+    private ThemeLoadingDialog E;
     private String F;
     private String G;
     private String H;
@@ -66,7 +66,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private ProgressBar L;
     private boolean M;
     private boolean N;
-    private t O;
+    private ThemeBaseAdapter O;
     private d P;
     private d Q;
     private List<ThemeBaseAdapter.b> R;
@@ -111,7 +111,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     private View w;
     private TextView x;
     private C y;
-    private k z;
+    private ThemeModel z;
 
     public enum f {
         LOCAL_THEME,
@@ -394,7 +394,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
         ThemeDataProvider.h().a(new e(), j, str, str2);
     }
 
-    private class e implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> {
+    private class e implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<ThemeModel> {
         private e() {
         }
 
@@ -563,7 +563,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     public void a() {
         if (ao.b().g()) {
             com.tsf.extend.wallpaper.l.a().a(this);
-            k kVarE = com.tsf.extend.wallpaper.l.a().e(this.z);
+            ThemeModel kVarE = com.tsf.extend.wallpaper.l.a().e(this.z);
             if (kVarE != null) {
                 this.j.setText(getResources().getString(ResourceIds.g.lp_theme_downloading));
                 a(kVarE.G() / 100.0f);
@@ -640,7 +640,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                             x.b(getContext(), "https://play.google.com/store/apps/details?id=com.ksmobile.launcher", "&referrer=utm_source%3Dtsf_theme_center_theme_cmlauncher" + jH);
                         }
                     } else if (!TextUtils.isEmpty(this.z.E()) && ao.b().g()) {
-                        k kVarE = com.tsf.extend.wallpaper.l.a().e(this.z);
+                        ThemeModel kVarE = com.tsf.extend.wallpaper.l.a().e(this.z);
                         if (kVarE != null && !kVarE.H()) {
                             kVarE.e(true);
                             this.j.setClickable(false);
@@ -1095,7 +1095,7 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
                 }
             }
         } else {
-            for (k kVar2 : list) {
+            for (ThemeModel kVar2 : list) {
                 if (!TextUtils.isEmpty(strF) && strF.equals(kVar2.g())) {
                     kVar2.b(true);
                 } else {
@@ -1167,12 +1167,12 @@ public class ThemeDetail extends FrameLayout implements DialogInterface.OnClickL
     public void a(List<ThemeModel> list) {
         for (ThemeBaseAdapter.b bVar : this.R) {
             ThemeModel kVar = bVar.a;
-            k kVar2 = bVar.b;
+            ThemeModel kVar2 = bVar.b;
             kVar.d(false);
             if (kVar2 != null) {
                 kVar2.d(false);
             }
-            for (k kVar3 : list) {
+            for (ThemeModel kVar3 : list) {
                 if (kVar3 != null && !(kVar3 instanceof AbstractThemeProvider)) {
                     if (kVar3.g().equals(kVar.g())) {
                         kVar.d(true);

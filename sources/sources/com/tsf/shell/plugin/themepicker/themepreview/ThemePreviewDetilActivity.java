@@ -56,7 +56,7 @@ public class ThemePreviewDetilActivity extends FragmentActivity implements View.
         try {
             return getPackageManager().getPackageInfo(str, 0).applicationInfo.loadLabel(getPackageManager());
         } catch (PackageManager.NameNotFoundException e) {
-            ThemePreviewEvent.printStackTrace();
+            e.printStackTrace();
             return null;
         }
     }

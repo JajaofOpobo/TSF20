@@ -71,7 +71,7 @@ public class AppPreviewLabel extends ItemLabelProvider {
     }
 
     @Override // com.tsf.shell.f.i.c.ItemLabelProvider
-    public BaseRenderable a(int i, int i2, boolean z) {
+    public IRenderable a(int i, int i2, boolean z) {
         if (this.h.id == 0) {
             Bitmap bitmapA = a(i, i2);
             com.censivn.C3DEngine.C3DEngine.g().a(this.h, bitmapA);

@@ -147,7 +147,7 @@ public class AlarmWidget extends VWidgetContainer {
                                 AlarmWidget.this.v.wait(AlarmWidget.this.w * 1000);
                             }
                         } catch (InterruptedException e) {
-                            AlarmDataProvider.printStackTrace();
+                            e.printStackTrace();
                         }
                     } else {
                         return;

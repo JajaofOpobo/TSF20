@@ -27,7 +27,7 @@ public class ActionModel {
             }
             return true;
         } catch (Exception e) {
-            ActionModel.printStackTrace();
+            e.printStackTrace();
             return false;
         }
     }

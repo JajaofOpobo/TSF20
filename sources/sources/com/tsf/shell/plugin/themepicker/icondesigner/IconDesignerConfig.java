@@ -25,7 +25,7 @@ public class IconDesignerConfig {
         try {
             listAsList = Arrays.asList(context2.getAssets().list("theme/icon"));
         } catch (IOException e) {
-            IconDesignerContract.printStackTrace();
+            e.printStackTrace();
             listAsList = null;
         }
         com.tsf.shell.plugin.themepicker.ThemePickerEvent.b("----------------------files length:" + listAsList.size());
@@ -80,7 +80,7 @@ public class IconDesignerConfig {
             contentValues.put(IconDesignerBaseColumns.e, str3);
             context.getContentResolver().insert(uri, contentValues);
         } catch (Exception e) {
-            IconDesignerContract.printStackTrace();
+            e.printStackTrace();
         }
     }
 

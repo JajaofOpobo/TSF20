@@ -24,7 +24,7 @@ public class ThemePreferenceStore {
                 }
             }
         } catch (Exception e) {
-            ThemePreferenceProvider.printStackTrace();
+            e.printStackTrace();
         }
     }
 
@@ -59,7 +59,7 @@ public class ThemePreferenceStore {
                         return aVar;
                     } catch (Exception e2) {
                         e = e2;
-                        ThemePreferenceProvider.printStackTrace();
+                        e.printStackTrace();
                         return aVar;
                     }
                 }

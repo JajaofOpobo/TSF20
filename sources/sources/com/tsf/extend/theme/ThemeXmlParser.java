@@ -50,15 +50,15 @@ public class ThemeXmlParser {
         public R a(Context context, String str, String str2, HashMap<String, Object> map) {
             try {
                 Resources resources = context.getResources();
-                XmlResourceParser xml = resources.getXml(ae.a(resources, str, str2));
+                XmlResourceParser xml = resources.getXml(ThemeXmlParser.a(resources, str, str2));
                 AttributeSet attributeSetAsAttributeSet = Xml.asAttributeSet(xml);
-                String strB = ae.b(xml);
+                String strB = ThemeXmlParser.b(xml);
                 int depth = xml.getDepth();
-                String strA = ae.a(strB);
+                String strA = ThemeXmlParser.a(strB);
                 if (!a(strB) || strA == null) {
                     return null;
                 }
-                int[] iArrA = ae.a(map, strA);
+                int[] iArrA = ThemeXmlParser.a(map, strA);
                 if (iArrA != null) {
                     while (true) {
                         int next = xml.next();
@@ -88,12 +88,12 @@ public class ThemeXmlParser {
         return null;
     }
 
-    public static f a(Context context, final HashMap<String, Object> map) {
+    public static ThemeSystemModel a(Context context, final HashMap<String, Object> map) {
         if (context == null) {
             return null;
         }
         final String packageName = context.getPackageName();
-        return new a<f>() { // from class: com.tsf.extend.theme.ae.1
+        return new a<ThemeSystemModel>() { // from class: com.tsf.extend.theme.ae.1
             /* JADX WARN: Multi-variable type inference failed */
             /* JADX WARN: Type inference failed for: r0v2, types: [R, com.tsf.extend.theme.ThemeSystemModel] */
             @Override // com.tsf.extend.theme.ae.a
@@ -110,16 +110,16 @@ public class ThemeXmlParser {
             @Override // com.tsf.extend.theme.ae.a
             public void a(TypedArray typedArray, String str) {
                 if ("info".equals(str)) {
-                    ae.c(map, typedArray, (ThemeSystemModel) this.c);
+                    ThemeXmlParser.c(map, typedArray, (ThemeSystemModel) this.c);
                 } else if ("pic".equals(str)) {
-                    ae.d(map, typedArray, (ThemeSystemModel) this.c);
+                    ThemeXmlParser.d(map, typedArray, (ThemeSystemModel) this.c);
                 }
             }
         }.a(context, packageName, "theme_info", map);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static void c(HashMap<String, Object> map, TypedArray typedArray, f fVar) {
+    public static void c(HashMap<String, Object> map, TypedArray typedArray, ThemeSystemModel fVar) {
         int iB = b(map, "ThemeInfo_author");
         int iB2 = b(map, "ThemeInfo_name");
         int iB3 = b(map, "ThemeInfo_versionName");
@@ -134,7 +134,7 @@ public class ThemeXmlParser {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static void d(HashMap<String, Object> map, TypedArray typedArray, f fVar) {
+    public static void d(HashMap<String, Object> map, TypedArray typedArray, ThemeSystemModel fVar) {
         fVar.b().add(Integer.valueOf(typedArray.getResourceId(b(map, "ThemeInfo_src"), 0)));
     }
 

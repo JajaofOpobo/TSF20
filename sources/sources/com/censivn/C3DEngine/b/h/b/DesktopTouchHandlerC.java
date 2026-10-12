@@ -47,7 +47,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
     private TextureElement e;
     private TextureElement f;
     private com.censivn.C3DEngine.b.d.MouseEventListener g;
-    private e h;
+    private DesktopTouchHandlerE h;
     private com.tsf.shell.f.i.MultiSelectController i;
     private ArrayList<Number3d> j;
     private float k;
@@ -121,10 +121,10 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
         this.b = new GridRenderable(f, f, i, i) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.1
             @Override // com.censivn.C3DEngine.b.f.IRenderable
             public void onKillFocus() {
-                if (c.this.i.e()) {
-                    c.this.i.g();
+                if (DesktopTouchHandlerC.this.i.e()) {
+                    DesktopTouchHandlerC.this.i.g();
                 }
-                c.this.d();
+                DesktopTouchHandlerC.this.d();
             }
 
             @Override // com.censivn.C3DEngine.b.f.IRenderable
@@ -150,13 +150,13 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                if (!c.this.n) {
+                if (!DesktopTouchHandlerC.this.n) {
                     if (!this.a) {
-                        if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 10.0f) {
+                        if (GraphicsEngineBridge.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 10.0f) {
                             this.f = motionEvent2.getX();
                             this.g = motionEvent2.getY();
-                            this.d = c.this.a.position().x;
-                            this.e = c.this.a.position().y;
+                            this.d = DesktopTouchHandlerC.this.a.position().x;
+                            this.e = DesktopTouchHandlerC.this.a.position().y;
                             this.a = true;
                             return;
                         }
@@ -164,23 +164,23 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
                     }
                     float x = (int) (this.d + (motionEvent2.getX() - this.f));
                     float y = (int) (this.e - (motionEvent2.getY() - this.g));
-                    if (c.this.F.x + x > com.censivn.C3DEngine.b.b.ScreenConstants.A) {
-                        this.d -= (x + c.this.F.x) - com.censivn.C3DEngine.b.b.ScreenConstants.A;
-                        x = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.A - c.this.F.x);
-                    } else if (c.this.E.x + x < com.censivn.C3DEngine.b.b.ScreenConstants.z) {
-                        this.d = (com.censivn.C3DEngine.b.b.ScreenConstants.z - (x + c.this.E.x)) + this.d;
-                        x = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.z - c.this.E.x);
+                    if (DesktopTouchHandlerC.this.F.x + x > com.censivn.C3DEngine.b.b.ScreenConstants.A) {
+                        this.d -= (x + DesktopTouchHandlerC.this.F.x) - com.censivn.C3DEngine.b.b.ScreenConstants.A;
+                        x = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.A - DesktopTouchHandlerC.this.F.x);
+                    } else if (DesktopTouchHandlerC.this.E.x + x < com.censivn.C3DEngine.b.b.ScreenConstants.z) {
+                        this.d = (com.censivn.C3DEngine.b.b.ScreenConstants.z - (x + DesktopTouchHandlerC.this.E.x)) + this.d;
+                        x = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.z - DesktopTouchHandlerC.this.E.x);
                     }
-                    if (c.this.E.y + y > com.censivn.C3DEngine.b.b.ScreenConstants.B) {
-                        this.e -= (y + c.this.E.y) - com.censivn.C3DEngine.b.b.ScreenConstants.B;
-                        y = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.B - c.this.E.y);
-                    } else if (c.this.F.y + y < com.censivn.C3DEngine.b.b.ScreenConstants.C) {
-                        this.e = (com.censivn.C3DEngine.b.b.ScreenConstants.C - (y + c.this.F.y)) + this.e;
-                        y = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.C - c.this.F.y);
+                    if (DesktopTouchHandlerC.this.E.y + y > com.censivn.C3DEngine.b.b.ScreenConstants.B) {
+                        this.e -= (y + DesktopTouchHandlerC.this.E.y) - com.censivn.C3DEngine.b.b.ScreenConstants.B;
+                        y = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.B - DesktopTouchHandlerC.this.E.y);
+                    } else if (DesktopTouchHandlerC.this.F.y + y < com.censivn.C3DEngine.b.b.ScreenConstants.C) {
+                        this.e = (com.censivn.C3DEngine.b.b.ScreenConstants.C - (y + DesktopTouchHandlerC.this.F.y)) + this.e;
+                        y = (int) (com.censivn.C3DEngine.b.b.ScreenConstants.C - DesktopTouchHandlerC.this.F.y);
                     }
-                    c.this.N = false;
-                    c.this.k = x;
-                    c.this.l = y;
+                    DesktopTouchHandlerC.this.N = false;
+                    DesktopTouchHandlerC.this.k = x;
+                    DesktopTouchHandlerC.this.l = y;
                 }
             }
         };
@@ -202,7 +202,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
         this.D = this.b.points().getAsNumber3dPX(15);
         this.v = this.b.points().getAsNumber3dPX(0);
         addChild(this.b);
-        this.h = new e() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.3
+        this.h = new DesktopTouchHandlerE() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.3
             @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerE
             public void a(MotionEvent motionEvent) {
                 e(motionEvent);
@@ -211,7 +211,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
             @Override // com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerE
             public void b(MotionEvent motionEvent) {
                 com.tsf.shell.f.i.PageItem bVarE = e(motionEvent);
-                if (bVarE != null && c.this.i.e()) {
+                if (bVarE != null && DesktopTouchHandlerC.this.i.e()) {
                     ((com.tsf.shell.f.i.ShortcutItem) bVarE).ap();
                 }
             }
@@ -219,7 +219,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
         this.i = new com.tsf.shell.f.i.MultiSelectController(this, this) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.4
             @Override // com.tsf.shell.f.i.MultiSelectController
             public void a() {
-                c.this.f();
+                DesktopTouchHandlerC.this.f();
             }
         };
         this.h.getMouseEventListener().c = this.b;
@@ -235,27 +235,27 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                c.this.K = c.this.I;
-                c.this.L = c.this.J;
-                c.this.M = true;
+                DesktopTouchHandlerC.this.K = DesktopTouchHandlerC.this.I;
+                DesktopTouchHandlerC.this.L = DesktopTouchHandlerC.this.J;
+                DesktopTouchHandlerC.this.M = true;
                 this.b = false;
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
-                c.this.M = false;
+                DesktopTouchHandlerC.this.M = false;
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
                 if (!this.b) {
-                    if (x.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
+                    if (GraphicsEngineBridge.b(motionEvent.getX(), motionEvent.getY(), motionEvent2.getX(), motionEvent2.getY()) > 15.0f) {
                         this.b = true;
                     }
-                } else if (c.this.M) {
-                    float[] fArrA = x.a(motionEvent2);
-                    c.this.K = (int) (fArrA[0] - c.this.a.position().x);
-                    c.this.L = (int) (fArrA[1] - c.this.a.position().y);
+                } else if (DesktopTouchHandlerC.this.M) {
+                    float[] fArrA = GraphicsEngineBridge.a(motionEvent2);
+                    DesktopTouchHandlerC.this.K = (int) (fArrA[0] - DesktopTouchHandlerC.this.a.position().x);
+                    DesktopTouchHandlerC.this.L = (int) (fArrA[1] - DesktopTouchHandlerC.this.a.position().y);
                 }
             }
         });
@@ -266,7 +266,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
         com.censivn.C3DEngine.b.c.KeyboardHandler.a(this);
         if (Q == null) {
             Q = new BaseRenderable();
-            c.b bVar = new c.b();
+            DropIndicatorState.b bVar = new DropIndicatorState.b();
             bVar.a = com.censivn.C3DEngine.b.b.ScreenConstants.a(-130.0f);
             bVar.b = com.censivn.C3DEngine.b.b.ScreenConstants.a(128.0f);
             bVar.c = com.censivn.C3DEngine.b.b.ScreenConstants.a(50.0f);
@@ -274,13 +274,13 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
             bVar.e = 38;
             bVar.f = com.censivn.C3DEngine.b.b.ScreenConstants.a(54.0f);
             bVar.g = 0;
-            R = new c.a(b.i.menu_multiple_choice, b.d.widget_folder_multi_choice, bVar);
+            R = new DropIndicatorState.a(com.tsf.b.i.menu_multiple_choice, com.tsf.b.d.widget_folder_multi_choice, bVar);
             Q.addChild(R);
         }
         R.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.b) { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.6
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                c.this.a();
+                DesktopTouchHandlerC.this.a();
             }
         });
         R.alpha(0.0f);
@@ -315,7 +315,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
     }
 
     @Override // com.tsf.shell.f.i.a.InterfaceC0113a
-    public ArrayList<i> b() {
+    public ArrayList<IRenderable> b() {
         return this.h.b().children();
     }
 
@@ -577,7 +577,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
             this.n = true;
             float f = this.a.position().x;
             float f2 = this.a.position().y;
-            for (i iVar : this.h.c()) {
+            for (IRenderable iVar : this.h.c()) {
                 iVar.position().x += f;
                 iVar.position().y += f2;
                 iVar.mouseEnabled(true);
@@ -589,18 +589,18 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
             com.censivn.C3DEngine.b.g.TweenParams dVar = new com.censivn.C3DEngine.b.g.TweenParams() { // from class: com.censivn.C3DEngine.b.h.b.DesktopTouchHandlerC.7
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a(float f3) {
-                    c.this.c.alpha(c.this.b.alpha());
+                    DesktopTouchHandlerC.this.c.alpha(DesktopTouchHandlerC.this.b.alpha());
                 }
 
                 @Override // com.censivn.C3DEngine.b.g.TweenParams
                 public void a() {
-                    c.this.a.destroy();
-                    c.this.b.destroy();
-                    c.this.c.destroy();
-                    c.this.h.destroy();
-                    c.this.O = null;
-                    com.censivn.C3DEngine.C3DEngine.g().a(c.this.e);
-                    com.censivn.C3DEngine.C3DEngine.g().a(c.this.f);
+                    DesktopTouchHandlerC.this.a.destroy();
+                    DesktopTouchHandlerC.this.b.destroy();
+                    DesktopTouchHandlerC.this.c.destroy();
+                    DesktopTouchHandlerC.this.h.destroy();
+                    DesktopTouchHandlerC.this.O = null;
+                    com.censivn.C3DEngine.C3DEngine.g().a(DesktopTouchHandlerC.this.e);
+                    com.censivn.C3DEngine.C3DEngine.g().a(DesktopTouchHandlerC.this.f);
                 }
             };
             dVar.a(0);
@@ -619,7 +619,7 @@ public class DesktopTouchHandlerC extends BaseRenderable implements KeyboardHand
         if (!this.m) {
             int iNumChildren = this.d.numChildren();
             for (int i = 0; i < iNumChildren; i++) {
-                i childAt = this.d.getChildAt(i);
+                IRenderable childAt = this.d.getChildAt(i);
                 Number3d number3d = this.j.get(i);
                 PositionNumber3d positionNumber3dPosition = childAt.position();
                 positionNumber3dPosition.x = (float) (((double) positionNumber3dPosition.x) + (((double) (number3d.x - childAt.position().x)) * 0.2d));

@@ -31,7 +31,7 @@ public class AlarmSettingData {
             com.a.a.a.a(SettingActivity.a, arrayList, "CityHistory");
             return true;
         } catch (IOException e) {
-            AlarmSettingTheme.printStackTrace();
+            e.printStackTrace();
             return false;
         }
     }

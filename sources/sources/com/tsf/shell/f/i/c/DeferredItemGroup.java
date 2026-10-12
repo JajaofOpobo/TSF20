@@ -71,7 +71,7 @@ public class DeferredItemGroup extends ItemGroupBase {
     }
 
     @Override // com.tsf.shell.f.i.c.ItemGroupBase
-    public BaseRenderable a(boolean z) {
+    public IRenderable a(boolean z) {
         if (this.k == null) {
             this.k = d(z);
             this.p = false;

@@ -167,7 +167,7 @@ public class BackupRestoreManager {
                 }
             } catch (Exception e3) {
                 e = e3;
-                ConfigManager.printStackTrace();
+                e.printStackTrace();
             }
             o.a(file3);
             if (z) {

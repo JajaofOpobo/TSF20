@@ -36,7 +36,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
     private String c;
     private String d;
     private com.tsf.extend.base.b.PagedListModel e;
-    private Map<com.tsf.extend.theme.b.AlbumModel, b.a<aq>> f;
+    private Map<com.tsf.extend.theme.b.AlbumModel, b.a<AbstractThemeProvider>> f;
     private android.support.v4.d.f<String, SoftReference<Bitmap>> g = new android.support.v4.d.f<String, SoftReference<Bitmap>>(10) { // from class: com.tsf.extend.theme.diy.c.1
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // android.support.v4.d.f
@@ -233,7 +233,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         return aVar;
     }
 
-    public boolean a(final com.tsf.extend.theme.b.AlbumModel aVar, final b.a<aq> aVar2) {
+    public boolean a(final com.tsf.extend.theme.b.AlbumModel aVar, final b.a<AbstractThemeProvider> aVar2) {
         boolean zA;
         if (this.f == null) {
             this.f = Maps.newHashMap();
@@ -245,7 +245,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         Context contextB = h.b();
         File fileA = e.a(contextB, aVar.a(), aVar.f());
         if (fileA != null && fileA.exists()) {
-            aq bVar = aVar.f() ? new com.tsf.extend.theme.DiyWallpaperProvider() : new com.tsf.extend.theme.diy.a();
+            AbstractThemeProvider bVar = aVar.f() ? new com.tsf.extend.theme.DiyWallpaperProvider() : new com.tsf.extend.theme.diy.a();
             File fileG = bVar.g(contextB);
             if (fileG != null) {
                 bVar.a(aVar.a());
@@ -276,9 +276,9 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
             }
             this.f.remove(aVar);
         } else {
-            f fVar = new f(aVar.f(), aVar.d(), aVar.a(), new n.b<aq>() { // from class: com.tsf.extend.theme.diy.c.8
+            f fVar = new f(aVar.f(), aVar.d(), aVar.a(), new n.b<AbstractThemeProvider>() { // from class: com.tsf.extend.theme.diy.c.8
                 @Override // com.android.volley.n.b
-                public void a(aq aqVar) {
+                public void a(AbstractThemeProvider aqVar) {
                     if (aqVar == null) {
                         aVar2.a(0, null);
                     } else {
@@ -341,7 +341,7 @@ public class c implements b<com.tsf.extend.base.b.PagedListModel> {
         }
     }
 
-    public boolean a(final Context context, final aq aqVar) {
+    public boolean a(final Context context, final AbstractThemeProvider aqVar) {
         if (aqVar == null || aqVar.I() == null) {
             return false;
         }

@@ -28,7 +28,7 @@ public class CubeClockFaceConfig {
             try {
                 inputStreamOpenRawResource.close();
             } catch (IOException e) {
-                CubeClockElementBase.printStackTrace();
+                e.printStackTrace();
             }
         }
     }
