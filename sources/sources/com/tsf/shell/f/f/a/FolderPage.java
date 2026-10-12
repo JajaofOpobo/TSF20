@@ -31,7 +31,6 @@ import com.tsf.shell.theme.inside.description.ThemeShellDescription;
 import com.tsf.shell.utils.GraphicsEngineBridge;
 import java.util.ArrayList;
 import java.util.Iterator;
-import com.tsf.shell.f.f.a.PageContainerView0133a;
 import com.tsf.shell.f.f.a.InterfaceC0101a;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
@@ -56,7 +55,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     public static int z;
     public com.tsf.shell.f.i.b.e.DrawerItemButton G;
     public GridRenderable H;
-    protected C0133a I;
+    protected ToastOverlayController.C0133a I;
     private BaseRenderable K;
     private BaseRenderable L;
     private ToastOverlayController M;
@@ -80,7 +79,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     private FolderRenameDialog aj;
     private DragOverlayElement ak;
     private FolderManager al;
-    private C0133a ao;
+    private ToastOverlayController.C0133a ao;
     private GridRenderable aq;
     private TextureElement ar;
     private FrameLayout au;
@@ -407,7 +406,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     public void au() {
         this.R = false;
         this.Q = true;
-        com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
+        com.tsf.shell.ShellDataProvider.a().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -418,7 +417,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
 
     /* JADX INFO: Access modifiers changed from: private */
     public void aU() {
-        com.tsf.shell.AppClassifier.ShellDataParser().b("PageApplication");
+        com.tsf.shell.ShellDataProvider.a().b("PageApplication");
         this.R = true;
         N();
         this.X.f();
@@ -922,7 +921,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     public void aF() {
         this.R = false;
         this.Q = false;
-        com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
+        com.tsf.shell.ShellDataProvider.a().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -935,7 +934,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
     public void aG() {
         this.R = false;
         this.Q = false;
-        com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
+        com.tsf.shell.ShellDataProvider.a().a("PageApplication");
         invalidate();
         setAnimationObjectState(true);
         if (this.M != null) {
@@ -1365,7 +1364,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
             this.M.g();
         }
         if (!this.R) {
-            com.tsf.shell.AppClassifier.ShellDataParser().b("PageApplication");
+            com.tsf.shell.ShellDataProvider.a().b("PageApplication");
         }
     }
 
@@ -1376,7 +1375,7 @@ public class FolderPage extends com.tsf.shell.f.f.WorkspacePage implements Keybo
             this.M.h();
         }
         if (!this.R) {
-            com.tsf.shell.AppClassifier.ShellDataParser().a("PageApplication");
+            com.tsf.shell.ShellDataProvider.a().a("PageApplication");
         }
     }
 

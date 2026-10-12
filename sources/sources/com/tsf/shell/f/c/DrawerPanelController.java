@@ -8,14 +8,14 @@ import com.tsf.shell.f.i.b.e.DrawerShortcutItemBase;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class DrawerPanelController {
-    public e a;
+    public DrawerSettingsPanel a;
     public f DrawerShortcutItemBase;
     public int c;
 
     public DrawerPanelController() {
         com.tsf.shell.manager.app.WidgetPanelController = this;
         this.c = a(com.tsf.shell.manager.b.ConfigManager.v());
-        this.a = new e(false);
+        this.a = new DrawerSettingsPanel(false);
         this.b = new f(false);
     }
 

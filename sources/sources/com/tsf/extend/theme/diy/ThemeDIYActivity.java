@@ -118,7 +118,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     private d w;
     private LinearLayout x;
     private b y;
-    private aq z;
+    private AbstractThemeProvider z;
     private List<n> l = Lists.newArrayList();
     private List<c> m = Lists.newArrayList();
     private String F = "1600";
@@ -812,7 +812,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(aq aqVar) {
+    public void a(AbstractThemeProvider aqVar) {
         List<String> listE;
         if (this.o != null && (listE = this.o.e()) != null && listE.size() != 0) {
             this.w = new d(aqVar);
@@ -894,7 +894,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void b(aq aqVar) {
+    public void b(AbstractThemeProvider aqVar) {
         ThemeDataProvider.a(aqVar.d(this), a(this.y.c, this.y.d));
     }
 
@@ -1575,12 +1575,12 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
     }
 
-    private class j implements com.tsf.extend.theme.diy.b.a<aq> {
+    private class j implements com.tsf.extend.theme.diy.b.a<AbstractThemeProvider> {
         private j() {
         }
 
         @Override // com.tsf.extend.theme.diy.b.a
-        public void a(final aq aqVar) {
+        public void a(final AbstractThemeProvider aqVar) {
             if (aqVar != null) {
                 ThemeDIYActivity.this.j.post(new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.j.1
                     @Override // java.lang.Runnable
@@ -1632,7 +1632,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
         }
 
         @Override // com.tsf.extend.theme.diy.b.a
-        public void a(int i, aq aqVar) {
+        public void a(int i, AbstractThemeProvider aqVar) {
             if (aqVar != null) {
                 z.a(0, new Runnable() { // from class: com.tsf.extend.theme.diy.ThemeDIYActivity.j.2
                     @Override // java.lang.Runnable
@@ -1650,9 +1650,9 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
 
     private class d implements com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<Pair<String, Bitmap>> {
         private final List<String> b;
-        private aq c;
+        private AbstractThemeProvider c;
 
-        public d(aq aqVar) {
+        public d(AbstractThemeProvider aqVar) {
             this.c = aqVar;
             this.b = ThemeDIYActivity.this.o.e();
         }
@@ -1887,7 +1887,7 @@ public class ThemeDIYActivity extends Activity implements DialogInterface.OnClic
 
     /* JADX INFO: Access modifiers changed from: private */
     public File y() {
-        List<aq> listI = v.i();
+        List<AbstractThemeProvider> listI = v.i();
         if (listI.isEmpty()) {
             return null;
         }

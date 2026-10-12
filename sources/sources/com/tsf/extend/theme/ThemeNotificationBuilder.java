@@ -14,7 +14,7 @@ public class ThemeNotificationBuilder extends Notification.Builder {
 
     @Override // android.app.Notification.Builder
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-    public g addAction(int i, CharSequence charSequence, PendingIntent pendingIntent) {
+    public ThemeNotificationBuilder addAction(int i, CharSequence charSequence, PendingIntent pendingIntent) {
         if (Build.VERSION.SDK_INT >= 16) {
             super.addAction(i, charSequence, pendingIntent);
         }
@@ -28,7 +28,7 @@ public class ThemeNotificationBuilder extends Notification.Builder {
 
     @Override // android.app.Notification.Builder
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-    public g setExtras(Bundle bundle) {
+    public ThemeNotificationBuilder setExtras(Bundle bundle) {
         if (Build.VERSION.SDK_INT >= 19) {
             super.setExtras(bundle);
         }
@@ -37,7 +37,7 @@ public class ThemeNotificationBuilder extends Notification.Builder {
 
     @Override // android.app.Notification.Builder
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-    public g setPriority(int i) {
+    public ThemeNotificationBuilder setPriority(int i) {
         if (Build.VERSION.SDK_INT >= 16) {
             super.setPriority(i);
         }
@@ -46,7 +46,7 @@ public class ThemeNotificationBuilder extends Notification.Builder {
 
     @Override // android.app.Notification.Builder
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-    public g setShowWhen(boolean z) {
+    public ThemeNotificationBuilder setShowWhen(boolean z) {
         if (Build.VERSION.SDK_INT >= 17) {
             super.setShowWhen(z);
         }
@@ -55,7 +55,7 @@ public class ThemeNotificationBuilder extends Notification.Builder {
 
     @Override // android.app.Notification.Builder
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-    public g setStyle(Notification.Style style) {
+    public ThemeNotificationBuilder setStyle(Notification.Style style) {
         if (Build.VERSION.SDK_INT >= 16) {
             super.setStyle(style);
         }
@@ -64,7 +64,7 @@ public class ThemeNotificationBuilder extends Notification.Builder {
 
     @Override // android.app.Notification.Builder
     /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-    public g setSubText(CharSequence charSequence) {
+    public ThemeNotificationBuilder setSubText(CharSequence charSequence) {
         if (Build.VERSION.SDK_INT >= 16) {
             super.setSubText(charSequence);
         }
@@ -73,7 +73,7 @@ public class ThemeNotificationBuilder extends Notification.Builder {
 
     @Override // android.app.Notification.Builder
     /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
-    public g setUsesChronometer(boolean z) {
+    public ThemeNotificationBuilder setUsesChronometer(boolean z) {
         if (Build.VERSION.SDK_INT >= 16) {
             super.setUsesChronometer(z);
         }

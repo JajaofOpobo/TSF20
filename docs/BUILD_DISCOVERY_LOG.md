@@ -713,6 +713,23 @@ Verified each against smali/v382/ledger before touching:
 - Output: `docs/build-output-iter37.txt`. Regressions: none. Confidence:
   HIGH (all applied fixes triple-verified; queued items explicitly deferred).
 
+## Iteration 38 — theme-2, qualifier sites, drawer chain [S]
+
+- Three investigators (smali descriptors + ledger + twins, all verified).
+- `ThemeDIYActivity` (8 + 1 latent): `aq`→`AbstractThemeProvider`
+  (smali field/method descriptors; lethal `String aq` field collision
+  avoided by type-position-only edits). CLEAN.
+- `ThemeNotificationBuilder` (5 + 2 latent): self-type `g` (ledger: file
+  WAS `g.java`; smali returns + `return this` bodies). CLEAN.
+- Qualifier sites: `DrawerPanelController.e`→`DrawerSettingsPanel`
+  (ledger + boolean-ctor), chain resolves to
+  `GlobalServiceLocator.g.a.j()/.k()` (static/instance chain verified
+  end-to-end); `FolderPage` ShellDataParser→`ShellDataProvider.a()` +
+  dead-import delete + `C0133a`→`ToastOverlayController.C0133a`
+  (Notifier call-shape chain). CLEAN (all three files).
+- Output: `docs/build-output-iter38.txt`. Regressions: none. Confidence:
+  HIGH throughout.
+
 ## Iteration 35 — diy trio, TouchHandlerC latents, TweenUtils [S]
 
 - Three investigators (smali descriptors + ledger + twins, all verified).

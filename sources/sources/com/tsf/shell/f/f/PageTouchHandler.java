@@ -69,7 +69,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
 
         @Override // com.tsf.shell.f.e.e.ItemNode
         public float a() {
-            return com.tsf.shell.manager.app.WidgetPanelController.PageShaderNode.j() ? com.censivn.C3DEngine.b.b.ScreenConstants.g + (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2) : com.censivn.C3DEngine.b.b.ScreenConstants.h * 2;
+            return com.tsf.shell.manager.GlobalServiceLocator.g.a.j() ? com.censivn.C3DEngine.b.b.ScreenConstants.g + (com.censivn.C3DEngine.b.b.ScreenConstants.h * 2) : com.censivn.C3DEngine.b.b.ScreenConstants.h * 2;
         }
     };
     private PageEventDispatcher G = new PageEventDispatcher();
@@ -160,7 +160,7 @@ public class PageTouchHandler implements KeyboardHandler.a, com.censivn.C3DEngin
         this.g = new com.tsf.shell.f.e.PageIndicatorStrip(true) { // from class: com.tsf.shell.f.f.PageTouchHandler.10
             @Override // com.tsf.shell.f.e.PageIndicatorStrip
             public void a() {
-                com.tsf.shell.manager.app.WidgetPanelController.PageShaderNode.k();
+                com.tsf.shell.manager.GlobalServiceLocator.g.a.k();
             }
         };
         this.i = new com.censivn.C3DEngine.b.f.SortedContainerRenderable() { // from class: com.tsf.shell.f.f.PageTouchHandler.11
