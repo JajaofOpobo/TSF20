@@ -110,7 +110,7 @@ public class DampedSpringConstraint {
         this.c = this.j - f;
     }
 
-    public float a(b bVar) {
+    public float a(DampedSpringConstraint bVar) {
         return (float) Math.sqrt(((b() - bVar.b()) * (b() - bVar.b())) + ((c() - bVar.c()) * (c() - bVar.c())) + ((d() - bVar.d()) * (d() - bVar.d())));
     }
 }

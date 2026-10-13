@@ -33,7 +33,7 @@ public class SortedContainerRenderable extends BaseRenderable {
 
         @Override // java.util.Comparator
         /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-        public int compare(i iVar, i iVar2) {
+        public int compare(IRenderable iVar, IRenderable iVar2) {
             int rendererPriorityLevel = iVar.getRendererPriorityLevel();
             int rendererPriorityLevel2 = iVar2.getRendererPriorityLevel();
             if (rendererPriorityLevel > rendererPriorityLevel2) {

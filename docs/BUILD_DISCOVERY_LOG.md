@@ -730,6 +730,25 @@ Verified each against smali/v382/ledger before touching:
 - Output: `docs/build-output-iter38.txt`. Regressions: none. Confidence:
   HIGH throughout.
 
+## Iteration 39 — parallel round #9: provider, renderables, spring twins [S]
+
+- Three investigators (smali descriptors + ledger + twins, all verified).
+- `ThemeDataProvider` deferred to its own round (14 logged + ~25 latent —
+  too big to fold in; precise brief in hand).
+- Renderable trio: `compare(i,i)`→`IRenderable` (interface-arg proof),
+  `m/k`→`Label/GridRenderable` (smali fields + ctor shape), `b`→
+  `AltSpriteItemData` (smali returns + element-type proof), 5× `l.this`
+  + 44× `a.this` qualifier repairs (line/occurrence counts distinguished
+  explicitly after a miscount). CLEAN (all three).
+- Spring twins: stale `c/a/a/{a,b}` DELETED (zero outside refs; all live
+  code on `spring.*`), bare-`b` retargeted to `DampedSpringConstraint`
+  (diff-proven identical; `b()/c()/d()` present). CLEAN.
+- `PageThumbnailRenderer`: `f.a.a.a`→`GlTextureBinding` (smali+ledger);
+  husk given `a,b,c,d` int fields (smali shapes + consumer uses).
+  Follow-ons queued (manager.A recovery, `a` self-refs). CLEAN.
+- Output: `docs/build-output-iter39.txt`. Regressions: none. Confidence:
+  HIGH throughout.
+
 ## Iteration 35 — diy trio, TouchHandlerC latents, TweenUtils [S]
 
 - Three investigators (smali descriptors + ledger + twins, all verified).

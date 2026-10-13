@@ -2,12 +2,12 @@ package com.censivn.C3DEngine.c.a.spring;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class SpringConstraint {
-    private b a;
-    private b b;
+    private DampedSpringConstraint a;
+    private DampedSpringConstraint b;
     private float c;
     private float d;
 
-    public SpringConstraint(b bVar, b bVar2, float f, float f2) {
+    public SpringConstraint(DampedSpringConstraint bVar, DampedSpringConstraint bVar2, float f, float f2) {
         this.d = 0.5f;
         this.a = bVar;
         this.b = bVar2;

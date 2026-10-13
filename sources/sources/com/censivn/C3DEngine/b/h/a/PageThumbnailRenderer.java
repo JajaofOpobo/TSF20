@@ -20,7 +20,7 @@ import java.util.Iterator;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class PageThumbnailRenderer extends com.censivn.C3DEngine.b.f.sprite.TextureSpriteRenderable {
-    private static com.tsf.shell.f.a.a.a i;
+    private static com.tsf.shell.f.a.a.GlTextureBinding i;
     private static TextureElement j;
     private static TextureElement k;
     private static b p;
@@ -148,7 +148,7 @@ public class PageThumbnailRenderer extends com.censivn.C3DEngine.b.f.sprite.Text
         c();
     }
 
-    private int[] a(com.tsf.shell.f.a.a.a aVar) {
+    private int[] a(com.tsf.shell.f.a.a.GlTextureBinding aVar) {
         GLES20.glBindFramebuffer(36160, aVar.a);
         int i2 = aVar.c;
         int i3 = aVar.d;

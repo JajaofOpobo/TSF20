@@ -5,14 +5,14 @@ import com.censivn.C3DEngine.api.element.Color4;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ButtonRenderable extends BaseRenderable {
-    private m a;
-    private k b;
+    private LabelRenderable a;
+    private GridRenderable b;
     private Color4 c = new Color4();
     private int d;
     private int e;
 
     public ButtonRenderable(float f, float f2, int i, int i2) {
-        this.b = new k(f, f2, false);
+        this.b = new GridRenderable(f, f2, false);
         this.b.setDefaultColor(this.c);
         this.d = i;
         this.e = i2;
@@ -20,19 +20,19 @@ public class ButtonRenderable extends BaseRenderable {
         this.b.setMouseEventListener(new com.censivn.C3DEngine.b.d.MouseEventListener(this.b) { // from class: com.censivn.C3DEngine.b.f.ButtonRenderable.1
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                l.this.a();
+                ButtonRenderable.this.a();
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
-                l.this.b();
-                l.this.c.set(l.this.e);
+                ButtonRenderable.this.b();
+                ButtonRenderable.this.c.set(ButtonRenderable.this.e);
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
-                l.this.c();
-                l.this.c.set(l.this.d);
+                ButtonRenderable.this.c();
+                ButtonRenderable.this.c.set(ButtonRenderable.this.d);
             }
         });
         this.b.calAABB();

@@ -71,7 +71,7 @@ public class AltTextureSpriteRenderable extends BaseRenderable {
             ShaderColorTexture shaderColorTexture = ShaderManager.SHADER_COLOR_TEXTURE;
             ShaderManager.enableShader(shaderColorTexture);
             float f = (this.mAlpha / 255.0f) * MatrixStack.glColor().alpha;
-            Iterator<b> it = this.f.iterator();
+            Iterator<AltSpriteItemData> it = this.f.iterator();
             while (it.hasNext()) {
                 a(it.next(), f);
             }
@@ -158,100 +158,100 @@ public class AltTextureSpriteRenderable extends BaseRenderable {
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void e(MotionEvent motionEvent) {
                 float[] fArrA = x.a(motionEvent);
-                a.this.e = a.this.a(fArrA[0], fArrA[1]);
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.e(motionEvent);
+                AltTextureSpriteRenderable.this.e = AltTextureSpriteRenderable.this.a(fArrA[0], fArrA[1]);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.e(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void f(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.f(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.f(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void g(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.g(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.g(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.a(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.a(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void k(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.k(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.k(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.b(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.b(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void c(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.c(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.c(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void d(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.d(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.d(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.a(motionEvent, motionEvent2, f7, f8);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.a(motionEvent, motionEvent2, f7, f8);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void a(MotionEvent motionEvent, MotionEvent motionEvent2) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.a(motionEvent, motionEvent2);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.a(motionEvent, motionEvent2);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void b(MotionEvent motionEvent, MotionEvent motionEvent2, float f7, float f8) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.b(motionEvent, motionEvent2, f7, f8);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.b(motionEvent, motionEvent2, f7, f8);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void h(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.h(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.h(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void i(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.i(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.i(motionEvent);
                 }
             }
 
             @Override // com.censivn.C3DEngine.b.d.MouseEventListener
             public void j(MotionEvent motionEvent) {
-                if (a.this.e != null && a.this.e.l != null) {
-                    a.this.e.l.j(motionEvent);
+                if (AltTextureSpriteRenderable.this.e != null && AltTextureSpriteRenderable.this.e.l != null) {
+                    AltTextureSpriteRenderable.this.e.l.j(motionEvent);
                 }
             }
         };
@@ -479,12 +479,12 @@ public class AltTextureSpriteRenderable extends BaseRenderable {
         return this.f.size();
     }
 
-    public b a(int i) {
+    public AltSpriteItemData a(int i) {
         return this.f.get(i);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public b a(float f, float f2) {
+    public AltSpriteItemData a(float f, float f2) {
         for (int i = 0; i < this.a; i++) {
             AltSpriteItemData bVar = this.f.get(i);
             this.AABB_TL[0] = bVar.t.x;
