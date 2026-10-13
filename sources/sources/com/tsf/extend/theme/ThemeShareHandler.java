@@ -20,15 +20,15 @@ public class ThemeShareHandler {
         void a(String str);
     }
 
-    public void a(Context context, int i, String str, aq aqVar, A aVar) {
+    public void a(Context context, int i, String str, AbstractThemeProvider aqVar, a aVar) {
         a(context, com.tsf.extend.base.g.BaseShareHandler.a(this.b, (String) null, context.getResources().getString(ResourceIds.g.share_title), context.getResources().getString(aqVar != null ? ResourceIds.g.theme_share_content : ResourceIds.g.share_gp_theme_link), str, 2), i, aVar);
     }
 
-    public static void a(Context context, String str, String str2, A aVar) {
+    public static void a(Context context, String str, String str2, a aVar) {
         new com.tsf.extend.base.g.ShareIntentHandler(context, com.tsf.extend.base.g.BaseShareHandler.a((String) null, (String) null, TextUtils.isEmpty(str) ? context.getResources().getString(ResourceIds.g.share_on) : str, str2, (String) null, 0), aVar).a(context, false);
     }
 
-    private void a(Context context, Intent intent, int i, A aVar) {
+    private void a(Context context, Intent intent, int i, a aVar) {
         com.tsf.extend.base.g.BaseShareHandler cVar;
         switch (i) {
             case 0:

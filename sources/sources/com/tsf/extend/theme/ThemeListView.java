@@ -34,8 +34,8 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     protected boolean e;
     protected long f;
     protected List<ThemeBaseAdapter.b> g;
-    protected t h;
-    protected p i;
+    protected ThemeBaseAdapter h;
+    protected ThemePagedModel i;
     protected int k;
     private ProgressBar l;
     private TextView m;
@@ -721,7 +721,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
         return this.y;
     }
 
-    protected t a(List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
+    protected ThemeBaseAdapter a(List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         return new t(getContext(), this.g, this);
     }
 
@@ -763,7 +763,7 @@ public class ThemeListView extends FrameLayout implements View.OnClickListener, 
     }
 
     @Override // com.tsf.extend.wallpaper.l.a
-    public void a(ThemeModel kVar, B bVar) {
+    public void a(ThemeModel kVar, DiyWallpaperProvider bVar) {
         kVar.d(true);
         if (this.h != null && this.h.a(kVar)) {
             this.h.notifyDataSetChanged();

@@ -16,9 +16,9 @@ public class ThemeShareAdapter extends BaseAdapter {
     public static int[] a = {ResourceIds.g.setting_facebook, ResourceIds.g.cm_club_google_plus};
     private static Typeface d;
     Context b;
-    List<an> c;
+    List<ThemeShareItem> c;
 
-    public ThemeShareAdapter(Context context, List<an> list, boolean z) {
+    public ThemeShareAdapter(Context context, List<ThemeShareItem> list, boolean z) {
         this.b = context;
         this.c = list;
         if (z) {
@@ -60,7 +60,7 @@ public class ThemeShareAdapter extends BaseAdapter {
         } else {
             aVar = (A) view.getTag();
         }
-        ThemeShareItem anVar = (an) getItem(i);
+        ThemeShareItem anVar = (ThemeShareItem) getItem(i);
         aVar.a.setImageDrawable(anVar.b());
         aVar.b.setText(anVar.c());
         return view;

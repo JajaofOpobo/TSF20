@@ -50,7 +50,7 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
                         if ((pageActivity instanceof PersonalizationActivity) && ((PersonalizationActivity) pageActivity).e() != null) {
                             ((PersonalizationActivity) pageActivity).e().getCurrentPageCode();
                         }
-                        c.a aVar = cVar.a;
+                        ThemeCategoryListModel.A aVar = cVar.a;
                         if ("1".equals(aVar.b)) {
                             ThemeModel kVar = (ThemeModel) aVar.d;
                             if (kVar != null) {
@@ -187,11 +187,11 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
     class A extends android.support.v4.view.ac {
         private ArrayList<c> b = new ArrayList<>();
         private C0064a c = new C0064a();
-        private n d;
-        private List<com.tsf.extend.base.c.ProgressCallback> e;
+        private ThemeProgressModel d;
+        private List<ThemeCategoryListModel.A> e;
         private int f;
 
-        public A(n nVar, int i) {
+        public A(ThemeProgressModel nVar, int i) {
             this.d = nVar;
             this.e = this.d.b();
             this.f = i;
@@ -215,7 +215,7 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
         @Override // android.support.v4.view.ac
         public Object a(ViewGroup viewGroup, int i) {
             int size = i % this.e.size();
-            c.a aVar = this.e.get(size);
+            ThemeCategoryListModel.A aVar = this.e.get(size);
             ImageView imageView = (ImageView) LayoutInflater.from(y.this.b).inflate(ResourceIds.C0052f.theme_list_item_album_entry_image, viewGroup, false);
             a(imageView, aVar.c);
             imageView.setOnClickListener(y.this.o);
@@ -278,7 +278,7 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
     }
 
     class c {
-        com.tsf.extend.base.c.ProgressCallback a;
+        ThemeCategoryListModel.A a;
         ImageView b;
         Bitmap c;
         int d;
@@ -291,9 +291,9 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
     class B implements ViewPager.e {
         private int b;
         private int c;
-        private List<com.tsf.extend.base.c.ProgressCallback> d;
+        private List<ThemeCategoryListModel.A> d;
 
-        public B(int i, int i2, List<com.tsf.extend.base.c.ProgressCallback> list) {
+        public B(int i, int i2, List<ThemeCategoryListModel.A> list) {
             this.b = i;
             this.c = i2;
             this.d = list;
@@ -320,7 +320,7 @@ public class ThemeCategoryPager extends ThemeBaseAdapter {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(int i, int i2, boolean z, com.tsf.extend.base.c.ProgressCallback aVar) {
+    public void a(int i, int i2, boolean z, ThemeCategoryListModel.A aVar) {
         String strI = "";
         String str = "";
         if ("1".equals(aVar.b)) {

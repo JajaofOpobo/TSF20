@@ -749,6 +749,47 @@ Verified each against smali/v382/ledger before touching:
 - Output: `docs/build-output-iter40.txt`. File CLEAN (was 30 lines).
   Regressions: none. Confidence: HIGH throughout.
 
+## Iteration 42 — C-generics settled via smali Signature [S]
+
+- Question: with C=TCLM, `cVar.a().add(TCLM.A)` fails against
+  `List<ThemeCategoryModel>` — so which link is wrong?
+- Smali Signature attribute: `c extends a<c$a>` — the TRUE C holds
+  `List<c$a>`. Tree TCLM.A ≡ `c$a` (String a/b/c + Object d, exact);
+  zero in-tree dependents on `<ThemeCategoryModel>`; only use is a
+  subclass decl. Type arg corrected to `<A>` (self-inner reference
+  requires FQN in extends clause — caught on rebuild, fixed).
+- `k()` rebuilt per smali body (keys/fields/branches 1:1); incidentally
+  proved tree's `ProgressCallback`-shaped body irreconcilable (interface
+  can't be instantiated) — archived as corrupt in the log.
+- `ProgressCallback` itself: REAL type with legitimate users (interface
+  impls, params, ServiceBinderA) — kept. Only the TPM.b()-flow lists
+  (which smali proves carry `c$a`) retargeted, plus the `HttpDownloader`
+  static-call mapping (`base/c` ≡ HttpDownloader, method-for-method).
+  WallpaperOnLineActivity's 2-arg line queued (no fitting overload —
+  needs its own twin work, not guessing).
+- DIYThemeDetail `k/o/aq` resolved by usage shapes in passing.
+- Output: `docs/build-output-iter42.txt`. Regressions: none. Confidence:
+  HIGH throughout.
+
+## Iteration 41 — theme install/share/list/category round [S]
+
+- Two investigators (smali descriptors + ledger + twins, all verified).
+- `ThemeInstallManager` (8 + 15 qualifiers + `aa` widening): self-type,
+  `l`→`ThemeStubHandler`, `B/b` + `A/a` case artifacts, `aa`→`Object`
+  (empty-class evidence documented; behavior-preserving by erasure).
+  Missed 3 sites on first pass (caught on rebuild, fixed, verified).
+  CLEAN.
+- Share/list/share-adapter/pager/page: `aq`→`AbstractThemeProvider`,
+  inner-`a`, `t`→`ThemeBaseAdapter`, `p`→`ThemePagedModel`,
+  `B`→`DiyWallpaperProvider` (sibling `instanceof` proof),
+  `an`→`ThemeShareItem`, `n`→`ThemeProgressModel`, `t`-return.
+  CLEAN (all five).
+- Scope discipline held: ProgressCallback→TCLM.A coherent restoration
+  (8 sites, 3 files) deferred to its own iteration — needs the C-generics
+  question settled first, not rushed inside this batch.
+- Output: `docs/build-output-iter41.txt`. Regressions: none. Confidence:
+  HIGH throughout.
+
 ## Iteration 39 — parallel round #9: provider, renderables, spring twins [S]
 
 - Three investigators (smali descriptors + ledger + twins, all verified).

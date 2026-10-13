@@ -72,14 +72,14 @@ public class ThemeCategoryPage extends ThemeListView {
         return true;
     }
 
-    private boolean a(n nVar) {
-        List<c.a> listB = nVar.b();
+    private boolean a(ThemeProgressModel nVar) {
+        List<ThemeCategoryListModel.A> listB = nVar.b();
         if (listB == null || listB.size() < 2) {
             return false;
         }
-        Iterator<c.a> it = listB.iterator();
+        Iterator<ThemeCategoryListModel.A> it = listB.iterator();
         while (it.hasNext()) {
-            c.a next = it.next();
+            ThemeCategoryListModel.A next = it.next();
             if (TextUtils.isEmpty(next.c)) {
                 it.remove();
             } else if (TextUtils.isEmpty(next.a)) {
@@ -154,7 +154,7 @@ public class ThemeCategoryPage extends ThemeListView {
     }
 
     @Override // com.tsf.extend.theme.ThemeListView
-    protected t a(List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
+    protected ThemeBaseAdapter a(List<ThemeBaseAdapter.b> list, View.OnClickListener onClickListener) {
         return new y(this.a, list, this);
     }
 

@@ -36,7 +36,7 @@ import org.json.JSONObject;
 public class ThemeInstallManager {
     public static boolean a = false;
     public static String b = "com.theme.test3D";
-    private static ah f = new ah();
+    private static ThemeInstallManager f = new ThemeInstallManager();
     private String H;
     private boolean K;
     private Bitmap L;
@@ -56,7 +56,7 @@ public class ThemeInstallManager {
     private boolean ab;
     private float[] ac;
     private Bitmap c;
-    private l e;
+    private ThemeStubHandler e;
     private Context g;
     private String h;
     private String i;
@@ -68,7 +68,7 @@ public class ThemeInstallManager {
     private boolean d = false;
     private Map<String, SparseArray<Object>> j = Collections.synchronizedMap(new LinkedHashMap());
     private boolean n = false;
-    private B p = b.Normal;
+    private b p = b.Normal;
     private boolean q = false;
     private boolean r = false;
     private boolean s = false;
@@ -114,7 +114,7 @@ public class ThemeInstallManager {
     private ThemeInstallManager() {
     }
 
-    public static ah a() {
+    public static ThemeInstallManager a() {
         return f;
     }
 
@@ -137,7 +137,7 @@ public class ThemeInstallManager {
         return null;
     }
 
-    public SparseArray<HashMap<String, aa>> e() {
+    public SparseArray<HashMap<String, Object>> e() {
         Object objA = a(1);
         if (objA instanceof SparseArray) {
             try {
@@ -205,7 +205,7 @@ public class ThemeInstallManager {
         return false;
     }
 
-    public void a(String str, String str2, Context context, SparseArray<Object> sparseArray, boolean z, String str3, boolean z2, boolean z3, l lVar) {
+    public void a(String str, String str2, Context context, SparseArray<Object> sparseArray, boolean z, String str3, boolean z2, boolean z3, ThemeStubHandler lVar) {
         String str4 = this.h;
         this.H = str2;
         this.g = context;
@@ -255,12 +255,12 @@ public class ThemeInstallManager {
             public void run() {
                 boolean zB;
                 if (new File(str).getName().startsWith("DIY_")) {
-                    zB = ah.this.a(str2, str, z, true);
+                    zB = ThemeInstallManager.this.a(str2, str, z, true);
                 } else {
-                    zB = ah.this.b(str2, str, z, true);
+                    zB = ThemeInstallManager.this.b(str2, str, z, true);
                 }
                 if (!zB) {
-                    ah.this.b(context, aVar, i, str3);
+                    ThemeInstallManager.this.b(context, aVar, i, str3);
                     return;
                 }
                 if (aVar != null) {
@@ -271,7 +271,7 @@ public class ThemeInstallManager {
                         }
                     });
                 }
-                ah.this.q = false;
+                ThemeInstallManager.this.q = false;
             }
         });
     }
@@ -331,7 +331,7 @@ public class ThemeInstallManager {
                     boolean z2 = false;
                     if (ai.a().b(str2)) {
                         context.startActivity(context.getPackageManager().getLaunchIntentForPackage(str2));
-                        ah.this.q = false;
+                        ThemeInstallManager.this.q = false;
                         com.tsf.extend.base.j.UiThreadUtils.a(new Runnable() { // from class: com.tsf.extend.theme.ThemeInstallManager.3.1
                             @Override // java.lang.Runnable
                             public void run() {
@@ -341,14 +341,14 @@ public class ThemeInstallManager {
                         return;
                     }
                     if (TextUtils.isEmpty(str2)) {
-                        ah.this.a(null, null, null, null, false, null, true, true, null);
-                        ah.this.b(context, aVar, i, str);
-                        ah.this.a(ah.this.g(null));
+                        ThemeInstallManager.this.a(null, null, null, null, false, null, true, true, null);
+                        ThemeInstallManager.this.b(context, aVar, i, str);
+                        ThemeInstallManager.this.a(ThemeInstallManager.this.g(null));
                         return;
                     }
                     if ("SYSTEM".equals(str2)) {
-                        ah.this.a(null, str2, null, null, false, null, true, true, null);
-                        ah.this.b(context, aVar, i, str);
+                        ThemeInstallManager.this.a(null, str2, null, null, false, null, true, true, null);
+                        ThemeInstallManager.this.b(context, aVar, i, str);
                         return;
                     }
                     if (!str2.startsWith("recom_")) {
@@ -364,15 +364,15 @@ public class ThemeInstallManager {
                             zE = v.e(str2);
                         }
                         if (zE) {
-                            boolean zA = ah.this.a(str2, true);
+                            boolean zA = ThemeInstallManager.this.a(str2, true);
                             if (zA) {
-                                ah.this.I = zOptBoolean2;
-                                ah.this.b(context, aVar, i, str);
+                                ThemeInstallManager.this.I = zOptBoolean2;
+                                ThemeInstallManager.this.b(context, aVar, i, str);
                                 if (z2) {
                                     ThemeDataProvider.h();
                                     String strF = v.f(str2);
                                     if (!TextUtils.isEmpty(strF) && strF.contains("clock3d")) {
-                                        ah.this.x = true;
+                                        ThemeInstallManager.this.x = true;
                                     }
                                 }
                             }
@@ -406,7 +406,7 @@ public class ThemeInstallManager {
         return null;
     }
 
-    public SparseArray<Object> a(Context context, boolean z, String str, l lVar, String str2) {
+    public SparseArray<Object> a(Context context, boolean z, String str, ThemeStubHandler lVar, String str2) {
         return null;
     }
 
@@ -680,7 +680,7 @@ public class ThemeInstallManager {
         return Integer.valueOf(Integer.parseInt(strArrSplit[0])).intValue() <= 1;
     }
 
-    public static boolean a(A aVar, String str) {
+    public static boolean a(a aVar, String str) {
         return a(str, aVar.a());
     }
 

@@ -72,12 +72,12 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
     private ImageView h;
     private View i;
     private d j;
-    private k k;
+    private ThemeModel k;
     private List<String> l;
     private List<Integer> m;
     private PageIndicatorCompat n;
     private int o;
-    private o p;
+    private ThemeLoadingDialog p;
     private String q;
     private String r;
     private String s;
@@ -490,10 +490,10 @@ public class DIYThemeDetail extends FrameLayout implements DialogInterface.OnCli
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean a(String str, String str2) {
-        return com.tsf.extend.base.c.ProgressCallback(str2, str, null) == 0;
+        return com.tsf.extend.base.HttpDownloader.a(str2, str, null) == 0;
     }
 
-    private void a(final aq aqVar) {
+    private void a(final AbstractThemeProvider aqVar) {
         DialogInterface.OnClickListener onClickListener = new DialogInterface.OnClickListener() { // from class: com.tsf.extend.theme.DIYThemeDetail.2
             /* JADX WARN: Type inference failed for: r0v0, types: [com.tsf.extend.theme.DIYThemeDetail$2$1] */
             @Override // android.content.DialogInterface.OnClickListener
