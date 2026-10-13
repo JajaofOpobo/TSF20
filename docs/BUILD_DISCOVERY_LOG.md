@@ -730,6 +730,25 @@ Verified each against smali/v382/ledger before touching:
 - Output: `docs/build-output-iter38.txt`. Regressions: none. Confidence:
   HIGH throughout.
 
+## Iteration 40 — ThemeDataProvider round + TCLM type-arg correction [S]
+
+- One investigator (smali descriptors + ledger + DEX, all verified).
+- Applied: self-type `v`, `p/k/d/n/B/b.a/C/ai/ah/ag/ap/aj/ak/ac/s/a-
+  InterfaceC0050a/f/ae` mappings (all same-package, no imports; FQN only
+  for the referrals-handler interface).
+- `aq` DEFERRED-then-resolved: brief's counter-evidence collapsed on
+  recheck — `t()` is inherited from `ThemeModel` (which `AbstractTheme-
+  Provider` extends), and both call shapes (`diy/e.a` return, `t()` feed
+  into `a(String,List<String>,…)`) match exactly. `aq`→`AbstractTheme-
+  Provider`. Lesson: check supertypes before declaring a method absent.
+- Structural find: smali `c` Signature proves `ThemeCategoryListModel`
+  extends `PagedListModel<c$a>` — tree's `<ThemeCategoryModel>` contradicted
+  it with zero in-tree dependents, so the type arg was corrected to `<A>`;
+  `k()` rebuilt to construct `TCLM.A` per smali body (keys/fields 1:1).
+  Prior `ProgressCallback`-shaped body archived as corrupt in the log.
+- Output: `docs/build-output-iter40.txt`. File CLEAN (was 30 lines).
+  Regressions: none. Confidence: HIGH throughout.
+
 ## Iteration 39 — parallel round #9: provider, renderables, spring twins [S]
 
 - Three investigators (smali descriptors + ledger + twins, all verified).

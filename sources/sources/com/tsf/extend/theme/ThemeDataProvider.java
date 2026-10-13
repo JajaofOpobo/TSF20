@@ -34,7 +34,7 @@ import org.json.JSONObject;
 
 /* JADX INFO: loaded from: C:\Users\Jaja\AndroidStudioProjects\TSF20\resources-Prime\classes.dex */
 public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
-    private static volatile v b = null;
+    private static volatile ThemeDataProvider b = null;
     private static String e = null;
     private static final List<String> h = Lists.newArrayList();
     private String c;
@@ -63,7 +63,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         a(com.tsf.extend.AppContextHolder.b());
         com.tsf.extend.base.i.InstallReferrerHandler.a().a(com.tsf.extend.AppContextHolder.b());
         com.tsf.extend.base.i.InstallReferrerHandler.a().a("1");
-        com.tsf.extend.base.i.InstallReferrerHandler.a().a(new a.InterfaceC0050a() { // from class: com.tsf.extend.theme.ThemeDataProvider.1
+        com.tsf.extend.base.i.InstallReferrerHandler.a().a(new com.tsf.extend.base.i.InstallReferrerHandler.InterfaceC0050a() { // from class: com.tsf.extend.theme.ThemeDataProvider.1
         });
         this.c = com.tsf.extend.base.j.AppEnvUtils.b(com.tsf.extend.AppContextHolder.b());
         this.c = this.c == null ? "null" : this.c;
@@ -71,11 +71,11 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         this.d = TextUtils.isEmpty(this.d) ? "null" : this.d;
     }
 
-    public static v h() {
+    public static ThemeDataProvider h() {
         if (b == null) {
-            synchronized (v.class) {
+            synchronized (ThemeDataProvider.class) {
                 if (b == null) {
-                    b = new v();
+                    b = new ThemeDataProvider();
                 }
             }
         }
@@ -167,7 +167,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                 return null;
             }
             int iA = a(str, bVar);
-            ag agVar = new ag("recom?");
+            ThemeListApiRequest agVar = new ThemeListApiRequest("recom?");
             agVar.a("190", String.valueOf(j), String.valueOf(iA != -1 ? iA : 0));
             strD = agVar.d();
         } else if (str.contains("DATA_RECOM_BY_NAME")) {
@@ -177,7 +177,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                 e3.printStackTrace();
             }
             int iA2 = a(str, bVar);
-            ag agVar2 = new ag("recom?");
+            ThemeListApiRequest agVar2 = new ThemeListApiRequest("recom?");
             agVar2.b("120", String.valueOf(string2), String.valueOf(iA2 != -1 ? iA2 : 0));
             strD = agVar2.d();
         } else if (str.contains("DATA_ALBUM")) {
@@ -192,7 +192,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         } else if ("DATA_DIY".equals(str)) {
             strD = String.format("https://cml.ksmobile.com/Album/getDiyThemeList?p=%s&mcc=%s", Integer.valueOf(i), this.c);
         } else if ("DATA_CATEGORY".equals(str)) {
-            strD = new s().d();
+            strD = new ThemeAlbumApiRequest().d();
         } else if (str.contains("DATA_WALLPAPE_RELATIVE")) {
             int iA3 = a(str, bVar);
             try {
@@ -207,7 +207,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                 e2 = e5;
                 e2.printStackTrace();
             }
-            ap apVar = new ap();
+            ThemeRecommendedApiRequest apVar = new ThemeRecommendedApiRequest();
             apVar.a(string, string2, String.valueOf(iA3 != -1 ? iA3 : 0));
             strD = apVar.d();
         } else if (str.equals("DATA_SEARCH")) {
@@ -217,18 +217,18 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
             } catch (JSONException e6) {
                 e6.printStackTrace();
             }
-            aj ajVar = new aj();
+            ThemeSearchApiRequest ajVar = new ThemeSearchApiRequest();
             ajVar.b(string2, String.valueOf(iA4 != -1 ? iA4 : 0));
             strD = ajVar.d();
         } else if (str.equals("DATA_SEARCH_TAG")) {
-            strD = new ak().d();
+            strD = new ThemeSearchTagsApiRequest().d();
         } else if (str != null && str.contains("DATA_DATA_FF")) {
-            ac acVar = new ac("PRecom?");
+            ThemeDynamicApiRequest acVar = new ThemeDynamicApiRequest("PRecom?");
             acVar.e();
             strD = acVar.d();
         } else {
             int iA5 = a(str, bVar);
-            ag agVar3 = new ag("tlist?", true);
+            ThemeListApiRequest agVar3 = new ThemeListApiRequest("tlist?", true);
             agVar3.b("DATA_NEW".equals(str) ? "101" : "102", String.valueOf(iA5 != -1 ? iA5 : 0));
             strD = agVar3.d();
         }
@@ -287,18 +287,18 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     private static String a(long j, String str) {
-        ag agVar = new ag("detail?");
+        ThemeListApiRequest agVar = new ThemeListApiRequest("detail?");
         agVar.a(j, str);
         return agVar.d();
     }
 
-    public void a(long j, String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<p> interfaceC0048a, String str2) {
-        com.android.volley.toolbox.j jVarA = com.tsf.extend.base.f.JsonRequestBuilder.a(a(j, str), null, interfaceC0048a, new b.a<p>() { // from class: com.tsf.extend.theme.ThemeDataProvider.6
+    public void a(long j, String str, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<ThemePagedModel> interfaceC0048a, String str2) {
+        com.android.volley.toolbox.j jVarA = com.tsf.extend.base.f.JsonRequestBuilder.a(a(j, str), null, interfaceC0048a, new JsonRequestBuilder.a<ThemePagedModel>() { // from class: com.tsf.extend.theme.ThemeDataProvider.6
             @Override // com.tsf.extend.base.f.JsonRequestBuilder.a
             /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public p b(JSONObject jSONObject) {
+            public ThemePagedModel b(JSONObject jSONObject) {
                 try {
-                    return v.this.g(jSONObject);
+                    return ThemeDataProvider.this.g(jSONObject);
                 } catch (JSONException e2) {
                     return null;
                 }
@@ -309,7 +309,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         a(jVarA);
     }
 
-    public void a(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<k> interfaceC0048a, final long j, String str, String str2) {
+    public void a(final com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<ThemeModel> interfaceC0048a, final long j, String str, String str2) {
         k kVarA;
         Iterator<Map.Entry<String, com.tsf.extend.base.b.PagedListModel>> it = d().entrySet().iterator();
         ThemeModel kVar = null;
@@ -331,11 +331,11 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         if (kVarA != null) {
             interfaceC0048a.a(null, kVarA);
         } else {
-            a(j, str, new com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<p>() { // from class: com.tsf.extend.theme.ThemeDataProvider.7
+            a(j, str, new com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<ThemePagedModel>() { // from class: com.tsf.extend.theme.ThemeDataProvider.7
                 @Override // com.tsf.extend.base.d.com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a
                 public void a(JSONObject jSONObject, p pVar) {
                     if (pVar != null) {
-                        k kVarA2 = v.this.a(pVar, j);
+                        k kVarA2 = ThemeDataProvider.this.a(pVar, j);
                         if (kVarA2 != null) {
                             interfaceC0048a.a(jSONObject, kVarA2);
                             return;
@@ -356,7 +356,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public k a(p pVar, long j) {
+    public ThemeModel a(ThemePagedModel pVar, long j) {
         if (pVar == null || pVar.a() == null) {
             return null;
         }
@@ -416,8 +416,8 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return aVar;
     }
 
-    private p d(JSONObject jSONObject) throws JSONException {
-        p pVar = new p();
+    private ThemePagedModel d(JSONObject jSONObject) throws JSONException {
+        ThemePagedModel pVar = new ThemePagedModel();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -442,9 +442,9 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return pVar;
     }
 
-    private p e(JSONObject jSONObject) throws JSONException {
+    private ThemePagedModel e(JSONObject jSONObject) throws JSONException {
         JSONArray jSONArrayOptJSONArray;
-        p pVar = new p();
+        ThemePagedModel pVar = new ThemePagedModel();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -466,16 +466,16 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return pVar;
     }
 
-    private k a(JSONArray jSONArray) {
+    private ThemeModel a(JSONArray jSONArray) {
         int length;
-        n nVar = null;
+        ThemeProgressModel nVar = null;
         if (jSONArray != null && (length = jSONArray.length()) > 0) {
-            nVar = new n();
+            nVar = new ThemeProgressModel();
             ArrayList arrayList = new ArrayList();
             nVar.b(arrayList);
             int iMin = Math.min(length, 50);
             for (int i = 0; i < iMin; i++) {
-                com.tsf.extend.base.c.ProgressCallback aVarK = k(jSONArray.getJSONObject(i));
+                ThemeCategoryListModel.A aVarK = k(jSONArray.getJSONObject(i));
                 if (aVarK != null) {
                     arrayList.add(aVarK);
                 }
@@ -484,7 +484,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return nVar;
     }
 
-    private d f(JSONObject jSONObject) {
+    private ThemeExpiringModel f(JSONObject jSONObject) {
         d dVar = new d();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
@@ -502,8 +502,8 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public p g(JSONObject jSONObject) {
-        p pVar = new p();
+    public ThemePagedModel g(JSONObject jSONObject) {
+        ThemePagedModel pVar = new ThemePagedModel();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -519,8 +519,8 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return pVar;
     }
 
-    private p h(JSONObject jSONObject) {
-        p pVarG = g(jSONObject);
+    private ThemePagedModel h(JSONObject jSONObject) {
+        ThemePagedModel pVarG = g(jSONObject);
         final int iOptInt = jSONObject.optInt("ttl", 10);
         if (pVarG != null) {
             pVarG.a(new com.tsf.extend.base.b.FilterPredicate() { // from class: com.tsf.extend.theme.ThemeDataProvider.8
@@ -533,7 +533,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return pVarG;
     }
 
-    private void a(p pVar, JSONObject jSONObject) {
+    private void a(ThemePagedModel pVar, JSONObject jSONObject) {
         String strOptString = jSONObject.optString("version");
         boolean z = jSONObject.optInt("hasMore") == 1;
         boolean z2 = jSONObject.optInt("diyEnabled") == 1;
@@ -549,7 +549,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         pVar.b(jSONObject.optString("upack"));
     }
 
-    private static k i(JSONObject jSONObject) {
+    private static ThemeModel i(JSONObject jSONObject) {
         ThemeModel kVar = new ThemeModel();
         kVar.i(jSONObject.optString("author"));
         kVar.a(jSONObject.optInt("download_count"));
@@ -586,9 +586,9 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.9
             @Override // java.lang.Runnable
             public void run() {
-                v.this.f = ai.a().c();
+                ThemeDataProvider.this.f = ThemeLocalProvider.a().c();
                 final ArrayList arrayListNewArrayList = Lists.newArrayList();
-                arrayListNewArrayList.addAll(v.this.f);
+                arrayListNewArrayList.addAll(ThemeDataProvider.this.f);
                 com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.9.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -603,7 +603,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         com.tsf.extend.base.j.HandlerUtils.a(2, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.10
             @Override // java.lang.Runnable
             public void run() {
-                final List<ThemeModel> listD = ai.a().d();
+                final List<ThemeModel> listD = ThemeLocalProvider.a().d();
                 com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.10.1
                     @Override // java.lang.Runnable
                     public void run() {
@@ -614,8 +614,8 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         });
     }
 
-    public static List<aq> i() {
-        aq aqVarA;
+    public static List<AbstractThemeProvider> i() {
+        AbstractThemeProvider aqVarA;
         ArrayList arrayList = new ArrayList();
         File[] fileArrC = com.tsf.extend.theme.diy.e.c(com.tsf.extend.AppContextHolder.b());
         if (fileArrC != null) {
@@ -628,15 +628,15 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return arrayList;
     }
 
-    public static f c(String str) {
-        f fVarA;
+    public static ThemeSystemModel c(String str) {
+        ThemeSystemModel fVarA;
         if (!e(str)) {
             return null;
         }
         try {
             Context contextCreatePackageContext = com.tsf.extend.AppContextHolder.b().createPackageContext(str, 3);
             HashMap<String, Object> mapD = com.tsf.extend.base.j.AppEnvUtils.d(contextCreatePackageContext);
-            if (contextCreatePackageContext == null || (fVarA = ae.a(contextCreatePackageContext, mapD)) == null || TextUtils.isEmpty(fVarA.i())) {
+            if (contextCreatePackageContext == null || (fVarA = ThemeXmlParser.a(contextCreatePackageContext, mapD)) == null || TextUtils.isEmpty(fVarA.i())) {
                 fVarA = null;
             }
             return fVarA;
@@ -649,7 +649,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         if (this.f == null || this.f.size() == 0) {
             return false;
         }
-        Iterator<k> it = this.f.iterator();
+        Iterator<ThemeModel> it = this.f.iterator();
         while (it.hasNext()) {
             if (str.equals(it.next().g())) {
                 return true;
@@ -664,7 +664,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         }
         try {
             ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
-            return applicationInfo != null && applicationInfo.metaData != null && applicationInfo.metaData.getBoolean("CMLAUNCHER_THEME_SUPPORT", false) && ah.c(applicationInfo.metaData.getString("CMLAUNCHER_THEME_VERSION"));
+            return applicationInfo != null && applicationInfo.metaData != null && applicationInfo.metaData.getBoolean("CMLAUNCHER_THEME_SUPPORT", false) && ThemeInstallManager.c(applicationInfo.metaData.getString("CMLAUNCHER_THEME_VERSION"));
         } catch (PackageManager.NameNotFoundException e2) {
             return false;
         }
@@ -697,7 +697,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     public static boolean h(String str) {
         try {
             ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
-            return (applicationInfo == null || applicationInfo.metaData == null || !ah.d(applicationInfo.metaData.getString("CMLAUNCHER_WIDGETSKIN_VERSION"))) ? false : true;
+            return (applicationInfo == null || applicationInfo.metaData == null || !ThemeInstallManager.d(applicationInfo.metaData.getString("CMLAUNCHER_WIDGETSKIN_VERSION"))) ? false : true;
         } catch (PackageManager.NameNotFoundException e2) {
             return false;
         }
@@ -706,7 +706,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
     public static String i(String str) {
         try {
             ApplicationInfo applicationInfo = com.tsf.extend.AppContextHolder.b().getPackageManager().getApplicationInfo(str, ItemInfo.APP_INTENT);
-            if (applicationInfo == null || applicationInfo.metaData == null || !applicationInfo.metaData.getBoolean("CMLAUNCHER_WIDGETSKIN", false) || !ah.d(applicationInfo.metaData.getString("CMLAUNCHER_WIDGETSKIN_VERSION"))) {
+            if (applicationInfo == null || applicationInfo.metaData == null || !applicationInfo.metaData.getBoolean("CMLAUNCHER_WIDGETSKIN", false) || !ThemeInstallManager.d(applicationInfo.metaData.getString("CMLAUNCHER_WIDGETSKIN_VERSION"))) {
                 return null;
             }
             return applicationInfo.metaData.getString("CMLAUNCHER_WIDGETSKIN_CHANNEL");
@@ -745,7 +745,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                         options = null;
                     }
                     Bitmap bitmapDecodeResource = BitmapFactory.decodeResource(contextCreatePackageContext.getResources(), i, options);
-                    final B bVar = new B();
+                    final b bVar = new b();
                     bVar.a = str;
                     bVar.b = bitmapDecodeResource;
                     com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.11.2
@@ -774,7 +774,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         final String str2 = list.get(i2) + "_" + i;
         Bitmap bitmapA = a(str2);
         if (bitmapA != null) {
-            B bVar = new B();
+            b bVar = new b();
             bVar.a = str;
             bVar.b = bitmapA;
             interfaceC0048a.a(null, bVar);
@@ -794,10 +794,10 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
                         options = options2;
                     }
                     Bitmap bitmapDecodeFile = BitmapFactory.decodeFile(Uri.parse((String) list.get(i2)).getPath(), options);
-                    final B bVar2 = new B();
+                    final b bVar2 = new b();
                     bVar2.a = str;
                     bVar2.b = bitmapDecodeFile;
-                    v.this.a(str2, bVar2.b);
+                    ThemeDataProvider.this.a(str2, bVar2.b);
                     com.tsf.extend.base.j.HandlerUtils.a(0, new Runnable() { // from class: com.tsf.extend.theme.ThemeDataProvider.12.1
                         @Override // java.lang.Runnable
                         public void run() {
@@ -816,7 +816,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         });
     }
 
-    public void a(String str, aq aqVar, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<b> interfaceC0048a, int i, int i2) {
+    public void a(String str, AbstractThemeProvider aqVar, com.tsf.extend.base.d.BaseDataProvider.InterfaceC0048a<b> interfaceC0048a, int i, int i2) {
         a(str, aqVar.t(), interfaceC0048a, i, i2);
     }
 
@@ -845,8 +845,8 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         a(mVar);
     }
 
-    private C j(JSONObject jSONObject) throws JSONException {
-        C cVar = new C();
+    private ThemeCategoryListModel j(JSONObject jSONObject) throws JSONException {
+        ThemeCategoryListModel cVar = new ThemeCategoryListModel();
         if (jSONObject.optInt("resCode", 1) != 0) {
             return null;
         }
@@ -860,7 +860,7 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
             if (jSONObject2 == null) {
                 return null;
             }
-            com.tsf.extend.base.c.ProgressCallback aVarK = k(jSONObject2);
+            ThemeCategoryListModel.A aVarK = k(jSONObject2);
             if (aVarK != null) {
                 cVar.a().add(aVarK);
                 if (cVar.a().size() >= jOptLong) {
@@ -874,11 +874,11 @@ public class ThemeDataProvider extends com.tsf.extend.base.d.BaseDataProvider {
         return cVar;
     }
 
-    private com.tsf.extend.base.c.ProgressCallback k(JSONObject jSONObject) {
+    private ThemeCategoryListModel.A k(JSONObject jSONObject) {
         if (jSONObject == null) {
             return null;
         }
-        com.tsf.extend.base.c.ProgressCallback aVar = new com.tsf.extend.base.c.ProgressCallback();
+        ThemeCategoryListModel.A aVar = new ThemeCategoryListModel.A();
         aVar.a = jSONObject.optString("id");
         aVar.b = jSONObject.optString("type");
         aVar.c = jSONObject.optString("banner_img");
